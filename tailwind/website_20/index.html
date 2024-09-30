@@ -1,0 +1,452 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="Container w-full h-auto">
+        <div class="header w-full h-auto lg:h-[640px] bg-[url('Assets/slide1-01.jpg')] bg-no-repeat bg-cover bg-center flex flex-col items-center">
+            <div class="navmenu w-full lg:w-[1170px] h-auto lg:h-[80px] flex items-center justify-between">
+                <div class="navleft w-[140px] h-[60px] flex items-center ms-[20px] lg:ms-0">
+                    <img src="Assets/logo.png">
+                </div>
+                <div class="navcenter w-[720px] h-[60px] uppercase text-[14px] text-[#fff] hidden lg:flex items-center justify-between">
+                    <a href="#" class="hover:text-[#ec1d25] duration-300">home</a>
+                    <a href="#" class="hover:text-[#ec1d25] duration-300">menu</a>
+                    <a href="#" class="hover:text-[#ec1d25] duration-300">reservation</a>
+                    <a href="#" class="hover:text-[#ec1d25] duration-300">gallery</a>
+                    <a href="#" class="hover:text-[#ec1d25] duration-300">about</a>
+                    <a href="#" class="hover:text-[#ec1d25] duration-300">blog</a>
+                    <a href="#" class="hover:text-[#ec1d25] duration-300">contact</a>
+                </div>
+                <div class="navright w-[130px] h-[60px] hidden md:flex items-center justify-around">
+                    <i class="ri-glasses-line text-[#fff] text-[22px]"></i>
+                    <i class="fa-brands fa-facebook-f text-[#fff]"></i>
+                    <i class="fa-brands fa-twitter text-[#fff]"></i>
+                </div>
+                <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[80px] lg:mr-0">
+                    <i class="fa-solid fa-bars text-[28px] text-[#fff]"></i>
+                </div>
+            </div>
+            <div class="heroTtl w-full lg:w-[660px] h-auto lg:h-[300px] mt-[100px] flex flex-col justify-center items-center">
+                <p id="subFont" class="text-[30px] lg:text-[60px] text-[#fff] text-center">Welcome to</p>
+                <h1 id="mainFont" class="text-[40px] lg:text-[90px] text-[#fff] uppercase font-bold tracking-widest pb-[30px] leading-[99px] text-center">pato place</h1>
+                <button class="w-[135px] h-[40px] bg-[#fff] rounded-[10px] uppercase text-[12px] text-[#ec1d25] hover:bg-[#ec1d25] duration-300 hover:text-[#fff]">look menu</button>
+            </div>
+        </div>
+
+        <div class="dropnav w-full h-[400px] bg-black fixed top-24 text-[#fff] flex flex-col items-center justify-around">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Reservation</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="welcome w-full h-auto lg:h-[645px] flex flex-wrap items-center justify-center">
+            <div class="welcomeCont w-full lg:w-[600px] h-auto lg:h-[420px] flex flex-col items-center">
+                <p id="subFont" class="text-[30px] text-[#d61c22] pt-[60px]">Italian Restaurant</p>
+                <h1 id="mainFont" class="text-[50px] text-[#222] font-bold uppercase tracking-widest leading-[60px] pb-[30px]">Welcome</h1>
+                <p class="text-[15px] text-[#666] text-center pb-[20px] p-[20px] lg:p-0">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed <br>
+                     fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis <br>
+                      ligula sem id neque.</p>
+                <p class="text-[#666] hover:text-[#ec1d25] duration-200">our story<span class="text-[#222] hover:text-[#ec1d25] duration-200 ps-[12px]"><i class="fa fa-long-arrow-right m-l-10 text-[12px]" aria-hidden="true"></i></span></p>
+            </div>
+            <div class="welcomeImg w-full lg:w-[600px] h-auto lg:h-[420px] flex items-center justify-center">
+                <div class="subwelcomeImg w-full lg:w-[390px] h-auto lg:h-[390px] rounded-[15px] overflow-hidden">
+                    <img src="Assets/our-story-01.jpg" class="rounded-[15px] transform transition-transform hover:scale-110 duration-700">
+                </div>
+            </div>
+        </div>
+
+        <div class="discover w-full h-auto lg:h-[340px] flex items-center justify-center">
+            <div class="discoverTtl w-full lg:w-[480px] h-auto lg:h-[120px] flex flex-col items-center">
+                <p id="subFont" class="text-[30px] text-[#d61c22]">Discover</p>
+                <h1 id="mainFont" class="text-[30px] lg:text-[50px] text-[#fff] uppercase font-bold leading-[60px] tracking-widest">Pato Place</h1>
+            </div>
+        </div>
+
+        <div class="intro w-full h-auto lg:h-[625px] flex flex-wrap items-center justify-center">
+            <div class="subIntro w-full lg:w-[400px] h-auto lg:h-[415px] flex flex-col items-center justify-end">
+                <div class="introImg w-full lg:w-[370px] h-auto lg:h-[220px] rounded-[15px] overflow-hidden">
+                    <img src="Assets/intro-01.jpg" class="rounded-[15px] transform transition-transform hover:scale-110 duration-700">
+                </div>
+                <div class="introCont w-full lg:w-[370px] h-auto lg:h-[165px]">
+                    <h1 id="mainFont" class="text-[22px] uppercase font-medium tracking-widest text-center lg:text-left hover:text-[#ec1d25] duration-300 pt-[25px] pb-[10px]">Romantic Restaurant</h1>
+                    <p class="text-[15px] text-[#666] pb-[20px] text-center lg:text-left p-[20px] lg:p-0">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                    <p class="text-[12px] uppercase text-[#666] hover:text-[#ec1d25] tracking-wider text-center lg:text-left">Learn More <span class="ps-[10px]"><i class="fa fa-long-arrow-right m-l-10"></i></span></p>
+                </div>
+            </div>
+            <div class="subIntro w-full lg:w-[400px] h-auto lg:h-[415px] flex flex-col items-center justify-end">
+                <div class="introImg w-full lg:w-[370px] h-[220px] rounded-[15px] overflow-hidden">
+                    <img src="Assets/intro-02.jpg" class="rounded-[15px] transform transition-transform hover:scale-110 duration-700">
+                </div>
+                <div class="introCont w-full lg:w-[370px] h-auto lg:h-[165px]">
+                    <h1 id="mainFont" class="text-[22px] uppercase font-medium text-center lg:text-left tracking-widest hover:text-[#ec1d25] duration-300 pt-[25px] pb-[10px]">Delicious Food</h1>
+                    <p class="text-[15px] text-[#666] pb-[20px] text-center lg:text-left p-[20px] lg:p-0">Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna</p>
+                    <p class="text-[12px] uppercase text-[#666] hover:text-[#ec1d25] text-center lg:text-left tracking-wider">Learn More <span class="ps-[10px]"><i class="fa fa-long-arrow-right m-l-10"></i></span></p>
+                </div>
+            </div>
+            <div class="subIntro w-full lg:w-[400px] h-auto lg:h-[415px] flex flex-col items-center justify-end">
+                <div class="introImg w-full lg:w-[370px] h-[220px] rounded-[15px] overflow-hidden">
+                    <img src="Assets/intro-04.jpg" class="rounded-[15px] transform transition-transform hover:scale-110 duration-700">
+                </div>
+                <div class="introCont w-full lg:w-[370px] h-auto lg:h-[165px]">
+                    <h1 id="mainFont" class="text-[22px] uppercase text-center lg:text-left font-medium tracking-widest hover:text-[#ec1d25] duration-300 pt-[25px] pb-[10px]">Red Wines You Love</h1>
+                    <p class="text-[15px] text-[#666] pb-[20px] text-center lg:text-left p-[20px] lg:p-0">Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                    <p class="text-[12px] uppercase text-[#666] text-center lg:text-left hover:text-[#ec1d25] tracking-wider">Learn More <span class="ps-[10px]"><i class="fa fa-long-arrow-right m-l-10"></i></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu w-full h-auto lg:h-[1140px] bg-[#F5F2EC] flex items-center justify-center">
+            <div class="subMenu w-full lg:w-[1200px] h-auto lg:h-[905px] flex flex-col items-center">
+                <div class="menuTtl w-full lg:w-[1170px] h-auto lg:h-[98px] flex flex-col items-center">
+                    <p id="subFont" class="text-[20px] lg:text-[30px] text-[#d61c22] text-center">Discover</p>
+                    <h1 id="mainFont" class="text-[30px] lg:text-[50px] text-[#222] font-bold text-center uppercase tracking-widest leading-[60px]">Our Menu</h1>
+                </div>
+                <div class="menuCont w-full lg:w-[1200px] h-auto lg:h-[523px mt-auto flex flex-wrap justify-center">
+                    <div class="menuImg w-[400px] h-[523px] flex items-end justify-center">
+                        <div class="subMenuImg w-[370px] h-[493px] rounded-[10px] bg-[url('Assets/our-menu-01.jpg')] bg-no-repeat 
+                        bg-cover flex items-center justify-center transform transition-transform hover:scale-110 duration-700 overflow-hidden">
+                            <div class="menuImgName w-[150px] h-[60px] bg-[#fff] hover:bg-[#EC1D25] duration-500 text-[#000] hover:text-[#fff] rounded-[10px] opacity-80 flex items-center justify-center">
+                                <h1 id="mainFont" class=" font-medium text-[22px] uppercase tracking-widest">lunch</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg w-[400px] h-[523px] flex items-end justify-center">
+                        <div class="subMenuImg w-[370px] h-[493px] rounded-[10px] bg-[url('Assets/our-menu-05.jpg')] bg-no-repeat 
+                        bg-cover flex items-center justify-center transform transition-transform hover:scale-110 duration-700 overflow-hidden">
+                            <div class="menuImgName w-[150px] h-[60px] bg-[#fff] hover:bg-[#EC1D25] duration-500 text-[#000] hover:text-[#fff] rounded-[10px] opacity-80 flex items-center justify-center">
+                                <h1 id="mainFont" class=" font-medium text-[22px] uppercase tracking-widest">dinner</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg w-[400px] h-[523px]">
+                        <div class="subMenuImg w-[400px] h-[261px] flex items-end justify-center">
+                            <div class="subImg w-[370px] h-[230px] rounded-[10px] bg-[url('Assets/our-menu-08.jpg')] bg-no-repeat 
+                            bg-cover flex items-center justify-center overflow-hidden transform transition-transform hover:scale-110 duration-700">
+                                <div class="subImgName w-[142px] h-[60px] bg-[#fff] hover:bg-[#EC1D25] duration-500 text-[#000] hover:text-[#fff] rounded-[10px] opacity-80 flex items-center justify-center">
+                                    <h1 id="mainFont" class=" font-medium text-[22px] uppercase tracking-widest">drink</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subMenuImg w-[400px] h-[261px] flex items-end justify-center">
+                            <div class="subImg w-[370px] h-[230px] rounded-[10px] bg-[url('Assets/our-menu-10.jpg')] bg-no-repeat 
+                            bg-cover flex items-center justify-center overflow-hidden transform transition-transform hover:scale-110 duration-700">
+                                <div class="subImgName w-[142px] h-[60px] bg-[#fff] hover:bg-[#EC1D25] duration-500 text-[#000] hover:text-[#fff] rounded-[10px] opacity-80 flex items-center justify-center">
+                                    <h1 id="mainFont" class=" font-medium text-[22px] uppercase tracking-widest">starters</h1>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="menuCont w-full lg:w-[1200px] h-auto lg:h-[262px] flex flex-wrap justify-center">
+                    <div class="menuImg w-full lg:w-[800px] h-auto lg:h-[260px] flex items-end justify-center">
+                        <div class="subMenuImg w-full lg:w-[770px] h-[230px] bg-[url('Assets/our-menu-13.jpg')] bg-no-repeat bg-cover transform 
+                        transition-transform hover:scale-110 duration-700 rounded-[10px] flex items-center justify-center">
+                            <div class="subMenuImgName w-[255px] h-[60px] text-[#000] hover:text-[#fff] bg-[#fff] rounded-[10px] opacity-80 
+                            hover:bg-[#EC1D25] duration-500 flex items-center justify-center">
+                                <h1 id="mainFont" class=" font-medium text-[22px] uppercase tracking-widest">happy hour</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuImg w-[400px] h-[260px] flex items-end justify-center">
+                        <div class="subMenuImg w-[370px] h-[230px] bg-[url('Assets/our-menu-16.jpg')] bg-no-repeat 
+                        bg-cover transform transition-transform hover:scale-110 duration-700 flex items-center justify-center">
+                            <div class="subMenuImg w-[175px] h-[60px] bg-[#fff] hover:bg-[#EC1D25] rounded-[10px] opacity-80 duration-500 flex items-center justify-center">
+                                <h1 id="mainFont" class=" font-medium text-[22px] uppercase tracking-widest">dessert</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="events w-full h-auto lg:h-[860px] bg-[url('Assets/bg-event-02.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-center">
+            <div class="subEvents w-full lg:w-[1200px] h-auto lg:h-[540px] flex flex-col justify-between items-center">
+                <div class="eventsTtl w-full lg:w-[1170px] h-auto lg:h-[100px] flex flex-col items-center">
+                    <p id="subFont" class="text-[30px] text-[#d61c22]">Upcomming</p>
+                    <h1 id="mainFont" class="text-[30px] lg:text-[50px] uppercase text-[#fff] font-bold tracking-widest leading-[60px]">events</h1>
+                </div>
+                <div class="eventsCont w-full lg:w-[1170px] h-auto lg:h-[390px] flex flex-wrap">
+                    <div class="eventsContImg w-full lg:w-[585px] h-[390px]">
+                        <img src="Assets/event-06.jpg" class="rounded-tl-[20px] rounded-bl-[20px]">
+                    </div>
+                    <div class="subEventsCont w-full lg:w-[585px] h-auto lg:h-[390px] bg-[#fff] rounded-tr-[20px] rounded-br-[20px] flex flex-col items-center justify-center gap-[30px]">
+                        <h1 id="mainTtl" class="text-[22px] text-[#222] uppercase tracking-wider text-center font-medium">Wines during specific nights</h1>
+                        <p class="text-[15px] text-[#666] text-center p-[20px] lg:p-0">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. <br> Sed fringilla, nunc sed imperdiet lacinia</p>
+                        <div class="counter w-full lg:w-[500px] h-auto lg:h-[75px] flex flex-wrap justify-around">
+                            <div class="days w-[80px] h-[75px] flex flex-col items-center justify-center">
+                                <h1 class="text-[50px] text-[#ec1d25] font-bold leading-[55px]">25</h1>
+                                <p class="text-[12px] text-[#999] font-bold uppercase">Days</p>
+                            </div>
+                            <div class="hours w-[80px] h-[75px] flex flex-col items-center justify-center">
+                                <h1 class="text-[50px] text-[#ec1d25] font-bold leading-[55px]">12</h1>
+                                <p class="text-[12px] text-[#999] font-bold uppercase">Hours</p>
+                            </div>
+                            <div class="minutes w-[80px] h-[75px] flex flex-col items-center justify-center">
+                                <h1 class="text-[50px] text-[#ec1d25] font-bold leading-[55px]">54</h1>
+                                <p class="text-[12px] text-[#999] font-bold uppercase">Minutes</p>
+                            </div>
+                            <div class="seconds w-[80px] h-[75px] flex flex-col items-center justify-center">
+                                <h1 class="text-[50px] text-[#ec1d25] font-bold leading-[55px]">23</h1>
+                                <p class="text-[12px] text-[#999] font-bold uppercase">seconds</p>
+                            </div>
+                        </div>
+                        <p class="text-[12px] text-[#000] uppercase tracking-wider hover:text-[#ec1d25] duration-300 cursor-pointer text-center">view details<span class="ps-[10px]"><i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reservation w-full h-auto lg:h-[715px] bg-[#EFEFEF] flex flex-wrap items-center justify-center">
+            <div class="reservationForm w-full lg:w-[600px] h-auto lg:h-[510px] flex flex-col items-center">
+                <div class="reservationTtl w-full lg:w-[570px] h-auto lg:h-[98px] mb-[20px] flex flex-col items-center">
+                    <p id="subFont" class="text-[30px] text-[#d61c22] text-center">Reservation</p>
+                    <h1 id="mainFont" class="text-[30px] lg:text-[50px] text-[#222] font-bold tracking-widest text-center uppercase leading-[60px]">Book table</h1>
+                </div>
+                <div class="reservationDetail w-full lg:w-[600px] h-auto lg:h-[300px] mb-[14px] flex flex-wrap justify-center">
+                    <div class="reservationBox-1 w-[300px] h-[300px] flex flex-col justify-around items-center">
+                        <div class="date w-[266px] h-[70px]">
+                            <p class="text-[15px] text-[#555]">Date</p>
+                            <input type="date" class="w-[266px] h-[46px] outline-none ps-[10px] rounded-[10px] border-2 border-[#D9D9D9]">
+                        </div>
+                        <div class="time w-[266px] h-[70px]">
+                            <p class="text-[15px] text-[#555]">Time</p>
+                            <input type="time" class="w-[266px] h-[46px] ps-[10px] outline-none rounded-[10px] border-2 border-[#D9D9D9]">
+                        </div>
+                        <div class="people w-[266px] h-[70px]">
+                            <p class="text-[15px] text-[#555]">People</p>
+                            <input type="text" class="w-[266px] h-[46px] outline-none ps-[10px] border-2 border-[#D9D9D9] rounded-[10px]">
+                        </div>
+                    </div>
+                    <div class="reservationBox-2 w-[300px] h-[300px] flex flex-col items-center justify-around">
+                        <div class="name w-[266px] h-[70px]">
+                            <p class="text-[15px] text-[#555]">Name</p>
+                            <input type="text" placeholder="Name" class="w-[266px] h-[46px] outline-none border-2 border-[#D9D9D9] rounded-[10px] ps-[10px] placeholder:text-[14px] text-[#666]">
+                        </div>
+                        <div class="phone w-[266px] h-[70px]">
+                            <p class="text-[15px] text-[#555]">Phone</p>
+                            <input type="text" placeholder="Phone" class="w-[266px] h-[46px] outline-none border-2 border-[#D9D9D9] rounded-[10px] ps-[10px] placeholder:text-[14px] text-[#666]">
+                        </div>
+                        <div class="email w-[266px] h-[70px]">
+                            <p class="text-[15px] text-[#555]">Email</p>
+                            <input type="email" placeholder="Email" class="w-[266px] h-[46px] outline-none border-2 border-[#D9D9D9] rounded-[10px] ps-[10px] placeholder:text-[14px] text-[#666]">
+                        </div>
+                    </div>
+                </div>
+                <div class="reservationBtn w-full lg:w-[570px] h-auto lg:h-[40px] flex justify-center">
+                    <button class="w-[150px] h-[40px] bg-[#111111] text-[#fff] rounded-[10px] uppercase text-[12px] tracking-wide hover:bg-[#EC1D25] duration-500">book table</button>
+                </div>
+            </div>
+            <div class="reservationImg w-full lg:w-[600px] h-auto lg:h-[510px] flex items-center justify-center">
+                <div class="reservationSubImg w-full lg:w-[390px] h-[390px] rounded-[10px] overflow-hidden">
+                    <img src="Assets/booking-01.jpg" class="rounded-[10px] transform transition-transform hover:scale-110 duration-700">
+                </div>
+            </div>
+        </div>
+
+        <div class="review w-full h-auto lg:h-[700px] flex flex-col items-center justify-center gap-[60px]">
+            <div class="reviewTtl w-full lg:w-[1170px] h-auto lg:h-[100px] flex flex-col items-center">
+                <p id="subFont" class="text-[30px] text-[#d61c22] text-center">Customers Say</p>
+                <h1 id="mainFont" class="text-[30px] lg:text-[50px] text-[#222] text-center font-bold uppercase tracking-widest leading-[60px]">Review</h1>
+            </div>
+            <div class="reviewCont w-full lg:w-[1200px] h-auto lg:h-[290px] flex flex-col items-center">
+                <img src="Assets/avatar-01.jpg" class="w-[110px] h-[110px] rounded-full border-4 border-[#EC1D25] mb-[30px]">
+                <p class="text-[18px] text-[#666] text-center pb-[15px] p-[20px] lg:p-0">“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre- <br>
+                    tium nec, fermentum viverra dui ”</p>
+                <div class="clientStar w-[100px] h-[20px] text-[#EC1D25] mb-[25px] flex items-center justify-center">
+                    <i class="fa fa-star p-l-1"></i>
+                    <i class="fa fa-star p-l-1"></i>
+                    <i class="fa fa-star p-l-1"></i>
+                    <i class="fa fa-star p-l-1"></i>
+                    <i class="fa fa-star p-l-1"></i>
+                </div>
+                <p class="text-[12px] text-[#222] uppercase tracking-wider text-center">Marie Simmons ˗ New York</p>
+            </div>
+        </div>
+
+        <div class="video relative w-full h-auto lg:h-[720px] flex items-center justify-center">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="videoTtl relative w-full lg:w-[400px] h-auto lg:h-[250px] flex flex-col items-center">
+                <p id="subFont" class="text-[30px] text-[#d61c22] text-center">Discover</p>
+                <h1 id="mainFont" class="text-[30px] lg:text-[50px] text-[#fff] font-bold uppercase tracking-widest pb-[35px]">Our Video</h1>
+                <div class="videoIcon w-[70px] h-[70px] bg-[#fff] hover:bg-[#d61c22] text-[18px] hover:text-[#fff] opacity-60 
+                duration-500 rounded-full flex items-center justify-center transform transition-transform hover:scale-125">
+                    <i class="fa fa-play fs-18 m-l-2"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog w-full h-auto lg:h-[775px] flex items-center justify-center">
+            <div class="subBlog w-full lg:w-[1200px] h-auto lg:h-[535px] flex flex-col justify-between items-center">
+                <div class="blogTtl w-full lg:w-[1170px] h-auto lg:h-[95px] flex flex-col items-center">
+                    <p id="subFont" class="text-[30px] text-[#d61c22] text-center">Latest News</p>
+                    <h1 id="mainFont" class="text-[30px] lg:text-[50px] uppercase text-center tracking-widest font-bold text-[#222] leading-[60px]">The Blog</h1>
+                </div>
+                <div class="blogCard w-full lg:w-[1200px] h-auto lg:h-[415px] flex flex-wrap justify-center">
+                    <div class="subBlogCard w-full lg:w-[400px] h-auto lg:h-[415px] flex flex-col items-center justify-end">
+                        <div class="blogImg w-full lg:w-[370px] h-[220px] rounded-[15px] overflow-hidden">
+                            <img src="Assets/blog-01.jpg" class="rounded-[15px] transform transition-transform hover:scale-110 duration-500">
+                        </div>
+                        <div class="blogImgCont w-full lg:w-[370px] h-auto lg:h-[165px]">
+                            <h1 id="mainFont" class="text-[22px] font-medium uppercase tracking-widest text-center lg:text-left tetx-[#000] hover:text-[#ec1d25] duration-300 pt-[20px] pb-[10px]">Best Places for Wine</h1>
+                            <p class="text-[15px] text-[#666] pb-[25px] text-center lg:text-left p-[20px] lg:p-0">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                            <p class="text-[12px] uppercase text-[#666] hover:text-[#ec1d25] duration-300 tracking-wider text-center lg:text-left pt-[20px]">Continue Reading<span class="ps-[10px]"><i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="subBlogCard w-full lg:w-[400px] h-auto lg:h-[415px] flex flex-col items-center justify-end">
+                        <div class="blogImg w-full lg:w-[370px] h-[220px] rounded-[15px] overflow-hidden">
+                            <img src="Assets/blog-02.jpg" class="rounded-[15px] transform transition-transform hover:scale-110 duration-500">
+                        </div>
+                        <div class="blogImgCont w-full lg:w-[370px] h-auto lg:h-[165px]">
+                            <h1 id="mainFont" class="text-[22px] font-medium uppercase text-center lg:text-left tracking-widest tetx-[#000] hover:text-[#ec1d25] duration-300 pt-[20px] pb-[10px]">Eggs and Cheese</h1>
+                            <p class="text-[15px] text-[#666] pb-[25px] text-center lg:text-left p-[20px] lg:p-0">Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat</p>
+                            <p class="text-[12px] uppercase text-[#666] hover:text-[#ec1d25] duration-300 text-center lg:text-left tracking-wider pt-[20px]">Continue Reading<span class="ps-[10px]"><i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="subBlogCard w-full lg:w-[400px] h-auto lg:h-[415px] flex flex-col items-center justify-end">
+                        <div class="blogImg w-full lg:w-[370px] h-[220px] rounded-[15px] overflow-hidden">
+                            <img src="Assets/blog-03.jpg" class="rounded-[15px] transform transition-transform hover:scale-110 duration-500">
+                        </div>
+                        <div class="blogImgCont w-full lg:w-[370px] h-auto lg:h-[165px]">
+                            <h1 id="mainFont" class="text-[22px] font-medium uppercase text-center lg:text-left tracking-widest tetx-[#000] hover:text-[#ec1d25] duration-300 pt-[20px] pb-[10px]">Style the Wedding Party</h1>
+                            <p class="text-[15px] text-[#666] pb-[25px] text-center lg:text-left p-[20px] lg:p-0">Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                            <p class="text-[12px] uppercase text-[#666] hover:text-[#ec1d25] duration-300 tracking-wider text-center lg:text-left pt-[20px]">Continue Reading<span class="ps-[10px]"><i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="specialEmail w-full h-[240px] bg-[#EFEFEF] flex items-center justify-center">
+            <div class="subSpecialEmail w-full lg:w-[700px] h-auto lg:h-[70px] flex flex-wrap items-center justify-center lg:justify-between gap-[20px] lg:gap-0">
+                <h1 id="mainFont" class="text-[22px] text-[#333] font-medium uppercase tracking-widest">Specials Sign up</h1>
+                <input type="email" placeholder="Email Address" class="w-[265px] h-[45px] outline-none rounded-[10px] text-[14px] text-[#666] ps-[20px] border-2 border-[#D9D9D9]">
+                <button class="w-[160px] h-[40px] bg-[#111111] rounded-[10px] uppercase text-[#fff] text-[12px] tracking-wider hover:bg-[#EC1D25] duration-300">sign-up</button>
+            </div>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[565px] bg-[#222222] flex flex-col items-center">
+            <div class="subFooter w-full lg:w-[1200px] h-auto lg:h-[485px] flex flex-col lg:flex-row items-center justify-center">
+                <div class="contTime w-full lg:w-[400px] h-auto lg:h-[378px] p-[20px] lg:p-0">
+                    <h1 id="mainFont" class="text-[18px] text-[#fff] font-medium uppercase tracking-wider pt-[30px] pb-[30px]">Contact Us</h1>
+                    <div class="contactDetail w-full lg:w-[370px] h-auto lg:h-[95px] mb-[60px] flex flex-col justify-between">
+                        <p class="text-[#999]"><i class="ri-map-pin-line"></i><span class="text-[13px] ps-[10px]"> 8th floor, 379 Hudson St, New York, NY 10018</span></p>
+                        <p class="text-[#999]"><i class="ri-phone-fill"></i><span class="text-[13px] ps-[10px]"> (+1) 96 716 6879</span></p>
+                        <p class="text-[#999]"><i class="ri-mail-fill"></i><span class="text-[13px] ps-[10px]"> contact@site.com</span></p>
+                    </div>
+                    <h1 id="mainFont" class="text-[18px] text-[#fff] pb-[30px] font-medium uppercase tracking-widest">Opening Times</h1>
+                    <p class="text-[13px] text-[#999] pb-[6px]">09:30 AM – 11:00 PM</p>
+                    <p class="text-[13px] text-[#999]">Every Day</p>
+                </div>
+                <div class="twitter w-full lg:w-[400px] h-auto lg:h-[378px] p-[20px] lg:p-0">
+                    <h1 id="mainFont" class="text-[18px] text-[#fff] font-medium uppercase tracking-widest pt-[30px] pb-[30px]">latest twitter</h1>
+                    <div class="twitterCont w-full lg:w-[370px] h-auto lg:h-[132px] mb-[30px]">
+                        <p class="text-[13px] text-[#ec1d25] pb-[6px]"><i class="ri-twitter-fill text-[#ccc]"></i><span class="ps-[8px]">@colorlib</span></p>
+                        <p class="text-[13px] text-[#999] pb-[6px]">Activello is a good option. It has a slider built into that <br> displays the featured image in the slider.</p>
+                        <p class="text-[13px] text-[#ec1d25] pb-[22px]">https://buff.ly/2zaSfAQ</p>
+                        <p class="text-[12px] text-[#555]">21 Dec 2017</p>
+                    </div>
+                    <div class="twitterCont w-full lg:w-[370px] h-auto lg:h-[110px]">
+                        <p class="text-[13px] text-[#ec1d25] pb-[6px]"><i class="ri-twitter-fill text-[#ccc]"></i><span class="ps-[8px]">@colorlib</span></p>
+                        <p class="text-[13px] text-[#999] pb-[20px]">Activello is a good option. It has a slider built into that displays <span class="text-[#ec1d25]">https://buff.ly/2zaSfAQ</span></p>
+                        <p class="text-[12px] text-[#555]">21 Dec 2017</p>
+                    </div>
+                </div>
+                <div class="gallery w-full lg:w-[400px] h-auto lg:h-[378px]">
+                    <h1 id="mainFont" class="text-[18px] text-[#fff] font-medium uppercase tracking-widest pt-[30px] pb-[30px]">gallery</h1>
+                    <div class="subGallery w-full lg:w-[370px] h-auto lg:h-[270px] flex flex-col justify-between">
+                        <div class="galleryImg w-full lg:w-[370px] h-auto lg:h-[80px] flex flex-wrap justify-between">
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-01.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-02.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-03.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-04.jpg">
+                            </div>
+                        </div>
+                        <div class="galleryImg w-full lg:w-[370px] h-auto lg:h-[80px] flex flex-wrap justify-between">
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-05.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-06.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-07.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-08.jpg">
+                            </div>
+                        </div>
+                        <div class="galleryImg w-full lg:w-[370px] h-auto lg:h-[80px] border flex flex-wrap justify-between">
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-09.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-10.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-11.jpg">
+                            </div>
+                            <div class="subGalleryImg relative w-[80px] h-[80px]">
+                                <div class="absolute hover:bg-[#EC1D25] inset-0 hover:bg-opacity-60 duration-300"></div>
+                                <img src="Assets/photo-gallery-12.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright w-full h-auto lg:h-[80px] bg-[#111111] flex justify-center">
+                <div class="subCopyright w-full lg:w-[1170px] h-auto lg:h-[80px] flex flex-wrap justify-between items-center">
+                    <div class="copyrightIcons w-[86px] h-[36px] text-[15px] flex justify-between items-center">
+                        <i class="ri-glasses-line text-[#fff] text-[18px] hover:text-[#ec1d25] duration-150"></i>
+                        <i class="fa-brands fa-facebook-f text-[#fff] hover:text-[#ec1d25] duration-150"></i>
+                        <i class="fa-brands fa-twitter text-[#fff] hover:text-[#ec1d25] duration-150"></i>
+                    </div>
+                    <div class="copyCont w-[240px] h-[35px] flex items-center">
+                        <p class="text-[14px] text-[#999]">@ 2017 Colorlib. <span class="hover:text-[#ec1d25] duration-300">Get The Theme</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide();
+
+        $(".hamburger").click(function(){
+            $(".dropnav").fadeToggle();
+        })
+    })
+</script>
+</html>

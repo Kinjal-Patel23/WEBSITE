@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="Container w-full h-auto">
+    <div class="header relative w-full h-auto lg:h-[900px] bg-[url('Assets/banner.png')] bg-no-repeat
+     bg-cover bg-center flex flex-col items-center">
+      <div class="absolute inset-0 bg-black opacity-70"></div>
+      <div class="navmenu relative w-full lg:w-[1110px] h-auto lg:h-[80px] flex items-center justify-between">
+        <div class="navleft w-[140px] h-[60px] cursor-pointer flex items-center ms-[20px] lg:ms-0">
+          <img src="Assets/logo.png">
+        </div>
+        <div class="navcenter w-[410px] h-[60px] text-[15px] text-[#fff] uppercase hidden lg:flex items-center justify-between">
+          <a href="#" class="hover:text-[#ff4533] duration-300">home</a>
+          <a href="#" class="hover:text-[#ff4533] duration-300">performer</a>
+          <a href="#" class="hover:text-[#ff4533] duration-300">pages</a>
+          <a href="#" class="hover:text-[#ff4533] duration-300">blog</a>
+          <a href="#" class="hover:text-[#ff4533] duration-300">contact</a>
+        </div>
+        <div class="navright w-[160px] h-[50px] cursor-pointer bg-[#FF4533] border border-[#ff4533] 
+          hover:bg-transparent text-[#fff] hover:text-[#ff4533] duration-500 hidden md:flex items-center justify-center">
+          <p>Buy Tickets</p>
+        </div>
+        <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[80px] lg:mr-0">
+          <i class="fa-solid fa-bars text-[28px] text-[#fff]"></i>
+        </div>
+      </div>
+      <div class="headerCont relative w-full lg:w-[1110px] h-auto lg:h-[295px] mt-[210px] flex flex-col items-center justify-between">
+        <p class="text-[22px] lg:text-[30px] text-[#ff4533]">12 Feb, 2020</p>
+        <div class="relative">
+          <img src="Assets/shape_2.svg" class="absolute left-10 mt-[125px] lg:mt-[125px] ms-0 lg:ms-[-80px] transform -translate-y-1/2 w-[50px] h-[50px] lg:w-[170px] lg:h-[170px] hidden md:flex">
+          <h1 id="mainTtl" class="relative text-white text-[40px] md:text-[72px] lg:text-[122px] uppercase z-10 text-center">CONCERT 2020</h1>
+          <img src="Assets/shape_1.svg" class="absolute right-10 mt-[-80px] lg:mt-[-130px] mr-[-20px] lg:mr-[-60px] transform -translate-y-1/2 w-[40px] h-[40px] lg:w-[170px] lg:h-[170px] hidden md:flex">
+        </div>
+        <h3 class="text-[30px] text-[#fff] p-[20px] lg:p-0 text-center">Green Avenue, New York</h3>  
+      </div>  
+    </div>
+
+    <div class="dropnav w-full h-[400px] bg-black fixed top-20 z-20 text-[#fff] flex flex-col items-center justify-around">
+      <a href="#">Home</a>
+      <a href="#">Performer</a>
+      <a href="#">Pages</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="performer w-full h-auto lg:h-[1640px] bg-[#000] flex flex-col items-center justify-center">
+      <div class="performerTtl w-full lg:w-[1140px] h-auto lg:h-[180px]">
+        <h1 class="text-[40px] lg:text-[80px] text-[#fff] text-center lg:text-left pt-[20px] lg:pt-0">Performer</h1>
+      </div>
+      <div class="performerCont w-full lg:w-[1140px] h-auto lg:h-[1260px] flex flex-col items-center">
+        <div class="performers w-full lg:w-[760px] h-auto lg:h-[630px] flex flex-wrap justify-center">
+          <div class="per-1 w-full lg:w-[380px] h-auto lg:h-[630px] flex flex-col items-center">
+            <div class="perImg w-full lg:w-[350px] h-[435px] bg-[url('Assets/1.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="perImgCont w-full lg:w-[350px] h-auto lg:h-[80px] mt-[40px]">
+              <h1 class="text-[30px] text-[#fff] pb-[6px] text-center lg:text-left">Mr. Zosoldos</h1>
+              <p class="text-[20px] text-[#ff4533] text-center lg:text-left">Acoustic drum</p>
+            </div>
+          </div>
+          <div class="per-2 w-full lg:w-[380px] h-auto lg:h-[630px] flex flex-col items-center">
+            <div class="perImg w-full lg:w-[350px] h-[435px] bg-[url('Assets/2.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="perImgCont w-full lg:w-[350px] h-auto lg:h-[80px] mt-[40px]">
+              <h1 class="text-[30px] text-[#fff] pb-[6px] text-center lg:text-left">Protik Hasan</h1>
+              <p class="text-[20px] text-[#ff4533] text-center lg:text-left">Acoustic drum</p>
+            </div>
+          </div>
+        </div>
+        <div class="performers w-full lg:w-[760px] h-auto lg:h-[630px] flex flex-wrap justify-center">
+          <div class="per-3 w-full lg:w-[380px] h-auto lg:h-[630px] flex flex-col items-center">
+            <div class="perImg w-full lg:w-[350px] h-[435px] bg-[url('Assets/3.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="perImgCont w-full lg:w-[350px] h-auto lg:h-[80px] mt-[40px]">
+              <h1 class="text-[30px] text-[#fff] pb-[6px] text-center lg:text-left">Salmon Vicky</h1>
+              <p class="text-[20px] text-[#ff4533] text-center lg:text-left">Acoustic drum</p>
+            </div>
+          </div>
+          <div class="per-4 w-full lg:w-[380px] h-auto lg:h-[630px] flex flex-col items-center">
+            <div class="perImg w-full lg:w-[350px] h-[435px] bg-[url('Assets/4.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="perImgCont w-full lg:w-[350px] h-auto lg:h-[80px] mt-[40px]">
+              <h1 class="text-[30px] text-[#fff] pb-[6px] text-center lg:text-left">Filaris Habol</h1>
+              <p class="text-[20px] text-[#ff4533] text-center lg:text-left">Acoustic drum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutProgram w-full h-auto lg:h-[870px] bg-[#000] bg-[url('Assets/shape_3.svg')] bg-no-repeat bg-left-bottom flex flex-col items-center justify-center">
+      <div class="aboutProgramTtl w-full lg:w-[760px] h-auto lg:h-[255px]">
+        <h1 class="text-[40px] lg:text-[80px] text-[#fff] text-center pb-[10px] pt-[20px] lg:pt-0">About Program</h1>
+        <p class="text-[20px] text-[#aab1b7] text-center p-[20px] lg:p-0">The event regularly attracts a diverse range of attendees from around the <br>
+           world, across different professions, and with different.</p>
+      </div>
+      <div class="aboutProCont w-full lg:w-[1140px] h-auto lg:h-[468px] flex flex-wrap items-center justify-center lg:justify-around">
+        <div class="aboutProImg w-full lg:w-[635px] h-[468px]">
+          <img src="Assets/about.png.webp">
+        </div>
+        <div class="aboutProImgCont w-full lg:w-[445px] h-auto lg:h-[345px] flex flex-col items-center">
+          <h1 class="text-[30px] text-[#ff4533] ps-[50px] pb-[35px] text-center lg:text-left">It’s time to book your seat</h1>
+          <p class="text-[20px] text-[#aab1b7] ps-0 lg:ps-[50px] pb-[50px] text-center lg:text-left p-[20px] lg:p-0">The event regularly attracts a diverse <br>
+             range of attendees from around the <br>
+              world, across different professions, and <br>
+               with different levels of experience <br>
+                transform your business.</p>
+          <button class="w-[185px] h-[60px] bg-[#FF4533] ms-[50px] text-[20px] text-[#fff] tracking-widest border border-[#FF4533] hover:bg-transparent hover:text-[#FF4533] duration-500 mt-0 lg:mt-[20px]">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="programDetails relative w-full h-auto lg:h-[2245px] bg-[url('Assets/details_banner.png')] bg-no-repeat 
+    bg-center bg-cover flex flex-col flex-wrap items-center justify-center">
+      <div class="absolute inset-0 bg-black opacity-85"></div>
+      <div class="proDetailTtl relative w-full lg:w-[1140px] h-auto lg:h-[180px]">
+        <h1 class="text-[40px] lg:text-[80px] text-[#fff] text-center pt-[20px] lg:pt-0">Program Details</h1>
+      </div>
+      <div class="proDetailCont relative w-full lg:w-[730px] h-auto lg:h-[480px] flex justify-end">
+        <div class="w-[292px] h-[480px]">
+          <div class="w-[292px] h-[77px] mb-[40px]">
+            <h1 class="text-[30px] text-[#ff4533] pb-[5px]">3.00-4.00pm</h1>
+            <p class="text-[20px] text-[#fff]">12 Feb 2020</p>
+          </div>
+          <div class="w-[292px] h-[310px] bg-[url('Assets/1(1).png')] bg-no-repeat bg-cover"></div>
+          <h1 class="text-[#fff] text-[20px] pt-[18px]">Mr. Zosoldos</h1>
+        </div>
+      </div>
+      <div class="proDetailCont relative w-full lg:w-[730px] h-auto lg:h-[480px]">
+        <div class="w-[292px] h-[475px]">
+          <div class="w-[292px] h-[77px] mb-[40px]">
+            <h1 class="text-[30px] text-[#ff4533] pb-[5px] text-right">3.00-4.00pm</h1>
+            <p class="text-[20px] text-[#fff] text-right">12 Feb 2020</p>
+          </div>
+          <div class="w-[292px] h-[310px] bg-[url('Assets/2(1).png')] bg-no-repeat bg-cover"></div>
+          <h1 class="text-[#fff] text-[20px] pt-[18px] text-right">Mr. Zosoldos</h1>
+        </div>
+      </div>
+      <div class="proDetailCont relative w-full lg:w-[730px] h-auto lg:h-[480px] flex justify-end">
+        <div class="w-[292px] h-[480px]">
+          <div class="w-[292px] h-[77px] mb-[40px]">
+            <h1 class="text-[30px] text-[#ff4533] pb-[5px]">3.00-4.00pm</h1>
+            <p class="text-[20px] text-[#fff]">12 Feb 2020</p>
+          </div>
+          <div class="w-[292px] h-[310px] bg-[url('Assets/3(1).png')] bg-no-repeat bg-cover"></div>
+          <h1 class="text-[#fff] text-[20px] pt-[18px]">Mr. Zosoldos</h1>
+        </div>
+      </div>
+      <div class="proDetailCont relative w-full lg:w-[730px] h-auto lg:h-[480px]">
+        <div class="w-[292px] h-[475px]">
+          <div class="w-[292px] h-[77px] mb-[40px]">
+            <h1 class="text-[30px] text-[#ff4533] pb-[5px] text-right">3.00-4.00pm</h1>
+            <p class="text-[20px] text-[#fff] text-right">12 Feb 2020</p>
+          </div>
+          <div class="w-[292px] h-[310px] bg-[url('Assets/4(1).png')] bg-no-repeat bg-cover"></div>
+          <h1 class="text-[#fff] text-[20px] pt-[18px] text-right">Mr. Zosoldos</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="map w-full h-[600px] relative">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0361376969!2d-74.30933885453035!3d40.69753995160874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1727010160364!5m2!1sen!2sin"
+          width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          class="absolute inset-0"></iframe>
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 w-full lg:w-[460px] h-auto lg:h-[300px] bg-black p-4 lg:p-0 lg:flex lg:flex-col justify-center">
+          <h1 class="pb-4 lg:pb-[20px] text-[24px] lg:text-[30px] text-[#ff4533] text-center">Concert 2020</h1>
+          <div class="w-full lg:w-[325px] h-auto lg:h-[142px] ms-0 lg:ms-[60px] text-center lg:text-left">
+              <p class="text-[16px] lg:text-[20px] text-[#aab1b7] font-semibold pb-[10px]">Venue: <span class="text-[#fff] ps-[20px] block lg:inline">26/A, Coontum Avenue <br class="lg:hidden"> New York-2783</span></p>
+              <p class="text-[16px] lg:text-[20px] text-[#aab1b7] font-semibold pb-[10px]">Phone: <span class="text-[#fff] ps-[20px] block lg:inline">+10 (88) 267 368 283</span></p>
+              <p class="text-[16px] lg:text-[20px] text-[#aab1b7] font-semibold">Email: <span class="text-[#fff] ps-[20px] block lg:inline">contact@concert20.com</span></p>
+          </div>
+      </div>
+    </div>
+  
+    <div class="logos w-full h-auto lg:h-[470px] bg-[#000] flex flex-col items-center justify-center">
+      <div class="logosTtl w-full lg:w-[1140px] h-auto lg:h-[110px]">
+        <h1 class="text-[22px] lg:text-[30px] text-[#ff4533] text-center">Sponsor Logos</h1>
+      </div>
+      <div class="logosImg w-full lg:w-[1110px] h-auto lg:h-[200px] border-b border-[#333333] flex flex-wrap lg:flex-nowrap justify-center">
+        <div class="w-[278px] h-[120px]">
+          <img src="Assets/1(2).png" class="w-[278px] h-[120px]">
+        </div>
+        <div class="w-[278px] h-[120px]">
+          <img src="Assets/2(2).png" class="w-[278px] h-[120px]">
+        </div>
+        <div class="w-[278px] h-[120px]">
+          <img src="Assets/3(2).png" class="w-[278px] h-[120px]">
+        </div>
+        <div class="w-[278px] h-[120px]">
+          <img src="Assets/4(2).png" class="w-[278px] h-[120px]">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer w-full h-auto lg:h-[400px] bg-[#000] flex items-center justify-center">
+      <div class="w-full lg:w-[540px] h-auto lg:h-[285px] flex flex-col items-center justify-around">
+        <h1 class="text-[30px] text-[#ff4533] text-center">12 Feb, 2020</h1>
+        <h1 class="text-[30px] text-[#fff] text-center">Green Avenue, New York</h1>
+        <p class="text-[20px] text-[#aab1b7] text-center p-[20px] lg:p-0">The event regularly attracts a diverse range of attendees <br> from around the world.</p>
+        <button class="w-[185px] h-[60px] text-[#fff] hover:text-[#FF4533] text-[20px] font-medium tracking-widest border border-[#FF4533] bg-[#FF4533] hover:bg-transparent duration-500">Buy Tickets</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".dropnav").hide();
+
+    $(".hamburger").click(function(){
+      $(".dropnav").toggle();
+    })
+  })
+</script>
+</html>

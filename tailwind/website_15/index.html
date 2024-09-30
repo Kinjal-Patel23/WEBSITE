@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="Container w-full h-auto">
+        <div class="header w-full h-auto lg:h-[900px] bg-[url('Assets/home-banner.jpg')] bg-no-repeat bg-cover bg-center flex flex-col items-center">
+            <div class="subHeader w-full lg:w-[1170px] h-[80px] flex justify-between">
+                <div class="navleft w-[115px] h-[80px] flex items-center ms-[20px] lg:ms-0">
+                    <img src="Assets/logo.png">
+                </div>
+                <div class="navcenter w-[492px] h-[80px] text-[14px] text-[#fff] hidden lg:flex items-center justify-between">
+                    <a href="#" class="hover:text-[#f84b67]">Home</a>
+                    <a href="#" class="hover:text-[#f84b67]">Features</a>
+                    <a href="#" class="hover:text-[#f84b67]">Price</a>
+                    <a href="#" class="hover:text-[#f84b67]">Pages</a>
+                    <a href="#" class="hover:text-[#f84b67]">Blog</a>
+                    <a href="#" class="hover:text-[#f84b67]">Contact</a>
+                </div>
+                <div class="navright w-[200px] h-[80px] hidden md:flex items-center justify-between">
+                    <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
+                    <button class="w-[130px] h-[44px] bg-[#fff] rounded-[3px] text-[14px] text-[#222] font-medium">Sign Up</button>
+                </div>
+                <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[80px] lg:mr-0">
+                    <i class="fa-solid fa-bars text-[28px] text-[#fff]"></i>
+                </div>
+            </div>
+            <div class="headerTtl w-full lg:w-[1170px] h-auto lg:h-[338px] mt-[200px] flex justify-end">
+                <div class="subHeaderTtl w-full lg:w-[488px] h-auto lg:h-[338px]">
+                    <h1 class="text-[30px] lg:text-[50px] text-[#fff] font-semibold p-[20px] lg:p-0 leading-[60px] pb-[20px]">Build a better business & faster</h1>
+                    <p class="text-[15px] text-[#fff] font-light leading-[30px] pb-[40px] p-[20px] lg:p-0">Subdue creature does face signs evening good sixth foreign gaered one. 
+                        Fruit. Third every fruitful multiply subdue creature doesn't face signs evening good sixth tyou're.</p>
+                    <button class="w-[200px] h-[50px] bg-[#F84B67] text-[13px] text-[#fff] font-medium uppercase">begin free trial</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropnav w-full h-[400px] bg-black text-[#fff] fixed top-24 flex flex-col items-center justify-around">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Price</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="design w-full h-auto lg:h-[700px] flex items-center justify-center">
+            <div class="subDesign w-full lg:w-[1170px] h-auto lg:h-[461px] flex flex-wrap justify-center">
+                <div class="designBox w-full lg:w-[390px] h-auto lg:h-[461px] flex justify-center">
+                    <div class="subDesignBox w-[360px] h-[410px] bg-[url('Assets/single_bg.png')] bg-no-repeat 
+                    bg-right-top border border-[#EDF1F6] flex flex-col justify-center gap-[18px]">
+                        <div class="designIcon w-[170px] h-[95px] ms-[30px] flex items-center">
+                            <div class="w-[80px] h-[80px] bg-[#FCA6A6] rounded-full"></div>
+                            <i class="fa-regular fa-pen-to-square text-[40px] ms-[-18px]" style="color: #050817;"></i>
+                        </div>
+                        <div class="designIconCont w-[298px] h-[210px] ms-[30px]">
+                            <h1 class="text-[20px] text-[#1d1d1d] font-semibold pb-[15px]">Unique Design</h1>
+                            <p class="text-[14px] text-[#7f7f7f] leading-[27px] pb-[30px]">Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
+                            <p class="text-[14px] text-[#1d1d1d] font-medium">Read More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="designBox w-full lg:w-[390px] h-auto lg:h-[461px] flex items-end justify-center">
+                    <div class="subDesignBox w-[360px] h-[410px] bg-[url('Assets/single_bg.png')] bg-no-repeat 
+                    bg-right-top border border-[#EDF1F6] flex flex-col justify-center gap-[18px]">
+                        <div class="designIcon w-[170px] h-[95px] ms-[30px] flex items-center">
+                            <div class="w-[80px] h-[80px] bg-[#71BEB4] rounded-full"></div>
+                            <i class="fa-regular fa-image text-[40px] ms-[-18px]" style="color: #050817;"></i>
+                        </div>
+                        <div class="designIconCont w-[298px] h-[210px] ms-[30px]">
+                            <h1 class="text-[20px] text-[#1d1d1d] font-semibold pb-[15px]">Business Solution</h1>
+                            <p class="text-[14px] text-[#7f7f7f] leading-[27px] pb-[30px]">Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
+                            <p class="text-[14px] text-[#1d1d1d] font-medium">Read More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="designBox w-full lg:w-[390px] h-auto lg:h-[461px] flex justify-center">
+                    <div class="subDesignBox w-[360px] h-[410px] bg-[url('Assets/single_bg.png')] bg-no-repeat 
+                    bg-right-top border border-[#EDF1F6] flex flex-col justify-center gap-[18px]">
+                        <div class="designIcon w-[170px] h-[95px] ms-[30px] flex items-center">
+                            <div class="w-[80px] h-[80px] bg-[#ED92DD] rounded-full"></div>
+                            <i class="fa-solid fa-headphones text-[40px] ms-[-18px]" style="color: #050817;"></i>
+                        </div>
+                        <div class="designIconCont w-[298px] h-[210px] ms-[30px]">
+                            <h1 class="text-[20px] text-[#1d1d1d] font-semibold pb-[15px]">Customer Support</h1>
+                            <p class="text-[14px] text-[#7f7f7f] leading-[27px] pb-[30px]">Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
+                            <p class="text-[14px] text-[#1d1d1d] font-medium">Read More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timing w-full h-auto lg:h-[800px] flex flex-wrap items-center justify-center">
+            <div class="timingCont w-full lg:w-[580px] h-auto lg:h-[700px]">
+                <h1 class="text-[30px] lg:text-[45px] text-[#1d1d1d] font-bold text-center lg:text-left leading-[58px] pb-[30px]">Form Female From <br> Cattle Evening.</h1>
+                <p class="text-[16px] text-[#333] pb-[20px] text-center lg:text-left p-[20px] lg:p-0">And appear great open bearing evening dominion vodi</p>
+                <p class="text-[14px] text-[#7f7f7f] leading-[30px] text-center lg:text-left p-[20px] lg:p-0">There earth face earth behold. She'd stars made void two given do <br>
+                    and also. Our own grass days. Greater male Shall There faced earth <br>
+                    behold She star
+                </p>
+                <div class=" w-full lg:w-[585px] h-auto lg:h-[278px] mt-[100px] flex flex-wrap justify-center lg:justify-between">
+                    <div class="cloud w-[263px] h-[278px] flex flex-col justify-end gap-[20px]">
+                        <div class="w-[170px] h-[95px] flex items-center">
+                            <div class="w-[80px] h-[80px] bg-[#FCA6A6] rounded-full"></div>
+                            <i class="fa-brands fa-cloudversify text-[40px] ms-[-20px]" style="color: #050817;"></i>
+                        </div>
+                        <div class="w-[263px] h-[125px]">
+                            <h1 class="text-[20px] text-[#1d1d1d] font-semibold pb-[12px]">Cloud Compatibility</h1>
+                            <p class="text-[14px] text-[#7f7f7f] leading-[27px]">There earth face earth behold. She stars made void two given and also our own grass days. Greater</p>
+                        </div>
+                    </div>
+                    <div class="time w-[263px] h-[278px] flex flex-col justify-end gap-[20px]">
+                        <div class="w-[170px] h-[95px] flex items-center">
+                            <div class="w-[80px] h-[80px] bg-[#71BEB4] rounded-full"></div>
+                            <i class="fa-solid fa-truck text-[35px] ms-[-20px]" style="color: #050817;"></i>
+                        </div>
+                        <div class="w-[263px] h-[125px]">
+                            <h1 class="text-[20px] text-[#1d1d1d] font-semibold pb-[12px]">On Time Delivery</h1>
+                            <p class="text-[14px] text-[#7f7f7f] leading-[27px]">There earth face earth behold. She stars made void two given and also our own grass days. Greater</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeImg w-full lg:w-[580px] h-[600px] flex items-center justify-center">
+                <img src="Assets/Annotation 2024-09-18 000037.png">
+            </div>
+        </div>
+
+        <div class="application w-full h-auto lg:h-[800px] bg-[#2B237C] flex flex-wrap items-center justify-center">
+            <div class="mobileImg w-full lg:w-[630px] h-[564px] bg-[url('Assets/mobile.png')] bg-no-repeat bg-right"></div>
+            <div class="applicationCont w-full lg:w-[490px] h-auto lg:h-[564px] lg:ms-[-60px]">
+                <h1 class="text-[30px] lg:text-[45px] text-[#fff] font-bold leading-[58px] text-center lg:text-left pt-[20px] pb-[30px]">Easy to Use <br> Mobile Application</h1>
+                <p class="text-[14px] leading-[27px] text-[#fff] pb-[55px] text-center lg:text-left p-[20px] lg:p-0">There earth face earth behold. She'd stars made void two given do and also. Our own grass days. Greater male Shall There faced earth behold She star</p>
+                <h1 class="text-[20px] text-[#fff] font-semibold ps-[70px] pb-[10px]">Add New Project</h1>
+                <p class="text-[14px] leading-[27px] text-[#fff] ps-[70px] pb-[25px]">There earth face earth behold. She'd stars made void two given do and also. Our own grass days. Greater</p>
+                <h1 class="text-[20px] text-[#fff] font-semibold ps-[70px] pb-[10px]">Generating Leads</h1>
+                <p class="text-[14px] text-[#fff] leading-[27px] ps-[70px]">There earth face earth behold. She'd stars made void two given do and also. Our own grass days. Greater</p>
+            </div>
+        </div>
+
+        <div class="product w-full h-auto lg:h-[700px] bg-[url('Assets/pattern1.png')] bg-no-repeat bg-left-top flex items-center justify-center">
+            <div class="subProduct w-full lg:w-[1170px] h-auto lg:h-[490px] flex flex-wrap justify-center lg:justify-between">
+                <div class="productImg w-full lg:w-[458px] h-[490px]">
+                    <img src="Assets/about3.png">
+                </div>
+                <div class="productCont w-full lg:w-[585px] h-auto lg:h-[490px]">
+                    <h1 class="text-[30px] lg:text-[45px] text-[#1d1d1d] font-bold leading-[58px] pt-[12px] text-center lg:text-left pb-[30px]">Form Female From <br> Cattle Evening.</h1>
+                    <p class="text-[16px] text-[#333] pb-[20px] text-center lg:text-left p-[20px] lg:p-0">And appear great open bearing evening dominion vodi</p>
+                    <p class="text-[14px] text-[#7f7f7f] leading-[27px] pb-[30px] text-center lg:text-left p-[20px] lg:p-0">There earth face earth behold. She'd stars made void two given do <br>
+                         and also. Our own grass days. Greater male Shall There faced earth <br>
+                          behold She star</p>
+                    <p class="text-[14px] text-[#7f7f7f] font-light text-center lg:text-left pb-[18px]"><span><i class="fa-solid fa-fill-drip pe-[20px] text-[18px]" style="color: #fca6a6;"></i></span>Set dry signs spirit a kind First shall them.</p>
+                    <p class="text-[14px] text-[#7f7f7f] font-light text-center lg:text-left pb-[18px]"><span><i class="fa-regular fa-square-check pe-[25px] text-[18px]" style="color: #71beb4;"></i></span>He two face one moved dominion man you're likeness</p>
+                    <p class="text-[14px] text-[#7f7f7f] font-light text-center lg:text-left pb-[18px]"><span><i class="fa-solid fa-pen-ruler pe-[23px] text-[18px]" style="color: #ed92dd;"></i></span>Sea forth fill have divide be dominion from life</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricingPlan w-full h-auto lg:h-[950px] bg-[#F6F6F6] flex flex-col items-center justify-evenly">
+            <div class="pricingPlanTtl w-full lg:w-[1170px] h-auto lg:h-[215px] flex flex-col justify-center">
+                <h1 class="text-[30px] lg:text-[45px] text-[#1d1d1d] font-bold pb-[17px] text-center lg:text-left">Our Pricing Plan</h1>
+                <p class="text-[14px] text-[#7f7f7f] text-center lg:text-left p-[20px] lg:p-0">Life firmament under them evening make after called dont saying likeness <br> isn't wherein also forth she'd air two without</p>
+            </div>
+            <div class="pricingPlanCont w-full lg:w-[1170px] h-auto lg:h-[600px] flex flex-wrap justify-center lg:justify-between">
+                <div class="standard w-[263px] h-[600px] bg-[#FFFFFF] flex flex-col justify-evenly items-center">
+                    <div class="standardIcon w-[200px] h-[95px] flex items-center">
+                        <div class="circle w-[70px] h-[70px] bg-[#71BEB4] rounded-full"></div>
+                        <i class="fa-solid fa-house text-[30px] ms-[-14px] mt-[15px]" style="color: #000000;"></i>
+                    </div>
+                    <div class="standardCont w-[200px] h-[405px]">
+                        <div class="w-[200px] h-[42px] border-b border-[#EDF1F6]">
+                            <h1 class="text-[24px] text-[#1d1d1d] font-semibold">Standard</h1>
+                        </div>
+                        <p class="text-[15px] text-[#7f7f7f] pt-[15px] pb-[35px]"><span class="text-[24px] text-[#1d1d1d] font-semibold">$25</span>/month</p>
+                        <div class="w-[200px] h-[210px] text-[14px] text-[#7f7f7f] border-b border-[#EDF1F6] flex flex-col justify-evenly">
+                            <p>2GB Bandwidth</p>
+                            <p>Two Account</p>
+                            <p>15GB Storage</p>
+                            <p>Sale After Service</p>
+                            <p>3 Host Domain</p>
+                            <p>24/7 Support</p>
+                        </div>
+                        <p class="text-[14px] text-[#1d1d1d] font-semibold pt-[30px]">Purchase Now</p>
+                    </div>
+                </div>
+                <div class="business w-[263px] h-[600px] bg-[#FFFFFF] flex flex-col justify-evenly items-center">
+                    <div class="businessIcon w-[200px] h-[95px] flex items-center">
+                        <div class="circle w-[70px] h-[70px] bg-[#ED92DD] rounded-full"></div>
+                        <i class="fa-solid fa-bag-shopping text-[30px] ms-[-14px] mt-[15px]" style="color: #000000;"></i>
+                    </div>
+                    <div class="businessCont w-[200px] h-[405px]">
+                        <div class="w-[200px] h-[42px] border-b border-[#EDF1F6]">
+                            <h1 class="text-[24px] text-[#1d1d1d] font-semibold">Business</h1>
+                        </div>
+                        <p class="text-[15px] text-[#7f7f7f] pt-[15px] pb-[35px]"><span class="text-[24px] text-[#1d1d1d] font-semibold">$35</span>/month</p>
+                        <div class="w-[200px] h-[210px] text-[14px] text-[#7f7f7f] border-b border-[#EDF1F6] flex flex-col justify-evenly">
+                            <p>2GB Bandwidth</p>
+                            <p>Two Account</p>
+                            <p>15GB Storage</p>
+                            <p>Sale After Service</p>
+                            <p>3 Host Domain</p>
+                            <p>24/7 Support</p>
+                        </div>
+                        <p class="text-[14px] text-[#1d1d1d] font-semibold pt-[30px]">Purchase Now</p>
+                    </div>
+                </div>
+                <div class="premium w-[263px] h-[600px] bg-[#FFFFFF] flex flex-col justify-evenly items-center">
+                    <div class="premiumIcon w-[200px] h-[95px] flex items-center">
+                        <div class="circle w-[70px] h-[70px] bg-[#97D0EE] rounded-full"></div>
+                        <i class="fa-solid fa-car text-[30px] ms-[-14px] mt-[15px]" style="color: #000000;"></i>
+                    </div>
+                    <div class="premiumCont w-[200px] h-[405px]">
+                        <div class="w-[200px] h-[42px] border-b border-[#EDF1F6]">
+                            <h1 class="text-[24px] text-[#1d1d1d] font-semibold">Premium</h1>
+                        </div>
+                        <p class="text-[15px] text-[#7f7f7f] pt-[15px] pb-[35px]"><span class="text-[24px] text-[#1d1d1d] font-semibold">$45</span>/month</p>
+                        <div class="w-[200px] h-[210px] text-[14px] text-[#7f7f7f] border-b border-[#EDF1F6] flex flex-col justify-evenly">
+                            <p>2GB Bandwidth</p>
+                            <p>Two Account</p>
+                            <p>15GB Storage</p>
+                            <p>Sale After Service</p>
+                            <p>3 Host Domain</p>
+                            <p>24/7 Support</p>
+                        </div>
+                        <p class="text-[14px] text-[#1d1d1d] font-semibold pt-[30px]">Purchase Now</p>
+                    </div>
+                </div>
+                <div class="ultimate w-[263px] h-[600px] bg-[#FFFFFF] flex flex-col justify-evenly items-center">
+                    <div class="ultimateIcon w-[200px] h-[95px] flex items-center">
+                        <div class="circle w-[70px] h-[70px] bg-[#FCEFED] rounded-full"></div>
+                        <i class="fa-solid fa-gift text-[30px] ms-[-14px] mt-[15px]" style="color: #000000;"></i>
+                    </div>
+                    <div class="ultimateCont w-[200px] h-[405px]">
+                        <div class="w-[200px] h-[42px] border-b border-[#EDF1F6]">
+                            <h1 class="text-[24px] text-[#1d1d1d] font-semibold">Ultimate</h1>
+                        </div>
+                        <p class="text-[15px] text-[#7f7f7f] pt-[15px] pb-[35px]"><span class="text-[24px] text-[#1d1d1d] font-semibold">$55</span>/month</p>
+                        <div class="w-[200px] h-[210px] text-[14px] text-[#7f7f7f] border-b border-[#EDF1F6] flex flex-col justify-evenly">
+                            <p>2GB Bandwidth</p>
+                            <p>Two Account</p>
+                            <p>15GB Storage</p>
+                            <p>Sale After Service</p>
+                            <p>3 Host Domain</p>
+                            <p>24/7 Support</p>
+                        </div>
+                        <p class="text-[14px] text-[#1d1d1d] font-semibold pt-[30px]">Purchase Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news w-full h-auto lg:h-[1500px] flex flex-col items-center justify-evenly">
+            <div class="newsTtl w-full lg:w-[1170px] h-auto lg:h-[150px] flex flex-col justify-between">
+                <h1 class="text-[30px] lg:text-[45px] text-[#1d1d1d] font-bold text-center lg:text-left">Read Our Latest News</h1>
+                <p class="text-[14px] text-[#7f7f7f] leading-[27px] text-center lg:text-left p-[20px] lg:p-0">Life firmament under them evening make after called dont saying likeness <br>
+                    isn't wherein also forth she'd air two without</p>
+            </div>
+            <div class="newsCont w-full lg:w-[1170px] h-auto lg:h-[514px] flex flex-wrap justify-center lg:justify-around">
+                <div class="newsImg w-full lg:w-[750px] h-[514px]">
+                    <img src="Assets/1.png">
+                </div>
+                <div class="newsContImg w-full lg:w-[360px] h-auto lg:h-[514px]">
+                    <div class="newsImg relative w-full lg:w-[360px] h-[260px] flex justify-center">
+                        <div class="absolute bg-black inset-0 opacity-0 hover:opacity-60 duration-500"></div>
+                        <img src="Assets/2.png">
+                    </div>
+                    <div class="newsImg w-full lg:w-[360px] h-auto lg:h-[250px] flex flex-col items-center justify-evenly">
+                        <p class="text-[13px] text-[#f84b67] font-light ps-[30px]">Software / Business <span class="text-[#666] ps-[10px]">March 10, 2019</span></p>
+                        <div class="w-full lg:w-[270px] h-auto lg:h-[83px] border-b border-[#DFDFDF] ms-[30px]">
+                            <h1 class="text-[20px] font-semibold text-center lg:text-left p-[20px] lg:p-0 text-[#000] hover:text-[#f84b67] duration-300">You living thing whose After our third you also Us.</h1>
+                        </div>
+                        <div class="w-[270px] h-[40px] ms-[30px] flex">
+                            <p class="text-[13px] text-[#7f7f7f] font-light pe-[15px]"><span><i class="fa-regular fa-comments pe-[8px]" style="color: #f84b67;"></i></span>02 Comments</p>
+                            <p class="text-[13px] text-[#7f7f7f] font-light"><span><i class="fa-regular fa-heart pe-[8px]" style="color: #f84b67;"></i></span>15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newsCont w-full lg:w-[1170px] h-auto lg:h-[514px] flex flex-wrap justify-center lg:justify-around">
+                <div class="newsContImg w-full lg:w-[360px] h-auto lg:h-[514px]">
+                    <div class="newsImg relative w-full lg:w-[360px] h-[260px] flex justify-center">
+                        <div class="absolute bg-black inset-0 opacity-0 hover:opacity-60 duration-500"></div>
+                        <img src="Assets/1.png" class="h-[260px]">
+                    </div>
+                    <div class="newsImg w-full lg:w-[360px] h-auto lg:h-[250px] flex flex-col items-center justify-evenly">
+                        <p class="text-[13px] text-[#f84b67] font-light ps-[30px]">Software / Business <span class="text-[#666] ps-[10px]">March 10, 2019</span></p>
+                        <div class="w-full lg:w-[270px] h-auto lg:h-[83px] border-b border-[#DFDFDF] ms-[30px]">
+                            <h1 class="text-[20px] font-semibold text-center lg:text-left p-[20px] lg:p-0 text-[#000] hover:text-[#f84b67] duration-300">You living thing whose After our third you also Us.</h1>
+                        </div>
+                        <div class="w-[270px] h-[40px] ms-[30px] flex">
+                            <p class="text-[13px] text-[#7f7f7f] font-light pe-[15px]"><span><i class="fa-regular fa-comments pe-[8px]" style="color: #f84b67;"></i></span>02 Comments</p>
+                            <p class="text-[13px] text-[#7f7f7f] font-light"><span><i class="fa-regular fa-heart pe-[8px]" style="color: #f84b67;"></i></span>15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsImg w-[750px] h-[514px]">
+                    <img src="Assets/4.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="logo w-full h-auto lg:h-[200px] flex justify-center items-center">
+            <div class="subLogo w-full lg:w-[975px] h-auto lg:h-[70px] flex flex-wrap justify-center lg:justify-between gap-[30px] lg:gap-0">
+                <div class="w-[165px] h-[70px] flex items-center justify-center">
+                    <img src="Assets/6.png">
+                </div>
+                <div class="w-[165px] h-[70px] flex items-center justify-center">
+                    <img src="Assets/7.png">
+                </div>
+                <div class="w-[165px] h-[70px] flex items-center justify-center">
+                    <img src="Assets/3.png">
+                </div>
+                <div class="w-[165px] h-[70px] flex items-center justify-center">
+                    <img src="Assets/8.png">
+                </div>
+                <div class="w-[165px] h-[70px] flex items-center justify-center">
+                    <img src="Assets/5.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[464px] bg-[#1F2338] flex flex-col items-center justify-center">
+            <div class="subFooter w-full lg:w-[1170px] h-auto lg:h-[270px] flex flex-wrap lg:flex-nowrap justify-center">
+                <div class="about w-[293px] h-[225px]">
+                    <h1 class="text-[20px] text-[#fff] font-semibold pb-[25px]">About Us</h1>
+                    <p class="text-[14px] text-[#7b838a] pb-[40px] leading-[24px]">Heaven fruitful doesn't over lesser <br>
+                         days appear creeping seasons so <br>
+                          behold bearing days open
+                    </p>
+                    <img src="Assets/logo.png">
+                </div>
+                <div class="contact w-[293px] h-[225px]">
+                    <h1 class="text-[20px] text-[#fff] font-semibold pb-[22px]">Contact Info</h1>
+                    <p class="text-[14px] text-[#7b838a] leading-[24px] pb-[20px]">Address :Your address goes here, <br> your demo address.</p>
+                    <p class="text-[14px] text-[#7b838a] pb-[20px]">Phone : +8880 44338899</p>
+                    <p class="text-[14px] text-[#7b838a]">Email : info@colorlib.com</p>
+                </div>
+                <div class="links w-[293px] h-[225px] flex flex-col">
+                    <h1 class="text-[20px] text-[#fff] font-semibold pb-[25px]">Important Link</h1>
+                    <a href="#" class="text-[14px] text-[#7b838a] hover:text-[#f84b67] pb-[12px]">WHMCS-bridge</a>
+                    <a href="#" class="text-[14px] text-[#7b838a] hover:text-[#f84b67] pb-[12px]">Search Domain</a>
+                    <a href="#" class="text-[14px] text-[#7b838a] hover:text-[#f84b67] pb-[12px]">My Account</a>
+                    <a href="#" class="text-[14px] text-[#7b838a] hover:text-[#f84b67] pb-[12px]">Shopping Cart</a>
+                    <a href="#" class="text-[14px] text-[#7b838a] hover:text-[#f84b67]">Our Shop</a>
+                </div>
+                <div class="newsletter w-[293px] h-[225px]">
+                    <h1 class="text-[20px] text-[#fff] font-semibold pb-[25px]">Newsletter</h1>
+                    <p class="text-[14px] text-[#7b838a] leading-[24px] pb-[25px]">Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open</p>
+                    <div class="w-[263px] h-[40px] flex">
+                        <input type="email" placeholder="Your Email Address" class="w-[240px] h-[40px] outline-none rounded-[50px] text-[14px] text-[#888] ps-[18px]">
+                        <div class="w-[50px] h-[40px] bg-[#F84B67] rounded-[40px] ms-[-50px] flex items-center justify-center">
+                            <i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright w-full lg:w-[1170px] h-auto lg:h-[70px] border-t border-[#4C4F60] flex items-center justify-between">
+                <p class="text-[14px] text-[#777] p-[20px] lg:p-0">Copyright ©2024 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #777777;"></i> by <span class="text-[#f84b67]">Colorlib</span></p>
+                <div class=" w-full lg:w-[160px] h-auto lg:h-[30px] flex items-center justify-between">
+                    <i class="fa-brands fa-facebook-f" style="color: #8f919c;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #8f919c;"></i>
+                    <i class="fa-brands fa-dribbble" style="color: #8f919c;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="color: #8f919c;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide();
+        $(".hamburger").click(function(){
+            $(".dropnav").toggle();
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,1384 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<style>
+    #chartContainer {
+      width: 80px;
+      height: 40px;
+    }
+
+    #chartContainer-2 {
+      width: 100%;
+      height: 400px; 
+      margin: 0 auto;
+    }
+
+    #chartContainer-3{
+    width: 210px;
+    height: 290px;
+  }
+
+    /* -------Line-1 --------- */
+
+.progress-bar__wrapper-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar__wrapper-1 progress {
+  /* width: 100%; */
+  width: 168px;
+  height: 3.5px;
+  border-radius: 50px;
+  background-color: #343331;
+  transition: width 300ms ease;
+}
+
+.progress-bar__wrapper-1 progress[value]::-webkit-progress-bar {
+  width: 168px;
+  height: 3.5px;
+  border-radius: 50px;
+  background-color: #343331;
+  transition: width 300ms ease;
+}
+
+.progress-bar__wrapper-1 progress[value]::-webkit-progress-value {
+  width: 0;
+  border-radius: 50px;
+  background-color: #6A69F5;
+  transition: width 300ms ease;
+}
+
+.progress-bar__value-1 {
+  margin-left: 10px; 
+  color: #6A69F5; 
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* -------Line-2 --------- */
+
+.progress-bar__wrapper-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar__wrapper-2 progress {
+  /* width: 100%; */
+  width: 168px;
+  height: 3.5px;
+  border-radius: 50px;
+  background-color: #343331;
+  transition: width 300ms ease;
+}
+
+.progress-bar__wrapper-2 progress[value]::-webkit-progress-bar {
+  width: 168px;
+  height: 3.5px;
+  border-radius: 50px;
+  background-color: #343331;
+  transition: width 300ms ease;
+}
+
+.progress-bar__wrapper-2 progress[value]::-webkit-progress-value {
+  width: 0;
+  border-radius: 50px;
+  background-color: #fff;
+  transition: width 300ms ease;
+}
+
+.progress-bar__value-2 {
+  margin-left: 10px; 
+  color: #fff; 
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* -------Line-3 --------- */
+
+.progress-bar__wrapper-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar__wrapper-3 progress {
+  /* width: 100%; */
+  width: 168px;
+  height: 3.5px;
+  border-radius: 50px;
+  background-color: #343331;
+  transition: width 300ms ease;
+}
+
+.progress-bar__wrapper-3 progress[value]::-webkit-progress-bar {
+  width: 168px;
+  height: 3.5px;
+  border-radius: 50px;
+  background-color: #343331;
+  transition: width 300ms ease;
+}
+
+.progress-bar__wrapper-3 progress[value]::-webkit-progress-value {
+  width: 0;
+  border-radius: 50px;
+  background-color: #F1416C;
+  transition: width 300ms ease;
+}
+
+.progress-bar__value-3 {
+  margin-left: 10px; 
+  color: #F1416C; 
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* -------Line-4 --------- */
+
+.progress-bar__wrapper-4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar__wrapper-4 progress {
+  /* width: 100%; */
+  width: 168px;
+  height: 3.5px;
+  border-radius: 50px;
+  background-color: #343331;
+  transition: width 300ms ease;
+}
+
+.progress-bar__wrapper-4 progress[value]::-webkit-progress-bar {
+  width: 168px;
+  height: 3.5px;
+  border-radius: 50px;
+  background-color: #343331;
+  transition: width 300ms ease;
+}
+
+.progress-bar__wrapper-4 progress[value]::-webkit-progress-value {
+  width: 0;
+  border-radius: 50px;
+  background-color: #009EF7;
+  transition: width 300ms ease;
+}
+
+.progress-bar__value-4 {
+  margin-left: 10px; 
+  color: #009EF7; 
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.accordian-main {
+    overflow-y: auto; 
+}
+
+/* Custom scrollbar styling */
+.accordian-main::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.accordian-main::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.accordian-main::-webkit-scrollbar-thumb {
+    background: #3a3a3a; 
+    border-radius: 4px; 
+}
+
+.accordian-main::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+</style>
+<body>
+    <div class="Container w-full flex">
+        <!-- Sidebar -->
+        <div class="sidebarBig fixed top-0 left-0 lg:w-[17%] md:w-0 h-screen overflow-y-auto bg-[#1F1F1F] border-r border-r-[#373737] sm:block">
+            <div class="accordian-main w-full h-full flex flex-col items-center"> 
+                <div class="sidebarImage w-[100px] h-[32px] mb-[20px] mt-[10px] flex items-center justify-between">
+                    <img src="Assets/logo-icon.svg">
+                    <h1 class="text-[22px] font-medium text-white">SLICED</h1>
+                </div>
+                <div class="sub-accordian w-[193px] h-auto">
+                    <!-- Accordian Sections -->
+                    <div class="accordian-ttl w-[193px] mb-[15px]">
+                        <p class="text-[#586363] text-[14px] font-medium">Menu</p>
+                    </div>
+                    <!-- Menu Items -->
+                    <div class="accordian-cont flex justify-between mb-[15px] cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center">
+                            <i class="ri-dashboard-3-line text-[#6A69F5] text-[20px]"></i>
+                            <p class="text-[15px] text-[#6A69F5] ps-[8px]">Dashboard</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[#6A69F5]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[100px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#6A69F5] ps-[8px]">Default</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Projects</p>
+                            </div> 
+                            <div class="newBtn w-[40px] h-[20px] bg-[#34232C] rounded-[3px]">
+                                <p class="text-[#AD3B74] text-[12px] font-bold flex justify-center">New</p>
+                            </div>
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">ECommerce</p>
+                            </div> 
+                            <div class="newBtn w-[40px] h-[20px] bg-[#34232C] rounded-[3px] flex justify-center">
+                                <p class="text-[#AD3B74] text-[12px] font-bold flex items-center justify-center">New</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center">
+                            <!-- <i class="ri-dashboard-3-line text-[#6A69F5] text-[20px] w-[20px]"></i> -->
+                            <i class="ri-apps-2-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Apps</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[150px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[white] ps-[8px]">Email</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Chat</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Contact</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Invoice</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Calendar</p>
+                            </div> 
+                            <div class="newBtn w-[40px] h-[20px] bg-[#34232C] rounded-[3px]">
+                                <p class="text-[#AD3B74] text-[12px] font-bold flex justify-center">New</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="accordian-ttl w-[193px] mb-[15px] mt-[15px]">
+                        <p class="text-[#586363] text-[14px] font-medium">UI Kit</p>
+                    </div>
+                    <div class="accordian-cont flex justify-between mb-[15px] cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center">
+                            <i class="ri-box-3-line text-[white] text-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Components</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[300px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[white] ps-[8px]">Tabs</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Accordions</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Modals</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Clipboard</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Notifications</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Carousel</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Pricing</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Lightbox</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Countdown</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Counter</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center">
+                            <i class="ri-flashlight-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">UI Elements</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[380px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px]">Alerts</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Buttons</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Buttons Group</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Badge</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Breadcrumb</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Videos</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Images</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Dropdowns</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Typography</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Avatar</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Tooltips</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Loader</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Pagination</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Progress bar</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between">
+                        <div class="accordian-sub-cont flex items-center cursor-pointer">
+                            <i class="ri-pie-chart-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Chart</p>
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between">
+                        <div class="accordian-sub-cont flex items-center cursor-pointer">
+                            <i class="ri-at-fill text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Font Icons</p>
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between">
+                        <div class="accordian-sub-cont flex items-center cursor-pointer">
+                            <i class="ri-drag-move-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Drag & Drop</p>
+                        </div>
+                    </div>
+                    <div class="accordian-ttl w-[193px] h-[10px] mb-[15px] mt-[15px]">
+                        <p class="text-[#586363] text-[14px] font-medium">Table & Forms</p>
+                    </div>
+                    <div class="accordian-cont flex justify-between cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center">
+                            <i class="ri-file-text-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Forms</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[185px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Basic</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Input Group</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Editors</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Validation</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Checkbox</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Radio</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Switches</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center">
+                            <i class="ri-table-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Tables</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[90px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Basic</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Datatables</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Editable</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="accordian-ttl w-[193px] h-[10px] mb-[15px] mt-[15px]">
+                        <p class="text-[#586363] text-[14px] font-medium">Users & Pages</p>
+                    </div>
+                    <div class="accordian-cont flex justify-between cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center">
+                            <i class="ri-user-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Users</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[55px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Profile</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Settings</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center ">
+                            <i class="ri-pages-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Pages</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[160px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Starter Page</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Maintenance</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Coming Soon</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">404 Error</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">500 Error</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">503 Error</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center">
+                            <i class="ri-layout-3-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Layout</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[55px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Creative Detached</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Datached</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between cursor-pointer">
+                        <div class="accordian-sub-cont flex items-center ">
+                            <i class="ri-git-repository-private-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Authentication</p>
+                        </div>
+                        <i class="ri-arrow-drop-down-line text-[23px] text-[white]"></i>
+                    </div>
+                    <div class="accordian-nav w-[160px] h-[80px] flex flex-col justify-around cursor-pointer">
+                        <div class="accordian-cont flex justify-between">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5]">Sign In</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Sign Up</p>
+                            </div> 
+                        </div>
+                        <div class="accordian-cont flex items-center">
+                            <div class="accordian-sub-cont flex items-center">
+                                <i class="ri-circle-fill text-[8px] w-[20px] text-[#6A69F5] flex justify-center"></i>
+                                <p class="text-[15px] text-[#9F9F9F] ps-[8px] hover:text-[#6A69F5] pr-[10px]">Reset Password</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="accordian-ttl w-[193px] h-[10px] mb-[15px] mt-[15px]">
+                        <p class="text-[#586363] text-[14px] font-medium">Supports</p>
+                    </div>
+                    <div class="accordian-cont flex justify-between">
+                        <div class="accordian-sub-cont flex items-center cursor-pointer">
+                            <i class="ri-list-check text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Changelog</p>
+                        </div>
+                    </div>
+                    <div class="accordian-cont flex justify-between">
+                        <div class="accordian-sub-cont flex items-center cursor-pointer">
+                            <i class="ri-file-list-2-line text-[white] text-[20px] w-[20px]"></i>
+                            <p class="text-[15px] text-[white] ps-[8px]">Documentation</p>
+                        </div>
+                    </div>
+                    <!-- Additional Sections -->
+                    <div class="helpCenter w-[193px] h-[208px] mt-[80px] bg-[#6A69F5] rounded-[6px] flex flex-col items-center justify-center">
+                        <div class="circle w-[48px] h-[48px] rounded-full bg-white mt-[-48px] flex items-center justify-center">
+                            <i class="ri-question-line text-[25px]"></i>
+                          </div>
+                        <h2 class="text-[20px] text-white mb-[15px] mt-[10px]">Help Center</h2>
+                        <p class="text-white text-[14px] text-center mb-[20px]">Looks like there might be a new theme soon.</p>
+                        <button class="w-[105px] h-[40px] border border-white bg-[#FFFFFF] text-[#323A46] text-[14px] rounded-[5px]">Go to help</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content Container -->
+        <div class="Container-2 w-full lg:w-[83%] h-auto right-0">
+            <!-- Navbar -->
+            <div class="navbar fixed top-0 right-0 z-[999] w-full lg:w-[83%] h-auto py-[5px] px-[10px] border-b border-b-[#373737] text-white flex justify-between bg-[#202020]">
+                <div class="navleft flex items-center gap-2 md:gap-4">
+                    <!-- <i class="ri-menu-2-line text-[24px]"></i> -->
+                    <i id="hamburger-icon" class="ri-menu-2-line text-[24px] cursor-pointer"></i>
+                    <div class="searchbar hidden md:flex w-[330px] h-[40px] border border-[#373737] rounded-[3px] bg-[#151515] items-center justify-between px-[1vw]">
+                        <input class="w-[300px] outline-none bg-transparent placeholder:text-[#706e6e] placeholder:text-[13px] text-[#cfcece] text-[15px]" type="text" placeholder="Search...">
+                        <i class="ri-search-line text-[#cfcece]"></i>
+                    </div>
+                </div>
+                <div class="navright flex items-center gap-3 text-[20px]">
+                    <i class="ri-fullscreen-line"></i>
+                    <i class="ri-sun-line"></i>
+                    <i class="ri-notification-line"></i>
+                    <div class="userProfile flex items-center cursor-pointer gap-3">
+                        <img src="./Assets/user.png" class="w-[30px] h-[30px] rounded-full">
+                        <p class="text-[#cfcece] text-[15px] flex items-center">Stevens L. <i class="ri-arrow-drop-down-line text-[35px] text-[#cfcece]"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="userDropList w-[200px] fixed z-[999] right-0 border border-[#363636] rounded-lg border-t-0 float-right bg-[#202020] text-[#cfcece] 
+                mr-[20px] mt-[60px] hover:cursor-pointer ps-[15px] py-[15px] flex flex-col gap-4 text-[14px]">
+                <p><i class="ri-user-line"></i> Profile</p>
+                <p><i class="ri-equalizer-line"></i> Settings</p>
+                <p><i class="ri-question-answer-line"></i> Messages</p>
+                <p><i class="ri-customer-service-2-line"></i> Support</p>
+                <div class="line w-100 border-t border-t-[#505050] ml-[-15px]"></div>
+                <p><i class="ri-logout-circle-r-line"></i> Log Out</p>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="main bg-[#151515] lg:ms-[20.4%] w-full h-auto flex flex-col items-center mt-[60px] gap-[15px]">
+                <div class="content-title w-full max-w-[1060px] h-[52px] mt-[10px] mb-[10px]">
+                    <p class="text-[12px] text-[#D0D0D0] font-medium">Sliced</p>
+                    <h2 class="text-[20px] font-bold text-white pt-[5px]">Dashboard</h2>
+                </div>
+                <div class="contentDashboard w-full max-w-[1060px] h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+                    <div class="card-1 w-full md:w-[253px] h-[130px] border border-[#373737] rounded-[4px] bg-[#1F1F1F] flex items-center justify-center">
+                        <div class="totalViews-1 w-[119px] h-[88px] ml-[15px]">
+                            <p class="text-[17px] text-[#D0D0D0] font-medium pb-[5px]">Total Views</p>
+                            <div class="number-1 flex justify-between items-center">
+                              <h2 class="text-white text-[24px] font-bold">15102</h2>
+                              <button class="w-[36px] h-[22px] rounded-[5px] text-[#49B37A] font-bold text-[14px] bg-[#294234]">23%</button>
+                            </div>
+                            <p class="text-[14px] text-[#94989a]">Current Month</p>
+                        </div>
+                        <div class="totalViews-2 w-[119px] h-[88px] flex items-center justify-center">
+                            <div id="chartContainer" class="flex items-center justify-center">
+                              <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-2 w-full md:w-[253px] h-[130px] border border-[#373737] rounded-[4px] bg-[#1F1F1F] flex items-center justify-center">
+                        <div class="paidVisits-1 w-[119px] h-[88px] ml-[15px]">
+                            <p class="text-[17px] text-[#D0D0D0] font-medium pb-[5px]">Paid Visits</p>
+                            <div class="number-2 flex justify-between items-center">
+                              <h2 class="text-white text-[24px] font-bold">4581</h2>
+                              <button class="w-[36px] h-[22px] rounded-[5px] text-[#F1416C] font-bold text-[14px] bg-[#49262F]">24%</button>
+                            </div>
+                            <p class="text-[14px] text-[#94989a]">Current Month</p>
+                        </div>
+                        <div class="paidVisits-2 w-[119px] h-[88px] flex items-center justify-center">
+                          <div id="chartContainer" class="flex items-center justify-center">
+                            <canvas id="myChart-2"></canvas>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-3 w-full md:w-[253px] h-[130px] border border-[#373737] rounded-[4px] bg-[#1F1F1F] flex items-center justify-center">
+                        <div class="totalReferral-1 w-[119px] h-[88px] ml-[15px]">
+                            <p class="text-[17px] text-[#D0D0D0] font-medium pb-[5px]">Total Referral</p>
+                            <div class="number-3 flex justify-between items-center">
+                              <h2 class="text-white text-[24px] font-bold">2140</h2>
+                              <button class="w-[36px] h-[22px] rounded-[5px] text-[#F1416C] font-bold text-[14px] bg-[#49262F]">10%</button>
+                            </div>
+                            <p class="text-[14px] text-[#94989a]">Current Month</p>
+                        </div>
+                        <div class="totalReferral-1 w-[119px] h-[88px] flex items-center justify-center">
+                          <div id="chartContainer" class="flex items-center justify-center">
+                            <canvas id="myChart-3"></canvas>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-4 w-full md:w-[253px] h-[130px] border border-[#373737] rounded-[4px] bg-[#1F1F1F] flex items-center justify-center">
+                        <div class="week-1 w-[119px] h-[88px] ml-[15px]">
+                            <p class="text-[17px] text-[#D0D0D0] font-medium pb-[5px]">This Week</p>
+                            <div class="number-4 flex justify-between items-center">
+                              <h2 class="text-white text-[24px] font-bold">7714</h2>
+                              <button class="w-[36px] h-[22px] rounded-[5px] text-[#49B37A] font-bold text-[14px] bg-[#294234]">82%</button>
+                            </div>
+                            <p class="text-[14px] text-[#94989a]">Current Month</p>
+                        </div>
+                        <div class="week-2 w-[119px] h-[88px] flex items-center justify-center">
+                          <div id="chartContainer" class="flex items-center justify-center">
+                            <canvas id="myChart-4"></canvas>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="chart w-auto max-w-[1060px] h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="revenue w-full md:w-[522px] h-[401px] bg-[#1F1F1F] border border-[#373737] rounded-[4px] col-span-2 flex flex-col items-center justify-center gap-3">
+                        <div class="ttlRevenue w-[480px] h-[28px] flex justify-between">
+                            <p class="text-[16px] font-bold text-[#fffc]">Total Revenue</p>
+                            <i class="dots ri-more-fill text-[#fffc] cursor-pointer"></i>
+                        </div>
+                          <div class="bigChart w-[480px] h-[300px] mt-[10px] ">
+                             <div id="chartContainer-2">
+                                <canvas id="myChart-5"></canvas>
+                              </div>
+                          </div>
+                    </div>
+                    <div class="trafficDevice w-auto md:w-[522px] h-[401px] grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="traffic w-full md:w-[253px] h-[401px] bg-[#1F1F1F] border border-[#373737] rounded-[4px] flex flex-col items-center justify-center gap-4">
+                            <div class="ttlTraffic w-[211px] h-[24px]">
+                                <p class="text-[16px] font-bold text-[#fffc]">Top Traffic By Source</p>
+                            </div>
+                            <div class="iconTraffic w-[211px] h-[312px] flex flex-col justify-between">
+                                <div class="sub-icon-1 w-[211px] h-[66px] flex flex-col justify-center">
+                                    <div class="browser-1 w-[211px] h-[40px] flex">
+                                      <div class="brows-1 w-[40px] h-[40px] bg-[#2E2E4A] rounded-[5px] flex items-center justify-center">
+                                        <!-- <i class="fa-brands fa-chrome text-[25px]" style="color: #6a69f5;"></i> -->
+                                        <i class="ri-chrome-line text-[28px] text-[#6a69f5]"></i>
+                                      </div>
+                                      <div class="browse-cont-1 w-[156px] h-[40px] ml-[10px] pl-[5px]">
+                                        <h3 class="text-[14px] text-[#fff]">Chrome</h3>
+                                        <p class="text-[14px] text-[#94989a]">Top Browser</p>
+                                      </div>
+                                    </div>
+                                    <div class="line-1 w-[211px] h-[22px]">
+                                      <div class="progress-bar__wrapper-1">
+                                        <progress id="progress-bar-1" value="56" max="100"></progress>
+                                        <label class="progress-bar__value-1" for="progress-bar">56%</label>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="sub-icon-2 w-[211px] h-[66px] flex flex-col justify-center">
+                                    <div class="browser-2 w-[211px] h-[40px] flex">
+                                      <div class="brows-2 w-[40px] h-[40px] bg-[#363636] rounded-[5px] flex items-center justify-center">
+                                        <!-- <i class="fa-brands fa-safari text-[25px]" style="color: #ffffff;"></i> -->
+                                        <i class="ri-safari-line text-[28px] text-[#ffffff]"></i>
+                                      </div>
+                                      <div class="browse-cont-2 w-[156px] h-[40px] ml-[10px] pl-[5px]">
+                                        <h3 class="text-[14px] text-[#fff]">Safari</h3>
+                                        <p class="text-[14px] text-[#94989a]">Top Browser</p>
+                                      </div>
+                                    </div>
+                                    <div class="line-2 w-[211px] h-[22px]">
+                                      <div class="progress-bar__wrapper-2">
+                                        <progress id="progress-bar-2" value="86" max="100"></progress>
+                                        <label class="progress-bar__value-2" for="progress-bar">86%</label>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="sub-icon-3 w-[211px] h-[66px] flex flex-col justify-center">
+                                    <div class="browser-3 w-[211px] h-[40px] flex">
+                                      <div class="brows-3 w-[40px] h-[40px] bg-[#49262F] rounded-[5px] flex items-center justify-center">
+                                        <!-- <i class="fa-brands fa-firefox text-[25px]" style="color: #f1416c;"></i> -->
+                                        <i class="ri-firefox-line text-[28px] text-[#f1416c]"></i>
+                                      </div>
+                                      <div class="browse-cont-3 w-[156px] h-[40px] ml-[10px] pl-[5px]">
+                                        <h3 class="text-[14px] text-[#fff]">Firefox</h3>
+                                        <p class="text-[14px] text-[#94989a]">Top Browser</p>
+                                      </div>
+                                    </div>
+                                    <div class="line-3 w-[211px] h-[22px]">
+                                      <div class="progress-bar__wrapper-3">
+                                        <progress id="progress-bar-3" value="65" max="100"></progress>
+                                        <label class="progress-bar__value-3" for="progress-bar">65%</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="sub-icon-4 w-[211px] h-[66px] flex flex-col justify-center">
+                                    <div class="browser-4 w-[211px] h-[40px] flex">
+                                      <div class="brows-4 w-[40px] h-[40px] bg-[#19394A] rounded-[5px] flex items-center justify-center">
+                                        <!-- <i class="fa-brands fa-edge text-[25px]" style="color: #009ef7;"></i> -->
+                                        <i class="ri-edge-new-line text-[28px] text-[#009ef7]"></i>
+                                      </div>
+                                      <div class="browse-cont-4 w-[156px] h-[40px] ml-[10px] pl-[5px]">
+                                        <h3 class="text-[14px] text-[#fff]">Edge</h3>
+                                        <p class="text-[14px] text-[#94989a]">Top Browser</p>
+                                      </div>
+                                    </div>
+                                    <div class="line-4 w-[211px] h-[22px]">
+                                      <div class="progress-bar__wrapper-4">
+                                        <progress id="progress-bar-4" value="40" max="100"></progress>
+                                        <label class="progress-bar__value-4" for="progress-bar">40%</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                        <div class="device w-full md:w-[253px] h-[401px] bg-[#1F1F1F] border border-[#373737] rounded-[4px] flex flex-col items-center justify-center gap-4">
+                            <div class="ttlDevice w-[211px] h-[24px]">
+                                <p class="text-[16px] font-bold text-[#fffc]">Users By Device</p>
+                            </div>
+                            <div class="chartDevice w-[211px] h-[312px]">
+                                <div id="chartContainer-3" class="flex items-center justify-center">
+                                  <div id="chart"></div> <!-- This is where the chart will be rendered -->
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="revenue-menu absolute top-[340px] bg-[#1F1F1F] right-[44%] w-[170px] h-[125px] border border-[#363636] text-[#94989a] text-[14px] rounded-[5px] px-[20px] flex flex-col justify-around">
+                  <a href="#">Weekly</a>
+                  <a href="#">Monthly</a>
+                  <a href="#">Yearly</a>
+                </div>
+                <div class="url w-auto max-w-[1060px] h-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="performing w-full md:w-[522px] h-[402px] bg-[#1F1F1F] border border-[#373737] rounded-[4px] flex flex-col items-center justify-center gap-4">
+                        <div class="ttlPerforming w-[480px] h-[24px]">
+                            <p class="text-[16px] font-bold text-[#fffc]">Top Performing Pages</p>
+                        </div>
+                        <div class="tablePerforming w-[480px] h-[320px]">
+                            <table class="w-[100%] h-[300px]">
+                              <tr class="text-left bg-[#2A2A2A] text-[white] text-[14px] py-[12px] px-[15px]">
+                                <th class="pl-[10px]">Page name</th>
+                                <th>Clicks</th>
+                                <th>Sessions</th>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">http://sliced.com/Index.html</td>
+                                <td>55</td>
+                                <td>2952</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">http://google.com</td>
+                                <td>229</td>
+                                <td>2392</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">http://facebook.com/Index.html</td>
+                                <td>12</td>
+                                <td>2792</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">http://twitter.com</td>
+                                <td>239</td>
+                                <td>6534</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">http://github.com/Index.html</td>
+                                <td>53</td>
+                                <td>3434</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">http://instagram.com</td>
+                                <td>65</td>
+                                <td>123</td>
+                              </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="countries w-full md:w-[522px] h-[402px] bg-[#1F1F1F] border border-[#373737] rounded-[4px] flex flex-col items-center justify-center gap-4">
+                        <div class="ttlCountries w-[480px] h-[24px]">
+                            <p class="text-[16px] font-bold text-[#fffc]">Users By Countries</p>
+                          </div>
+                          <div class="nameCountries w-[480px] h-[320px]">
+                            <table class="w-[100%] h-[300px]">
+                              <tr class="text-left bg-[#2A2A2A] text-[white] text-[14px] py-[12px] px-[15px]">
+                                <th class="pl-[10px]">Countries Name</th>
+                                <th>Device</th>
+                                <th>Age</th>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">Ireland</td>
+                                <td>Desktop</td>
+                                <td>18</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">United States</td>
+                                <td>Mobile</td>
+                                <td>24 - 36</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">Germany</td>
+                                <td>Tablet</td>
+                                <td>50</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">United Kingdom</td>
+                                <td>Desktop</td>
+                                <td>24 - 36</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">India</td>
+                                <td>Tablet</td>
+                                <td>18</td>
+                              </tr>
+                              <tr class="text-[14px] text-[white] border-t border-[#555]">
+                                <td class="pl-[10px]">Singapore</td>
+                                <td>Mobile</td>
+                                <td>18 - 24</td>
+                              </tr>
+                            </table>
+                          </div>
+                    </div>
+                </div>
+                <div class="footer w-auto max-w-[1060px] h-[36px] flex items-center justify-center">
+                    <div class="sub-footer w-full md:w-[500px] h-[20px] flex items-center justify-center">
+                        <p class="text-[#767273] text-[14px]">&copy; 2024 Sliced Crafted with <i class="fa-solid fa-heart" style="color: #6a69f5;"></i> by SRB Themes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".accordian-nav").hide()
+        $(".accordian-cont").click(function(){
+          $(".accordian-nav").not($(this).next()).slideUp()
+          $(".ri-arrow-drop-up-line").not($(this).children("i")).removeClass("ri-arrow-drop-up-line").addClass("ri-arrow-drop-down-line")
+          $(this).next(".accordian-nav").slideToggle(200)
+          $(this).children("i").toggleClass("ri-arrow-drop-down-line ri-arrow-drop-up-line")
+        })
+
+        $(".userDropList").hide();
+        $(".userProfile").click(function(){
+         $(".userDropList").fadeToggle(300)
+        });
+
+        $(".revenue-menu").hide()
+        $(".dots").click(function(){
+          $(".revenue-menu").fadeToggle(200)
+        })
+
+        $(document).click(function(event){
+          if(!$(event.target).closest('.ttlRevenue, .revenue-menu').length) {
+            $(".revenue-menu").fadeOut(100);
+          }
+        })
+
+        $(document).click(function(event){
+         if(!$(event.target).closest('.userProfile, .userDropList').length) {
+            $(".userDropList").fadeOut(100);
+          }
+        });
+
+        $('#hamburger-icon').click(function() {
+          if ($('.sidebarBig').is(':visible')) {
+            $('.sidebarBig').hide();
+            $('.navbar').css('width', '100%').css('margin-left', '0');
+            $('.Container-2').css('width','100%').css('margin-left','0');
+            $('.main').css('width','100%').css('margin-left','0')
+          } 
+          else {
+            $('.sidebarBig').show();
+            $('.navbar').css('width', '83%').css('margin-left', '17%');
+            $('.Container-2').css('width','83%').css('margin-left','17%');
+            $('.main').css('width','100%').css('margin-left','0')
+          }
+        });
+    })
+
+    // ------CHART - 1 -------
+
+    var ctx = $('#myChart')[0].getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
+          datasets: [{
+            label: 'Monthly Data',
+            backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
+            borderColor: '#4CB67C',
+            borderWidth: 2,
+            data: [10, 82, 40, 65, 20, 89, 40, 20, 70, 98], 
+            fill: false, // Don't fill the area under the line
+            pointRadius: 0, // Points hidden by default
+            pointHoverRadius: 5 // Points visible on hover
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false // Hide legend
+            },
+            tooltip: {
+              enabled: false // Hide tooltips
+            }
+          },
+          scales: {
+            x: {
+              display: false, // Hide x-axis
+              grid: {
+                display: false // Hide x-axis grid lines
+              }
+            },
+            y: {
+              display: false, // Hide y-axis
+              grid: {
+                display: false // Hide y-axis grid lines
+              }
+            }
+          }
+        }
+      });
+
+    // ------CHART - 2 -------
+
+    var ctx = $('#myChart-2')[0].getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
+          datasets: [{
+            label: 'Monthly Data',
+            backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
+            borderColor: '#F1416C',
+            borderWidth: 2,
+            data: [10, 82, 40, 65, 20, 89, 40, 20, 70, 98], // Varying data points
+            fill: false, // Don't fill the area under the line
+            pointRadius: 0, // Points hidden by default
+            pointHoverRadius: 5 // Points visible on hover
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false // Hide legend
+            },
+            tooltip: {
+              enabled: false // Hide tooltips
+            }
+          },
+          scales: {
+            x: {
+              display: false, // Hide x-axis
+              grid: {
+                display: false // Hide x-axis grid lines
+              }
+            },
+            y: {
+              display: false, // Hide y-axis
+              grid: {
+                display: false // Hide y-axis grid lines
+              }
+            }
+          }
+        }
+      });
+    // ------CHART - 3 -------
+
+    var ctx = $('#myChart-3')[0].getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
+          datasets: [{
+            label: 'Monthly Data',
+            backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
+            borderColor: '#F1416C',
+            borderWidth: 2,
+            data: [10, 40, 40, 10, 20, 89, 70, 20, 70, 98], // Varying data points
+            fill: false, // Don't fill the area under the line
+            pointRadius: 0, // Points hidden by default
+            pointHoverRadius: 5 // Points visible on hover
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false // Hide legend
+            },
+            tooltip: {
+              enabled: false // Hide tooltips
+            }
+          },
+          scales: {
+            x: {
+              display: false, // Hide x-axis
+              grid: {
+                display: false // Hide x-axis grid lines
+              }
+            },
+            y: {
+              display: false, // Hide y-axis
+              grid: {
+                display: false // Hide y-axis grid lines
+              }
+            }
+          }
+        }
+      });
+
+    // ------CHART - 4 -------
+
+    var ctx = $('#myChart-4')[0].getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
+          datasets: [{
+            label: 'Monthly Data',
+            backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
+            borderColor: 'rgb(76,182,124)',
+            borderWidth: 2,
+            data: [0, 82, 60, 65, 0, 10, 80, 20, 70, 98], // Varying data points
+            fill: false, // Don't fill the area under the line
+            pointRadius: 0, // Points hidden by default
+            pointHoverRadius: 5 // Points visible on hover
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false // Hide legend
+            },
+            tooltip: {
+              enabled: false // Hide tooltips
+            }
+          },
+          scales: {
+            x: {
+              display: false, // Hide x-axis
+              grid: {
+                display: false // Hide x-axis grid lines
+              }
+            },
+            y: {
+              display: false, // Hide y-axis
+              grid: {
+                display: false // Hide y-axis grid lines
+              }
+            }
+          }
+        }
+      });
+
+    // ------CHART - 5 -------
+
+    var ctx = $('#myChart-5')[0].getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          datasets: [
+            {
+              label: 'Line 1',
+              backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 2, // Adjust the border width
+              data: [0, 3, 5, 10, 8, 11, 15], // Example data points
+              fill: false, // Don't fill the area under the line
+              pointRadius: 0, // Points hidden by default
+              pointHoverRadius: 5 // Points visible on hover
+            },
+            {
+              label: 'Line 2',
+              backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
+              borderColor: 'rgba(255, 99, 132, 1)',
+              borderWidth: 2, // Adjust the border width
+              data: [2, 3, 5, 12, 9, 13, 14], // Example data points
+              fill: false, // Don't fill the area under the line
+              pointRadius: 0, // Points hidden by default
+              pointHoverRadius: 5 // Points visible on hover
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false // Hide legend
+            },
+            tooltip: {
+              enabled: true // Show tooltips
+            }
+          },
+          scales: {
+            x: {
+              display: true, // Show x-axis
+              grid: {
+                display: false // Hide x-axis grid lines
+              },
+              ticks: {
+                display: true, // Display x-axis labels
+                color: 'white' // Set color to white
+              }
+            },
+            y: {
+              display: true, // Show y-axis
+              grid: {
+                display: true, // Show y-axis grid lines
+                borderDash: [5, 5] // Dashed grid lines
+              },
+              min: 0, // Start at 0
+              max: 15, // End at 15
+              ticks: {
+                stepSize: 3, // Set step size to 3
+                callback: function(value) {
+                  return value + 'm'; // Add 'm' to the y-axis labels
+                },
+                color: 'white', // Set color to white
+                maxTicksLimit: 6 // Limit to 6 labels (this can be removed as stepSize is set)
+              }
+            }
+          }
+        }
+      });
+
+    // ------CHART - 6 -------   
+
+      var options = {
+        series: [76, 67, 61], // Only 3 values
+        chart: {
+          height: 1000,
+          type: 'radialBar',
+        },
+        plotOptions: {
+          radialBar: {
+            offsetY: 0,
+            startAngle: 0,
+            endAngle: 360, // Complete circle
+            hollow: {
+              margin: 5,
+              size: '50%', // Size of the hollow part
+              background: 'transparent',
+            },
+            dataLabels: {
+              name: {
+                show: true, // Show name
+                fontSize: '15px',
+                fontFamily: 'Helvetica, Arial, sans-serif',
+                color: '#323943',
+                offsetY: 0,
+              },
+              value: {
+                show: true, // Show value
+                fontSize: '12px',
+                fontFamily: 'Helvetica, Arial, sans-serif',
+                color: '#323943',
+                offsetY: 10,
+              },
+              total: {
+                show: true,
+                label: 'Total',
+                formatter: function (w) {
+                  return 709; // Total value to display
+                },
+                fontSize: '15px',
+                fontFamily: 'Helvetica, Arial, sans-serif',
+                color: '#323943',
+                offsetY: -10,
+              }
+            },
+            barLabels: {
+              enabled: false // Disable bar labels
+            },
+          }
+        },
+        colors: ['#6261D8', '#4CB67C', '#323943'], // Three colors for three bars
+        labels: ['Tablet', 'Mobile', 'Desktop'], // Labels for the series
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            legend: {
+              show: false
+            }
+          }
+        }]
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+</script>
+</html>

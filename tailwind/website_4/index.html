@@ -1,0 +1,445 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    .Container{
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    }
+
+
+    .callBtn button{
+        background: rgb(255,72,145);
+        background: linear-gradient(0deg, rgba(255,72,145,1) 0%, rgba(255,101,117,1) 100%);
+    }
+
+    .heroBtn{
+        background: rgb(255,72,145);
+        background: linear-gradient(0deg, rgba(255,72,145,1) 0%, rgba(255,101,117,1) 100%);
+    }
+
+    .serviceCard-1, .serviceCard-2, .serviceCard-3, .serviceCard-4{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    }
+
+    .priceCont button{
+        background: rgb(255,73,144);
+        background: linear-gradient(0deg, rgba(255,73,144,1) 0%, rgba(255,105,112,1) 100%);
+    }
+
+    .priceCont .priceCard-1:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 1s;
+    }
+
+    .priceCont .priceCard-2:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 1s;
+    }
+
+    .priceCont .priceCard-3:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 1s;
+    }
+</style>
+<body>
+  
+    <div class="Container w-full h-auto">
+        <div class="header w-full h-auto lg:h-[700px] bg-[url('Assets/h1_hero1.png')] bg-no-repeat bg-cover bg-center flex flex-col items-center">
+            <div class="subHeader w-full h-auto lg:h-[80px] flex items-center justify-around lg:justify-evenly">
+                <div class="logo w-auto md:w-[220px] h-[60px] flex items-center">
+                    <img src="Assets/logo.png">
+                </div>
+                <div class="menu w-auto lg:w-[600px] h-auto lg:h-[60px] text-[17px] text-[#192839] hidden lg:flex items-center justify-around">
+                    <a href="#" class="hover:text-[#FF44A6]">Home</a>
+                    <a href="#" class="hover:text-[#FF44A6]">About</a>
+                    <a href="#" class="hover:text-[#FF44A6]">Services</a>
+                    <a href="#" class="hover:text-[#FF44A6]">Case Study</a>
+                    <a href="#" class="hover:text-[#FF44A6]">Blog</a>
+                    <a href="#" class="hover:text-[#FF44A6]">Contact</a>
+                </div>
+                <div class="call w-auto md:w-[400px] h-auto lg:h-[60px] flex justify-center">
+                    <div class="subCall w-[230px] h-[60px] hidden lg:flex items-center justify-center">
+                        <p class="text-[17px] text-[#fff] font-medium">Call Us: +10 (78) 378 3784</p>
+                    </div>
+                    <div class="callBtn w-[130px] h-[60px] hidden sm:flex items-center">
+                        <button class="w-[130px] h-[50px] bg-[#FF4B8F] rounded-l-full rounded-r-full g text-[18px] text-[#fff] font-medium">Let's Talk</button>
+                    </div>
+                </div>
+                <div class="hamburgerIcon w-[50px] h-[60px] lg:hidden flex items-center justify-center">
+                    <i class="fa-solid fa-bars text-[30px]"></i>
+                </div>
+            </div>
+            <div class="dropnav w-full md:w-[400px] h-[250px] text-[16px] text-white font-bold bg-[#4C4C4C] absolute right-0 top-[60px] flex flex-col items-center justify-evenly">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Case Study</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="heroSection w-full lg:w-[1100px] h-auto lg:h-[411px] mt-[60px] flex justify-between items-center">
+                <div class="subHeroSection w-full md:w-[451px] h-auto lg:h-[411px] px-[20px] flex flex-col justify-end">
+                    <div class="marketing w-[180px] h-auto md:h-[30px] border rounded-l-full rounded-r-full bg-[#FFFFFF] flex items-center justify-center">
+                        <p class="text-[14px] text-[#ff4495]">Digital Marketing Expert</p>
+                    </div>
+                    <div class="heroTtl w-full md:w-[451px] h-auto md:h-[139px] mt-[20px]">
+                        <h1 class="text-[35px] md:text-[58px] text-[#192839] font-bold leading-[70px]">We bring you new customers</h1>
+                    </div>
+                    <div class="subHeroTtl w-full md:w-[451px] h-auto md:h-[56px] mt-[30px]">
+                        <p class="text-[20px] text-[#192839] leading-[28px]">We build effective strategies to help you reach customers and prospects across the entire web.</p>
+                    </div>
+                    <div class="heroBtn w-[204px] h-[57px] border mt-[45px] rounded-l-full rounded-r-full flex items-center justify-center">
+                        <button class="text-[18px] text-[#fff] font-medium">Explore Services</button>
+                    </div>
+                </div>
+                <div class="heroSectionPlay w-[150px] h-auto lg:h-[150px] mx-[20px] rounded-full border border-[#CDCFCD] bg-transparent flex items-center justify-center">
+                    <div class="subheroPlay w-[100px] h-[100px] text-[#FF7CB5] hover:text-white border rounded-full bg-white hover:bg-[#FF7CB5] duration-700 flex items-center justify-center">
+                        <i class="fa-solid fa-play text-[22px]"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services w-full h-auto lg:h-[715px] flex flex-col items-center mt-[60px] lg:mt-[0]">
+            <div class="serviceTtl w-full lg:w-[1140px] h-auto lg:h-[213px] px-[10px] px-0 mb-[25px] lg:mb-[0] flex flex-col items-center">
+                <p class="text-[13px] text-[#ff4495] pb-[15px]">OUR SERVICES</p>
+                <h1 class="text-[40px] font-bold text-[#192839] text-center">Provide Awesome <br> Service With Our Tools</h1>
+            </div>
+            <div class="serviceCont w-full lg:w-[1140px] h-auto lg:h-[382px] px-[10px] lg:px-0 flex flex-wrap justify-around">
+                <div class="serviceCard-1 w-[261px] h-[332px] text-[#192839] hover:text-white ps-[20px] hover:bg-[#212529] duration-700 rounded-[8px] flex flex-col justify-evenly">
+                    <div class="cardTtl-1 w-[219px] h-[53px]">
+                        <p class="text-[22px] font-bold leading-[26px]">Discover, Explore the Product</p>
+                    </div>
+                    <div class="cardImg-1 w-[78px] h-[78px] bg-[#FFE1EE] rounded-full flex items-center justify-center">
+                        <img src="Assets/services1.svg">
+                    </div>
+                    <div class="subCardTtl-1 w-[219px] h-[50px]">
+                        <p class="text-[17px]">Effective strategies to help you reach customers.</p>
+                    </div>
+                </div>
+                <div class="serviceCard-2 w-[261px] h-[332px] text-[#192839] hover:text-white ps-[20px] hover:bg-[#212529] duration-700 rounded-[8px] flex flex-col justify-evenly">
+                    <div class="cerdTtl-1 w-[219px] h-[53px]">
+                        <p class="text-[22px] font-bold leading-[26px]">Discover, Explore the Product</p>
+                    </div>
+                    <div class="cardImg-1 w-[78px] h-[78px] bg-[#FFE1EE] rounded-full flex items-center justify-center">
+                        <img src="Assets/services2.svg">
+                    </div>
+                    <div class="subCardTtl-1 w-[219px] h-[50px]">
+                        <p class="text-[17px]">Effective strategies to help you reach customers.</p>
+                    </div>
+                </div>
+                <div class="serviceCard-3 w-[261px] h-[332px] text-[#192839] hover:text-white ps-[20px] hover:bg-[#212529] duration-700 rounded-[8px] flex flex-col justify-evenly">
+                    <div class="cerdTtl-1 w-[219px] h-[53px]">
+                        <p class="text-[22px] font-bold leading-[26px]">Discover, Explore the Product</p>
+                    </div>
+                    <div class="cardImg-1 w-[78px] h-[78px] bg-[#FFE1EE] rounded-full flex items-center justify-center">
+                        <img src="Assets/services3.svg">
+                    </div>
+                    <div class="subCardTtl-1 w-[219px] h-[50px]">
+                        <p class="text-[17px]">Effective strategies to help you reach customers.</p>
+                    </div>
+                </div>
+                <div class="serviceCard-4 w-[261px] h-[332px] text-[#192839] hover:text-white ps-[20px] hover:bg-[#212529] duration-700 rounded-[8px] flex flex-col justify-evenly">
+                    <div class="cerdTtl-1 w-[219px] h-[53px]">
+                        <p class="text-[22px] font-bold leading-[26px]">Discover, Explore the Product</p>
+                    </div>
+                    <div class="cardImg-1 w-[78px] h-[78px] bg-[#FFE1EE] rounded-full flex items-center justify-center">
+                        <img src="Assets/services5.png">
+                    </div>
+                    <div class="subCardTtl-1 w-[219px] h-[50px]">
+                        <p class="text-[17px]">Effective strategies to help you reach customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about w-full h-auto lg:h-[539px] flex flex-wrap items-center justify-center mt-[60px] lg:mt-[0]">
+            <div class="aboutImg w-full lg:w-[546px] h-auto lg:h-[539px] flex items-center justify-center">
+                <img src="Assets/about1.png">
+            </div>
+            <div class="aboutCont w-full lg:w-[546px] h-auto lg:h-[389px] flex flex-col justify-between">
+                <div class="subaboutCont w-full lg:w-[546px] h-auto lg:h-[325px] px-[60px] lg:px-0 lg:ms-[15px] mb-[20px] lg:mb-0">
+                    <p class="text-[13px] text-[#ff4495] pb-[18px]">ABOUT US</p>
+                    <h1 class="text-[35px] lg:text-[40px] text-[#192839] leading-[56px] font-bold pb-[12px]">We Create a Steps to Build a Successful Digital Product</h1>
+                    <p class="text-[17px] text-[#656565] pb-[30px]">With over 50 years of combined experience, our mission is to design with your values and vision in mind. We’re out to create purposeful spaces that balance art and creativity with science and strategy.</p>
+                    <p class="text-[17px] text-[#656565]">We’re out to create purposeful spaces that balance art and creativity with science and strategy.</p>
+                </div>
+                <div class="aboutBtn w-full lg:w-[546px] h-auto lg:h-[10px] px-[60px] lg:px-0 lg:ms-[15px]">
+                    <button class="text-[16px] text-[#192839] font-semibold ps-[5px]">Explore More</button>
+                </div>
+                <div class="line w-[100px] h-[3px] bg-[#FF4495] mt-[15px] lg:mt-0 ms-[80px] lg:ms-[20px]"></div>
+            </div>
+        </div>
+
+        <div class="pricing w-full h-auto lg:h-[1019px] flex items-center justify-center mt-[60px] lg:mt-[0]">
+            <div class="subPricing w-full lg:w-[1140px] h-auto lg:h-[779px] bg-[#F8FBFE]">
+                <div class="pricingTtl w-full lg:w-[1140px] h-auto lg:h-[262px] flex flex-col items-center justify-center">
+                    <p class="text-[13px] text-[#ff4495] pb-[10px]">PRICING PLAN</p>
+                    <h1 class="text-[40px] text-[#192839] font-bold pb-[10px] text-center px-[15px] lg:px-0">Choose Your Best Pricing Plan</h1>
+                    <div class="priceBtn w-[186px] h-[40px] border border-black rounded-l-full rounded-r-full flex items-center justify-center">
+                        <div class="year w-[86px] h-[40px] bg-[#192839] rounded-l-full flex items-center justify-center">
+                            <p class="text-[13px] text-white font-semibold">YEARLY</p>
+                        </div>
+                        <div class="month w-[100px] h-[40px] rounded-r-full flex items-center justify-center">
+                            <p class="text-[13px] text-[#192839] font-semibold">MONTHLY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="priceCont w-full lg:w-[1140px] h-auto lg:h-[517px] flex flex-wrap items-center justify-center">
+                    <div class="priceCard-1 w-[380px] h-[517px] flex flex-col items-center justify-center">
+                        <div class="priceIcon-1 w-[276px] h-[115px] flex flex-col items-center justify-between">
+                            <div class="w-[78px] h-[78px] rounded-full bg-[#FFFFFF] flex items-center justify-center">
+                                <img src="Assets/price1.svg">
+                            </div>
+                            <div class="w-[276px] h-[24px] flex justify-center">
+                                <p class="text-[16px] text-[#ff4495]">Basic</p>
+                            </div>
+                        </div>
+                        <div class="subpriceIcon w-[276px] h-[56px] flex justify-center">
+                            <h1 class="text-[30px] text-[#192839] font-bold">$ 05.00</h1>
+                        </div>
+                        <div class="priceCont-1 w-[276px] h-[219px] flex flex-col items-center justify-between">
+                            <p class="text-[17px] text-[#192839] leading-[35px] text-center">Increase traffic 50% <br>
+                                Social Media Marketing <br>
+                                10 Free Optimization <br>
+                                24/7 support
+                            </p>
+                            <button class="w-[142px] h-[51px] border rounded-l-full rounded-r-full text-white">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="priceCard-2 w-[380px] h-[517px] flex flex-col items-center justify-center">
+                        <div class="priceIcon-1 w-[276px] h-[115px] flex flex-col items-center justify-between">
+                            <div class="w-[78px] h-[78px] rounded-full bg-[#FFFFFF] flex items-center justify-center">
+                                <img src="Assets/price2.svg">
+                            </div>
+                            <div class="w-[276px] h-[24px] flex justify-center">
+                                <p class="text-[16px] text-[#ff4495]">Basic</p>
+                            </div>
+                        </div>
+                        <div class="subpriceIcon w-[276px] h-[56px] flex justify-center">
+                            <h1 class="text-[30px] text-[#192839] font-bold">$ 05.00</h1>
+                        </div>
+                        <div class="priceCont-1 w-[276px] h-[219px] flex flex-col items-center justify-between">
+                            <p class="text-[17px] text-[#192839] leading-[35px] text-center">Increase traffic 50% <br>
+                                Social Media Marketing <br>
+                                10 Free Optimization <br>
+                                24/7 support
+                            </p>
+                            <button class="w-[142px] h-[51px] border rounded-l-full rounded-r-full text-white">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="priceCard-3 w-[380px] h-[517px] flex flex-col items-center justify-center">
+                        <div class="priceIcon-1 w-[276px] h-[115px] flex flex-col items-center justify-between">
+                            <div class="w-[78px] h-[78px] rounded-full bg-[#FFFFFF] flex items-center justify-center">
+                                <img src="Assets/price3.svg">
+                            </div>
+                            <div class="w-[276px] h-[24px] flex justify-center">
+                                <p class="text-[16px] text-[#ff4495]">Basic</p>
+                            </div>
+                        </div>
+                        <div class="subpriceIcon w-[276px] h-[56px] flex justify-center">
+                            <h1 class="text-[30px] text-[#192839] font-bold">$ 05.00</h1>
+                        </div>
+                        <div class="priceCont-1 w-[276px] h-[219px] flex flex-col items-center justify-between">
+                            <p class="text-[17px] text-[#192839] leading-[35px] text-center">Increase traffic 50% <br>
+                                Social Media Marketing <br>
+                                10 Free Optimization <br>
+                                24/7 support
+                            </p>
+                            <button class="w-[142px] h-[51px] border rounded-l-full rounded-r-full text-white">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore w-full h-auto lg:h-[391px] flex flex-col items-center justify-center mt-[60px] lg:mt-[0]">
+            <div class="exploreTtl w-full lg:w-[1140px] h-auto lg:h-[191px] border-b flex flex-wrap justify-between items-center">
+                <div class="subexploreTtl w-full lg:w-[641px] h-auto mx-[45px] lg:mx-[0] lg:h-[153px]">
+                    <p class="text-[13px] text-[#ff4495] pb-[20px]">WHY CHOOSE US</p>
+                    <h1 class="text-[30px] md:text-[40px] text-[#192839] font-bold leading-[56px]">We are an SEO company that specializes in developing</h1>
+                </div>
+                <div class="exploreBtn w-[200px] h-[50px] flex flex-col items-center justify-center">
+                    <p class="text-[#192839] text-[16px] font-semibold">Explore More</p>
+                    <div class="line w-[95px] h-[2px] bg-[#FF4495] mt-[5px]"></div>
+                </div>
+            </div>
+            <div class="exploreCont w-full lg:w-[1140px] h-auto lg:h-[180px] mt-[50px] lg:mt-[-] flex flex-wrap items-center justify-between">
+                <div class="counter w-full lg:w-[475px] h-auto lg:h-[153px] mx-[45px] lg:mx-[0] mb-[60px] lg:mb-0 flex flex-col sm:flex-row justify-center">
+                    <div class="counter-1 w-full lg:w-[174px] h-auto lg:h-[80px] mb-[30px] sm:mb-[0] border-r flex flex-col justify-center">
+                        <h1 class="text-[36px] text-[#ff4495] font-bold">450 +</h1>
+                        <p class="text-[14px] text-[#545454] font-semibold">Successfully completed projects</p>
+                    </div>
+                    <div class="counter-2 w-full lg:w-[174px] h-auto lg:h-[80px] flex flex-col justify-center lg:ms-[35px]">
+                        <h1 class="text-[36px] text-[#ff4495] font-bold">860 +</h1>
+                        <p class="text-[14px] text-[#545454] font-semibold">Highly specialised employees</p>
+                    </div>
+                </div>
+                <div class="counterCont w-full lg:w-[641px] h-auto lg:h-[150px] mx-[45px] lg:mx-[0]">
+                    <p class="text-[19px] text-[#545454] leading-[30px] pb-[25px]">With over 50 years of combined experience, our mission is to design with your values and vision in mind. We’re out to create purposeful spaces that balance art and creativity with science and strategy.</p>
+                    <p class="text-[19px] text-[#545454]">- Shonda Leer, Chief of Staff at Franclin Technologies</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="brand w-full h-auto lg:h-[175px] flex items-center justify-center mt-[60px] lg:mt-[0]">
+            <div class="subBrand w-full lg:w-[1116px] h-auto lg:h-[175px] px-[30px] lg:px-[0] pt-[20px] lg:pt-[0] border flex flex-wrap items-center justify-around gap-[20px] lg:gap-0">
+                <img src="Assets/brand1.png">
+                <img src="Assets/brand2.png">
+                <img src="Assets/brand3.png">
+                <img src="Assets/brand4.png">
+                <img src="Assets/brand1.png">
+            </div>
+        </div>
+
+        <div class="caseStudy w-full h-auto lg:h-[608px] flex flex-col items-center justify-center mt-[60px] lg:mt-[0]">
+            <div class="caseStudyTtl w-full lg:w-[1140px] h-auto lg:h-[213px] flex flex-col justify-center items-center mb-[20px] lg:mb-0">
+                <p class="text-[13px] text-[#ff4495]">CASE STUDY</p>
+                <h1 class="text-[32px] md:text-[40px] text-[#192839] font-bold text-center leading-[55px]">Some Of Our Awesome <br> Stuffs</h1>
+            </div>
+            <div class="caseStudyTtl w-full lg:w-[1140px] h-auto lg:h-[295px] px-[20px] lg:px-0 flex flex-wrap justify-evenly gap-[20px] lg:gap-0">
+                <div class="caseStudyCard-1 w-[348px] h-[295px] bg-[url('Assets/stuffs1.jpg')] bg-no-repeat bg-cover bg-center">
+                    <div class="cardCont-1 w-[182px] h-[98px] mt-[180px] ms-[30px]">
+                        <p class="text-[14px] text-[#fff] pb-[10px]">Marketing</p>
+                        <h1 class="text-[22px] text-[#fff] font-bold">Discover, Explore the Product</h1>
+                    </div>
+                </div>
+                <div class="caseStudyCard-2 w-[348px] h-[295px] bg-[url('Assets/stuffs2.jpg')] bg-no-repeat bg-cover bg-center">
+                    <div class="cardCont-1 w-[182px] h-[98px] mt-[180px] ms-[30px]">
+                        <p class="text-[14px] text-[#fff] pb-[10px]">Marketing</p>
+                        <h1 class="text-[22px] text-[#fff] font-bold">Discover, Explore the Product</h1>
+                    </div>
+                </div>
+                <div class="caseStudyCard-3 w-[348px] h-[295px] bg-[url('Assets/stuffs3.jpg')] bg-no-repeat bg-cover bg-center">
+                    <div class="cardCont-1 w-[182px] h-[98px] mt-[180px] ms-[30px]">
+                        <p class="text-[14px] text-[#fff] pb-[10px]">Marketing</p>
+                        <h1 class="text-[22px] text-[#fff] font-bold">Discover, Explore the Product</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial w-full h-auto lg:h-[540px] flex items-center justify-center mt-[60px] lg:mt-[0]">
+            <div class="subTestimonial w-full lg:w-[736px] h-auto lg:h-[303px] flex flex-col items-center justify-between">
+                <div class="clientImg w-[88px] h-[88px] rounded-full mb-[20px] lg:mb-0">
+                    <img src="Assets/t-woner.png">
+                </div>
+                <div class="review w-full lg:w-[736px] h-auto lg:h-[117px] px-[20px] lg:px-[0] pb-[20px] lg:pb-0">
+                    <p class="text-[26px] text-[#232f55] text-center">"Even the all-powerful Pointing has no control about the blind texts it is an almost un real orthographic eaque ipsa quae elit small batch freegan sed. Craft beer elit seitan exercitation"</p>
+                </div>
+                <div class="clientNm w-full lg:w-[736px] h-[18px] flex items-center justify-center">
+                    <p class="text-[18px] text-[#192839]">- Robert . Creative Director at Colorlib</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="interested w-full h-auto lg:h-[563px] bg-[url('Assets/contact-bg.jpg')] bg-no-repeat bg-cover flex items-center justify-center mt-[60px] lg:mt-[0]">
+            <div class="subInterested w-full lg:w-[1140px] h-auto lg:h-[505px] flex flex-col items-center">
+                <div class="interested-bg w-full lg:w-[510px] h-[505px] lg:ms-[48%] bg-[url('Assets/bg-2.png')] bg-no-repeat bg-cover flex items-center justify-center">
+                    <div class="subInterested-bg w-full lg:w-[380px] h-auto lg:h-[255px] flex flex-col justify-between items-center gap-[25px] lg:gap-0">
+                        <div class="interestedTtl w-full lg:w-[300px] h-auto lg:h-[79px] px-[30px] lg:px-0">
+                            <h1 class="text-[33px] text-[#fff] font-bold leading-[40px] text-center">Interested To Digging Dipper?</h1>
+                        </div>
+                        <div class="subinterestedTtl w-full lg:w-[380px] h-auto lg:h-[45px] px-[30px] lg:px-0">
+                            <p class="text-[16px] text-[#fff] text-center">We’re out to create purposeful spaces that balance art and creativity with science and strategy.</p>
+                        </div>
+                        <div class="subinterestedTtl w-[165px] h-[59px] hover:bg-white px-[30px] lg:px-0 text-white hover:text-[#ff4495] duration-700 border rounded-l-full rounded-r-full flex items-center justify-center">
+                            <button class="text-[18px] font-semibold">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[510px] flex flex-col items-center justify-around mt-[60px] lg:mt-[0]">
+            <div class="subFooter w-full lg:w-[1140px] h-auto lg:h-[294px] flex flex-wrap items-center justify-center">
+                <div class="calvino w-[285px] h-[294px] flex flex-col justify-center lg:justify-end mx-[20px] lg:mx-0">
+                    <div class="calvinoImg w-[175px] h-[49px] mt-[20px] ms-[15px]">
+                        <img src="Assets/logo2_footer.png">
+                    </div>
+                    <div class="calvinoCont w-[261px] h-[86px] mt-[25px] ms-[15px] leading-[30px]">
+                        <p class="text-[16px] text-[#5e5e5e]">Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum</p>
+                    </div>
+                    <div class="calvinoIcon w-[100px] h-[49px] text-[#BCBCBC] mb-[18px] mt-[15px] ms-[15px] flex justify-between items-center">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="navigation w-[190px] h-[294px] flex flex-col justify-end">
+                    <div class="navTtl w-[166px] h-[24px] ms-[30px]">
+                        <h1 class="text-[20px] text-[#1a1a1a] font-semibold">Navigation</h1>
+                    </div>
+                    <div class="navMenu w-[166px] h-[180px] text-[15px] ms-[30px] mt-[35px] text-[#5e5e5e] flex flex-col justify-between">
+                        <a href="#" class="hover:underline">Home</a>
+                        <a href="#" class="hover:underline">About</a>
+                        <a href="#" class="hover:underline">Services</a>
+                        <a href="#" class="hover:underline">Blog</a>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </div>
+                </div>
+                <div class="services w-[190px] h-[294px] flex flex-col justify-end">
+                    <div class="navTtl w-[166px] h-[24px] ms-[30px]">
+                        <h1 class="text-[20px] text-[#1a1a1a] font-semibold">Services</h1>
+                    </div>
+                    <div class="navMenu w-[166px] h-[140px] text-[15px] ms-[30px] mb-[40px] mt-[33px] text-[#5e5e5e] flex flex-col justify-between">
+                        <a href="#" class="hover:underline">Drone Mapping</a>
+                        <a href="#" class="hover:underline">Real State</a>
+                        <a href="#" class="hover:underline">Commercial</a>
+                        <a href="#" class="hover:underline">Construction</a>
+                    </div>
+                </div>
+                <div class="support w-[190px] h-[294px] flex flex-col justify-end">
+                    <div class="navTtl w-[166px] h-[24px] ms-[30px]">
+                        <h1 class="text-[20px] text-[#1a1a1a] font-semibold">Support</h1>
+                    </div>
+                    <div class="navMenu w-[166px] h-[140px] text-[15px] ms-[30px] mb-[40px] mt-[33px] text-[#5e5e5e] flex flex-col justify-between">
+                        <a href="#" class="hover:underline">Drone Mapping</a>
+                        <a href="#" class="hover:underline">Real State</a>
+                        <a href="#" class="hover:underline">Commercial</a>
+                        <a href="#" class="hover:underline">Construction</a>
+                    </div>
+                </div>
+                <div class="contact w-[285px] h-[294px] flex flex-col justify-end">
+                    <div class="navTtl w-[166px] h-[24px] ms-[30px]">
+                        <h1 class="text-[20px] text-[#1a1a1a] font-semibold">Contact Us</h1>
+                    </div>
+                    <div class="navMenu w-[185px] h-[140px] text-[15px] ms-[30px] mb-[40px] mt-[33px] text-[#5e5e5e] flex flex-col">
+                        <a href="#" class="hover:underline pb-[18px]">Drone Mapping</a>
+                        <a href="#" class="text-[14px] underline pb-[15px]">contact@carwash.com</a>
+                        <p class="text-[22px] text-[#ff4495] font-semibold underline">10 (87) 738-3940</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright w-full lg:w-[1116px] h-auto lg:h-[28px] flex items-center justify-center">
+                <p class="text-[14px] text-[#5e5e5e] px-[30px] lg:px-0">Copyright &copy;2024 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #ff4495;"></i> by <span class="text-[#ff4495]">Colorlib</span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide()
+        $(".hamburgerIcon").click(function(){
+            $(".dropnav").slideToggle()
+        })
+    })
+</script>
+</html>

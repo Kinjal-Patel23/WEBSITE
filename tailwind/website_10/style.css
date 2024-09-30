@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heroContTtl{
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aboutImg{
+    animation: slide 10s 2s infinite;
+}
+
+@keyframes slide{
+    0%{background-image: url(Assets/21-1.jpg);}
+    25%{background-image: url(Assets/22-1.jpg);}
+    50%{background-image: url(Assets/23-1.jpg);}
+    75%{background-image: url(Assets/24-1.jpg);}
+    100%{background-image: url(Assets/21-1.jpg);}
+}
+
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .boxImgSub{
+    background: rgb(255,242,73);
+    background: linear-gradient(281deg, rgba(255,242,73,1) 0%, rgba(255,105,205,1) 100%);
+} */

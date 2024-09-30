@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    position: fixed;
+}
+
+.head{
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+.head h1{
+    font-weight: 200;
+    font-size: 22px;
+}
+
+.navbar{
+    padding-left: 40%;
+    margin-top: 40px;
+}
+
+.navbar-1 a{
+    margin-inline: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.background{
+    width: 100%;
+    height: 840px;
+}
+
+
+
+.box{
+    width: 100%;
+}
+
+.sub-box{
+    height: 740px;
+    margin-top: 70px;
+    width: 1168px;
+    margin-left: 90px;
+    display: flex;
+    position: relative;
+    z-index: -2;
+}
+
+.welcome{
+    padding-top: 12%;
+    padding-left: 5%;
+}
+
+.welcome h2{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+.welcome p{
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.welcome button{
+    padding: 12px 25px;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+}
+
+.gallery{
+    height: 621px;
+}
+
+.sub-gallery{
+    margin-left: 80px;
+    margin-top: 10%;
+}
+
+
+.gal-nm{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gal-nm p{
+    font-size: 20px;
+}
+
+.container{
+    width: 100%;
+}
+
+.sub-container{
+    width: 980px;
+    height: 350px;
+    display: flex;
+    margin-left: 198px;
+    justify-content: space-around;
+}
+
+.cont-img1{
+    margin-top: 20px;
+    width: 290px;
+}
+
+.cont-img1 p{
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 40px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 60px;
+}
+
+.cont-img2{
+    margin-top: 20px;
+}
+
+.cont-img2 p{
+    width: 290px;
+    font-size: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 37px;
+}
+
+.cont-img3{
+    margin-top: 20px;
+}
+
+.cont-img3 p{
+    width: 290px;
+    font-size: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 13px;
+}
+
+#view{
+    margin-top: 15px;
+    margin-left: 40px;
+
+}
+
+#msg{
+    margin-left: 20px;
+}
+
+#heart{
+    margin-left: 30%;
+}
+
+.form{
+    width: 100%;
+}
+
+.sub-form{
+    width: 450px;
+    height: 170px;
+    margin-left: 447px;
+    margin-top: 90px;
+}
+
+.sub p{
+    font-size: 22px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sub input{
+    padding-left: 10px;
+    padding-right: 240px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.sub button{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 188px;
+    padding-right: 188px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.sub button:hover{
+    background-color: gray;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(199, 195, 195);
+    height: 100px;
+}
+
+.lastsection{
+    padding-top: 20px;
+
+}
+
+.lastsection p{
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+
+

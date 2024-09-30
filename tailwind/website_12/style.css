@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arrowcircle{
+    background: rgb(177,8,255);
+    background: linear-gradient(9deg, rgba(177,8,255,1) 0%, rgba(26,113,253,1) 100%);
+}
+
+.styledText {
+    color: transparent; /* Transparent fill for hollow text */
+    -webkit-text-stroke: 2px #290037; /* Creates the outline */
+    text-transform: uppercase; /* If you want all caps */
+    font-family: Arial, sans-serif; /* Adjust font as per your choice */
+    text-align: center;
+  }

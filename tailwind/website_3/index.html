@@ -1,0 +1,924 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+  .Container{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .navleft p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+  } 
+
+  .logo{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .aboutContTtl{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .servicesTtl h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .menuTtl h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .chefTtl h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .reservationTtl h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .testimonialTtl h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .blogTtl h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .aboutNum{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+  }
+
+  .subservicesTtl h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+  }
+
+  .subMenuTtl h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal; 
+  }
+
+  .subChefTtl h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .reservationSubTtl h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .testimonialSubTtl h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .blogSubTtl h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 680px;
+      margin-top: -16%;
+      margin-bottom: -15%;
+    }
+
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+body {
+  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial,   sans-serif;
+  font-size: 13px;
+  color: #666;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  direction: ltr;
+}
+
+.sectionClass {
+  padding: 20px 0px 50px 0px;
+  position: relative;
+  display: block;
+}
+
+.fullWidth {
+  width: 100% !important;
+  display: table;
+  float: none;
+  padding: 0;
+  min-height: 1px;
+  position: relative;
+}
+
+
+.sectiontitle {
+  background-position: center;
+  margin: 30px 0 0px;
+  text-align: center;
+  min-height: 20px;
+}
+
+.sectiontitle h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+.headerLine {
+  width: 160px;
+  height: 2px;
+  display: inline-block;
+}
+
+
+.projectFactsWrap{
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+#projectFacts .fullWidth{
+  padding: 0;
+}
+
+.projectFactsWrap .item{
+  width: 25%;
+  height: 100%;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.projectFactsWrap .item p.number{
+  font-size: 40px;
+  padding: 0;
+  font-weight: bolder;
+}
+
+.projectFactsWrap .item p{
+  color: #c8a97e;
+  font-size: 17px;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Open Sans';
+}
+
+
+@media (max-width: 786px){
+  .projectFactsWrap .item {
+     flex: 0 0 50%;
+  }
+}
+
+</style>
+<body>
+  
+    <div class="Container w-full h-auto">
+      <div class="header w-full  h-auto lg:h-[649px] flex flex-col items-center bg-[#000]">
+        <div class="smallHeader w-full h-auto lg:h-[35px] bg-[#383839] opacity-40 z-[2] hidden lg:flex items-center justify-around">
+          <div class="smallHeaderNum  w-[333px] h-[28px] text-white flex items-center justify-center">
+            <i class="ri-phone-fill pr-[10px]"></i>
+            <p class="text-[14px] font-medium tracking-wide">+ 1235 2355 98</p>
+          </div>
+          <div class="smallHeaderMail w-[333px] h-[28px] text-white flex items-center justify-center">
+            <i class="fa-regular fa-paper-plane pr-[10px]"></i>
+            <p class="text-[14px] font-medium tracking-wide">youremail@email.com</p>
+          </div>
+          <div class="smallHeaderTime w-[475px] h-[28px] text-white flex items-center justify-center">
+            <p class="text-[14px] font-medium tracking-wide">Open hours: Monday - Sunday 8:00AM - 9:00PM</p>
+          </div>
+        </div>
+        <div class="bigHeader w-full h-[70px] bg-transparent z-[2] mt-[12px] mb-[100px] border-b border-[#666] flex items-center justify-between lg:justify-center">
+          <div class="navleft w-[96px] h-[50px] flex items-center justify-center ms-[30px] lg:m-0">
+            <p class="text-[22px] text-white">Feliciano</p>
+          </div>
+          <div class="navright w-[998px] h-[50px] text-white font-medium text-[15px] hidden lg:flex justify-end items-center gap-[30px]">
+            <a href="#" class="active text-[#C8A97E] hover:text-white">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Stories</a>
+            <a href="#">Contact</a>
+            <button class="w-[127px] h-[50px] bg-[#C8A97E] text-white rounded-[5px]">Book a table</button>
+          </div>
+          <div class="hamburger flex lg:hidden mr-[80px] lg:m-0">
+            <i class="fa-solid fa-bars text-[28px] text-red-700"></i>
+          </div>
+        </div>
+
+        <swiper-container class="mySwiper" space-between="30" effect="fade" autoplay-delay="2000" loop="true" speed="900">
+          <swiper-slide class="relative flex items-center justify-center bg-[url('Assets/bg_1.jpg')]">
+              <div class="absolute inset-0 bg-black opacity-70"></div>
+              <div class="heroTtl w-full lg:w-[1140px] h-auto lg:h-[194px] flex flex-col items-center justify-center relative">
+                  <h1 class="logo text-[50px] lg:text-[80px] text-[#c8a97e] text-center leading-[70px]">Feliciano</h1>
+                  <h1 class="text-[40px] lg:text-[60px] text-white font-semibold text-center tracking-widest">BEST RESTAURANT</h1>
+              </div>
+          </swiper-slide>
+          <swiper-slide class="relative flex items-center justify-center bg-[url('Assets/bg_2.jpg')]">
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="heroTtl w-full lg:w-[1140px] h-auto lg:h-[194px] flex flex-col items-center justify-center relative">
+                <h1 class="logo text-[50px] lg:text-[80px] text-[#c8a97e] leading-[70px]">Feliciano</h1>
+                <h1 class=" text-[40px] lg:text-[60px] text-white font-semibold tracking-widest">NUTRITIOUS & TASTY</h1>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="relative flex items-center justify-center bg-[url('Assets/bg_3.jpg')]">
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="heroTtl w-full lg:w-[1140px] h-auto lg:h-[194px] flex flex-col items-center justify-center relative">
+              <h1 class="logo text-[50px] lg:text-[80px] text-[#c8a97e] leading-[70px]">Feliciano</h1>
+              <h1 class="text-[40px] lg:text-[60px] text-white font-semibold tracking-widest">DELICIOUS SPECIALTIES</h1>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+        <div class="heroImg w-full lg:w-[1297px] h-auto lg:h-[206px] bg-transparent z-[2] border-t border-[#666] flex flex-col lg:flex-row flex-wrap items-center justify-center lg:justify-between">
+          <div class="heroImg-1 w-[302px] h-[155px] flex flex-col items-center justify-between">
+            <div class="subheroImg-1 w-[90px] h-[90px] rounded-full">
+              <img src="Assets/breakfast-1.jpg" class="w-[90px] h-[90px] rounded-full">
+            </div>
+            <div class="subheroCont-1 w-[302px] h-[55px] flex flex-col items-center justify-center">
+              <h1 class="text-[18px] text-white font-semibold">Grilled Beef with potatoes</h1>
+              <p class="text-[14px] text-white">Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+          </div>
+          <div class="heroImg-2 w-[302px] h-[155px] flex flex-col items-center justify-between">
+            <div class="subheroImg-2 w-[90px] h-[90px] rounded-full">
+              <img src="Assets/breakfast-2.jpg" class="w-[90px] h-[90px] rounded-full">
+            </div>
+            <div class="subheroCont-3 w-[302px] h-[55px] flex flex-col items-center justify-center">
+              <h1 class="text-[18px] text-white font-semibold">Grilled Beef with potatoes</h1>
+              <p class="text-[14px] text-white">Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+          </div>
+          <div class="heroImg-3 w-[302px] h-[155px] flex flex-col items-center justify-between">
+            <div class="subheroImg-3 w-[90px] h-[90px] rounded-full">
+              <img src="Assets/breakfast-3.jpg" class="w-[90px] h-[90px] rounded-full">
+            </div>
+            <div class="subheroCont-3 w-[302px] h-[55px] flex flex-col items-center justify-center">
+              <h1 class="text-[18px] text-white font-semibold">Grilled Beef with potatoes</h1>
+              <p class="text-[14px] text-white">Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+          </div>
+          <div class="heroImg-4 w-[302px] h-[155px] flex flex-col items-center justify-between">
+            <div class="subheroImg-4 w-[90px] h-[90px] rounded-full">
+              <img src="Assets/breakfast-4.jpg" class="w-[90px] h-[90px] rounded-full">
+            </div>
+            <div class="subheroCont-4 w-[302px] h-[55px] flex flex-col items-center justify-center">
+              <h1 class="text-[18px] text-white font-semibold">Grilled Beef with potatoes</h1>
+              <p class="text-[14px] text-white">Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropmenu w-full h-auto lg:h-[300px] top-[115px] z-[2] fixed flex justify-center">
+        <div class="subDropMenu w-full max-w-[90%] sm:max-w-[80%] md:max-w-[600px] h-auto md:h-[300px] text-black bg-yellow-400 flex flex-col items-center justify-around">
+            <a href="#" class="py-2 text-center w-full">Home</a>
+            <a href="#" class="py-2 text-center w-full">About Us</a>
+            <a href="#" class="py-2 text-center w-full">Rent Venue</a>
+            <a href="#" class="py-2 text-center w-full">Shows & Events</a>
+            <a href="#" class="py-2 text-center w-full">Tickets</a>
+        </div>
+      </div>
+    
+
+      <div class="about w-full h-auto lg:h-[950px] bg-[#FFFFFF] flex flex-col justify-evenly items-center pt-[40px] lg:pt-0">
+          <div class="subAbout w-full lg:w-[1130px] h-auto lg:h-[550px] flex flex-wrap justify-center lg:justify-between" data-aos="fade-up" data-aos-duration="3000">
+            <div class="aboutImg-1 w-[309px] h-[520px] bg-[url('Assets/about.jpg')] bg-cover bg-center bg-no-repeat"></div>
+            <div class="aboutImg-2 w-[309px] h-[520px] self-end bg-[url('Assets/about-1.jpg')] bg-cover bg-center bg-no-repeat mb-[10px] lg:mb-0"></div>
+            <div class="aboutCont w-[475px] h-[450px] self-center flex flex-col justify-between">
+              <div class="aboutContTtl w-[445px] h-[100px] flex items-center ms-[10px]">
+                <h1 class="text-[100px] text-[#c8a97e] p-[70px] lg:ps-0">About</h1>
+              </div>
+              <div class="subAboutContTtl w-[445px] h-[120px] ms-[10px] mt-[-80px]">
+                <h1 class="text-[50px] text-[#333] font-semibold leading-[60px] ps-[70px] lg:ps-0">Feliciano Restaurant</h1>
+              </div>
+              <div class="subAboutCont w-full lg:w-[445px] h-auto lg:h-[166px] ms-0 lg:ms-[10px] flex flex-col justify-between">
+                <p class="text-[17px] text-[#666] leading-[30px] p-[30px] lg:p-0">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p class="text-[17px] text-[#666] ps-[30px] lg:ps-0">Mon - Fri <span class="font-bold">8 AM - 11 PM</span></p>
+              </div>
+              <div class="aboutNum w-[360px] h-[56px] ms-[10px]">
+                <h1 class="text-[40px] text-[#c8a97e] font-bold">+ 1-978-123-4567</h1>
+              </div>
+            </div>
+          </div>
+          <div class="aboutCounter w-full lg:w-[1083px] h-auto lg:h-[180px] flex flex-wrap justify-between mt-[40px] lg:mt-0">
+            <div class="subCounter w-full lg:w-[800px] h-auto lg:h-[180px] flex items-center justify-center" data-aos="fade-up" data-aos-duration="3000">
+              <div id="projectFacts" class="sectionClass w-full lg:w-[800px] h-auto lg:h-[180px] flex items-center">
+                <div class="fullWidth eight columns w-[800px] h-[180px] flex items-center">
+                    <div class="projectFactsWrap flex items-center justify-center lg:justify-between w-full lg:w-[800px] h-auto lg:h-[180px]">
+                        <div class="item wow fadeInUpBig animated animated" data-number="18" style="visibility: visible;">
+                            <p id="number1" class="number">18</p>
+                            <p>Years of Experienced</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="100" style="visibility: visible;">
+                            <p id="number2" class="number">100</p>
+                            <p>Menus/Dish</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="50" style="visibility: visible;">
+                            <p id="number3" class="number">50</p>
+                            <p>Staffs</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="15000" style="visibility: visible;">
+                            <p id="number4" class="number">15,000</p>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="subCounterCont w-full lg:w-[250px] h-auto lg:h-[180px] flex items-center">
+              <p class="text-[17px] text-[#666] leading-[36px] text-center p-[20px] pt-[30px] lg:pt-0">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="services w-full h-auto lg:h-[647px] bg-[#FAFAFA] flex items-center justify-center pt-[40px] lg:pt-0">
+        <div class="subServices w-full lg:w-[1140px] h-auto lg:h-[409px] flex flex-col">
+          <div class="servicesTtl w-full lg:w-[1140px] h-[80px] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <h1 class="text-[60px] lg:text-[100px] text-[#c8a97e]">Services</h1>
+          </div>
+          <div class="subservicesTtl w-full lg:w-[1140px] h-[60px] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <h2 class="text-[30px] lg:text-[50px] text-[#333] font-black mt-[-7%]">Catering Services</h2>
+          </div>
+          <div class="servicesCard w-full lg:w-[1140px] h-auto lg:h-[269px] flex flex-wrap items-center justify-center" data-aos="fade-up" data-aos-duration="3000">
+            <div class="serviceCard-1 w-[380px] h-[255px] flex flex-col items-center justify-between">
+              <div class="serviceIcon-1 w-[350px] h-[70px] flex items-center justify-center">
+                <img src="Assets/cake.png">
+              </div>
+              <div class="serviceCont-1 w-[330px] h-[165px] flex flex-col items-center justify-between">
+                <h1 class="text-[24px] font-medium text-black">Birthday Party</h1>
+                <p class="text-[17px] leading-[34px] text-center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>
+            <div class="serviceCard-2 w-[380px] h-[255px] flex flex-col items-center justify-between">
+              <div class="serviceIcon-2 w-[350px] h-[70px] flex items-center justify-center">
+                <img src="Assets/talk.png">
+              </div>
+              <div class="serviceCont-2 w-[330px] h-[165px] flex flex-col items-center justify-between">
+                <h1 class="text-[24px] font-medium text-black">Business Meetings</h1>
+                <p class="text-[17px] leading-[34px] text-center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>
+            <div class="serviceCard-3 w-[380px] h-[255px] flex flex-col items-center justify-between">
+              <div class="serviceIcon-3 w-[350px] h-[70px] flex items-center justify-center">
+                <img src="Assets/tray.png">
+              </div>
+              <div class="serviceCont-3 w-[330px] h-[165px] flex flex-col items-center justify-between">
+                <h1 class="text-[24px] font-medium text-black">Wedding Party</h1>
+                <p class="text-[17px] leading-[34px] text-center">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu w-full h-auto lg:h-[1086px] bg-[#FFFFFF] flex flex-col items-center justify-center pt-[40px] lg:pt-0">
+        <div class="menuTtl w-full lg:w-[1110px] h-[100px] mt-[-3%] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h1 class="text-[60px] lg:text-[100px] text-[#c8a97e]">Specialties</h1>
+        </div>
+        <div class="subMenuTtl w-full lg:w-[1110px] h-[60px] flex justify-center items-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h2 class="text-[30px] lg:text-[50px] text-[#333] mt-[-9%]">Our Menu</h2>
+        </div>
+        <div class="menuCont w-full lg:w-[1140px] h-auto lg:h-[800px] mt-[-5%] flex justify-center items-end" data-aos="fade-up" data-aos-duration="3000">
+          <div class="subMenuCont w-full lg:w-[1112px] h-auto lg:h-[708px] border border-[#F2F2F2]">
+            <div class="menuCont-1 w-full lg:w-[1112px] h-auto lg:h-[236px] flex flex-wrap justify-center lg:justify-start">
+              <div class="menuContImg w-[278px] h-[236px] bg-[url('Assets/breakfast-1.jpg')] bg-no-repeat bg-center bg-cover"></div>
+              <div class="menuCont w-[278px] h-[236px] border border-[#F2F2F2] flex flex-col items-center justify-center">
+                <div class="subMenuContTtl w-[236px] h-[68px] flex">
+                  <div class="w-[156px] h-[60px]">
+                    <h1 class="text-[20px] text-[#333] font-semibold">Grilled Beef with potatoes</h1>
+                  </div>
+                  <div class="w-[80px] h-[60px] flex justify-end">
+                    <h1 class="text-[20px] text-[#c8a97e] font-semibold">$29</h1>
+                  </div>
+                </div>
+                <div class="subMenuInfo w-[236px] h-[68px] flex items-center">
+                  <p class="text-[17px] text-[#000c]">Meat, Potatoes, Rice, Tomatoe</p>
+                </div>
+                <div class="subMenuBtn w-[236px] h-[38px]">
+                  <button class="w-[109px] h-[38px] bg-[#C8A97E] hover:bg-transparent hover:text-[#C8A97E] border border-[#C8A97E] duration-500 text-[16px] text-white">Order now</button>
+                </div>
+              </div>
+              <div class="menuContImg w-[278px] h-[236px] bg-[url('Assets/breakfast-2.jpg')] bg-no-repeat bg-center bg-cover"></div>
+              <div class="menuCont w-[278px] h-[236px] border border-[#F2F2F2] flex flex-col items-center justify-center">
+                <div class="subMenuContTtl w-[236px] h-[68px] flex">
+                  <div class="w-[156px] h-[60px]">
+                    <h1 class="text-[20px] text-[#333] font-semibold">Grilled Beef with potatoes</h1>
+                  </div>
+                  <div class="w-[80px] h-[60px] flex justify-end">
+                    <h1 class="text-[20px] text-[#c8a97e] font-semibold">$29</h1>
+                  </div>
+                </div>
+                <div class="subMenuInfo w-[236px] h-[68px] flex items-center">
+                  <p class="text-[17px] text-[#000c]">Meat, Potatoes, Rice, Tomatoe</p>
+                </div>
+                <div class="subMenuBtn w-[236px] h-[38px]">
+                  <button class="w-[109px] h-[38px] bg-[#C8A97E] hover:bg-transparent hover:text-[#C8A97E] border border-[#C8A97E] duration-500 text-[16px] text-white">Order now</button>
+                </div>
+              </div>
+            </div>
+            <div class="menuCont-2 w-full lg:w-[1112px] h-auto lg:h-[236px] flex flex-wrap justify-center lg:justify-start">
+              <div class="menuCont w-[278px] h-[236px] border border-[#F2F2F2] flex flex-col items-center justify-center">
+                <div class="subMenuContTtl w-[236px] h-[68px] flex">
+                  <div class="w-[156px] h-[60px]">
+                    <h1 class="text-[20px] text-[#333] font-semibold">Grilled Beef with potatoes</h1>
+                  </div>
+                  <div class="w-[80px] h-[60px] flex justify-end">
+                    <h1 class="text-[20px] text-[#c8a97e] font-semibold">$29</h1>
+                  </div>
+                </div>
+                <div class="subMenuInfo w-[236px] h-[68px] flex items-center">
+                  <p class="text-[17px] text-[#000c]">Meat, Potatoes, Rice, Tomatoe</p>
+                </div>
+                <div class="subMenuBtn w-[236px] h-[38px]">
+                  <button class="w-[109px] h-[38px] bg-[#C8A97E] hover:bg-transparent hover:text-[#C8A97E] border border-[#C8A97E] duration-500 text-[16px] text-white">Order now</button>
+                </div>
+              </div>
+              <div class="menuContImg w-[278px] h-[236px] bg-[url('Assets/breakfast-3.jpg')] bg-no-repeat bg-center bg-cover"></div>
+              <div class="menuCont w-[278px] h-[236px] border border-[#F2F2F2] flex flex-col items-center justify-center">
+                <div class="subMenuContTtl w-[236px] h-[68px] flex">
+                  <div class="w-[156px] h-[60px]">
+                    <h1 class="text-[20px] text-[#333] font-semibold">Grilled Beef with potatoes</h1>
+                  </div>
+                  <div class="w-[80px] h-[60px] flex justify-end">
+                    <h1 class="text-[20px] text-[#c8a97e] font-semibold">$29</h1>
+                  </div>
+                </div>
+                <div class="subMenuInfo w-[236px] h-[68px] flex items-center">
+                  <p class="text-[17px] text-[#000c]">Meat, Potatoes, Rice, Tomatoe</p>
+                </div>
+                <div class="subMenuBtn w-[236px] h-[38px]">
+                  <button class="w-[109px] h-[38px] bg-[#C8A97E] hover:bg-transparent hover:text-[#C8A97E] border border-[#C8A97E] duration-500 text-[16px] text-white">Order now</button>
+                </div>
+              </div>
+              <div class="menuContImg w-[278px] h-[236px] bg-[url('Assets/breakfast-4.jpg')] bg-no-repeat bg-center bg-cover"></div>
+            </div>
+            <div class="menuCont-3 w-full lg:w-[1112px] h-auto lg:h-[236px] flex flex-wrap justify-center lg:justify-start">
+              <div class="menuContImg w-[278px] h-[236px] bg-[url('Assets/breakfast-5.jpg')] bg-no-repeat bg-center bg-cover"></div>
+              <div class="menuCont w-[278px] h-[236px] border border-[#F2F2F2] flex flex-col items-center justify-center">
+                <div class="subMenuContTtl w-[236px] h-[68px] flex">
+                  <div class="w-[156px] h-[60px]">
+                    <h1 class="text-[20px] text-[#333] font-semibold">Grilled Beef with potatoes</h1>
+                  </div>
+                  <div class="w-[80px] h-[60px] flex justify-end">
+                    <h1 class="text-[20px] text-[#c8a97e] font-semibold">$29</h1>
+                  </div>
+                </div>
+                <div class="subMenuInfo w-[236px] h-[68px] flex items-center">
+                  <p class="text-[17px] text-[#000c]">Meat, Potatoes, Rice, Tomatoe</p>
+                </div>
+                <div class="subMenuBtn w-[236px] h-[38px]">
+                  <button class="w-[109px] h-[38px] bg-[#C8A97E] hover:bg-transparent hover:text-[#C8A97E] border border-[#C8A97E] duration-500 text-[16px] text-white">Order now</button>
+                </div>
+              </div>
+              <div class="menuContImg w-[278px] h-[236px] bg-[url('Assets/breakfast-6.jpg')] bg-no-repeat bg-center bg-cover"></div>
+              <div class="menuCont w-[278px] h-[236px] border border-[#F2F2F2] flex flex-col items-center justify-center">
+                <div class="subMenuContTtl w-[236px] h-[68px] flex">
+                  <div class="w-[156px] h-[60px]">
+                    <h1 class="text-[20px] text-[#333] font-semibold">Grilled Beef with potatoes</h1>
+                  </div>
+                  <div class="w-[80px] h-[60px] flex justify-end">
+                    <h1 class="text-[20px] text-[#c8a97e] font-semibold">$29</h1>
+                  </div>
+                </div>
+                <div class="subMenuInfo w-[236px] h-[68px] flex items-center">
+                  <p class="text-[17px] text-[#000c]">Meat, Potatoes, Rice, Tomatoe</p>
+                </div>
+                <div class="subMenuBtn w-[236px] h-[38px]">
+                  <button class="w-[109px] h-[38px] bg-[#C8A97E] hover:bg-transparent hover:text-[#C8A97E] border border-[#C8A97E] duration-500 text-[16px] text-white">Order now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chef w-full h-auto lg:h-[835px] bg-[#FFFFFF] flex flex-col items-center justify-center pt-[40px] lg:pt-0">
+        <div class="chefTtl w-full lg:w-[1140px] h-[100px] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h1 class="text-[60px] lg:text-[100px] text-[#c8a97e]">Chef</h1>
+        </div>
+        <div class="subChefTtl w-full lg:w-[1110px] h-[60px] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h2 class="text-[30px] lg:text-[50px] text-[#333] mt-[-9%]">Our Master Chef</h2>
+        </div>
+        <div class="chefCont w-full lg:w-[1140px] h-auto lg:h-[457px] flex justify-center lg:justify-start flex-wrap" data-aos="fade-up" data-aos-duration="3000">
+          <div class="chefCard-1 w-[285px] h-[457px] flex flex-col items-center">
+            <div class="chefImg w-[255px] h-[320px] bg-[url('Assets/chef-4.jpg')] bg-no-repeat bg-cover rounded-[5px]"></div>
+            <div class="chefNm w-[255px] h-[121px] flex flex-col justify-center">
+              <div class="subchefNum w-[255px] h-[55px] mt-[15px]">
+                <h1 class="text-[18px] text-[#333] font-semibold">John Smooth</h1>
+                <p class="text-[14px] text-[#0000004d]">Restaurant Owner</p>
+              </div>
+              <div class="chefIcon w-[100px] h-[34px] text-[17px] mt-[7px] flex justify-between">
+                <i class="fa-brands fa-twitter" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-google-plus-g" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-instagram" style="color: #c8a97e;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="chefCard-2 w-[285px] h-[457px] flex flex-col items-center">
+            <div class="chefImg w-[255px] h-[320px] bg-[url('Assets/chef-2.jpg')] bg-no-repeat bg-cover rounded-[5px]"></div>
+            <div class="chefNm w-[255px] h-[121px] flex flex-col justify-center">
+              <div class="subchefNum w-[255px] h-[55px] mt-[15px]">
+                <h1 class="text-[18px] text-[#333] font-semibold">Rebeca Welson</h1>
+                <p class="text-[14px] text-[#0000004d]">Head Chef</p>
+              </div>
+              <div class="chefIcon w-[100px] h-[34px] text-[17px] mt-[7px] flex justify-between">
+                <i class="fa-brands fa-twitter" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-google-plus-g" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-instagram" style="color: #c8a97e;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="chefCard-3 w-[285px] h-[457px] flex flex-col items-center">
+            <div class="chefImg w-[255px] h-[320px] bg-[url('Assets/chef-3.jpg')] bg-no-repeat bg-cover rounded-[5px]"></div>
+            <div class="chefNm w-[255px] h-[121px] flex flex-col justify-center">
+              <div class="subchefNum w-[255px] h-[55px] mt-[15px]">
+                <h1 class="text-[18px] text-[#333] font-semibold">Kharl Branyt</h1>
+                <p class="text-[14px] text-[#0000004d]">Chef</p>
+              </div>
+              <div class="chefIcon w-[100px] h-[34px] text-[17px] mt-[7px] flex justify-between">
+                <i class="fa-brands fa-twitter" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-google-plus-g" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-instagram" style="color: #c8a97e;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="chefCard-4 w-[285px] h-[457px] flex flex-col items-center">
+            <div class="chefImg w-[255px] h-[320px] bg-[url('Assets/chef-1.jpg')] bg-no-repeat bg-cover rounded-[5px]"></div>
+            <div class="chefNm w-[255px] h-[121px] flex flex-col justify-center">
+              <div class="subchefNum w-[255px] h-[55px] mt-[15px]">
+                <h1 class="text-[18px] text-[#333] font-semibold">Luke Simon</h1>
+                <p class="text-[14px] text-[#0000004d]">Chef</p>
+              </div>
+              <div class="chefIcon w-[100px] h-[34px] text-[17px] mt-[7px] flex justify-between">
+                <i class="fa-brands fa-twitter" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-google-plus-g" style="color: #c8a97e;"></i>
+                <i class="fa-brands fa-instagram" style="color: #c8a97e;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reservation w-full h-auto lg:h-[838px] pt-[40px] lg:pt-0">
+        <div class="reservationImg w-full h-auto lg:h-[838px] bg-[url('Assets/bg_3.jpg')] bg-no-repeat bg-center bg-cover bg-fixed flex items-center">
+          <div class="subReservation w-full lg:w-[665px] h-auto lg:h-[600px] bg-[#FFFFFF] ms-0 lg:ms-[8%] flex flex-col items-center" data-aos="fade-up" data-aos-duration="3000">
+            <div class="reservationTtl w-full lg:w-[569px] h-[100px] mt-[-4%] flex items-center justify-center">
+              <h1 class="text-[60px] lg:text-[100px] text-[#c8a97e]">Book a table</h1>
+            </div>
+            <div class="reservationSubTtl w-full lg:w-[569px] h-[60px] flex items-center justify-center">
+              <h2 class="text-[30px] lg:text-[50px] text-[#333] mt-[-18%]">Make Reservation</h2>
+            </div>
+            <div class="reservationForm w-full lg:w-[599px] h-auto lg:h-[420px] mt-[-2%] flex flex-col items-center justify-center lg:justify-start">
+              <div class="formDetail-1 w-full lg:w-[598px] h-auto lg:h-[110px] flex flex-wrap">
+                <div class="formName w-full lg:w-[299px] h-auto lg:h-[110px] flex flex-col justify-evenly">
+                  <p class="text-[17px] text-[#000] font-semibold ps-[10px]">Name</p>
+                  <input type="text" placeholder="Your Name" class="w-[269px] h-[52px] ps-[10px] border border-[#E5E5E5] text-[16px] text-[#333] ms-[10px]">
+                </div>
+                <div class="formEmail w-full lg:w-[299px] h-auto lg:h-[110px] flex flex-col justify-evenly">
+                  <p class="text-[17px] text-[#000] font-semibold ps-[10px]">Email</p>
+                  <input type="text" placeholder="Your Email" class="w-[269px] h-[52px] ps-[10px] border border-[#E5E5E5] text-[16px] text-[#333] ms-[10px]">
+                </div>
+              </div>
+              <div class="formDetail-2 w-full lg:w-[598px] h-auto lg:h-[110px] flex flex-wrap">
+                <div class="formName w-full lg:w-[299px] h-auto lg:h-[110px] flex flex-col justify-evenly">
+                  <p class="text-[17px] text-[#000] font-semibold ps-[10px]">Phone</p>
+                  <input type="text" placeholder="Phone" class="w-[269px] h-[52px] ps-[10px] border border-[#E5E5E5] text-[16px] text-[#333] ms-[10px]">
+                </div>
+                <div class="formEmail w-full lg:w-[299px] h-auto lg:h-[110px] flex flex-col justify-evenly">
+                  <p class="text-[17px] text-[#000] font-semibold ps-[10px]">Date</p>
+                  <input type="text" placeholder="Date" class="w-[269px] h-[52px] ps-[10px] border border-[#E5E5E5] text-[16px] text-[#333] ms-[10px]">
+                </div>
+              </div>
+              <div class="formDetail-3 w-full lg:w-[598px] h-auto lg:h-[110px] flex flex-wrap">
+                <div class="formName w-full lg:w-[299px] h-auto lg:h-[110px] flex flex-col justify-evenly">
+                  <p class="text-[17px] text-[#000] font-semibold ps-[10px]">Time</p>
+                  <input type="text" placeholder="Time" class="w-[269px] h-[52px] ps-[10px] border border-[#E5E5E5] text-[16px] text-[#333] ms-[10px]">
+                </div>
+                <div class="formEmail w-full lg:w-[299px] h-auto lg:h-[110px] flex flex-col justify-evenly">
+                  <p class="text-[17px] text-[#000] font-semibold ps-[10px]">Person</p>
+                  <input type="text" placeholder="Person" class="w-[269px] h-[52px] ps-[10px] border border-[#E5E5E5] text-[16px] text-[#333] ms-[10px]">
+                </div>
+              </div>
+              <div class="formDetail-4 w-full lg:w-[569px] h-auto lg:h-[58px] mt-[20px] flex justify-center">
+                <button class="w-[254px] h-[58px] bg-[#C8A97E] border border-[#C8A97E] hover:bg-transparent duration-700 hover:text-[#C8A97E] text-[16px] text-white">Make a Reservation</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial w-full h-auto lg:h-[800px] bg-[#FFFFFF] flex flex-col items-center justify-center pt-[40px] lg:pt-0">
+        <div class="testimonialTtl w-full lg:w-[1140px] h-[100px] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h1 class="text-[60px] lg:text-[100px] text-[#c8a97e]">Testimony</h1>
+        </div>
+        <div class="testimonialSubTtl w-full lg:w-[1140px] h-[84px] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h2 class="text-[30px] lg:text-[50px] text-[#333] mt-[-11%]">Happy Customer</h2>
+        </div>
+        <div class="testimonialClient w-full lg:w-[1050px] h-auto lg:h-[472px] flex flex-wrap justify-center" data-aos="fade-up" data-aos-duration="3000">
+          <div class="client-1 w-[350px] h-[472px] flex flex-col items-center">
+            <div class="clientImg w-[130px] h-[130px] rounded-full">
+              <img src="Assets/person_3.jpg" class="w-[130px] h-[130px] rounded-full">
+            </div>
+            <div class="quotes w-[40px] h-[40px] mt-[-9%] rounded-full ms-[26%] bg-[#C8A97E] flex items-center justify-center">
+              <i class="ri-double-quotes-l text-[25px] text-white"></i>
+            </div>
+            <div class="clientInfo w-full lg:w-[320px] h-auto lg:h-[270px] mt-[30px] flex flex-col items-center">
+              <p class="text-[17px] text-[#666] leading-[34px] text-center mb-[35px] p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h1 class="text-[22px] text-[#000] mb-[15px]">Ian Boner</h1>
+              <p class="text-[12px] text-[#666] font-semibold tracking-widest">CUSTOMER</p>
+            </div>
+          </div>
+          <div class="client-2 w-[350px] h-[472px] flex flex-col items-center">
+            <div class="clientImg w-[130px] h-[130px] rounded-full">
+              <img src="Assets/person_1.jpg" class="w-[130px] h-[130px] rounded-full">
+            </div>
+            <div class="quotes w-[40px] h-[40px] mt-[-9%] rounded-full ms-[26%] bg-[#C8A97E] flex items-center justify-center">
+              <i class="ri-double-quotes-l text-[25px] text-white"></i>
+            </div>
+            <div class="clientInfo w-full lg:w-[320px] h-auto lg:h-[270px] mt-[30px] flex flex-col items-center">
+              <p class="text-[17px] text-[#666] leading-[34px] text-center mb-[35px] p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h1 class="text-[22px] text-[#000] mb-[15px]">Jason McClean</h1>
+              <p class="text-[12px] text-[#666] font-semibold tracking-widest">CUSTOMER</p>
+            </div>
+          </div>
+          <div class="client-3 w-[350px] h-[472px] flex flex-col items-center">
+            <div class="clientImg w-[130px] h-[130px] rounded-full">
+              <img src="Assets/person_2.jpg" class="w-[130px] h-[130px] rounded-full">
+            </div>
+            <div class="quotes w-[40px] h-[40px] mt-[-9%] rounded-full ms-[26%] bg-[#C8A97E] flex items-center justify-center">
+              <i class="ri-double-quotes-l text-[25px] text-white"></i>
+            </div>
+            <div class="clientInfo w-full lg:w-[320px] h-auto lg:h-[270px] mt-[30px] flex flex-col items-center">
+              <p class="text-[17px] text-[#666] leading-[34px] text-center mb-[35px] p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h1 class="text-[22px] text-[#000] mb-[15px]">Mark Stevenson</h1>
+              <p class="text-[12px] text-[#666] font-semibold tracking-widest">CUSTOMER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog w-full h-auto lg:h-[904px] bg-[#FAFAFA] flex flex-col items-center justify-center pt-[40px] lg:pt-0">
+        <div class="blogTtl w-full lg:w-[665px] h-[100px] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h1 class="text-[60px] lg:text-[100px] text-[#c8a97e]">Blog</h1>
+        </div>
+        <div class="blogSubTtl w-full lg:w-[635px] h-[60px] flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h2 class="text-[30px] lg:text-[50px] text-[#333] mt-[-15%]">Recent Posts</h2>
+        </div>
+        <div class="blogCont w-full lg:w-[1140px] h-auto lg:h-[534px] flex flex-wrap justify-center" data-aos="fade-up" data-aos-duration="3000">
+          <div class="post-1 w-[380px] h-[534px] flex flex-col items-center">
+            <div class="postImg w-[350px] h-[300px] bg-[url('Assets/image_1.jpg')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="postCont w-[350px] h-[204px] bg-[#FFFFFF] flex flex-col items-center justify-evenly">
+              <div class="postContTtl w-[302px] h-[96px]">
+                <p class="text-[15px] text-[#ccc] pb-[8px]">Sept. 06, 2019 Admin</p>
+                <h1 class="text-[20px] text-[#000] font-semibold">Taste the delicious foods in Asia</h1>
+              </div>
+              <div class="readMore w-[302px] h-[34px] flex items-center justify-between">
+                <p class="text-[14px] text-[#000]">Read More</p>
+                <i class="ri-message-fill text-[17px] text-[#0000004d]">   3</i>
+              </div>
+            </div>
+          </div>
+          <div class="post-2 w-[380px] h-[534px] flex flex-col items-center">
+            <div class="postImg w-[350px] h-[300px] bg-[url('Assets/image_2.jpg')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="postCont w-[350px] h-[204px] bg-[#FFFFFF] flex flex-col items-center justify-evenly">
+              <div class="postContTtl w-[302px] h-[96px]">
+                <p class="text-[15px] text-[#ccc] pb-[8px]">Sept. 06, 2019 Admin</p>
+                <h1 class="text-[20px] text-[#000] font-semibold">Taste the delicious foods in Asia</h1>
+              </div>
+              <div class="readMore w-[302px] h-[34px] flex items-center justify-between">
+                <p class="text-[14px] text-[#000]">Read More</p>
+                <i class="ri-message-fill text-[17px] text-[#0000004d]">   3</i>
+              </div>
+            </div>
+          </div>
+          <div class="post-3 w-[380px] h-[534px] flex flex-col items-center">
+            <div class="postImg w-[350px] h-[300px] bg-[url('Assets/image_3.jpg')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="postCont w-[350px] h-[204px] bg-[#FFFFFF] flex flex-col items-center justify-evenly">
+              <div class="postContTtl w-[302px] h-[96px]">
+                <p class="text-[15px] text-[#ccc] pb-[8px]">Sept. 06, 2019 Admin</p>
+                <h1 class="text-[20px] text-[#000] font-semibold">Taste the delicious foods in Asia</h1>
+              </div>
+              <div class="readMore w-[302px] h-[34px] flex items-center justify-between">
+                <p class="text-[14px] text-[#000]">Read More</p>
+                <i class="ri-message-fill text-[17px] text-[#0000004d]">   3</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer w-full h-auto lg:h-[551px] bg-[#141313] flex flex-col items-center justify-center ">
+        <div class="subFooter w-full lg:w-[1140px] h-auto lg:h-[300px] flex flex-wrap justify-center">
+          <div class="feliciano w-[285px] h-auto lg:h-[291px]">
+            <div class="felicianoCont w-[255px] h-[179px] ms-[12px]">
+              <h1 class="text-[18px] text-[#fff] font-bold">Feliciano</h1>
+              <p class="text-[14px] text-[#ffffffb3] pt-[40px] leading-[30px]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+            <div class="felicianoIcon w-[150px] h-[49px] ms-[12px] mt-[20px] flex items-center justify-between" data-aos="fade-up" data-aos-duration="3000">
+              <div class="icon-1 w-[40px] h-[40px] bg-[#201F1F] rounded-full flex items-center justify-center">
+                <i class="fa-brands fa-twitter text-[18px]" style="color: #ffffff;"></i>
+              </div>
+              <div class="icon-1 w-[40px] h-[40px] bg-[#201F1F] rounded-full flex items-center justify-center">
+                <i class="fa-brands fa-facebook-f text-[18px]" style="color: #ffffff;"></i>
+              </div>
+              <div class="icon-1 w-[40px] h-[40px] bg-[#201F1F] rounded-full flex items-center justify-center">
+                <i class="fa-brands fa-instagram text-[18px]" style="color: #ffffff;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="hours w-[285px] h-auto lg:h-[291px]">
+            <div class="hoursTtl w-[255px] h-[27px] ms-[12px]">
+              <h1 class="text-[18px] text-[#fff] font-bold">Open Hours</h1>
+            </div>
+            <div class="hoursCont w-[255px] h-[200px] mt-[40px] ms-[12px]">
+              <div class="mon w-[210px] h-[28px] text-[#ffffffb3] flex items-center justify-between">
+                <p class="text-[14px]">Monday</p>
+                <p class="text-[14px]">9:00 - 24:00</p>
+              </div>
+              <div class="tus w-[210px] h-[28px] text-[#ffffffb3] flex items-center justify-between">
+                <p class="text-[14px]">Tuesday</p>
+                <p class="text-[14px]">9:00 - 24:00</p>
+              </div>
+              <div class="wed w-[210px] h-[28px] text-[#ffffffb3] flex items-center justify-between">
+                <p class="text-[14px]">Wednesday</p>
+                <p class="text-[14px]">9:00 - 24:00</p>
+              </div>
+              <div class="thur w-[210px] h-[28px] text-[#ffffffb3] flex items-center justify-between">
+                <p class="text-[14px]">Thursday</p>
+                <p class="text-[14px]">9:00 - 24:00</p>
+              </div>
+              <div class="fri w-[210px] h-[28px] text-[#ffffffb3] flex items-center justify-between">
+                <p class="text-[14px]">Friday</p>
+                <p class="text-[14px]">9:00 - 24:00</p>
+              </div>
+              <div class="sat w-[210px] h-[28px] text-[#ffffffb3] flex items-center justify-between">
+                <p class="text-[14px]">Saturday</p>
+                <p class="text-[14px]">9:00 - 24:00</p>
+              </div>
+              <div class="sun w-[210px] h-[28px] text-[#ffffffb3] flex items-center justify-between">
+                <p class="text-[14px]">Sunday</p>
+                <p class="text-[14px]">9:00 - 24:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="instagram w-[285px] h-auto lg:h-[291px]">
+            <div class="instagramTtl w-[255px] h-[27px] ms-[12px]">
+              <h1 class="text-[18px] text-[#fff] font-bold">Instagram</h1>
+            </div>
+            <div class="instagramImage w-[255px] h-[200px] ms-[12px] mt-[40px]" data-aos="fade-up">
+              <div class="subInstaImg-1 w-[255px] h-[100px] flex">
+                <div class="instaImg-1 w-[85px] h-[100px] bg-[url('Assets/insta-1.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                <div class="instaImg-1 w-[85px] h-[100px] bg-[url('Assets/insta-2.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                <div class="instaImg-1 w-[85px] h-[100px] bg-[url('Assets/insta-3.jpg')] bg-no-repeat bg-cover bg-center"></div>
+              </div>
+              <div class="subInstaImg-2 w-[255px] h-[100px] flex">
+                <div class="instaImg-1 w-[85px] h-[100px] bg-[url('Assets/insta-4.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                <div class="instaImg-1 w-[85px] h-[100px] bg-[url('Assets/insta-5.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                <div class="instaImg-1 w-[85px] h-[100px] bg-[url('Assets/insta-6.jpg')] bg-no-repeat bg-cover bg-center"></div>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter w-[285px] h-auto lg:h-[291px]">
+            <div class="newsletterCont w-[255px] h-[130px] ms-[12px] mb-[10px]">
+              <h1 class="text-[18px] text-[#fff] font-bold">Newsletter</h1>
+              <p class="text-[14px] text-[#ffffffb3] pt-[40px] leading-[30px]">Far far away, behind the word mountains, far from the countries.</p>
+            </div>
+            <div class="newsletterInput w-[255px] h-[52px] ms-[12px]">
+              <input type="email" placeholder="Enter email address"  class="w-[255px] h-[52px] outline-none bg-[#2C2B2B] text-[16px] text-[#ffffffb3] ps-[45px] rounded-[3px]">
+            </div>
+            <div class="newsletterBtn w-[255px] h-[52px] ms-[12px] mt-[10px]">
+              <button class="w-[255px] h-[52px] bg-[#C8A97E] text-[16px] text-[#fff] rounded-[3px]">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="copyright w-full lg:w-[1110px] h-[28px] mt-[40px] flex items-center justify-center">
+          <p class="text-[14px] text-[#ffffffb3] text-center">Copyright ©2024 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #ffffffb3;"></i> by Colorlib</p>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  $.fn.jQuerySimpleCounter = function( options ) {
+  var settings = $.extend({
+      start:  0,
+      end:    100,
+      easing: 'swing',
+      duration: 400,
+      complete: ''
+  }, options );
+
+  var thisElement = $(this);
+
+  $({count: settings.start}).animate({count: settings.end}, {
+  duration: settings.duration,
+  easing: settings.easing,
+  step: function() {
+    var mathCount = Math.ceil(this.count);
+    thisElement.text(mathCount);
+  },
+  complete: settings.complete
+});
+};
+
+
+$('#number1').jQuerySimpleCounter({end: 18,duration: 3000});
+$('#number2').jQuerySimpleCounter({end: 100,duration: 3000});
+$('#number3').jQuerySimpleCounter({end: 50,duration: 3500});
+$('#number4').jQuerySimpleCounter({end: 15000,duration: 2500});
+
+AOS.init();
+
+$(document).ready(function(){
+        $(".subDropMenu").hide()
+        $(".hamburger").click(function(){
+            $(".subDropMenu").toggle()
+        })
+    })
+
+</script>
+</html>

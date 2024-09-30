@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+<body>
+
+    <div class="Container w-full h-auto">
+        <div class="header w-full h-auto lg:h-[1000px] bg-[#1D1F20] flex flex-col items-center justify-evenly">
+            <div class="navmenu w-full lg:w-[1200px] h-[96px] flex flex-col items-center justify-around">
+                <img src="Assets/Jevelin_logo.png">
+                <div class="menu w-[450px] h-[40px] text-[#fff] text-[15px] font-semibold hidden lg:flex items-center justify-between">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">OFFERS</a>
+                    <a href="#">MENU</a>
+                    <a href="#">CONTACT</a>
+                    <i class="ri-shopping-bag-2-line text-[20px]"></i>
+                </div>
+                <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[30px] lg:mr-0">
+                    <i class="fa-solid fa-bars text-[28px] text-[#fff]"></i>
+                </div>
+            </div>
+            <div class="heroSection w-full lg:w-[834px] h-auto lg:h-[834px] pt-[70px] flex flex-col items-center">
+                <div class="heroSubTtl w-full lg:w-[600px] h-[80px] flex items-center mb-[5px]">
+                    <div class="heroImg w-[100px] h-[100px] ps-[20px] pt-[5px]">
+                        <div class="img-1 w-[74px] h-[43px]">
+                            <img src="Assets/Ellipse-732-copy-10.png">
+                        </div>
+                        <div class="img-2 w-[80px] h-[52px] ms-[-10px] mt-[-10px]">
+                            <img src="Assets/Ellipse-732-copy.png">
+                        </div>
+                        <div class="img-3 w-[49px] h-[50px] ms-[30px] mt-[-30px]">
+                            <img src="Assets/Ellipse-732-copy-11.png" alt="">
+                        </div>
+                    </div>
+                    <p class="text-[60px] text-[#FF3939] font-bold text-center lg:text-left">CRISPY <span class="text-[#8F94A6]">TENDER</span></p>
+                </div>
+                <div class="heroMainTtl w-full lg:w-[650px] h-auto lg:h-[150px] flex items-center justify-center">
+                    <h1 class="text-[60px] lg:text-[160px] text-[#fff] font-extrabold leading-[120px] ps-[30px]">BURGER</h1>
+                </div>
+                <img src="Assets/Layer-692.png" class="mt-[-180px]">
+            </div>
+        </div>
+
+        <div class="dropnav w-full h-[300px] bg-black text-[#fff] fixed top-28 flex flex-col justify-around items-center">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">OFFERS</a>
+            <a href="#">MENU</a>
+            <a href="#">CONTACT</a>
+        </div>
+
+        <div class="about w-full h-auto lg:h-[1000px] flex flex-wrap items-center justify-evenly">
+            <div class="aboutImg w-full lg:w-[675px] h-[843px] mt-[10px] lg:mt-0">
+                <img src="Assets/food-photographer-david-fedulov-W1Yi4z375L0-unsplash.jpg" class="rounded-[20px]">
+            </div>
+            <div class="aboutCont w-full lg:w-[600px] h-auto lg:h-[400px]">
+                <button class="w-[93px] h-[25px] bg-[#000] mb-[15px] m-[20px] lg:m-0 rounded-l-full rounded-r-full uppercase text-[#fff] text-[12px]">About Us</button>
+                <div class="w-full lg:w-[530px] h-auto lg:h-[198px] mb-[25px]">
+                    <h1 class="text-[30px] lg:text-[60px] text-[#000] font-bold leading-[66px] p-[20px] lg:p-0">Delivering best ingredients for our trusty food lovers</h1>
+                </div>
+                <div class="w-full lg:w-[530px] h-auto lg:h-[146px]">
+                    <p class="text-[18px] text-[#515050] pb-[12px] p-[20px] lg:p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    <p class="text-[#515050] text-[18px] font-bold p-[20px] lg:p-0">Risus commodo viverra maecenas accumsan lacus lalala vel facilisis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offers w-full h-auto lg:h-[1000px] flex flex-col items-center justify-evenly">
+            <div class="offersTtl w-full lg:w-[1200px] h-[66px]">
+                <h1 class="text-[30px] lg:text-[60px] text-[#000] font-bold leading-[66px] text-center lg:text-left">Special offers</h1>
+            </div>
+            <div class="offersCont w-full lg:w-[1200px] h-auto lg:h-[844px] flex flex-wrap lg:flex-nowrap">
+                <div class="offerSandwich w-full lg:w-[615px] h-auto lg:h-[844px]">
+                    <div class="town w-full lg:w-[460px] h-[34px] mt-[90px] ms-0 lg:ms-[60px] mb-[25px] flex items-end">
+                        <button class="w-[117px] h-[25px] bg-[#FF3939] rounded-[10px] text-[12px] font-bold text-[#fff]">NEW IN TOWN</button>
+                    </div>
+                    <div class="sandwichImg w-full lg:w-[460px] h-[230px] mb-[40px]  lg:ms-[50px]">
+                        <img src="Assets/Hue_Saturation-679.jpg" alt="">
+                    </div>
+                    <div class="sandwichTtl w-full lg:w-[460px] h-[44px] mb-[25px] ms-0 lg:ms-[60px]">
+                        <h1 class="text-[20px] lg:text-[40px] text-[#000] font-bold leading-[44px]">Ham Sandwich</h1>
+                    </div>
+                    <div class="sandwichFat w-full lg:w-[460px] h-[37px] mb-[25px] ms-0 lg:ms-[60px] flex gap-[10px]">
+                        <div class="fat w-[97px] h-[36px] border border-[#e0e0e0] rounded-l-full rounded-r-full flex items-center justify-center">
+                            <p class="text-[14px] text-[#7b7b7b] font-bold">fat 26g</p>
+                        </div>
+                        <div class="sugar w-[119px] h-[36px] border border-[#e0e0e0] rounded-l-full rounded-r-full flex items-center justify-center">
+                            <p class="text-[14px] text-[#7b7b7b] font-bold">sugars 34g</p>
+                        </div>
+                        <div class="carbs w-[113px] h-[36px] border border-[#e0e0e0] rounded-l-full rounded-r-full flex items-center justify-center">
+                            <p class="text-[14px] text-[#7b7b7b] font-bold">carbs 26g</p>
+                        </div>
+                    </div>
+                    <div class="sandwichCont w-full lg:w-[460px] h-auto lg:h-[102px] ms-0 lg:ms-[60px] mb-[30px]">
+                        <p class="text-[18px] text-[#515050] p-[20px] lg:p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                    <div class="sandwichPrice w-full lg:w-[460px] h-auto lg:h-[45px] ms-0 lg:ms-[60px] flex flex-wrap justify-between">
+                        <div class="subPrice w-full lg:w-[215px] h-auto lg:h-[44px] flex items-center">
+                            <h1 class="text-[20px] lg:text-[40px] text-[#000] font-bold">$14</h1>
+                        </div>
+                        <div class="subPricelearn w-full lg:w-[180px] h-auto lg:h-[43px] bg-[#000] hover:bg-[#FF3939] duration-500 rounded-l-full rounded-r-full flex items-center justify-center">
+                            <p class="text-[14px] text-[#fff] font-bold"><span><i class="fa-solid fa-circle-plus text-[#fff]"></i></span>   LEARN MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offerSandwichCont w-full lg:w-[640px] h-auto lg:h-[844px] mt-[40px] lg:mt-0">
+                    <div class="sandwichType w-full lg:w-[630px] h-auto lg:h-[422px] flex flex-wrap items-center justify-around">
+                        <div class="type-1 w-[298px] h-[402px] bg-[#FBF8F6] rounded-[15px] flex flex-col items-center justify-evenly">
+                            <div class="typeImg w-[160px] h-[132px]">
+                                <img src="Assets/Hue_Saturation-679-copy-3.jpg">
+                            </div>
+                            <div class="typeImgTtl w-[170px] h-[59px] text-center flex">
+                                <h1 class="text-[21px] text-[#000] font-bold leading-[29px]">Juicy Beef Burger Meal</h1>
+                            </div>
+                            <div class="typeImgPrice w-[170px] h-[34px] flex items-center justify-center">
+                                <button class="w-[60px] h-[33px] text-[20px] text-[#fff] font-bold bg-[#FF3939] rounded-r-full rounded-l-full">$16</button>
+                            </div>
+                            <div class="typeCart w-[170px] h-[34px] text-[14px] font-bold text-[#000] hover:text-[#ff3939] flex items-center justify-center gap-[5px]">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>Add to cart</p>
+                            </div>
+                        </div>
+                        <div class="type-2 w-[298px] h-[402px] bg-[#FBF8F6] rounded-[15px] flex flex-col items-center justify-evenly">
+                            <div class="typeImg w-[160px] h-[132px]">
+                                <img src="Assets/Hue_Saturation-679-copy-4.jpg">
+                            </div>
+                            <div class="typeImgTtl w-[170px] h-[59px] text-center flex">
+                                <h1 class="text-[21px] text-[#000] font-bold leading-[29px]">Choko Milkshake From Heaven</h1>
+                            </div>
+                            <div class="typeImgPrice w-[170px] h-[34px] flex items-center justify-center">
+                                <button class="w-[60px] h-[33px] text-[20px] text-[#fff] font-bold bg-[#FF3939] rounded-r-full rounded-l-full">$8</button>
+                            </div>
+                            <div class="typeCart w-[170px] h-[34px] text-[14px] font-bold text-[#000] hover:text-[#ff3939] flex items-center justify-center gap-[5px]">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sandwichType w-full lg:w-[630px] h-auto lg:h-[422px] flex flex-wrap items-center justify-around">
+                        <div class="type-1 w-[298px] h-[402px] bg-[#FBF8F6] rounded-[15px] flex flex-col items-center justify-evenly">
+                            <div class="typeImg w-[160px] h-[132px]">
+                                <img src="Assets/Hue_Saturation-679-copy.jpg">
+                            </div>
+                            <div class="typeImgTtl w-[170px] h-[59px] text-center flex">
+                                <h1 class="text-[21px] text-[#000] font-bold leading-[29px]">Blueberry Waffles</h1>
+                            </div>
+                            <div class="typeImgPrice w-[170px] h-[34px] flex items-center justify-center">
+                                <button class="w-[60px] h-[33px] text-[20px] text-[#fff] font-bold bg-[#FF3939] rounded-r-full rounded-l-full">$4</button>
+                            </div>
+                            <div class="typeCart w-[170px] h-[34px] text-[14px] font-bold text-[#000] hover:text-[#ff3939] flex items-center justify-center gap-[5px]">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>Add to cart</p>
+                            </div>
+                        </div>
+                        <div class="type-1 w-[298px] h-[402px] bg-[#FBF8F6] rounded-[15px] flex flex-col items-center justify-evenly">
+                            <div class="typeImg w-[160px] h-[132px]">
+                                <img src="Assets/Hue_Saturation-679-copy-2.jpg">
+                            </div>
+                            <div class="typeImgTtl w-[170px] h-[59px] text-center flex">
+                                <h1 class="text-[21px] text-[#000] font-bold leading-[29px]">Medium Portion of Fries</h1>
+                            </div>
+                            <div class="typeImgPrice w-[170px] h-[34px] flex items-center justify-center">
+                                <button class="w-[60px] h-[33px] text-[20px] text-[#fff] font-bold bg-[#FF3939] rounded-r-full rounded-l-full">$3</button>
+                            </div>
+                            <div class="typeCart w-[170px] h-[34px] text-[14px] font-bold text-[#000] hover:text-[#ff3939] flex items-center justify-center gap-[5px]">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="special w-full h-auto lg:h-[1200px] bg-[#000] flex flex-col justify-center gap-[50px]">
+            <div class="subSpecial w-full lg:w-[1200px] h-auto lg:h-[510px] flex flex-wrap lg:flex-nowrap items-center justify-center">
+                <div class="specialImg w-full lg:w-[675px] h-[503px]">
+                    <img src="Assets/Layer-562.png" alt="">
+                </div>
+                <div class="specialCont w-full lg:w-[530px] h-auto lg:h-[458px] ms-[40px]">
+                    <button class="w-[101px] h-[30px] text-[15px] mb-[30px] text-[#fff] font-bold bg-[#FF3939] rounded-[10px]">-25% OFF</button>
+                    <h1 class="text-[30px] lg:text-[60px] text-[#fff] pb-[45px] font-bold leading-[66px]">Enjoy our specially prepared burgers for you</h1>
+                    <p class="text-[18px] text-[#fff] pb-[30px] font-bold">Don't miss out on our daily special offers</p>
+                    <button class="w-[202px] h-[60px] bg-transparent text-[#fff] text-[18px] font-bold hover:bg-[#FF3939] hover:border-none duration-500 border-2 rounded-r-full rounded-l-full">SEE MENU</button>
+                </div>
+            </div>
+            <div class="subSpecial w-full lg:w-[1240px] h-auto lg:h-[510px] ms-0 lg:ms-[105px] flex flex-wrap lg:flex-nowrap justify-center items-center">
+                <div class="specialCont w-full lg:w-[530px] h-auto lg:h-[458px] ms-0 lg:ms-[40px] order-2 lg:order-1 flex flex-col items-center lg:items-start">
+                    <button class="w-[101px] h-[30px] text-[15px] mb-[30px] text-[#fff] font-bold bg-[#FF3939] rounded-[10px]">-15% OFF</button>
+                    <h1 class="text-[30px] lg:text-[60px] text-[#fff] pb-[45px] font-bold leading-[66px] text-center lg:text-left p-[20px] lg:p-0">New, amazing sandwich offers every day</h1>
+                    <p class="text-[18px] text-[#fff] pb-[30px] font-bold text-center  lg:text-left p-[20px] lg:p-0">Just add some of our juicy side dishes</p>
+                    <button class="w-[202px] h-[60px] bg-transparent text-[#fff] text-[18px] font-bold hover:bg-[#FF3939] hover:border-none duration-500 border-2 rounded-r-full rounded-l-full">SEE MENU</button>
+                </div>
+                <div class="specialImg w-full lg:w-[675px] h-[503px] flex justify-center lg:justify-end lg:order-2">
+                    <img src="Assets/Layer-563.png">
+                </div>
+            </div>    
+        </div>
+
+        <div class="trending w-full h-auto lg:h-[700px] flex flex-col items-center justify-evenly">
+            <div class="trendingTtl w-full lg:w-[1151px] h-[66px]">
+                <h1 class="text-[30px] lg:text-[60px] text-[#000] font-bold text-center lg:text-left leading-[66px]">Trending Burgers</h1>
+            </div>
+            <div class="trendingCont w-full lg:w-[1180px] h-auto lg:h-[507px] flex flex-wrap items-center justify-around">
+                <div class="trending-1 w-[275px] h-[487px] bg-[#FCF8F7] flex flex-col items-center justify-center gap-[15px]">
+                    <div class="trendingImg w-[245px] h-[168px]">
+                        <img src="Assets/burger1.jpg">
+                    </div>
+                    <div class="trendingImgTtl w-[245px] h-[29px]">
+                        <h1 class="text-[26px] text-[#000] font-bold leading-[29px]">Juicy Burger</h1>
+                    </div>
+                    <div class="trendingImgCont w-[245px] h-[97px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="trendingImgPrice w-[245px] h-[34px] flex justify-between">
+                        <div class="price w-[108px] h-[34px]">
+                            <button class="w-[50px] h-[33px] text-[#fff] text-[18px] font-bold bg-[#FF3939] rounded-[12px]">$8</button>
+                        </div>
+                        <div class="cart w-[108px] h-[36px] flex items-center justify-end gap-[5px]">
+                            <i class="fa-solid fa-plus text-[14px] font-bold text-[#000]"></i>
+                            <p class="text-[14px] font-semibold text-[#000]">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-2 w-[275px] h-[487px] bg-[#FCF8F7] flex flex-col items-center justify-center gap-[15px]">
+                    <div class="trendingImg w-[245px] h-[168px]">
+                        <img src="Assets/burger2.jpg">
+                    </div>
+                    <div class="trendingImgTtl w-[245px] h-[29px]">
+                        <h1 class="text-[26px] text-[#000] font-bold leading-[29px]">Juicy Burger</h1>
+                    </div>
+                    <div class="trendingImgCont w-[245px] h-[97px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="trendingImgPrice w-[245px] h-[34px] flex justify-between">
+                        <div class="price w-[108px] h-[34px]">
+                            <button class="w-[50px] h-[33px] text-[#fff] text-[18px] font-bold bg-[#FF3939] rounded-[12px]">$8</button>
+                        </div>
+                        <div class="cart w-[108px] h-[36px] flex items-center justify-end gap-[5px]">
+                            <i class="fa-solid fa-plus text-[14px] font-bold text-[#000]"></i>
+                            <p class="text-[14px] font-semibold text-[#000]">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-3 w-[275px] h-[487px] bg-[#FCF8F7] flex flex-col items-center justify-center gap-[15px]">
+                    <div class="trendingImg w-[245px] h-[168px]">
+                        <img src="Assets/burger3.jpg">
+                    </div>
+                    <div class="trendingImgTtl w-[245px] h-[29px]">
+                        <h1 class="text-[26px] text-[#000] font-bold leading-[29px]">Juicy Burger</h1>
+                    </div>
+                    <div class="trendingImgCont w-[245px] h-[97px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="trendingImgPrice w-[245px] h-[34px] flex justify-between">
+                        <div class="price w-[108px] h-[34px]">
+                            <button class="w-[50px] h-[33px] text-[#fff] text-[18px] font-bold bg-[#FF3939] rounded-[12px]">$8</button>
+                        </div>
+                        <div class="cart w-[108px] h-[36px] flex items-center justify-end gap-[5px]">
+                            <i class="fa-solid fa-plus text-[14px] font-bold text-[#000]"></i>
+                            <p class="text-[14px] font-semibold text-[#000]">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-4 w-[275px] h-[487px] bg-[#FCF8F7] flex flex-col items-center justify-center gap-[15px]">
+                    <div class="trendingImg w-[245px] h-[168px]">
+                        <img src="Assets/burger4.jpg">
+                    </div>
+                    <div class="trendingImgTtl w-[245px] h-[29px]">
+                        <h1 class="text-[26px] text-[#000] font-bold leading-[29px]">Juicy Burger</h1>
+                    </div>
+                    <div class="trendingImgCont w-[245px] h-[97px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="trendingImgPrice w-[245px] h-[34px] flex justify-between">
+                        <div class="price w-[108px] h-[34px]">
+                            <button class="w-[50px] h-[33px] text-[#fff] text-[18px] font-bold bg-[#FF3939] rounded-[12px]">$8</button>
+                        </div>
+                        <div class="cart w-[108px] h-[36px] flex items-center justify-end gap-[5px]">
+                            <i class="fa-solid fa-plus text-[14px] font-bold text-[#000]"></i>
+                            <p class="text-[14px] font-semibold text-[#000]">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="dessert w-full h-auto lg:h-[700px] flex flex-col items-center justify-evenly">
+            <div class="dessertTtl w-full lg:w-[1151px] h-[66px]">
+                <h1 class="text-[30px] lg:text-[60px] text-[#000] font-bold text-center lg:text-left leading-[66px]">Dessert Menu</h1>
+            </div>
+            <div class="dessertCont w-full lg:w-[1180px] h-auto lg:h-[507px] flex flex-wrap items-center justify-around">
+                <div class="dessert-1 w-[275px] h-[487px] bg-[#FCF8F7] flex flex-col items-center justify-center gap-[15px]">
+                    <div class="dessertImg w-[245px] h-[168px]">
+                        <img src="Assets/dessert2.jpg">
+                    </div>
+                    <div class="dessertImgTtl w-[245px] h-[29px]">
+                        <h1 class="text-[26px] text-[#000] font-bold leading-[29px]">Strawberry Mix</h1>
+                    </div>
+                    <div class="dessertImgCont w-[245px] h-[97px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="dessertImgPrice w-[245px] h-[34px] flex justify-between">
+                        <div class="price w-[108px] h-[34px]">
+                            <button class="w-[50px] h-[33px] text-[#fff] text-[18px] font-bold bg-[#FF3939] rounded-[12px]">$8</button>
+                        </div>
+                        <div class="cart w-[108px] h-[36px] flex items-center justify-end gap-[5px]">
+                            <i class="fa-solid fa-plus text-[14px] font-bold text-[#000]"></i>
+                            <p class="text-[14px] font-semibold text-[#000]">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dessert-2 w-[275px] h-[487px] bg-[#FCF8F7] flex flex-col items-center justify-center gap-[15px]">
+                    <div class="dessertImg w-[245px] h-[168px]">
+                        <img src="Assets/dessert1.jpg">
+                    </div>
+                    <div class="dessertImgTtl w-[245px] h-[29px]">
+                        <h1 class="text-[26px] text-[#000] font-bold leading-[29px]">Chocolate Mix</h1>
+                    </div>
+                    <div class="dessertImgCont w-[245px] h-[97px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="dessertImgPrice w-[245px] h-[34px] flex justify-between">
+                        <div class="price w-[108px] h-[34px]">
+                            <button class="w-[50px] h-[33px] text-[#fff] text-[18px] font-bold bg-[#FF3939] rounded-[12px]">$8</button>
+                        </div>
+                        <div class="cart w-[108px] h-[36px] flex items-center justify-end gap-[5px]">
+                            <i class="fa-solid fa-plus text-[14px] font-bold text-[#000]"></i>
+                            <p class="text-[14px] font-semibold text-[#000]">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dessert-3 w-[275px] h-[487px] bg-[#FCF8F7] flex flex-col items-center justify-center gap-[15px]">
+                    <div class="dessertImg w-[245px] h-[168px]">
+                        <img src="Assets/dessert3.jpg">
+                    </div>
+                    <div class="dessertImgTtl w-[245px] h-[29px]">
+                        <h1 class="text-[26px] text-[#000] font-bold leading-[29px]">Apple Pie</h1>
+                    </div>
+                    <div class="dessertImgCont w-[245px] h-[97px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="dessertImgPrice w-[245px] h-[34px] flex justify-between">
+                        <div class="price w-[108px] h-[34px]">
+                            <button class="w-[50px] h-[33px] text-[#fff] text-[18px] font-bold bg-[#FF3939] rounded-[12px]">$8</button>
+                        </div>
+                        <div class="cart w-[108px] h-[36px] flex items-center justify-end gap-[5px]">
+                            <i class="fa-solid fa-plus text-[14px] font-bold text-[#000]"></i>
+                            <p class="text-[14px] font-semibold text-[#000]">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dessert-4 w-[275px] h-[487px] bg-[#FCF8F7] flex flex-col items-center justify-center gap-[15px]">
+                    <div class="dessertImg w-[245px] h-[168px]">
+                        <img src="Assets/dessert4.jpg">
+                    </div>
+                    <div class="dessertImgTtl w-[245px] h-[29px]">
+                        <h1 class="text-[26px] text-[#000] font-bold leading-[29px]">Sunday Waffle</h1>
+                    </div>
+                    <div class="dessertImgCont w-[245px] h-[97px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="dessertImgPrice w-[245px] h-[34px] flex justify-between">
+                        <div class="price w-[108px] h-[34px]">
+                            <button class="w-[50px] h-[33px] text-[#fff] text-[18px] font-bold bg-[#FF3939] rounded-[12px]">$8</button>
+                        </div>
+                        <div class="cart w-[108px] h-[36px] flex items-center justify-end gap-[5px]">
+                            <i class="fa-solid fa-plus text-[14px] font-bold text-[#000]"></i>
+                            <p class="text-[14px] font-semibold text-[#000]">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="testimonial w-full h-auto lg:h-[1000px] flex flex-col md:flex-row items-center justify-evenly">
+            <div class="testimonialImg w-full md:w-[675px] h-auto md:h-[843px]">
+                <img src="Assets/nate-johnston-ozHMc88WgcI-unsplash.jpg" class="rounded-[20px] w-full h-auto">
+            </div>
+            <div class="testimonialCont w-full md:w-[600px] h-auto md:h-[400px] mt-4 md:mt-0 flex flex-col items-center lg:text-left">
+                <button class="w-[125px] h-[25px] bg-[#000] mb-[15px] rounded-full uppercase text-[#fff] text-[12px]">TESTIMONIALS</button>
+                <div class="testimonialTtl w-full md:w-[530px] h-auto md:h-[132px] mb-[25px]">
+                    <h1 class="text-[28px] lg:text-[40px] md:text-[60px] text-[#000] font-bold p-[20px] lg:p-0 leading-[50px] md:leading-[66px]">What our clients have to say</h1>
+                </div>
+                <div class="testimonialIcon w-[66px] h-[66px] border-black">
+                    <i class="fa-solid fa-quote-right text-[#ff3939] text-[40px] md:text-[60px]"></i>
+                </div>
+                <div class="w-full md:w-[530px] h-auto md:h-[146px]">
+                    <p class="text-[16px] md:text-[18px] text-[#515050] pb-[12px] p-[10px] lg:p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    <p class="text-[#000] text-[16px] md:text-[18px] font-bold p-[15px] lg:p-0">- John Doe</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery w-full h-auto lg:h-[337px] flex flex-wrap justify-center">
+            <div class="img-1 w-full lg:w-[337px] h-auto lg:h-[337px]">
+                <img src="Assets/insta2.jpg">
+            </div>
+            <div class="img-2 w-full lg:w-[337px] h-auto lg:h-[337px]">
+                <img src="Assets/insta1.jpg">
+            </div>
+            <div class="img-3 w-full lg:w-[337px] h-auto lg:h-[337px]">
+                <img src="Assets/insta3.jpg">
+            </div>
+            <div class="img-4 w-full lg:w-[337px] h-auto lg:h-[337px]">
+                <img src="Assets/insta4.jpg">
+            </div>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[480px] flex items-center justify-center">
+            <div class="subFooter w-full lg:w-[1200px] h-auto lg:h-[400px] flex flex-wrap justify-center items-center">
+                <div class="jevelin w-full lg:w-[380px] h-auto lg:h-[225px] flex flex-col items-center justify-center gap-[20px]">
+                    <div class="jevelinLogo w-[380px] h-[22px]">
+                        <img src="Assets/Jevelin_logo_dark.png">
+                    </div>
+                    <div class="jevelinCont w-[380px] h-[68px]">
+                        <p class="text-[18px] text-[#515050]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
+                    <div class="jevelinIcon w-[380px] h-[45px] flex gap-[15px]">
+                        <i class="fa-brands fa-instagram text-[25px] text-[#000]"></i>
+                        <i class="fa-brands fa-square-facebook text-[25px] text-[#000]"></i>
+                        <i class="fa-brands fa-twitter text-[25px] text-[#000]"></i>
+                    </div>
+                </div>
+                <div class="contactUs w-full lg:w-[410px] h-auto lg:h-[242px] flex flex-col justify-center items-center">
+                    <div class="contactTtl w-[380px] h-[30px] mt-[30px] mb-[20px]">
+                        <h1 class="text-[26px] text-[#000] font-bold">Contact us</h1>
+                    </div>
+                    <div class="contactCont w-[380px] h-[190px]">
+                        <p class="text-[18px] text-[#515050] pb-[15px]"><span class="text-[#ff3939]"><i class="fa-solid fa-location-dot"></i></span>Street name 1, City</p>
+                        <p class="text-[18px] text-[#515050] pb-[15px]"><span class="text-[#ff3939]"><i class="fa-solid fa-phone"></i></span>+569 2698 0256</p>
+                        <p class="text-[18px] text-[#515050]"><span class="text-[#ff3939]"><i class="fa-solid fa-envelope"></i></span>email@companyname.com</p>
+                    </div>
+                </div>
+                <div class="subscribe w-full lg:w-[410px] h-auto lg:h-[242px]">
+                    <div class="subscribeTtl w-[400px] h-[30px] mt-[20px] mb-[20px]">   
+                        <h1 class="text-[26px] text-[#000] font-bold text-center">Subscribe</h1>
+                    </div>
+                    <input type="text" placeholder="Enter your email here..." class="w-[400px] h-[60px] ps-[130px] outline-none bg-[#F4F4F4] rounded-r-full rounded-l-full">
+                    <button class="w-[400px] h-[60px] text-[18px] text-[#fff] font-bold hover:bg-[#000] duration-500 rounded-r-full rounded-l-full bg-[#FF3939] mt-[12px]">SUBSCRIBE</button>
+                    <p class="text-[#858585] pt-[15px] text-center">Get the latest special offers</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide();
+        $(".hamburger").click(function(){
+            $(".dropnav").fadeToggle();
+        })
+    })
+</script>
+</html>

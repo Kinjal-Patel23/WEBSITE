@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <div class="Container w-full h-auto">
+        <div class="smallHeader w-full h-[40px] bg-[#F0F0F1] hidden sm:flex justify-between items-center px-[10%]">
+            <div class="smallHeaderCont w-full md:w-[250px] h-auto md:h-[20px]">
+                <p class="text-[13px] font-medium">Hey! The Show is Starting in 15 Days.</p>
+            </div>
+            <div class="contactBtn w-full md:w-[180px] h-auto md:h-[20px] flex items-center justify-center gap-[5px]">
+                <button class="text-[14px] transform hover:-translate-x-1 duration-1000">Contact Us Now!</button>
+                <div class="ctnIcon">
+                    <i class="fa-solid fa-arrow-right text-[12px]" style="color: #000000;"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bigHeader w-full h-[80px] flex items-center justify-between px-[10%]">
+            <div class="navleft w-[160px] h-[50px] flex items-center">
+                <h1 class="text-[#656C74] text-[28px] font-extrabold">Art<span class="text-[#2A2A2A]">Xibition</span></h1>
+            </div>
+            <div class="navright w-full lg:w-[500px] h-[50px] mr-[35px]">
+                <div class="navmenu w-full lg:w-[500px] h-[50px] hidden lg:flex items-center justify-between text-[14px] font-medium">
+                    <a href="#" class="active text-[#656C74]">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Rent Venue</a>
+                    <a href="#">Shows & Events</a>
+                    <a href="#">Tickets</a>
+                </div>
+            </div>
+            <div class="hamburger flex lg:hidden">
+                <i class="fa-solid fa-bars text-[28px]"></i>
+            </div>
+        </div>
+
+        <div class="dropmenu w-full h-auto md:h-[300px] z-[2] fixed flex justify-start lg:justify-center">
+            <div class="subDropMenu w-full lg:w-[600px] h-auto md:h-[300px] text-black bg-yellow-400 flex flex-col items-center justify-around">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Rent Venue</a>
+                <a href="#">Shows & Events</a>
+                <a href="#">Tickets</a>
+            </div>
+        </div>
+
+        <div class="heroSection w-full h-auto lg:h-[100vh]">
+            <div class="subHeroSection w-full h-auto lg:h-[100vh] bg-[url('Assets/img-1.jpg')] bg-left bg-no-repeat bg-cover relative flex flex-col items-center">
+                <div class="counter w-full h-[15vh] bg-[#888581] opacity-50 flex items-center justify-center">
+                <div class="sub-counter w-[730px] h-[12vh] flex justify-between">
+                    <div class="num1 w-full lg:w-[150px] h-[12vh] flex flex-col items-center justify-center">
+                        <p class="text-[14px] text-white">Days</p>
+                        <h1 class="text-[37px] md:text-[50px] text-white font-extrabold leading-[50px]">-860</h1>
+                    </div>
+                    <div class="num2 w-full lg:w-[150px] h-[12vh] flex flex-col items-center justify-center">
+                        <p class="text-[14px] text-white">Hours</p>
+                        <h1 class="text-[37px] md:text-[50px] text-white font-extrabold leading-[50px]">-13</h1>
+                    </div>
+                    <div class="num3 w-full lg:w-[150px] h-[12vh] flex flex-col items-center justify-center">
+                        <p class="text-[14px] text-white">Minutes</p>
+                        <h1 class="text-[37px] lg:text-[50px] text-white font-extrabold leading-[50px]">-60</h1>
+                    </div>
+                    <div class="num4 w-full lg:w-[150px] h-[12vh] flex flex-col items-center justify-center">
+                        <p class="text-[14px] text-white">Seconds</p>
+                        <h1 class="text-[37px] lg:text-[50px] text-white font-extrabold leading-[50px]">-23</h1>
+                    </div>
+                </div>
+                </div>
+                <div class="heroSectionTtl w-full lg:w-[900px] h-auto md:h-[180px] mt-[9%] mb-[58px] flex flex-col items-center justify-start lg:justify-between">
+                <p class="text-[14px] text-white">Opening on Thursday, March 31st</p>
+                <h1 class="text-[50px] text-white font-extrabold text-center pb-[20px] lg:pb-0">The Sunny Hill Festival 2022</h1>
+                <button class="w-[160px] h-[45px] bg-white text-[14px] font-medium">Purchase Tickets</button>
+                </div>
+                <!-- <div class="images w-full lg:w-[1100px] h-auto md:h-[185px] mt-[110%] lg:mt-[44%] absolute flex justify-between gap-10 lg:gap-0">
+                <div class="img-1 w-[250px] h-[185px]">
+                    <img src="Assets/img-2.jpg" class="w-full h-auto">
+                </div>
+                <div class="img-2 w-[250px] h-[185px]">
+                    <img src="Assets/img-3.jpg" class="w-full h-auto">
+                </div>
+                <div class="img-3 w-[250px] h-[185px]">
+                    <img src="Assets/img-4.jpg" class="w-full h-auto">
+                </div>
+                <div class="img-4 w-[250px] h-[185px]">
+                    <img src="Assets/img-10.jpg" class="w-full h-auto">
+                </div>
+            </div> -->
+                <div class="images w-full flex flex-wrap justify-center gap-4 px-4">
+                <div class="img-1 w-full sm:w-[250px] h-[185px] flex-shrink-0">
+                    <img src="Assets/img-2.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="img-2 w-full sm:w-[250px] h-[185px] flex-shrink-0">
+                    <img src="Assets/img-3.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="img-3 w-full sm:w-[250px] h-[185px] flex-shrink-0">
+                    <img src="Assets/img-4.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="img-4 w-full sm:w-[250px] h-[185px] flex-shrink-0">
+                    <img src="Assets/img-10.jpg" class="w-full h-full object-cover">
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="venues w-full h-auto lg:h-[140vh] flex flex-col items-center justify-between">
+            <div class="subVenue w-full lg:w-[1100px] h-auto lg:h-[260px] mt-[80px] flex flex-col md:flex-row justify-between px-[55px] lg:px-0">
+                <div class="subVenueCont w-full lg:w-[860px] h-auto lg:h-[260px] flex flex-col">
+                    <h1 class="text-[30px] font-extrabold text-[#2A2A2A] pb-[18px]">Three Amazing Venues for events</h1>
+                    <p class="text-[15px] text-[#757575] pb-[25px]">ArtXibition Event Template is brought to you by Tooplate website and it included total 7 HTML pages. These are <span class="text-[#409CFF]">Homepage, About, Rent a venue, shows & events, event details, tickets,</span> and <span class="text-[#409CFF]">ticket details.</span> You can feel free to modify any page as you like. If you have any question, please visit our Contact page.</p>
+                    <p class="text-[15px] text-[#757575] pb-[25px] lg:pb-0">You can use this event template for your commercial or business website. You are not permitted to redistribute this template ZIP file on any template download website. If you need the latest HTML templates, you may visit <span class="text-[#409CFF]">Too CSS</span> website that features a great collection of templates in different categories.</p>
+                </div>
+                <div class="location w-[150px] h-[200px] pt-[8px]">
+                    <h1 class="text-[22px] text-[#2A2A2A] font-extrabold pb-[18px]">Visit Us</h1>
+                    <p class="text-[14px] text-[#757575] pb-[8px]">5 College St NW,
+                        Norcross, GA 30071
+                        United States
+                    </p>
+                    <p class="text-[14px] text-[#757575] font-medium">Need Directions?</p>
+                </div>
+            </div>
+            <div class="subVenueImage w-full h-auto lg:h-[465px]">
+                <img src="Assets/img-5.jpg">
+            </div>
+        </div>
+
+        <div class="tickets w-full h-auto lg:h-[930px] flex flex-col items-center justify-around">
+            <div class="ticketsTtl w-full lg:w-[700px] h-[80px] flex items-center justify-center">
+                <h1 class="text-[30px] font-extrabold text-center text-[#2A2A2A]">Our Venues & Tickets</h1>
+            </div>
+            <div class="ticketCont w-full lg:w-[1290px] h-auto lg:h-[900px] flex flex-col lg:flex-row justify-between mt-[20px]">
+                <div class="ticketCont-1 w-full lg:w-[410px] h-auto lg:h-[770px] mb-4 lg:mb-0 px-[35px] lg:px-0">
+                    <div class="ticketImg-1 w-full lg:w-[410px] h-[425px]">
+                        <img src="Assets/img-9.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <div class="ticketImgCont-1 w-full lg:w-[410px] h-[345px] flex">
+                        <div class="subSmallCont w-full lg:w-[125px] h-[345px] bg-[#6C737B] flex items-center justify-center">
+                            <div class="w-[118px] h-[68px] bg-white -rotate-90 flex items-center">
+                                <p class="text-[#535553] font-medium text-center">Purchase Tickets</p>
+                            </div>
+                        </div>
+                        <div class="subBigCont w-full lg:w-[285px] h-auto lg:h-[345px] bg-[#656C74] ps-[15px] flex flex-col justify-evenly">
+                            <div class="bigContTtl w-[full] md:w-[270px] h-auto md:h-[130px]">
+                                <h1 class="text-[22px] text-white font-bold">Radio City Musical Hall</h1>
+                                <p class="text-white pt-[18px]">Lorem ipsum dolor sit amet, consectetur vinzi iscing elit, sed doers kontra.</p>
+                            </div>
+                            <div class="bigContIcon w-full md:w-[120px] h-auto md:h-[40px] flex justify-between">
+                                <div class="bigIcon-1 w-[54px] h-[40px] text-white flex items-center justify-between">
+                                    <i class="fa fa-sitemap"></i>
+                                    <p class="text-[17px] font-medium">250</p>
+                                </div>
+                                <div class="bigIcon-2 w-[50px] h-[40px] text-white flex items-center justify-between">
+                                    <i class="fa fa-user"></i>
+                                    <p class="text-[17px] font-medium">500</p>
+                                </div>
+                            </div>
+                            <div class="bigContPrice w-full md:w-[120px] h-auto md:h-[90px] text-white bg-[#6C737B] px-[20px] flex flex-col justify-center">
+                                <p class="font-medium">1 ticket</p>
+                                <p class="font-medium">from <span class="text-[20px] font-extrabold">$45</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticketCont-2 w-full lg:w-[410px] h-auto lg:h-[800px] mb-4 lg:mb-0 px-[35px] lg:px-0">
+                    <div class="ticketImg-2 w-full lg:w-[410px] h-[425px]">
+                        <img src="Assets/img-11.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <div class="ticketImgCont-2 w-full lg:w-[410px] h-[375px] flex">
+                        <div class="subSmallCont w-full lg:w-[125px] h-[375px] bg-[#6C737B] flex items-center justify-center">
+                            <div class="w-[118px] h-[68px] bg-white -rotate-90 flex items-center">
+                                <p class="text-[#535553] font-medium text-center">Purchase Tickets</p>
+                            </div>
+                        </div>
+                        <div class="subBigCont w-full lg:w-[285px] h-auto lg:h-[375px] bg-[#656C74] ps-[15px] flex flex-col justify-evenly">
+                            <div class="bigContTtl w-full md:w-[240px] h-auto md:h-[150px]">
+                                <h1 class="text-[22px] text-white font-bold">Madison Square Garden</h1>
+                                <p class="text-white pt-[18px]">Lorem ipsum dolor sit amet, consectetur vinzi iscing elit, sed doers kontra.</p>
+                            </div>
+                            <div class="bigContIcon w-full md:w-[120px] h-auto md:h-[40px] flex justify-between">
+                                <div class="bigIcon-1 w-[54px] h-[40px] text-white flex items-center justify-between">
+                                    <i class="fa fa-sitemap"></i>
+                                    <p class="text-[17px] font-medium">450</p>
+                                </div>
+                                <div class="bigIcon-2 w-[50px] h-[40px] text-white flex items-center justify-between">
+                                    <i class="fa fa-user"></i>
+                                    <p class="text-[17px] font-medium">650</p>
+                                </div>
+                            </div>
+                            <div class="bigContPrice w-full md:w-[120px] h-auto md:h-[90px] text-white bg-[#6C737B] px-[20px] flex flex-col justify-center">
+                                <p class="font-medium">1 ticket</p>
+                                <p class="font-medium">from <span class="text-[20px] font-extrabold">$55</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticketCont-3 w-full lg:w-[410px] h-auto lg:h-[770px] mb-4 lg:mb-0 px-[35px] lg:px-0">
+                    <div class="ticketImg-3 w-full lg:w-[410px] h-[425px]">
+                        <img src="Assets/img-8.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <div class="ticketImgCont-3 w-full lg:w-[410px] h-[345px] flex">
+                        <div class="subSmallCont w-full lg:w-[125px] h-[345px] bg-[#6C737B] flex items-center justify-center">
+                            <div class="w-[118px] h-[68px] bg-white -rotate-90 flex items-center">
+                                <p class="text-[#535553] font-medium text-center">Purchase Tickets</p>
+                            </div>
+                        </div>
+                        <div class="subBigCont w-full lg:w-[285px] h-auto lg:h-[345px] bg-[#656C74] ps-[15px] flex flex-col justify-evenly">
+                            <div class="bigContTtl w-full md:w-[270px] h-auto md:h-[130px]">
+                                <h1 class="text-[22px] text-white font-bold">Royce Hall</h1>
+                                <p class="text-white pt-[18px]">Lorem ipsum dolor sit amet, consectetur vinzi iscing elit, sed doers kontra.</p>
+                            </div>
+                            <div class="bigContIcon w-full md:w-[120px] h-auto md:h-[40px] flex justify-between">
+                                <div class="bigIcon-1 w-[54px] h-[40px] text-white flex items-center justify-between">
+                                    <i class="fa fa-sitemap"></i>
+                                    <p class="text-[17px] font-medium">450</p>
+                                </div>
+                                <div class="bigIcon-2 w-[50px] h-[40px] text-white flex items-center justify-between">
+                                    <i class="fa fa-user"></i>
+                                    <p class="text-[17px] font-medium">750</p>
+                                </div>
+                            </div>
+                            <div class="bigContPrice w-full md:w-[120px] h-auto md:h-[90px] text-white bg-[#6C737B] px-[20px] flex flex-col justify-center">
+                                <p class="font-medium">1 ticket</p>
+                                <p class="font-medium">from <span class="text-[20px] font-extrabold">$65</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="discover w-full h-auto lg:h-[730px]">
+            <div class="sub-discover-1 w-full h-auto lg:h-[630px] flex">
+                <div class="discoverTtl w-[120px] h-[630px] bg-[#6C737B] hidden lg:flex items-center justify-center">
+                    <div class="w-[100px] h-[68px] bg-white -rotate-90 flex items-center">
+                        <p class="text-[#535553] font-medium text-center">Discover More</p>
+                    </div>
+                </div>
+                <div class="discoverImg w-full lg:w-[1229px] h-auto lg:h-[630px] bg-[#656C74] flex flex-col lg:flex-row items-center gap-[30px]">
+                    <div class="discoverImg-1 w-full lg:w-[350px] h-auto lg:h-[400px] flex flex-col px-[35px] lg:px-0">
+                        <div class="discoverImage w-full lg:w-[350px] h-[220px]">
+                            <img src="Assets/img-12.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div class="discoverImgCont w-full lg:w-[350px] h-[180px] bg-[#FFFFFF] flex flex-col justify-end">
+                            <div class="subDiscoverCont-1 w-full md:w-[350px] h-auto md:h-[50px] flex justify-center">
+                                <h1 class="text-[#2A2A2A] text-[22px] font-extrabold">Radio City Musical Hall</h1>
+                            </div>
+                            <div class="subDiscoverCont-2 w-full md:w-[350px] h-auto md:h-[110px] flex flex-col items-center">
+                                <div class="time w-[250px] h-[40px] flex items-center">
+                                    <i class="fa-regular fa-clock" style="color: #858b9d;"></i>
+                                    <p class="ps-[7px] text-[15px] text-[#535553]">Tuesday: 15:30-19:30</p>
+                                </div>
+                                <div class="location w-[250px] h-[40px] flex items-center">
+                                    <i class="fa-solid fa-location-dot" style="color: #858b9d;"></i>
+                                    <p class="ps-[7px] text-[15px] text-[#535553]">Copacabana Beach, Rio de Janeiro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discoverImg-2 w-full lg:w-[350px] h-auto lg:h-[400px] flex flex-col px-[35px] lg:px-0">
+                        <div class="discoverImage w-full lg:w-[350px] h-[220px]">
+                            <img src="Assets/img-7.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div class="discoverImgCont w-full lg:w-[350px] h-[180px] bg-[#FFFFFF] flex flex-col justify-end">
+                            <div class="subDiscoverCont-1 w-full md:w-[350px] h-auto md:h-[50px] flex justify-center">
+                                <h1 class="text-[#2A2A2A] text-[22px] font-extrabold">Madison Square Garden</h1>
+                            </div>
+                            <div class="subDiscoverCont-2 w-full md:w-[350px] h-auto md:h-[110px] flex flex-col items-center">
+                                <div class="time w-[250px] h-[40px] flex items-center">
+                                    <i class="fa-regular fa-clock" style="color: #858b9d;"></i>
+                                    <p class="ps-[7px] text-[15px] text-[#535553]">Wednesday: 08:00-14:00</p>
+                                </div>
+                                <div class="location w-[250px] h-[40px] flex items-center">
+                                    <i class="fa-solid fa-location-dot" style="color: #858b9d;"></i>
+                                    <p class="ps-[7px] text-[15px] text-[#535553]">Copacabana Beach, Rio de Janeiro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discoverImg-3 w-full lg:w-[350px] h-auto lg:h-[400px] flex flex-col px-[35px] lg:px-0 mb-[30px] lg:mb-0">
+                        <div class="discoverImage w-full lg:w-[350px] h-[220px]">
+                            <img src="Assets/img-6.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div class="discoverImgCont w-full lg:w-[350px] h-[180px] bg-[#FFFFFF] flex flex-col items-center justify-end">
+                            <div class="subDiscoverCont-1 w-full md:w-[250px] h-auto md:h-[50px] flex">
+                                <h1 class="text-[#2A2A2A] text-[22px] font-extrabold">Royce Hall</h1>
+                            </div>
+                            <div class="subDiscoverCont-2 w-full md:w-[350px] h-auto md:h-[110px] flex flex-col items-center">
+                                <div class="time w-[250px] h-[40px] flex items-center">
+                                    <i class="fa-regular fa-clock" style="color: #858b9d;"></i>
+                                    <p class="ps-[7px] text-[15px] text-[#535553]">Thursday: 09:00-23:00</p>
+                                </div>
+                                <div class="location w-[250px] h-[40px] flex items-center">
+                                    <i class="fa-solid fa-location-dot" style="color: #858b9d;"></i>
+                                    <p class="ps-[7px] text-[15px] text-[#535553]">Copacabana Beach, Rio de Janeiro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-discover-2 w-full h-auto lg:h-[100px] bg-[#7C838B] flex flex-col lg:flex-row items-center justify-center">
+                <div class="newsletter w-full lg:w-[365px] h-[60px] flex justify-center lg:justify-start items-center">
+                    <p class="text-white text-[18px] font-bold">Subscribe Our Newsletter:</p>
+                </div>
+                <div class="email w-full lg:w-[530px] h-[60px] flex justify-center lg:justify-start items-center">
+                    <input type="text" placeholder="Your Email Adderess" class="w-[530px] h-[40px] outline-none text-[14px] bg-transparent px-[10px] text-white placeholder:text-center lg:placeholder:text-left placeholder:text-white border-b">
+                </div>
+                <div class="discoverBtn w-[150px] h-[45px] bg-[#343A3E] mt-[10px] ms-[20px] hover:bg-[#656C74] duration-600 flex items-center justify-center">
+                    <button class="text-white font-medium">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer w-full lg:h-[470px] flex flex-col items-center justify-between">
+            <div class=" w-full lg:w-[1140px] h-auto lg:h-[340px] flex flex-col lg:flex-row justify-between">
+                <div class="address w-full lg:w-[300px] h-auto lg:h-[320px] flex flex-col items-center lg:items-start">
+                    <h1 class="text-[20px] text-[#2A2A2A] font-bold pb-[20px] pt-[50px]">Sunny Hill Festival Address</h1>
+                    <p class="text-[15px] leading-[25px] text-[#757575] pb-[30px] lg:pb-[90px]">5 College St NW, <br>
+                        Norcross, GA 30071 <br>
+                        United States
+                    </p>
+                    <p class="text-[15px] text-[#757575]">São Conrado, Rio de Janeiro</p>
+                </div>
+                <div class="link w-full lg:w-[300px] h-auto lg:h-[320px] flex flex-col items-center justify-center lg:justify-start">
+                    <h1 class="text-[20px] text-[#2A2A2A] font-bold pb-[20px] pt-[50px]">Useful Links</h1>
+                    <a href="#" class="text-[#757575]">Info</a>
+                    <a href="#" class="text-[#757575]">Venues</a>
+                    <a href="#" class="text-[#757575]">Guides</a>
+                    <a href="#" class="text-[#757575]">Videos</a>
+                    <a href="#" class="text-[#757575]">Outreach</a>
+                </div>
+                <div class="hours w-full lg:w-[300px] h-auto lg:h-[320px] flex flex-col items-center lg:items-end">
+                    <h1 class="text-[20px] text-[#2A2A2A] font-bold pb-[20px] pt-[50px]">Open Hours</h1>
+                    <p class="text-[15px] text-[#757575]">Mon to Fri: 10:00 AM to 8:00 PM</p>
+                    <p class="text-[15px] text-[#757575]">Sat - Sun: 11:00 AM to 4:00 PM</p>
+                    <p class="text-[15px] text-[#757575] pb-[30px] lg:pb-[90px]">Holidays: Closed</p>
+                    <p class="text-[15px] text-[#757575]">Copyright 2021 ArtXibition Company</p>
+                    <p class="text-[15px] text-[#757575]">Design: <span class="text-[#81BEFF] font-medium">Tooplate</span></p>
+                </div>
+            </div>
+            <div class="line w-full lg:w-[1140px] h-[1px] bg-[#C1C1C1]"></div>
+            <div class="icons w-full lg:w-[1140px] h-auto lg:h-[100px] flex flex-col lg:flex-row justify-between items-center">
+                <div class="logo w-full lg:w-[250px] h-[70px] flex items-center justify-center lg:justify-start">
+                    <h1 class="text-[28px] font-extrabold text-[#656C74]">Art<span class="text-[#2A2A2A]">Xibition</span></h1>
+                </div>
+                <div class="menu w-full lg:w-[450px] h-auto lg:h-[70px] text-[#656C74] px-[30px] lg:px-0 font-semibold flex flex-wrap justify-around lg:justify-between items-center">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Rent Venue</a>
+                    <a href="#">Shows & Events</a>
+                    <a href="#">Tickets</a>
+                </div>
+                <div class="iconImg w-[160px] h-[70px] flex items-center justify-between">
+                    <div class="twitter w-[35px] h-[35px] rounded-full bg-[#2A2A2A] flex items-center justify-center">
+                        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="twitter w-[35px] h-[35px] rounded-full bg-[#2A2A2A] flex items-center justify-center">
+                        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="twitter w-[35px] h-[35px] rounded-full bg-[#2A2A2A] flex items-center justify-center">
+                        <i class="fa-brands fa-behance" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="twitter w-[35px] h-[35px] rounded-full bg-[#2A2A2A] flex items-center justify-center">
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".subDropMenu").hide()
+        $(".hamburger").click(function(){
+            $(".subDropMenu").toggle()
+        })
+    })
+</script>
+</html>

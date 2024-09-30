@@ -1,0 +1,670 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">   
+</head>
+<style>
+    body{
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+<body>
+    <div class="Container w-full h-auto">
+        <div class="header w-full h-[105px] flex items-center justify-center">
+            <div class="subHeader w-full lg:w-[1170px] h-[65px] p-[20px] flex items-center justify-between">
+                <div class="headerLogo w-[95px] h-[26px]">
+                    <img src="Assets/logo.png">
+                </div>
+                <div class="headerRight w-[679px] h-[65px] hidden lg:flex justify-end gap-[20px]">
+                    <div class="workingTime w-[277px] h-[65px] flex items-center justify-between">
+                        <div class="clock w-[45px] h-[45px] -rotate-45 border border-[#a3a3a3] flex items-center justify-center">
+                            <i class="fa-regular fa-clock rotate-45 text-[#F6783A]"></i>
+                        </div>
+                        <div class="clockCont w-[212px] h-[42px] flex flex-col justify-center">
+                            <p class="text-[12px] text-[#020031] font-medium uppercase">Working time:</p>
+                            <p class="text-[13px] text-[#636363]">Monday - Friday: 08 AM - 06 PM</p>
+                        </div>
+                    </div>
+                    <div class="find w-[329px] h-[65px] flex items-center justify-between">
+                        <div class="location w-[45px] h-[45px] -rotate-45 border border-[#a3a3a3] flex items-center justify-center">
+                            <i class="ri-map-pin-line rotate-45 text-[#F6783A] text-[20px]"></i>
+                        </div>
+                        <div class="locationCont w-[260px] h-[42px] flex flex-col justify-center">
+                            <p class="text-[12px] text-[#020031] font-medium uppercase">Find us:</p>
+                            <p class="text-[13px] text-[#636363]">40 Baria Street 133/2, New York City, USM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hamburger flex lg:hidden mr-[40px] lg:mr-0">
+                    <i class="fa-solid fa-bars text-[28px] text-[#000]"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropNavbar w-full h-auto lg:h-[500px] top-24 fixed flex items-center justify-end">
+            <div class="subDropNavbar w-[550px] h-[500px] bg-[#020031] text-[#fff] rounded-[10px] flex flex-col items-center justify-around">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">EVENT</a>
+                <a href="#">COURSES</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </div>
+        
+        <div class="menuHeader w-full h-[70px] bg-[#020031] flex items-center justify-center">
+            <div class="subMenuHeader w-full lg:w-[1140px] h-[70px] flex justify-end lg:justify-between">
+                <div class="menu w-[538px] h-[70px] text-[13px] text-[#fff] font-medium hidden lg:flex">
+                    <a href="#" class="w-[77px] h-[70px] flex items-center justify-center bg-[#F6783A] duration-500">HOME</a>
+                    <a href="#" class="w-[104px] h-[70px] flex items-center justify-center hover:bg-[#F6783A] duration-500">ABOUT US</a>
+                    <a href="#" class="w-[82px] h-[70px] flex items-center justify-center hover:bg-[#F6783A] duration-500">EVENT</a>
+                    <a href="#" class="w-[101px] h-[70px] flex items-center justify-center hover:bg-[#F6783A] duration-500">COURSES</a>
+                    <a href="#" class="w-[74px] h-[70px] flex items-center justify-center hover:bg-[#F6783A] duration-500">BLOG</a>
+                    <a href="#" class="w-[100px] h-[70px] flex items-center justify-center hover:bg-[#F6783A] duration-500">CONTACT</a>
+                </div>
+                <div class="menuIcon w-[120px] lg:w-[94px] h-[70px] text-[#fff] flex items-center justify-around">
+                    <i class="ri-search-line text-[18px]"></i>
+                    <i class="ri-shopping-cart-2-fill text-[18px] pr-[50px] lg:pr-0"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="heroSection w-full h-auto lg:h-[760px] bg-[url('Assets/1(5).jpg')] bg-no-repeat bg-center bg-cover flex items-center">
+            <div class="subHeroSection w-full lg:w-[780px] h-auto lg:h-[354px] ms-0 lg:ms-[90px]">
+                <p class="font-medium text-[#f6783a] uppercase tracking-widest ps-[15px] pb-[30px]">Award Winning UNIVERSITY</p>
+                <h1 class="text-[25px] lg:text-[48px] text-[#fff] font-medium leading-[58px] uppercase ps-[15px] pb-[20px]">An investment in knowledge pays the best interest.</h1>
+                <p class="text-[#fff] leading-[32px] ps-[15px] pb-[45px]">Education is not just about going to school and getting a degree. It's about widening your
+                    knowledge and absorbing the truth about life. Knowledge is power.</p>
+                <button class="w-[170px] h-[50px] text-[14px] text-[#fff] uppercase font-medium bg-[#F6783A] rounded-l-full rounded-r-full ms-[15px]">Get Started</button>
+            </div>
+        </div>
+
+        <div class="nextCourse w-full h-auto lg:h-[162px] bg-[#020031] flex items-center justify-center">
+            <div class="subNextCourse w-full max-w-[1171px] h-auto lg:h-[82px] flex flex-col lg:flex-row">
+                <div class="courseNm w-full lg:w-[683px] h-auto flex items-center gap-[15px] mb-4 lg:mb-0">
+                    <div class="courseImg w-[71px] h-[71px] rounded-full bg-[#fff] flex items-center justify-center">
+                        <i class="fa fa-graduation-cap text-[30px] text-[#f6783a]"></i>
+                    </div>
+                    <div class="courseImgCont w-full lg:w-[563px] h-auto flex flex-col justify-between">
+                        <h1 class="text-[18px] sm:text-[20px] font-medium text-[#fff]">NEXT COURSE: Sales & Marketing Alignment</h1>
+                        <p class="text-[14px] text-[#fff]">07:00 PM - 09:00 PM</p>
+                    </div>
+                </div>
+                <div class="courseTime w-full lg:w-[488px] h-auto flex justify-between sm:justify-end items-center">
+                    <div class="days w-[72px] lg:w-[100px] h-[71px] border-r border-[#35335A] flex flex-col items-center justify-center">
+                        <h1 class="text-[28px] sm:text-[36px] text-[#fff] font-medium">00</h1>
+                        <p class="text-[12px] sm:text-[16px] text-[#fff]">DAYS</p>
+                    </div>
+                    <div class="hours w-[72px] lg:w-[100px] h-[71px] border-r flex flex-col items-center justify-center">
+                        <h1 class="text-[28px] sm:text-[36px] text-[#fff] font-medium">00</h1>
+                        <p class="text-[12px] sm:text-[16px] text-[#fff]">HOURS</p>
+                    </div>
+                    <div class="mins w-[72px] lg:w-[100px] h-[71px] border-r flex flex-col items-center justify-center">
+                        <h1 class="text-[28px] sm:text-[36px] text-[#fff] font-medium">00</h1>
+                        <p class="text-[12px] sm:text-[16px] text-[#fff]">MINS</p>
+                    </div>
+                    <div class="secs w-[72px] lg:w-[100px] h-[71px] flex flex-col items-center justify-center">
+                        <h1 class="text-[28px] sm:text-[36px] text-[#fff] font-medium">00</h1>
+                        <p class="text-[12px] sm:text-[16px] text-[#fff]">SECS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="services w-full h-auto lg:h-[632px] flex items-center justify-center">
+            <div class="subServices w-full lg:w-[1170px] h-auto lg:h-[480px] flex flex-col justify-between items-center">
+                <div class="servicesTtl w-full lg:w-[1140px] h-[78px] flex flex-col items-center justify-center mb-[30px] lg:mb-0">
+                    <h1 class="text-[30px] text-[#111] font-medium pb-[20px]">OUR SERVICES</h1>
+                    <p class="text-[14px] text-[#636363]">We provides the opportunity to prepare for life</p>
+                </div>
+                <div class="servicesCont w-full lg:w-[1170px] h-auto lg:h-[320px] flex flex-col justify-between">
+                    <div class="subServicesCont w-full lg:w-[1170px] h-auto lg:h-[127px] flex flex-wrap justify-center gap-[20px] lg:gap-0">
+                        <div class="service-1 w-[390px] h-[127px] flex">
+                            <div class="serviceIcon w-[45px] h-[45px] ms-[15px]">
+                                <img src="Assets/1(6).png">
+                            </div>
+                            <div class="serviceIconCont w-[285px] h-[111px] ms-[25px]">
+                                <h1 class="text-[24px] text-[#111] pb-[10px]">Art Studio</h1>
+                                <p class="text-[14px] text-[#636363]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                            </div>
+                        </div>
+                        <div class="service-2 w-[390px] h-[127px] flex">
+                            <div class="serviceIcon w-[45px] h-[45px] ms-[15px]">
+                                <img src="Assets/2(6).png">
+                            </div>
+                            <div class="serviceIconCont w-[285px] h-[111px] ms-[25px]">
+                                <h1 class="text-[24px] text-[#111] pb-[10px]">Great Facility</h1>
+                                <p class="text-[14px] text-[#636363]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                            </div>
+                        </div>
+                        <div class="service-3 w-[390px] h-[127px] flex">
+                            <div class="serviceIcon w-[45px] h-[45px] ms-[15px]">
+                                <img src="Assets/3(4).png">
+                            </div>
+                            <div class="serviceIconCont w-[285px] h-[111px] ms-[25px]">
+                                <h1 class="text-[24px] text-[#111] pb-[10px]">Activity Hub</h1>
+                                <p class="text-[14px] text-[#636363]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subServicesCont w-full lg:w-[1170px] h-auto lg:h-[127px] flex flex-wrap justify-center gap-[20px] lg:gap-0">
+                        <div class="service-4 w-[390px] h-[127px] flex">
+                            <div class="serviceIcon w-[45px] h-[45px] ms-[15px]">
+                                <img src="Assets/4(4).png">
+                            </div>
+                            <div class="serviceIconCont w-[285px] h-[111px] ms-[25px]">
+                                <h1 class="text-[24px] text-[#111] pb-[10px]">Fully Qualified</h1>
+                                <p class="text-[14px] text-[#636363]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                            </div>
+                        </div>
+                        <div class="service-5 w-[390px] h-[127px] flex">
+                            <div class="serviceIcon w-[45px] h-[45px] ms-[15px]">
+                                <img src="Assets/5(3).png">
+                            </div>
+                            <div class="serviceIconCont w-[285px] h-[111px] ms-[25px]">
+                                <h1 class="text-[24px] text-[#111] pb-[10px]">Flexible Schedule</h1>
+                                <p class="text-[14px] text-[#636363]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                            </div>
+                        </div>
+                        <div class="service-6 w-[390px] h-[127px] flex">
+                            <div class="serviceIcon w-[45px] h-[45px] ms-[15px]">
+                                <img src="Assets/6(3).png">
+                            </div>
+                            <div class="serviceIconCont w-[285px] h-[111px] ms-[25px]">
+                                <h1 class="text-[24px] text-[#111] pb-[10px]">Chemistry Lab</h1>
+                                <p class="text-[14px] text-[#636363]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="enrollment relative w-full h-auto lg:h-[633px] bg-[url('Assets/enroll-bg.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-center">
+            <div class="absolute inset-0 bg-black opacity-80"></div>
+            <div class="subEnrollment relative w-full lg:w-[1170px] h-auto lg:h-[453px] flex justify-between">
+                <div class="enrollmentCont w-full lg:w-[488px] h-auto lg:h-[453px] flex flex-col items-center justify-between">
+                    <div class="enrollTtl w-full lg:w-[458px] h-[78px] mb-[20px] lg:mb-0">
+                        <h1 class="text-[30px] text-[#fff] text-center lg:text-left font-medium pb-[14px]">ENROLLMENT</h1>
+                        <p class="text-[14px] text-[#fff] text-center lg:text-left ">Get started with us to explore the exciting</p>
+                    </div>
+                    <div class="enrollCont w-full lg:w-[458px] h-auto lg:h-[318px] flex m-[40px] lg:m-0">
+                        <div class="circle w-[40px] h-[300px] flex flex-col items-center">
+                            <div class="circle-1 w-[40px] h-[40px] bg-[#F6783A] rounded-full flex items-center justify-center">
+                                <h1 class="text-[18px] text-[#fff] font-medium">1</h1>
+                            </div>
+                            <div class="h-[60px] border-l border-dashed mt-[6px] mb-[6px] border-gray-400"></div>
+                            <div class="circle-2 w-[40px] h-[40px] bg-[#F6783A] rounded-full flex items-center justify-center">
+                                <h1 class="text-[18px] text-[#fff] font-medium">2</h1>
+                            </div>
+                            <div class="h-[60px] border-l border-dashed mt-[6px] mb-[6px] border-gray-400"></div>
+                            <div class="circle-3 w-[40px] h-[40px] bg-[#F6783A] rounded-full flex items-center justify-center">
+                                 <h1 class="text-[18px] text-[#fff] font-medium">3</h1>
+                            </div>
+                        </div>
+                        <div class="circleCont w-full lg:w-[388px] h-auto lg:h-[300px] ms-[30px]">
+                            <div class="contact w-full lg:w-[388px] h-auto lg:h-[110px]">
+                                <h1 class="text-[20px] text-[#fff] pb-[12px]">Contact</h1>
+                                <p class="text-[14px] text-[#fff]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
+                            </div>
+                            <div class="consulting w-full lg:w-[388px] h-auto lg:h-[110px]">
+                                <h1 class="text-[20px] text-[#fff] pb-[12px]">Consulting</h1>
+                                <p class="text-[14px] text-[#fff]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
+                            </div>
+                            <div class="register w-full lg:w-[388px] h-auto lg:h-[110px]">
+                                <h1 class="text-[20px] text-[#fff] pb-[12px]">Register</h1>
+                                <p class="text-[14px] text-[#fff]">Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enrollmentImg w-[585px] h-[419px] hidden lg:flex">
+                    <img src="Assets/encroll-img.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="courses w-full h-auto lg:h-[1234px] flex items-center justify-center">
+            <div class="subCourses w-full lg:w-[1170px] h-auto lg:h-[1050px] flex flex-col items-center">
+                <div class="coursesTtl w-full lg:w-[1140px] h-[78px] flex flex-col items-center">
+                    <h1 class="text-[30px] text-[#111] font-medium pb-[12px]">OUR COURSES</h1>
+                    <p class="text-[14px] text-[#636363]">Building a better world, one course at a time</p>
+                </div>
+                <div class="coursesCont w-full lg:w-[1170px] h-auto lg:h-[428px] flex flex-wrap items-center justify-center mt-auto mb-[50px]">
+                    <div class="business w-[390px] h-[428px] flex flex-col items-center">
+                        <div class="businessImg w-[360px] h-[243px]">
+                            <img src="Assets/1 (1).jpg">
+                        </div>
+                        <div class="businessNm w-[360px] h-[40px] flex justify-center mt-[-20px] mb-[22px]">
+                            <button class="w-[140px] h-[40px] bg-[#F6783A] rounded-l-full rounded-r-full">
+                                <p class="text-[13px] text-[#fff] font-bold uppercase tracking-wider">Business</p>
+                            </button>
+                        </div>
+                        <div class="businessCont w-[360px] h-[140px] flex flex-col justify-between">
+                            <div class="businessDate w-[360px] h-[21px] flex items-center justify-center gap-[7px]">
+                                <i class="fa-regular fa-clock text-[14px] text-[#f6783a]"></i>
+                                <p class="text-[14px] text-[#f6783a]">22 Mar 2018</p>
+                            </div>
+                            <div class="businessInfo w-[360px] h-[62px]">
+                                <h1 class="text-[24px] text-[#111] text-center leading-[30px]">Certificate Course in Writing for a Global Market</h1>
+                            </div>
+                            <div class="businessPrice w-[360px] h-[46px] flex items-center justify-center">
+                                <p class="text-[14px] text-[#b7b7b7] font-medium"><span class="text-[24px] font-normal text-[#f6783a]">$100</span>/month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marketing w-[390px] h-[428px] flex flex-col items-center">
+                        <div class="marketingImg w-[360px] h-[243px]">
+                            <img src="Assets/2 (1).jpg">
+                        </div>
+                        <div class="marketingNm w-[360px] h-[40px] flex justify-center mt-[-20px] mb-[22px]">
+                            <button class="w-[140px] h-[40px] bg-[#F6783A] rounded-l-full rounded-r-full">
+                                <p class="text-[13px] text-[#fff] font-bold uppercase tracking-wider">Marketing</p>
+                            </button>
+                        </div>
+                        <div class="marketingCont w-[360px] h-[140px] flex flex-col justify-between">
+                            <div class="marketingDate w-[360px] h-[21px] flex items-center justify-center gap-[7px]">
+                                <i class="fa-regular fa-clock text-[14px] text-[#f6783a]"></i>
+                                <p class="text-[14px] text-[#f6783a]">22 Mar 2018</p>
+                            </div>
+                            <div class="marketingInfo w-[390px] h-[62px]">
+                                <h1 class="text-[24px] text-[#111] text-center leading-[30px]">Google AdWords: Get More Customers with Search Marketing</h1>
+                            </div>
+                            <div class="marketingPrice w-[360px] h-[46px] flex items-center justify-center">
+                                <p class="text-[14px] text-[#b7b7b7] font-medium"><span class="text-[24px] font-normal text-[#f6783a]">$150</span>/month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design w-[390px] h-[428px] flex flex-col items-center">
+                        <div class="designImg w-[360px] h-[243px]">
+                            <img src="Assets/3(3).jpg">
+                        </div>
+                        <div class="designNm w-[360px] h-[40px] flex justify-center mt-[-20px] mb-[22px]">
+                            <button class="w-[140px] h-[40px] bg-[#F6783A] rounded-l-full rounded-r-full">
+                                <p class="text-[13px] text-[#fff] font-bold uppercase tracking-wider">Design</p>
+                            </button>
+                        </div>
+                        <div class="designCont w-[360px] h-[140px] flex flex-col justify-between">
+                            <div class="designDate w-[360px] h-[21px] flex items-center justify-center gap-[7px]">
+                                <i class="fa-regular fa-clock text-[14px] text-[#f6783a]"></i>
+                                <p class="text-[14px] text-[#f6783a]">22 Mar 2018</p>
+                            </div>
+                            <div class="designInfo w-[360px] h-[62px]">
+                                <h1 class="text-[24px] text-[#111] text-center leading-[30px]">The Ultimate Drawing Course Beginner to Advanced</h1>
+                            </div>
+                            <div class="designPrice w-[360px] h-[46px] flex items-center justify-center">
+                                <p class="text-[14px] text-[#b7b7b7] font-medium"><span class="text-[24px] font-normal text-[#f6783a]">$180</span>/month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coursesCont w-full lg:w-[1170px] h-auto lg:h-[428px] flex flex-wrap items-center justify-center">
+                    <div class="database w-[390px] h-[428px] flex flex-col items-center">
+                        <div class="databaseImg w-[360px] h-[243px]">
+                            <img src="Assets/4(3).jpg">
+                        </div>
+                        <div class="databaseNm w-[360px] h-[40px] flex justify-center mt-[-20px] mb-[22px]">
+                            <button class="w-[140px] h-[40px] bg-[#F6783A] rounded-l-full rounded-r-full">
+                                <p class="text-[13px] text-[#fff] font-bold uppercase tracking-wider">Database</p>
+                            </button>
+                        </div>
+                        <div class="databaseCont w-[360px] h-[140px] flex flex-col justify-between">
+                            <div class="databaseDate w-[360px] h-[21px] flex items-center justify-center gap-[7px]">
+                                <i class="fa-regular fa-clock text-[14px] text-[#f6783a]"></i>
+                                <p class="text-[14px] text-[#f6783a]">22 Mar 2018</p>
+                            </div>
+                            <div class="databaseInfo w-[360px] h-[62px]">
+                                <h1 class="text-[24px] text-[#111] text-center leading-[30px]">Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</h1>
+                            </div>
+                            <div class="databasePrice w-[360px] h-[46px] flex items-center justify-center">
+                                <p class="text-[14px] text-[#b7b7b7] font-medium"><span class="text-[24px] font-normal text-[#f6783a]">$150</span>/month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program w-[390px] h-[428px] flex flex-col items-center">
+                        <div class="programImg w-[360px] h-[243px]">
+                            <img src="Assets/5(2).jpg">
+                        </div>
+                        <div class="programNm w-[360px] h-[40px] flex justify-center mt-[-20px] mb-[22px]">
+                            <button class="w-[140px] h-[40px] bg-[#F6783A] rounded-l-full rounded-r-full">
+                                <p class="text-[13px] text-[#fff] font-bold uppercase tracking-wider">Program</p>
+                            </button>
+                        </div>
+                        <div class="programCont w-[360px] h-[140px] flex flex-col justify-between">
+                            <div class="programDate w-[360px] h-[21px] flex items-center justify-center gap-[7px]">
+                                <i class="fa-regular fa-clock text-[14px] text-[#f6783a]"></i>
+                                <p class="text-[14px] text-[#f6783a]">22 Mar 2018</p>
+                            </div>
+                            <div class="programInfo w-[360px] h-[62px]">
+                                <h1 class="text-[24px] text-[#111] text-center leading-[30px]">Web Developer Bootcamp Make web applications</h1>
+                            </div>
+                            <div class="programPrice w-[360px] h-[46px] flex items-center justify-center">
+                                <p class="text-[14px] text-[#b7b7b7] font-medium"><span class="text-[24px] font-normal text-[#f6783a]">$250</span>/month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business w-[390px] h-[428px] flex flex-col items-center">
+                        <div class="businessImg w-[360px] h-[243px]">
+                            <img src="Assets/6(2).jpg">
+                        </div>
+                        <div class="businessNm w-[360px] h-[40px] flex justify-center mt-[-20px] mb-[22px]">
+                            <button class="w-[140px] h-[40px] bg-[#F6783A] rounded-l-full rounded-r-full">
+                                <p class="text-[13px] text-[#fff] font-bold uppercase tracking-wider">Business</p>
+                            </button>
+                        </div>
+                        <div class="businessCont w-[360px] h-[140px] flex flex-col justify-between">
+                            <div class="programDate w-[360px] h-[21px] flex items-center justify-center gap-[7px]">
+                                <i class="fa-regular fa-clock text-[14px] text-[#f6783a]"></i>
+                                <p class="text-[14px] text-[#f6783a]">22 Mar 2018</p>
+                            </div>
+                            <div class="businessInfo w-[360px] h-[62px]">
+                                <h1 class="text-[24px] text-[#111] text-center leading-[30px]">How to Start an Amazon FBA Store on a Tight Budget</h1>
+                            </div>
+                            <div class="businessPrice w-[360px] h-[46px] flex items-center justify-center">
+                                <p class="text-[14px] text-[#b7b7b7] font-medium"><span class="text-[24px] font-normal text-[#f6783a]">$150</span>/month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="counter relative w-full h-[650px] lg:h-[258px] bg-[url('Assets/fact-bg.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-center">
+            <div class="absolute inset-0 bg-black opacity-85"></div>
+            <div class="subCounter relative w-full lg:w-[1170px] h-[78px] flex flex-wrap lg:flex-nowrap items-center justify-center">
+                <div class="years w-[293px] h-[78px] flex items-center justify-center gap-[15px]">
+                    <div class="yearsImg w-[48px] h-[48px] flex items-center justify-center">
+                        <i class="ri-vip-crown-line text-[48px] text-[#fff]"></i>
+                    </div>
+                    <div class="yearsNum w-[48px] h-[60px] flex flex-col items-center justify-center">
+                        <h1 class="text-[36px] text-[#f6783a]">50</h1>
+                        <p class="text-[14px] uppercase text-[#fff]">years</p>
+                    </div>
+                </div>
+                <div class="teachers w-[293px] h-[78px] flex items-center justify-center gap-[25px] mt-4 lg:mt-0">
+                    <div class="teachersImg w-[48px] h-[48px] flex items-center justify-center">
+                        <i class="ri-briefcase-line text-[48px] text-[#fff]"></i>
+                    </div>
+                    <div class="teachersNum w-[48px] h-[60px] flex flex-col items-center justify-center">
+                        <h1 class="text-[36px] text-[#f6783a]">80</h1>
+                        <p class="text-[14px] uppercase text-[#fff]">teachers</p>
+                    </div>
+                </div>
+                <div class="students w-[293px] h-[78px] flex items-center justify-center gap-[24px] mt-4 lg:mt-0">
+                    <div class="studentsImg w-[48px] h-[48px] flex items-center justify-center">
+                        <i class="ri-user-3-line text-[48px] text-[#fff]"></i>
+                    </div>
+                    <div class="studentsNum w-[48px] h-[60px] flex flex-col items-center justify-center">
+                        <h1 class="text-[36px] text-[#f6783a]">500</h1>
+                        <p class="text-[14px] uppercase text-[#fff]">students</p>
+                    </div>
+                </div>
+                <div class="lessons w-[293px] h-[78px] flex items-center justify-center gap-[30px] mt-4 lg:mt-0">
+                    <div class="lessonsImg w-[48px] h-[48px] flex items-center justify-center">
+                        <i class="fa-regular fa-pen-to-square text-[42px] text-[#fff]"></i>
+                    </div>
+                    <div class="lessonsNum w-[48px] h-[60px] flex flex-col items-center justify-center">
+                        <h1 class="text-[36px] text-[#f6783a]">800+</h1>
+                        <p class="text-[14px] uppercase text-[#fff]">lessons</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="events w-full h-auto lg:h-[889px] flex items-center justify-center">
+            <div class="subEvents w-full lg:w-[1170px] h-auto lg:h-[709px] flex flex-col items-center justify-around">
+                <div class="eventsTtl w-full lg:w-[1140px] h-[78px] flex flex-col items-center justify-center">
+                    <h1 class="text-[30px] text-[#111] font-medium text-center lg:text-left pb-[10px]">OUR EVENTS</h1>
+                    <p class="text-[14px] text-[#636363] text-center lg:text-left">Our department initiated a series of events</p>
+                </div>
+                <div class="eventsCont w-full lg:w-[1170px] h-auto lg:h-[511px] flex flex-wrap justify-center">
+                    <div class="event-1 w-full lg:w-[585px] h-auto lg:h-[511px] flex flex-col items-center mb-[30px] lg:mb-0">
+                        <div class="eventImg w-full lg:w-[555px] h-[312px]">
+                            <img src="Assets/1 (2).jpg">
+                        </div>
+                        <div class="eventDate w-full lg:w-[555px] h-[44px] mb-[20px] mt-[-22px] flex justify-center">
+                            <button class="w-[170px] h-[44px] bg-[#F6783A] rounded-r-full rounded-l-full">
+                                <p class="text-[#fff] font-bold">24 MAR 2018</p>
+                            </button>
+                        </div>
+                        <div class="eventCont w-full lg:w-[555px] h-auto lg:h-[140px] flex flex-col justify-between">
+                            <div class="eventDetail w-full lg:w-[555px] h-auto lg:h-[58px] text-center">
+                                <h1 class="text-[24px] text-[#111] leading-[29px] p-[20px] lg:p-0">The dos and don'ts of writing a personal statement for languages</h1>
+                            </div>
+                            <div class="eventTime w-full lg:w-[555px] h-auto lg:h-[22px] flex justify-center">
+                                <i class="ri-calendar-line text-[#f6783a] text-[14px]"></i>
+                                <p class="text-[14px] text-[#636363] ps-[8px]"> 08:00 AM - 10:00 AM</p>
+                                <i class="ri-map-pin-line text-[#f6783a] text-[14px] ps-[15px]"></i>
+                                <p class="text-[14px] text-[#636363] ps-[7px]">Center Building, Block A</p>
+                            </div>
+                            <div class="eventRegister w-full lg:w-[555px] h-auto lg:h-[15px] flex items-center justify-center">
+                                <p class="text-[13px] text-[#b7b7b7] font-medium uppercase tracking-widest">register<span class="text-[#f6783a]"><i class="ri-arrow-right-double-line"></i></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-1 w-full lg:w-[585px] h-auto lg:h-[511px] flex flex-col items-center">
+                        <div class="eventImg w-full lg:w-[555px] h-[312px]">
+                            <img src="Assets/2 (2).jpg">
+                        </div>
+                        <div class="eventDate w-full lg:w-[555px] h-auto lg:h-[44px] mb-[20px] mt-[-22px] flex justify-center">
+                            <button class="w-[170px] h-[44px] bg-[#F6783A] rounded-r-full rounded-l-full">
+                                <p class="text-[#fff] font-bold">22 MAR 2018</p>
+                            </button>
+                        </div>
+                        <div class="eventCont w-full lg:w-[555px] h-auto lg:h-[140px] flex flex-col justify-between">
+                            <div class="eventDetail w-full lg:w-[555px] h-auto lg:h-[58px] text-center">
+                                <h1 class="text-[24px] text-[#111] leading-[29px] p-[20px] lg:p-0">University interview tips: <br> confidence won't make up for flannel</h1>
+                            </div>
+                            <div class="eventTime w-full lg:w-[555px] h-auto lg:h-[22px] flex justify-center">
+                                <i class="ri-calendar-line text-[#f6783a] text-[14px]"></i>
+                                <p class="text-[14px] text-[#636363] ps-[8px]"> 08:00 AM - 10:00 AM</p>
+                                <i class="ri-map-pin-line text-[#f6783a] text-[14px] ps-[15px]"></i>
+                                <p class="text-[14px] text-[#636363] ps-[7px]">Center Building, Block A</p>
+                            </div>
+                            <div class="eventRegister w-full lg:w-[555px] h-auto lg:h-[15px] flex items-center justify-center">
+                                <p class="text-[13px] text-[#b7b7b7] font-medium uppercase tracking-widest">register<span class="text-[#f6783a]"><i class="ri-arrow-right-double-line"></i></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery w-full h-auto flex flex-wrap lg:flex-nowrap items-center justify-center">
+            <div class="img-1 w-full lg:w-[332px] h-[337px] bg-[url('Assets/1(3).jpg')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="img-2 w-full lg:w-[332px] h-auto lg:h-[337px] flex flex-col">
+                <div class="w-full lg:w-[332px] h-[169px] flex">
+                    <div class="w-1/2 lg:w-[166px] h-[169px] bg-[url('Assets/2(3).jpg')] bg-no-repeat bg-cover bg-center"></div>
+                    <div class="w-1/2 lg:w-[166px] h-[169px] bg-[url('Assets/3(1).jpg')] bg-no-repeat bg-cover bg-center"></div>
+                </div>
+                <div class="w-full lg:w-[332px] h-[169px] bg-[url('Assets/4(1).jpg')] bg-no-repeat bg-cover bg-center"></div>
+            </div>
+            <div class="img-3 w-full lg:w-[332px] h-auto lg:h-[337px] flex flex-col">
+                <div class="w-full lg:w-[332px] h-[169px] bg-[url('Assets/5(1).jpg')] bg-no-repeat bg-cover bg-center"></div>
+                <div class="w-full lg:w-[332px] h-[169px] flex">
+                    <div class="w-1/2 lg:w-[166px] h-[169px] bg-[url('Assets/6(1).jpg')] bg-no-repeat bg-cover bg-center"></div>
+                    <div class="w-1/2 lg:w-[166px] h-[169px] bg-[url('Assets/7.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                </div>
+            </div>
+            <div class="img-4 w-full lg:w-[332px] h-[337px] bg-[url('Assets/8.jpg')] bg-no-repeat bg-cover bg-center"></div>
+        </div>
+
+        <div class="news w-full h-auto flex items-center justify-center p-4">
+            <div class="subNews w-full max-w-[1170px] h-auto flex flex-col items-center">
+                <div class="newsTtl w-full max-w-[1140px] h-auto flex flex-col items-center mb-20">
+                    <h1 class="text-[24px] md:text-[30px] text-[#111] font-medium pb-[10px]">LATEST NEWS</h1>
+                    <p class="text-[12px] md:text-[14px] text-[#636363]">Get latest breaking news & top stories today</p>
+                </div>
+                <div class="newsCont w-full flex flex-wrap justify-center gap-4 mt-auto mb-[80px]">
+                    <div class="newsDetail w-full max-w-[550px] flex flex-col md:flex-row justify-between">
+                        <div class="newsImg w-full md:w-[230px] h-[170px] bg-[url('Assets/1(4).jpg')] bg-no-repeat bg-center bg-cover"></div>
+                        <div class="newsImgCont w-full md:w-[297px] h-auto flex flex-col justify-between mt-4 md:mt-0">
+                            <div class="newsImgContTtl">
+                                <h1 class="text-[18px] md:text-[22px] text-[#111] leading-[24px] md:leading-[31px]">Parents who try to be their children’s best friends</h1>
+                            </div>
+                            <div class="newsContDate flex items-center">
+                                <i class="fa-regular fa-calendar text-[12px] text-[#f6783a]"></i>
+                                <p class="text-[12px] text-[#b7b7b7] ps-[6px]">24 Mar 2018</p>
+                                <i class="fa-solid fa-user text-[12px] text-[#f6783a] ps-[14px]"></i>
+                                <p class="text-[12px] text-[#b7b7b7] ps-[6px]">Owen Wilson</p>
+                            </div>
+                            <div class="newsSubCont">
+                                <p class="text-[12px] md:text-[14px] text-[#636363]">Integer luctus diam ac scelerisque consectetur. Vimus dot euismod neganeco lacus sit amet...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsDetail w-full max-w-[550px] flex flex-col md:flex-row justify-between">
+                        <div class="newsImg w-full md:w-[230px] h-[170px] bg-[url('Assets/2(4).jpg')] bg-no-repeat bg-center bg-cover"></div>
+                        <div class="newsImgCont w-full md:w-[297px] h-auto flex flex-col justify-between mt-4 md:mt-0">
+                            <div class="newsImgContTtl">
+                                <h1 class="text-[18px] md:text-[22px] text-[#111] leading-[24px] md:leading-[31px]">Graduations could be delayed as external examiners</h1>
+                            </div>
+                            <div class="newsContDate flex items-center">
+                                <i class="fa-regular fa-calendar text-[12px] text-[#f6783a]"></i>
+                                <p class="text-[12px] text-[#b7b7b7] ps-[6px]">23 Mar 2018</p>
+                                <i class="fa-solid fa-user text-[12px] text-[#f6783a] ps-[14px]"></i>
+                                <p class="text-[12px] text-[#b7b7b7] ps-[6px]">Owen Wilson</p>
+                            </div>
+                            <div class="newsSubCont">
+                                <p class="text-[12px] md:text-[14px] text-[#636363]">Integer luctus diam ac scelerisque consectetur. Vimus dot euismod neganeco lacus sit amet...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsDetail w-full max-w-[550px] flex flex-col md:flex-row justify-between">
+                        <div class="newsImg w-full md:w-[230px] h-[170px] bg-[url('Assets/3(2).jpg')] bg-no-repeat bg-center bg-cover"></div>
+                        <div class="newsImgCont w-full md:w-[297px] h-auto flex flex-col justify-between mt-4 md:mt-0">
+                            <div class="newsImgContTtl">
+                                <h1 class="text-[18px] md:text-[22px] text-[#111] leading-[24px] md:leading-[31px]">Private schools adopt a Ucas style application system</h1>
+                            </div>
+                            <div class="newsContDate flex items-center">
+                                <i class="fa-regular fa-calendar text-[12px] text-[#f6783a]"></i>
+                                <p class="text-[12px] text-[#b7b7b7] ps-[6px]">24 Mar 2018</p>
+                                <i class="fa-solid fa-user text-[12px] text-[#f6783a] ps-[14px]"></i>
+                                <p class="text-[12px] text-[#b7b7b7] ps-[6px]">Owen Wilson</p>
+                            </div>
+                            <div class="newsSubCont">
+                                <p class="text-[12px] md:text-[14px] text-[#636363]">Integer luctus diam ac scelerisque consectetur. Vimus dot euismod neganeco lacus sit amet...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsDetail w-full max-w-[550px] flex flex-col md:flex-row justify-between">
+                        <div class="newsImg w-full md:w-[230px] h-[170px] bg-[url('Assets/4(2).jpg')] bg-no-repeat bg-center bg-cover"></div>
+                        <div class="newsImgCont w-full md:w-[297px] h-auto flex flex-col justify-between mt-4 md:mt-0">
+                            <div class="newsImgContTtl">
+                                <h1 class="text-[18px] md:text-[22px] text-[#111] leading-[24px] md:leading-[31px]">Cambridge digs in at the top of university league table</h1>
+                            </div>
+                            <div class="newsContDate flex items-center">
+                                <i class="fa-regular fa-calendar text-[12px] text-[#f6783a]"></i>
+                                <p class="text-[12px] text-[#b7b7b7] ps-[6px]">23 Mar 2018</p>
+                                <i class="fa-solid fa-user text-[12px] text-[#f6783a] ps-[14px]"></i>
+                                <p class="text-[12px] text-[#b7b7b7] ps-[6px]">Owen Wilson</p>
+                            </div>
+                            <div class="newsSubCont">
+                                <p class="text-[12px] md:text-[14px] text-[#636363]">Integer luctus diam ac scelerisque consectetur. Vimus dot euismod neganeco lacus sit amet...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="newsletter w-full h-auto md:h-[178px] bg-[#F7F7F7] flex flex-col md:flex-row items-center justify-center p-4">
+            <div class="newsletterTtl w-full md:w-[653px] h-auto md:h-[78px] flex flex-col justify-between mb-4 md:mb-0">
+                <h1 class="text-[24px] md:text-[30px] text-[#111] font-medium text-center md:text-left">NEWSLETTER</h1>
+                <p class="text-[12px] md:text-[14px] text-[#636363] text-center md:text-left">Subscribe and get the latest news and useful tips, advice and best offer.</p>
+            </div>
+            <div class="newsletterEmail w-full md:w-[488px] h-auto md:h-[78px] flex items-center justify-center">
+                <div class="newsletterBtn w-full md:w-[458px] h-auto md:h-[57px] flex flex-col md:flex-row">
+                    <input type="text" placeholder="Enter your email" class="w-full md:w-[308px] h-[50px] md:h-[57px] ps-[20px] md:ps-[30px] text-[14px] text-[#636363] rounded-t-full md:rounded-l-full md:rounded-t-none outline-none">
+                    <button class="w-full md:w-[150px] h-[50px] md:h-[57px] bg-[#F6783A] rounded-b-full md:rounded-r-full md:rounded-b-none uppercase text-[#fff] text-[14px] font-medium">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer w-full h-auto md:h-[457px] bg-[#020031] flex flex-col items-center">
+            <div class="subFooter w-full md:w-[1170px] h-auto md:h-[379px] bg-[url('Assets/footer.png')] bg-no-repeat bg-center flex flex-col md:flex-row items-center p-4">
+        <div class="unica w-full md:w-[293px] h-auto md:h-[249px] mb-6 md:mb-0">
+            <img src="Assets/logo-light.png" class="ps-[20px] pb-[30px]">
+            <p class="ps-[20px] text-[14px] text-[#b7b7b7] pb-[40px]">orem ipsum dolor sit amet, consecter adipiscing elite. Donec minos varius, viverra justo ut, aliquet nisl.</p>
+            <div class="social-icons flex ps-[20px] gap-[12px]">
+                <i class="fa-brands fa-square-twitter text-[#b7b7b7]"></i>
+                <i class="fa-brands fa-square-facebook text-[#b7b7b7]"></i>
+                <i class="fa-brands fa-square-google-plus text-[#b7b7b7]"></i>
+                <i class="fa-brands fa-linkedin text-[#b7b7b7]"></i>
+                <i class="fa-solid fa-square-rss text-[#b7b7b7]"></i>
+            </div>
+        </div>
+        <div class="link w-full md:w-[293px] h-auto md:h-[249px] mb-6 md:mb-0">
+            <div class="linkTtl w-full md:w-[263px] h-[27px] mb-[30px] ms-[20px]">
+                <h1 class="text-[14px] text-[#fff] font-medium pt-[8px]">USEFUL LINK</h1>
+            </div>
+            <div class="links w-full md:w-[263px] h-auto md:h-[166px] ms-[20px] flex gap-[50px]">
+                <div class="links-1 w-[70px] h-[165px] text-[14px] text-[#b7b7b7] flex flex-col justify-between">
+                    <a href="#" class="hover:text-[#f6783a]">Home</a>
+                    <a href="#" class="hover:text-[#f6783a]">About us</a>
+                    <a href="#" class="hover:text-[#f6783a]">Services</a>
+                    <a href="#" class="hover:text-[#f6783a]">Events</a>
+                    <a href="#" class="hover:text-[#f6783a]">Features</a>
+                </div>
+                <div class="links-2 w-[59px] h-[165px] text-[14px] text-[#b7b7b7] flex flex-col justify-between">
+                    <a href="#" class="hover:text-[#f6783a]">Policy</a>
+                    <a href="#" class="hover:text-[#f6783a]">Term</a>
+                    <a href="#" class="hover:text-[#f6783a]">Help</a>
+                    <a href="#" class="hover:text-[#f6783a]">FAQs</a>
+                    <a href="#" class="hover:text-[#f6783a]">Site map</a>
+                </div>
+            </div>
+        </div>
+        <div class="post w-full md:w-[293px] h-auto md:h-[249px] mb-6 md:mb-0">
+            <div class="postTtl w-full md:w-[263px] h-[27px] mb-[30px] ms-[20px]">
+                <h1 class="text-[14px] text-[#fff] font-medium pt-[8px]">RECENT POST</h1>
+            </div>
+            <div class="post-1 w-full md:w-[263px] h-auto md:h-[74px] ms-[20px] mb-[25px]">
+                <p class="text-[14px] text-[#b7b7b7] pb-[10px]">Snackable study:How to break <br> up your master's degree</p>
+                <p class="text-[12px] text-[#b7b7b7]"><span class="text-[12px] text-[#f6783a]"><i class="fa-regular fa-clock"></i></span>24 Mar 2018</p>
+            </div>
+            <div class="post-2 w-full md:w-[263px] h-auto md:h-[74px] ms-[20px]">
+                <p class="text-[14px] text-[#b7b7b7] pb-[10px]">Open University plans major <br> cuts to number of staff</p>
+                <p class="text-[12px] text-[#b7b7b7]"><span class="text-[12px] text-[#f6783a]"><i class="fa-regular fa-clock"></i></span>24 Mar 2018</p>
+            </div>
+        </div>
+        <div class="contact w-full md:w-[293px] h-auto md:h-[249px]">
+            <div class="contactTtl w-full md:w-[263px] h-[27px] mb-[30px] ms-[20px]">
+                <h1 class="text-[14px] text-[#fff] font-medium pt-[8px]">CONTACT</h1>
+            </div>
+            <div class="contactCont w-full md:w-[263px] h-auto md:h-[157px] ms-[20px]">
+                <p class="text-[14px] text-[#b7b7b7] pb-[12px]"><span><i class="fa-solid fa-location-dot text-[12px]"></i></span>      40 Baria Street 133/2, NewYork City,US</p>
+                <p class="text-[14px] text-[#b7b7b7] pb-[12px]"><span><i class="fa-solid fa-phone text-[12px]"></i></span>      (+88) 111 555 666</p>
+                <p class="text-[14px] text-[#b7b7b7] pb-[12px]"><span><i class="fa-solid fa-envelope text-[12px]"></i></span>       infodeercreative@gmail.com</p>
+                <p class="text-[14px] text-[#b7b7b7]"><span><i class="fa-regular fa-clock text-[12px]"></i></span>       Monday - Friday, 08:00AM - 06:00 PM</p>
+            </div>
+        </div>
+            </div>
+            <div class="copyright w-full h-[77px] flex items-center justify-center">
+        <p class="text-[14px] text-[#b7b7b7]">Copyright ©2024 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by <span class="font-medium text-[#fff] hover:text-[#f6783a]">Colorlib</span></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".subDropNavbar").hide();
+        $(".hamburger").click(function(){
+            $(".subDropNavbar").fadeToggle();
+        })
+    })
+</script>
+</html>

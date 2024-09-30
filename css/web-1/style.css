@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+/* ---- HEADER ----*/
+
+header{
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    
+}
+
+.head{
+    font-size: 20px;
+    color: black;
+    padding-left: 250px;
+    padding-top: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 3px;
+   
+}
+
+.sub-title{
+    padding-left: 60%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+/* ---- Navigation menu ----*/
+
+.nav-1{
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 220px;
+    padding: 10px;
+    font-size: 16px;
+    
+    
+    
+}
+
+.nav-1 a{
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;  
+    margin-inline: 15px; 
+    font-size: 14px;
+}
+
+.img1{
+    width: 20px;
+    height: 20px;
+}
+
+/* ---- Hero Section ----*/
+
+.main{
+    
+    background-image: url(Assets/cloud.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height:600px;  
+}
+
+.cont{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+    line-height: 100px;
+    margin-top: 0;
+    padding-top: 120px;
+}
+
+.main1{
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.main2{
+    letter-spacing: 20px;
+    font-size: 120px;
+    font-weight: 1000;
+
+}
+
+.main3{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.btn1{
+    text-align: center;
+}
+
+.btn2{
+    background-color: black;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border: none;
+}
+
+.btn2:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* ---- Main Section ----*/
+
+
+.cont-1 {
+    display: flex;
+}
+
+.section1 {
+    flex: 1;
+    padding: 20px;
+}
+
+.line{
+    width: 40px;
+    margin-left: 31%;
+    
+}
+
+.section1 h1 {
+    font-size: 42px;
+    margin-top: 70px;
+    font-weight: 900;
+    line-height: 42px;
+    margin-left: 200px;
+    letter-spacing: 5px;
+}
+
+.section1 p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-top: 60px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-right: 0%;
+    
+}
+
+.btns{
+    margin-left: 33%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+.btns:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btns1{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.btns1:hover{
+    background-color: black;
+    color: white;
+}
+
+.cont-2 h1{
+    font-size: 42px;
+    font-weight: 1000;
+    letter-spacing: 4px;
+}
+
+/* ---- box1 box2 box3 ---- */
+
+.bgimg{
+    background-image: url(Assets/natural.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+}
+
+.cont-2{
+    margin-top: 0;
+    padding-top: 100px;
+    margin-left: 18%;    
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.box-1 {
+    border: 6px solid black;
+    padding: 20px;
+    width: 270px;
+    margin: 15px;
+    height: 370px;
+    text-align: center;
+    
+}
+
+.box-1 h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.box-1 p {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #444;
+    margin-bottom: 20px;
+    
+    
+
+}
+
+
+
+.time {
+    padding-top: 50px;
+    border-top: 2px solid black;
+    line-height: 10px;
+    
+   
+
+}
+
+#time {
+    padding-top: 5px;
+    
+   
+
+}
+
+.day{
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+
+.btn-1 {
+    background: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+    border: none;
+    margin-top: 90px;
+}
+
+.btn-2 {
+    background: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+    border: none;
+    margin-top: 55px;
+}
+
+.btn-3 {
+    background: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+    border: none;
+    margin-top: 14px;
+}
+
+.service_btn{
+    margin-top: 60px;
+    padding-left: 44%;
+}
+
+.service_btn button{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.service_btn button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* ---- Footer ----*/
+
+footer{
+    width: 100%;
+    height: 600px;
+    background-color: #57BBBF;
+    color: black;
+}
+
+.foot1{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.foot2{
+    padding: 40px;
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+.cnt h2{
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+.add{
+    margin-top: 30%;
+}
+
+.add p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.fax{
+    margin-top: 15%;
+}
+
+.fax p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.info{
+    margin-top: 15%;
+}
+
+.info p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+  
+.icon{
+    margin-top: 15%;
+}
+
+.icon i{
+    letter-spacing: 15px;
+    font-size: 22px;
+}
+
+.copyright{
+    margin-top: 30%;
+}
+
+.copyright p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.nm label{
+    font-weight: 300;
+}
+
+.nm input{
+    border: 2px solid black;
+    padding-left: 70%;
+    padding-right: 70%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+    background-color: #57BBBF;
+}
+
+.mail{
+    margin-top: 20px;
+}
+
+.mail label{
+    font-weight: 300;
+}
+
+.mail input{
+    border: 2px solid black;
+    padding-left: 70%;
+    padding-right: 70%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+    background-color: #57BBBF;
+}
+
+.sub{
+    margin-top: 20px;
+}
+
+.sub label{
+    font-weight: 300;
+}
+
+.sub input{
+    border: 2px solid black;
+    padding-left: 70%;
+    padding-right: 70%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+    background-color: #57BBBF;
+}
+
+.msg{
+    margin-top: 20px;
+}
+
+.msg label{
+    font-weight: 300;
+}
+
+.msg input{
+    border: 2px solid black;
+    padding-left: 70%;
+    padding-right: 70%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    background-color: #57BBBF;
+}
+
+.submit{
+    margin-top: 15px;
+    margin-left:153%;
+}
+
+.submit button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.submit button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}

@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header{
+    width: 100%;
+    height: 129px;
+    background-color: #000769;
+    display: flex;
+}
+
+.logo{
+    width: 328px;
+    height: 129px;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 22px;
+    padding-left: 80px;
+    padding-top: 50px;
+    color: white;
+}
+
+
+.navbar{
+    width: 700px;
+    height: 129px;
+}
+
+.sub-navbar{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.sub-navbar a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    margin-inline: 30px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+#home{
+    color: orange;
+}
+
+.sub-navbar a:hover{
+    color: orange;
+
+}
+
+.login{
+    padding-top: 50px;
+    padding-left: 80px;
+    
+}
+
+.login i{
+    padding-right: 10px;
+    padding: 5px;
+}
+
+.login a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.hamburger{
+    padding-top: 50px;
+    padding-left: 50px;
+    display: none;
+}
+
+.sec-1{
+    width: 100%;
+    height: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome{
+    width: 1167px;
+    height: 860px;
+    background-image: url('assets/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome h1{
+    font-size: 72px;
+    text-align: center;
+    padding-top: 20%;
+    color: white;
+}
+
+.welcome p{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    padding-top: 20px;
+    color: white;
+}
+
+.btn-1{
+    padding: 15px 30px;
+    margin-left: 45%;
+    margin-top: 50px;
+    border: 1px solid #FC9823;
+    background-color: #FC9823;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.btn-1:hover{
+    background-color: transparent;
+}
+
+.sec-2{
+    width: 100%;
+    height: 520px;
+}
+
+.card{
+    width: 1167px;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6.8%;
+}
+
+.card-1{
+    width: 368px;
+    height: 520px;
+    background-image: url('assets/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.card-1 h1{
+    padding-top: 60%;
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.card-2{
+    width: 368px;
+    height: 520px;
+    background-image: url('assets/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.card-2 h1{
+    padding-top: 60%;
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.card-3{
+    width: 368px;
+    height: 520px;
+    background-image: url('assets/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.card-3 h1{
+    padding-top: 60%;
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.sec-3{
+    width: 100%;
+    height: 657px;
+}
+
+.content{
+    width: 80%;
+    height: 657px;
+    margin-left: 6.8%;
+    
+}
+
+.content h1{
+    font-size: 50px;
+    color: #FC9823;
+    padding-top: 100px;
+    font-weight: 500;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.sub-ttl{
+    font-size: 18px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+    color: #525AB7;
+    text-align: center;
+
+}
+
+.cont {
+    font-size: 15px;
+    /*white-space: pre-wrap;*/
+    letter-spacing: 0.7px;
+    word-spacing: 3px;
+    color: #525AB7;
+    font-weight: 300;
+    text-align: center;
+    
+    
+}
+
+.btn-2{
+    padding: 15px 30px;
+    margin-left: 45%;
+    margin-top: 50px;
+    border: 1px solid #FC9823;
+    background-color: #FC9823;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    border: 1px solid #FC9823;
+    transition: 1.1s;
+    font-weight: 400;
+}
+
+.btn-2:hover{
+    background-color: #525AB7;
+    color: white;
+    transition: 1.1s;
+    border: 1px solid #525AB7;
+}
+
+footer{
+    width: 100%;
+    height: 215px;
+    background-color: #000769;
+   
+}
+
+.sub-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.follow{
+    width: 200px;
+    height: 140px;
+    text-align: center;
+}
+
+.follow h4{
+    padding-top: 40px;
+    color: white;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.follow i{
+    padding: 10px;
+}
+
+.contact{
+    width: 300px;
+    height: 140px;
+    text-align: center;
+}
+
+.contact h4{
+    padding-top: 40px;
+    color: white;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.contact p{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.address{
+    width: 300px;
+    height: 140px;
+    text-align: center;
+}
+
+.address h4{
+    padding-top: 40px;
+    color: white;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.address p{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.copyright{
+    width: 100%;
+    height: 45px;
+    background-color: #E4E4E4;
+    margin-top: 20px;
+}
+
+.copyright p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+
+@media (min-width:0) and (max-width:480px){
+    .navbar .sub-navbar{
+        display: none;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    header{
+        height: 200px;
+    }
+
+
+    .logo h1{
+        font-size: 2vh;
+    }
+
+    .welcome{
+        width: 90%;
+        height: 580px;
+        padding-left: 20px;
+        margin-top: -80%;
+    }
+
+    .welcome h1{
+        font-size: 4vh;
+    }
+
+    .welcome p{
+        font-size: 2vh;
+    }
+
+    .btn-1{
+        margin-left: 30%
+    }
+
+    .card{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: -80%;
+    }
+
+    .card .card-1{
+        width:35%;
+        height: 500px;
+    }
+
+    .card .card-2{
+        width:35%;
+        height: 500px;
+    }
+
+    .card .card-3{
+        width:35%;
+        height: 500px;
+    }
+
+    .content{
+        padding-top: 85%;
+        width: 100%;
+        height: 800px;
+        padding-right: 10%;
+    }
+
+    .content h1{
+        font-size: 4vh;
+        margin-top: 20px;padding-bottom: 17px;
+        
+    }
+
+    .sub-ttl{
+        font-size: 2vh;
+    }
+
+    .cont{
+        font-size: 2vh;
+        width: 110%;
+    }
+
+    .btn-2{
+        margin-left: 30%;
+    }
+
+    footer{
+        width: 100%;
+        height: 700px;
+    }
+
+   .sub-footer{
+    margin-top: 170%;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .sub-footer .follow{
+        width: 100%;
+        height: 170px;
+   }
+
+   .sub-footer .follow h4{
+    font-size: 2vh;
+    text-align: center;
+   }
+
+   .follow i{
+    font-size: 1.5vh;
+   }
+
+   .sub-footer .contact{
+    width: 100%;
+    height: 170px;
+}
+
+   .sub-footer .contact h4{
+    font-size: 2vh;
+   }
+
+   .contact p{
+    font-size: 1.5vh;
+   }
+
+   .sub-footer .address{
+    width: 100%;
+    height: 170px;
+}
+
+.sub-footer .address h4{
+    font-size: 2vh;
+   }
+
+   .address p{
+    font-size: 1.5vh;
+   }
+
+   .copyright{
+    margin-top: 50px;
+    height: 100px;
+   }
+   .copyright p{
+    font-size: 1.5vh;
+    padding-top: 40px;
+   }
+}
+
+@media (min-width:481px) and (max-width:1080px){
+        .welcome{
+            width: 500px;
+            height: 600px; 
+            margin-top: -50%;
+            margin-left: 12px;  
+        }
+
+        .navbar .sub-navbar{
+            display: none;
+        }
+    
+        .hamburger{
+            display: block;
+        }
+
+        .login{
+            display: flex;
+            padding-right: 30px;
+        }
+
+        header{
+            height: 180px;
+        }
+        
+        .welcome h1{
+            font-size: 5vh;
+        }
+
+        .card{
+            flex-wrap: wrap;
+            margin-top: -40%;
+        }
+
+        .card .card-1{
+            width: 20%;
+            height: 400px;
+           
+        }
+
+        .card .card-2{
+            width: 20%;
+            height: 400px;
+            margin-right: 58%;
+            
+        }
+
+        .card .card-3{
+            width: 42%;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        .content{
+            margin-top: 250px;
+            width: 100%;
+            height: 600px;
+        }
+
+        .content h1{
+            font-size: 6vh;
+        }
+
+        .cont{
+            padding-left: 70px;
+        }
+
+        .btn-2{
+            margin-left: 40%;
+        }
+
+    
+}
+
+@media (min-width:1080px) and (max-width:1400px){
+
+   
+}

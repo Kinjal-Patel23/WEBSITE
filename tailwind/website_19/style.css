@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mainTtl{
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #6d38d4, #e334fc) 1;
+}
+
+#shadowColor{
+    background: rgb(220,53,251);
+    background: linear-gradient(209deg, rgba(220,53,251,1) 0%, rgba(106,56,211,1) 100%);
+}
+
+#showBtn{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #6d38d4, #e334fc) 1;
+}
+
+.showbtn:hover{
+    background: rgb(220,53,251);
+    background: linear-gradient(209deg, rgba(220,53,251,1) 0%, rgba(106,56,211,1) 100%);
+}
+
+.showbtn{
+    transition: transform 1s ease;
+}
+
+#subIcons{
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #6d38d4, #e334fc) 1;
+}

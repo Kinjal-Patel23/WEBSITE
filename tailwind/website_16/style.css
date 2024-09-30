@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.circleBtn{
+    background: rgb(255,126,0);
+    background: linear-gradient(234deg, rgba(255,126,0,1) 0%, rgba(255,176,0,1) 100%);
+}
+
+.subServices{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dealBtn{
+    background: rgb(255,114,0);
+    background: linear-gradient(267deg, rgba(255,114,0,1) 0%, rgba(255,174,0,1) 100%);;
+}

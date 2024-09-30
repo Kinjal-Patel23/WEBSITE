@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ 
+    <header class="header  w-100 h-auto bg-black grid">
+        <div class="sub-header w-full h-[74px] grid grid-flow-col justify-between items-center mt-[18px]">
+            <div class="icon w-[130px] h-[40px] hidden sm:grid grid-flow-col justify-around items-center">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </div>
+            <div class="logo w-[213px] h-[74px] bg-[url('assets/logo.png')]"></div>
+            <div class="call-button w-[228px] h-[48px] hidden border-[1px] border-amber-400 sm:grid hover:bg-amber-300 ease-in duration-500">
+                <p class="text-amber-300 grid grid-flow-col justify-center pt-[10px] hover:text-white">Call Us: +10 783 346 4378</p>
+            </div>
+            <i class="hamburger-icon fa-solid fa-ellipsis text-[40px] sm:hidden cursor-pointer" style="color: #ffffff;"></i>
+        </div>
+        <div class="menu w-auto h-auto bg-black hidden sm:grid grid-flow-col justify-center">
+            <div class="links w-auto h-auto lg:h-[87px] lg:grid grid-flow-col justify-center">
+                <nav class="w-auto sm:w-[500px] h-auto text-[16px] font-normal grid grid-flow-col justify-between items-center text-white">
+                    <a href="#">HOME</a>
+                    <a href="#">CAKES</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="navdrop w-100 h-[45vh] bg-black text-white grid grid-flow-row justify-around ps-[50px] text-[25px]">
+        <a href="#">HOME</a>
+        <a href="#">CAKES</a>
+        <a href="#">ABOUT</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT</a>
+        <div class="icon w-[100px] h-[30px] grid grid-flow-col justify-around items-center pt-[10px]">
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        </div>
+        <div class="call-button w-[160px] h-[60px] border-[1px] mr-[20px] border-amber-400 grid hover:bg-amber-300 ease-in duration-500">
+            <p class="text-amber-300 text-[16px] grid grid-flow-col justify-center pt-[10px] hover:text-white">Call Us: +10 783 346 4378</p>
+        </div>
+    </div>
+
+    <div class="title w-auto h-[700px] bg-[url('assets/img-1.jpg')] bg-no-repeat bg-cover bg-center">
+        <div class="sub-title w-auto lg:w-[641px] h-[270px]  mt-[230px] ml-[10px] lg:ml-[120px] absolute">
+            <h1 class="text-[70px] leading-tight pb-[50px] text-white font-light">Healthy Made Delicious Cake</h1>
+            <button class="w-[173px] h-[61px] bg-amber-300 border-[1px] border-amber-300 hover:bg-transparent hover:border-amber-400 hover:text-amber-400 ease-in duration-500">ORDER NOW</button>
+        </div>
+    </div>
+
+    <div class="about w-full h-full relative bg-black">
+        <div class="aboutTitle w-full lg:w-[1140px] h-[30px] lg:ml-[110px] pt-[25px]">
+            <h1 class="text-center text-[40px] font-light text-white">This is Schilers. Awesome Food <br>
+                 Theme. Purchase it and eat <br>
+                  Burgers.</h1>
+            <div class="line w-[100px] h-[2px] bg-amber-300 hidden lg:flex lg:ml-[515px] mt-[25px]"></div>
+        </div>
+        <div class="about-cont w-full lg:w-[1140px] h-[322px] mx-auto mt-[250px] lg:ml-[110px] flex flex-col lg:flex-row lg:justify-between">
+            <div class="about-cont w-full lg:w-[570px] h-auto lg:h-[322px] lg:ml-[50px]">
+                <h2 class="text-[24px] pl-[10px] font-light pb-[20px] text-amber-300">This is Schilers. Awesome Food Theme. <br>
+                    Purchase it and eat Burgers.
+                </h2>
+                <p class="pl-[10px] pb-[15px] text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.</p>
+                <p class="pl-[10px] text-white">Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore <br>
+                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.</p>
+            </div>
+            <div class="Image w-full lg:w-[451px] h-[40vh] lg:h-[315px] lg:ml-[20px]">
+                <img src="assets/img-2.jpg" class="w-[451px] h-[315px] bg-center bg-no-repeat">
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 h-[595px] bg-black grid grid-flow-col justify-center items-center">
+        <div class="slider w-[1140px] h-[400px]">
+            <swiper-container class="mySwiper" autoplay="true" navigation="true" space-between="30"
+            slides-per-view="3" loop="true">
+                <swiper-slide>
+                    <img src="assets/img-3.jpg">
+                    <div class="w-[340px] h-[72px] bg-black mt-[10px] ml-[10px]">
+                        <h2 class="text-white text-[24px] font-thin pt-[10px]">Cashmere Tank + Bag</h2>
+                        <p class="text-amber-300 text-[20px] font-thin pt-[6px]">$98.00</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="assets/img-4.jpg">
+                    <div class="w-[340px] h-[72px] bg-black mt-[10px] ml-[10px]">
+                        <h2 class="text-white text-[24px] font-thin pt-[10px]">Delightful Lemon</h2>
+                        <p class="text-amber-300 text-[20px] font-thin pt-[6px]">$98.00</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="assets/img-5.jpg">
+                    <div class="w-[340px] h-[72px] bg-black mt-[10px] ml-[10px]">
+                        <h2 class="text-white text-[24px] font-thin pt-[10px]">Sweet Surprise</h2>
+                        <p class="text-amber-300 text-[20px] font-thin pt-[6px]">$98.00</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="assets/img-4.jpg">
+                    <div class="w-[340px] h-[72px] bg-black mt-[10px] ml-[10px]">
+                        <h2 class="text-white text-[24px] font-thin pt-[10px]">Cashmere Tank + Bag</h2>
+                        <p class="text-amber-300 text-[20px] font-thin pt-[6px]">$98.00</p>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </div>
+
+    <div class="w-100 h-[668px] bg-black">
+        <div class="w-[1116px] h-[668px] bg-white ml-[110px] bg-[url('assets/img-6.jpg')]">
+            <div class="pl-[45%] pt-[25%]">
+                <img src="assets/play-icon.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 h-[728px] bg-black">
+        <div class="w-[1140px] h-[102px] absolute mt-[110px] ml-[100px]">
+            <h1 class="text-center text-[40px] font-thiner pt-[15px] text-white">Food Lover's Say</h1>
+        </div>
+        <div class="w-[1140px] h-[356px] absolute mt-[220px] ml-[100px] grid grid-flow-col">
+            <div class="w-[380px] h-[356px] grid justify-center border-t border-b">
+                <div class="w-[288px] h-[38px] mt-[40px]">
+                    <i class="fa-solid fa-star pt-[20px]" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="w-[288px] h-[115px]">
+                    <p class="text-[20px] text-white">"Consectetur adipiscing elit, <br>
+                         sed do eiusmod tempor dunt <br>
+                          ulter labore et dolore magna.</p>
+                </div>
+                <div class="w-[288px] h-[45px] grid grid-flow-col">
+                    <img src="assets/img-7.png">
+                    <p class="pr-[120px] pt-[10px] font-normal text-white">Wilma Mumduya</p>
+                </div>
+            </div>
+            <div class="w-[380px] h-[356px] grid justify-center border-[1px] border-white">
+                <div class="w-[288px] h-[38px] mt-[40px]">
+                    <i class="fa-solid fa-star pt-[20px]" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="w-[288px] h-[115px]">
+                    <p class="text-[20px] text-white">"Consectetur adipiscing elit, <br>
+                         sed do eiusmod tempor dunt <br>
+                          ulter labore et dolore magna.</p>
+                </div>
+                <div class="w-[288px] h-[45px] grid grid-flow-col">
+                    <img src="assets/img-8.png">
+                    <p class="pr-[120px] pt-[10px] font-normal text-white">Wilma Mumduya</p>
+                </div>
+            </div>
+            <div class="w-[380px] h-[356px]  grid justify-center border-t border-b border-white">
+                <div class="w-[288px] h-[38px]  mt-[40px]">
+                    <i class="fa-solid fa-star pt-[20px]" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="w-[288px] h-[115px]">
+                    <p class="text-[20px] text-white">"Consectetur adipiscing elit, <br>
+                         sed do eiusmod tempor dunt <br>
+                          ulter labore et dolore magna.</p>
+                </div>
+                <div class="w-[288px] h-[45px] grid grid-flow-col">
+                    <img src="assets/img-9.png">
+                    <p class="pr-[120px] pt-[10px] font-normal text-white">Wilma Mumduya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 h-[554px] bg-black">
+        <div class="w-[1140px] h-[154px] ml-[100px] grid grid-flow-col">
+            <div class="w-[165px] h-[52px] mt-[40px]">
+                <h1 class="text-[34px] text-white">Our Blogs</h1>
+            </div>
+            <div class="w-[167px] h-[61px]  ml-[70%] mt-[40px] bg-amber-300 border-[1px] border-amber-300 hover:bg-transparent hover:text-amber-300 hover:border-amber-300 ">
+                <button class="mt-[20px] ml-[40px]">MORE BLOG</button>
+            </div>
+        </div>
+        <div class="w-[1328px] h-[370px] grid grid-flow-col gap-[21px]">
+            <div class="w-[664px] h-[370px] grid grid-flow-col">
+                <div class="w-[327px] h-[370px] bg-[url('assets/img-10.jpg')]"></div>
+                <div class="w-[327px] h-[370px] border-[1px] border-white">
+                    <h3 class="text-amber-400 pt-[20px] pl-[30px] text-[24px]">Tomato, black olive, feta & anchovy tart ulla mco laboris</h3>
+                    <p class="pl-[30px] pt-[20px] text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.</p>
+                    <button class="ml-[30px] mt-[20px] text-amber-300 border-b border-amber-300">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="w-[664px] h-[370px] grid grid-flow-col">
+                <div class="w-[327px] h-[370px] bg-[url('assets/img-11.jpg')]"></div>
+                <div class="w-[327px] h-[370px] border-[1px] border-white">
+                    <h3 class="text-amber-400 pt-[20px] pl-[30px] text-[24px]">Tomato, black olive, feta & anchovy tart ulla mco laboris</h3>
+                    <p class="pl-[30px] pt-[20px] text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.</p>
+                    <button class="ml-[30px] mt-[20px] text-amber-300 border-b border-amber-300 ease-in duration-500">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 h-[560px] bg-black">
+        <div class="w-[1140px] h-[221px] absolute mt-[90px] ml-[100px]">
+            <h1 class="text-[35px] text-center font-thiner text-white pt-[30px]">Follow us on Instagram</h1>
+            <button class="text-amber-300 border-[1px] border-amber-300 w-[153px] h-[52px] ml-[43%] mt-[40px]"><i class="fa-brands fa-instagram" style="color: #f0cd0a;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Cakeshop</button>
+        </div>
+        <div class="w-[1140px] h-[239px] absolute mt-[310px] ml-[100px] grid grid-cols-4">
+            <div class="w-[261px] h-[209px] bg-[url('assets/img-12.jpg')] bg-center bg-cover"></div>
+            <div class="w-[261px] h-[209px] bg-[url('assets/img-13.jpg')] bg-center bg-cover"></div>
+            <div class="w-[261px] h-[209px] bg-[url('assets/img-14.jpg')] bg-center bg-cover"></div>
+            <div class="w-[261px] h-[209px] bg-[url('assets/img-15.jpg')] bg-center bg-cover"></div>
+        </div>
+    </div>
+
+    <div class="footer w-100 h-[534px] bg-black">
+        <div class="w-[1140px] h-[188px] absolute mt-[80px] ml-[100px]">
+            <div class="w-[1116px] h-[108px] border-b-[1px] border-[#3B3B3B] flex justify-between ml-[10px]">
+                <div class="w-[213px] h-[74px]">
+                    <img src="assets/logo.png">
+                </div>
+                <div class="w-[439px] h-[87px] text-white flex justify-around items-center text-[15px]">
+                    <a href="#">HOME</a>
+                    <a href="#">CAKES</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-[1140px] h-[248px] border-b-[1px] border-[#3B3B3B] absolute mt-[270px] ml-[100px] flex justify-between">
+            <div class="w-[546px] h-[198px]">
+                <p class="text-white leading-[28.8px] text-[16px] pb-[50px]">
+                    Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore <br>
+                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco <br>
+                      laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="w-[152px] h-[52px] text-white border-[1px] border-[#3B3B3B] m-[4px]"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;Instagram</button>
+                <button class="w-[148px] h-[52px] text-white border-[1px] border-[#3B3B3B] m-[4px]"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;Facebook</button>
+                <button class="w-[134px] h-[52px] text-white border-[1px] border-[#3B3B3B] m-[4px]"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i>&nbsp;&nbsp;&nbsp;Twitter</button>
+            </div>
+            <div class="w-[166px] h-[149px]">
+                <img src="assets/location.svg">
+                <h4 class="text-[22px] font-thin text-[#E5B642] pt-[15px]">Location</h4>
+                <p class="text-white pt-[5px]">4736 Poe Lane, HOT <br>
+                     SPRINGS, Montana- <br>
+                     59845</p>
+            </div>
+            <div class="w-[166px] h-[133px]">
+                <img src="assets/phone.svg">
+                <h4 class="text-[22px] font-thin text-[#E5B642] pt-[15px]">Contact</h4>
+                <p class="text-white pt-[5px]">913-473-7000
+                    contact@cakeshop.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright w-100 h-[85px] bg-black flex justify-center">
+        <div class="w-[1116px] h-[85px] flex justify-center items-center">
+            <p class="text-white">Copyright &copy;2024 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #FFD43B;"></i>  by Colorlib</p>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".navdrop").hide()
+
+        $(".hamburger-icon").click(function(){
+            $(".navdrop").slideToggle(300)
+        })
+    })
+</script>
+</html>

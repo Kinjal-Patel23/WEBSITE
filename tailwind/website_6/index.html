@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .discount{
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .winter{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+</style>
+<body>
+  
+  <div class="Container w-full h-auto">
+    <div class="header w-full h-[68px] bg-[#000000] flex items-center justify-around p-[20px]">
+      <div class="country w-[110px] h-[42px] flex items-center justify-end gap-[10px]">
+        <img src="Assets/header_icon.png" class="w-[30px] h-[16px]">
+        <p class="text-[14px] text-[#fff]">USA</p>
+        <i class="ri-arrow-drop-down-line text-[#fff] text-[25px]"></i>
+      </div>
+      <div class="contact w-[138px] h-[42px] flex items-center justify-end">
+        <p class="text-[14px] text-[#fff] font-medium">+777 2345 7886</p>
+      </div>
+      <div class="menu w-[503px] h-[42px] ml-auto text-[14px] text-[#fff] hidden lg:flex items-center justify-between">
+        <a href="#">My Account</a>
+        <a href="#">Wish List</a>
+        <a href="#">Shopping</a>
+        <a href="#">Cart</a>
+        <a href="#">Checkout</a>
+      </div>
+    </div>
+
+    <div class="subHeader w-full lg:h-[100px] flex items-center justify-between p-[20px]">
+      <div class="navleft w-[102px] h-[99px] flex items-center ps-[10px] lg:ps-0">
+        <img src="Assets/logo.png">
+      </div>
+      <div class="navcenter w-[654px] h-[99px] text-[14px] hidden lg:flex items-center justify-end gap-[30px]">
+        <a href="#" class="hover:text-[#ff003c]">Home</a>
+        <a href="#" class="hover:text-[#ff003c]">Category</a>
+        <div class="flex items-center">
+          <a href="#" class="hover:text-[#ff003c]">Latest</a>
+          <p class="text-[10px] bg-[#ff003c] text-[#fff] ps-[5px] pt-[3px] pb-[3px] pr-[5px] rounded-[6px] mt-[-35px] ml-[0px]">HOT</p>
+        </div>
+        <a href="#" class="hover:text-[#ff003c]">Blog</a>
+        <a href="#" class="hover:text-[#ff003c]">Pages</a>
+        <a href="#" class="hover:text-[#ff003c]">Contact</a>
+      </div>
+      <div class="navright w-[500px] h-[99px] hidden md:flex items-center justify-between">
+        <div class="search w-[180px] h-[46px] border border-[#F1F1F1] rounded-l-full rounded-r-full mx-[30px] flex items-center justify-around">
+          <input type="text" placeholder="Search product" class="w-[100px] text-[13px] text-[#828482] outline-none">
+          <i class="ri-search-line text-[#6C6A6A] font-bold"></i>
+        </div>
+        <div class="heart w-[50px] h-[50px] border border-[#F1F1F1] rounded-full flex items-center justify-center">
+          <i class="ri-heart-3-line text-[23px] text-[#828482]"></i>
+        </div>
+        <div class="cart w-[50px] h-[50px] border border-[#F1F1F1] rounded-full flex items-center justify-center">
+          <i class="ri-shopping-cart-2-fill text-[23px] text-[#828482]"></i>
+        </div>
+        <div class="signIn w-[108px] h-[50px] bg-[#2577FD] hover:bg-[#00B1FF] duration-700 rounded-l-full rounded-r-full flex items-center justify-center">
+          <h1 class="text-[18px] text-[#fff]">Sign In</h1>
+        </div>
+      </div>
+      <div class="hamburger flex lg:hidden mr-[40px] lg:mr-0">
+        <i class="fa-solid fa-bars text-[28px] text-[#000]"></i>
+      </div>
+    </div>
+
+    <div class="dropmenu h-[400px] top-40 fixed right-0 flex items-center justify-center">
+      <div class="subDropMenu w-[400px] h-[400px] bg-gray-600 flex flex-col items-center justify-around text-[#fff]">
+        <a href="#">Home</a>
+        <a href="#">Category</a>
+        <a href="#">Latest</a>
+        <a href="#">Blog</a>
+        <a href="#">Pages</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="heroSection w-full h-auto lg:h-[764px] bg-[url('Assets/h1_hero.jpg')] bg-no-repeat bg-cover bg-center flex justify-center">
+      <div class="subHeroSection w-full lg:w-[1250px] h-auto lg:h-[764px] flex items-center justify-between">
+        <div class="heroImg w-[737px] h-[764px] hidden lg:flex justify-end">
+          <img src="Assets/hero_man.png">
+        </div>
+        <div class="heroCont w-full lg:w-[488px] h-auto lg:h-[417px] flex flex-col items-center lg:items-start">
+          <h2 class="discount text-[40px] text-[#2577fd] text-center lg:text-left">60% Discount</h2>
+          <h1 class="winter text-[40px] lg:text-[80px] font-bold text-[#1f2022] text-center lg:text-left lg:leading-[110px] pb-[12px]">Winter Collection</h1>
+          <p class="winter text-[20px] text-[#313639] font-light italic pb-[42px] text-center lg:text-left">Best Cloth Collection By 2024!</p>
+          <button type="submit" class="w-[156px] h-[50px] text-[#fff] text-[18px] bg-[#227CFD] hover:bg-[#00B1FF] duration-700 rounded-l-full rounded-r-full mb-[10px] lg:mb-0">Shop Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="category w-full h-auto lg:h-[766px] flex flex-col items-center justify-center">
+      <div class="categoryTtl w-full lg:w-[1236px] h-[133px] flex justify-center">
+        <h1 class="winter text-[24px] lg:text-[48px] text-[#000] font-bold pt-[20px] lg:pt-0">Shop by Category</h1>
+      </div>
+      <div class="categoryCont w-full lg:w-[1236px] h-auto lg:h-[263px] flex flex-wrap items-center justify-around gap-[20px] lg:gap-0">
+        <div class="categoryCard w-[382px] h-[233px] rounded-[7px] bg-[url('Assets/cat1.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-end pr-[10px]">
+          <div class="categoryCardCont w-[152px] h-[102px]">
+            <h1 class="winter text-[26px] text-[#1f1f1f] font-bold pb-[8px]">Women`s</h1>
+            <button type="submit" class="w-[152px] h-[44px] font-medium bg-[#FFCE25] rounded-l-full rounded-r-full">Best New Deals</button>
+            <p class="discount text-[23px] text-[#0071fe] font-semibold mt-[-14px]">New Collection</p>
+          </div>
+        </div>
+        <div class="categoryCard w-[382px] h-[233px] rounded-[7px] bg-[url('Assets/cat2.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-end pr-[10px]">
+          <div class="categoryCardCont w-[155px] h-[102px]">
+            <p class="discount text-[23px] text-[#0071fe] font-semibold text-center">Discount!</p>
+            <h1 class="winter text-[26px] text-[#1f1f1f] font-bold pb-[8px] leading-[29px]">Winter Cloth</h1>
+            <p class="text-[#000] text-center">New Collection</p> 
+          </div>
+        </div>
+        <div class="categoryCard w-[382px] h-[233px] rounded-[7px] bg-[url('Assets/cat3.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-end pr-[10px]">
+          <div class="categoryCardCont w-[152px] h-[102px]">
+            <h1 class="winter text-[26px] text-[#1f1f1f] font-bold pb-[8px]">Man`s Cloth</h1>
+            <button type="submit" class="w-[152px] h-[44px] font-medium bg-[#FFCE25] rounded-l-full rounded-r-full">Best New Deals</button>
+            <p class="discount text-[23px] text-[#0071fe] font-semibold mt-[-14px]">New Collection</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products w-full h-auto lg:h-[1500px] flex justify-center">
+      <div class="subProducts w-full lg:w-[1170px] h-auto lg:h-[1297px] flex flex-col">
+        <div class="productsTtl w-full lg:w-[1170px] h-[79px] border-b border-[#E8E8E8] flex items-center justify-between">
+          <div class="leftTtl w-[383px] h-[78px]">
+            <h1 class="winter text-[25px] lg:text-[48px] text-[#000] text-center lg:text-left font-bold ps-[15px] pt-[20px] lg:pt-0">Latest Products</h1>
+          </div>
+          <div class="productMenu w-[292px] h-[78px] text-[#8f8f96] mr-[15px] hidden lg:flex items-center justify-around">
+            <a href="#" class="text-[#ff003c]">All</a>
+            <a href="#">New</a>
+            <a href="#">Featured</a>
+            <a href="#">Offer</a>
+          </div>
+        </div>
+        <div class="productsCont w-full lg:w-[1170px] h-auto lg:h-[569px] mt-auto flex flex-wrap justify-center">
+          <div class="product-1 w-[390px] h-[569px] flex flex-col items-center">
+            <div class="productImg w-[360px] h-[392px] bg-[url('Assets/product1.png')] bg-no-repeat bg-cover bg-center">
+              <div class="new w-[66px] h-[29px] bg-[#FF003C] mt-[22px] ms-[24px] text-[#fff] rounded-l-full rounded-r-full flex items-center justify-center">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="productImgCont w-[360px] h-[97px] mt-[30px] flex flex-col justify-between">
+              <div class="star w-[360px] h-[33px] text-center">
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+              </div>
+              <div class="productNm w-[360px] h-[29px]">
+                <p class="winter font-medium hover:text-[#ff003c] text-center">Green Dress with details</p>
+              </div>
+              <div class="productPrice w-[360px] h-[27px] flex justify-center gap-[20px]">
+                <p class="text-[18px] text-[#212529] font-medium">$40.00</p>
+                <p class="text-[18px] text-[#ff003c] font-medium"><s>$60.00</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="product-2 w-[390px] h-[569px] flex flex-col items-center">
+            <div class="productImg w-[360px] h-[392px] bg-[url('Assets/product2.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="productImgCont w-[360px] h-[97px] mt-[30px] flex flex-col justify-between">
+              <div class="star w-[360px] h-[33px] text-center">
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+              </div>
+              <div class="productNm w-[360px] h-[29px]">
+                <p class="winter font-medium hover:text-[#ff003c] text-center">Green Dress with details</p>
+              </div>
+              <div class="productPrice w-[360px] h-[27px] flex justify-center gap-[20px]">
+                <p class="text-[18px] text-[#212529] font-medium">$40.00</p>
+                <p class="text-[18px] text-[#ff003c] font-medium"><s>$60.00</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="product-3 w-[390px] h-[569px] flex flex-col items-center">
+            <div class="productImg w-[360px] h-[392px] bg-[url('Assets/product3.png')] bg-no-repeat bg-cover bg-center">
+              <div class="new w-[66px] h-[29px] bg-[#FF003C] mt-[22px] ms-[24px] text-[#fff] rounded-l-full rounded-r-full flex items-center justify-center">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="productImgCont w-[360px] h-[97px] mt-[30px] flex flex-col justify-between">
+              <div class="star w-[360px] h-[33px] text-center">
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+              </div>
+              <div class="productNm w-[360px] h-[29px]">
+                <p class="winter font-medium hover:text-[#ff003c] text-center">Green Dress with details</p>
+              </div>
+              <div class="productPrice w-[360px] h-[27px] flex justify-center gap-[20px]">
+                <p class="text-[18px] text-[#212529] font-medium">$40.00</p>
+                <p class="text-[18px] text-[#ff003c] font-medium"><s>$60.00</s></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productsCont w-full lg:w-[1170px] h-auto lg:h-[569px] flex flex-wrap justify-center">
+          <div class="product-4 w-[390px] h-[569px] flex flex-col items-center">
+            <div class="productImg w-[360px] h-[392px] bg-[url('Assets/product4.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="productImgCont w-[360px] h-[97px] mt-[30px] flex flex-col justify-between">
+              <div class="star w-[360px] h-[33px] text-center">
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+              </div>
+              <div class="productNm w-[360px] h-[29px]">
+                <p class="winter font-medium hover:text-[#ff003c] text-center">Green Dress with details</p>
+              </div>
+              <div class="productPrice w-[360px] h-[27px] flex justify-center gap-[20px]">
+                <p class="text-[18px] text-[#212529] font-medium">$40.00</p>
+                <p class="text-[18px] text-[#ff003c] font-medium"><s>$60.00</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="product-5 w-[390px] h-[569px] flex flex-col items-center">
+            <div class="productImg w-[360px] h-[392px] bg-[url('Assets/product5.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div class="productImgCont w-[360px] h-[97px] mt-[30px] flex flex-col justify-between">
+              <div class="star w-[360px] h-[33px] text-center">
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+              </div>
+              <div class="productNm w-[360px] h-[29px]">
+                <p class="winter font-medium hover:text-[#ff003c] text-center">Green Dress with details</p>
+              </div>
+              <div class="productPrice w-[360px] h-[27px] flex justify-center gap-[20px]">
+                <p class="text-[18px] text-[#212529] font-medium">$40.00</p>
+                <p class="text-[18px] text-[#ff003c] font-medium"><s>$60.00</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="product-6 w-[390px] h-[569px] flex flex-col items-center">
+            <div class="productImg w-[360px] h-[392px] bg-[url('Assets/product6.png')] bg-no-repeat bg-cover bg-center">
+              <div class="new w-[66px] h-[29px] bg-[#FF003C] mt-[22px] ms-[24px] text-[#fff] rounded-l-full rounded-r-full flex items-center justify-center">
+                <p>New</p>
+              </div>
+            </div>
+            <div class="productImgCont w-[360px] h-[97px] mt-[30px] flex flex-col justify-between">
+              <div class="star w-[360px] h-[33px] text-center">
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#FFBC1E]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+                <i class="fa-regular fa-star text-[#a5a9aa]"></i>
+              </div>
+              <div class="productNm w-[360px] h-[29px]">
+                <p class="winter font-medium hover:text-[#ff003c] text-center">Green Dress with details</p>
+              </div>
+              <div class="productPrice w-[360px] h-[27px] flex justify-center gap-[20px]">
+                <p class="text-[18px] text-[#212529] font-medium">$40.00</p>
+                <p class="text-[18px] text-[#ff003c] font-medium"><s>$60.00</s></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop w-full h-auto lg:h-[550px] flex justify-center">
+      <div class="subShop w-full lg:w-[1207px] h-auto lg:h-[581px] bg-[url('Assets/card.png')] bg-no-repeat bg-cover bg-center flex justify-evenly">
+        <div class="shopMenImg w-[225px] h-[698px] mt-[-117px] mx-[60px] hidden lg:flex">
+          <img src="Assets/card-man.png">
+        </div>
+        <div class="shopMenCont w-full lg:w-[780px] h-auto lg:h-[581px] flex flex-col justify-center gap-[20px]">
+          <div class="shopMenTtl w-full lg:w-[750px] h-auto lg:h-[143px]">
+            <h1 class="winter text-[30px] lg:text-[55px] text-[#000] text-center lg:text-left font-bold leading-[72px]">Find The Best Product <br>
+              from Our Shop</h1>
+          </div>
+          <div class="shopMenSubTtl w-full lg:w-[750px] h-auto lg:h-[30px]">
+            <p class="text-[20px] text-[#373b41] text-center lg:text-left p-[20px] lg:p-0">Designers who are interesten creating state ofthe.</p>
+          </div>
+          <div class="button w-full lg:w-[710px] h-auto lg:h-[146px] flex justify-center lg:justify-between">
+            <div class="subBtn w-[186px] h-[54px] bg-[#000] rounded-l-full rounded-r-full cursor-pointer mt-[40px] flex items-center justify-center">
+              <p class="text-[18px] text-[#fff]">Shop Now</p>
+            </div>
+            <div class="btnImg w-[167px] h-[146px] hidden lg:flex">
+              <img src="Assets/card-shape.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection w-full h-auto lg:h-[980px] flex items-center justify-center">
+      <div class="subCollection w-full lg:w-[1170px] h-auto lg:h-[704px] flex flex-wrap items-center lg:items-end justify-center">
+        <div class="collectionTtl w-full lg:w-[390px] h-auto lg:h-[582px] flex flex-col items-center mb-[30px] lg:mb-0">
+          <div class="subCollectionTtl w-full lg:w-[360px] h-auto lg:h-[275px] mx-[15px] mb-[30px] lg:mb-0 flex flex-col lg:items-start items-center">
+            <h1 class="winter text-[25px] lg:text-[45px] text-[#000] font-bold leading-[59px] text-center lg:text-left pb-[20px] pt-[20px] lg:pt-0">Best Collection of This Month</h1>
+            <p class="text-[20px] text-[#373b41] pb-[50px] text-center lg:text-left">Designers who are interested in creating.</p>
+            <button type="submit" class="w-[186px] h-[70px] bg-[#2577FD] hover:bg-[#00B1FF] text-[18px] text-[#fff] rounded-l-full rounded-r-full">Shop Now</button>
+          </div>
+          <div class="subCollectionImg w-[360px] h-auto lg:h-[277px] mx-[15px] flex items-end">
+            <img src="Assets/collection1.png">
+          </div>
+        </div>
+        <div class="collectionImg w-[317px] h-[674px] ml-auto hidden lg:block">
+          <img src="Assets/collection2.png" alt="Collection 2">
+        </div>
+        <div class="collectionJacket w-full lg:w-[390px] h-auto lg:h-[458px] flex flex-col items-center lg:items-end justify-between">
+          <div class="menzWinter w-[242px] h-[118px] flex items-end">
+            <div class="menzWinterCont w-[115px] h-[66px]">
+              <p class="text-[18px] text-[#000] font-medium text-right">Menz Winter Jacket</p>
+            </div>
+            <div class="menzWinterImg w-[131px] h-[118px] flex justify-end">
+              <img src="Assets/collection3.png" alt="Collection 3">
+            </div>
+          </div>
+          <div class="menzWinter w-[302px] h-[118px] flex items-end">
+            <div class="menzWinterCont w-[171px] h-[86px] bg-[#2577FD] rounded-[8px]">
+              <p class="text-[18px] text-[#fff] font-medium text-right pr-[25px] pt-[10px]">Menz Winter Jacket</p>
+            </div>
+            <div class="menzWinterImg w-[131px] h-[118px] flex justify-end">
+              <img src="Assets/collection4.png" alt="Collection 4">
+            </div>
+          </div>
+          <div class="menzWinter w-[242px] h-[132px] flex items-end">
+            <div class="menzWinterCont w-[115px] h-[66px]">
+              <p class="text-[18px] text-[#000] font-medium text-right">Menz Winter Jacket</p>
+            </div>
+            <div class="menzWinterImg w-[131px] h-[118px] flex justify-end">
+              <img src="Assets/collection5.png" alt="Collection 5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer w-full h-auto lg:h-[400px] flex items-center justify-center mt-[20px] lg:mt-0">
+      <div class="subOffer w-full lg:w-[1207px] h-auto lg:h-[400px] bg-[url('Assets/latest-offer.png')] bg-no-repeat bg-cover bg-right flex flex-wrap items-center justify-center lg:justify-start">
+        <div class="offerCont w-full lg:w-[950px] h-auto lg:h-[221px] flex flex-col lg:flex-row items-center justify-between p-4 lg:p-0">
+          <div class="offerTtl w-full lg:w-[458px] h-auto lg:h-[166px] mb-6 lg:mb-0">
+            <h1 class="winter text-[30px] lg:text-[45px] text-[#000] font-bold leading-tight lg:leading-[59px] pb-[10px] lg:pb-[25px] px-0 lg:px-[30px] text-center lg:text-left">Get Our <br> Latest Offers News</h1>
+            <p class="text-[16px] lg:text-[20px] text-[#373b41] px-0 lg:px-[30px] text-center lg:text-left">Subscribe news letter</p>
+          </div>
+          <div class="offerTtl w-full lg:w-[458px] h-[60px] flex items-center justify-center lg:justify-end rounded-full">
+            <input type="email" placeholder="Your email here" class="flex-grow h-[50px] lg:h-[60px] ps-[20px] lg:ps-[40px] text-[#000] placeholder:text-[#464545] rounded-full outline-none border border-gray-300 lg:border-none">
+            <button class="bg-blue-500 text-white h-[50px] lg:h-[60px] text-[14px] rounded-full lg:-ml-12 px-6 lg:px-10">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="payment w-full h-auto flex items-center justify-center py-10">
+      <div class="subPayment w-full lg:w-[1170px] h-auto flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="shipping w-full lg:w-[293px] h-auto text-center">
+          <div class="shippingImg w-full h-[40px] mb-[30px] flex justify-center">
+            <i class="fa-solid fa-cube text-[40px]"></i>
+          </div>
+          <div class="shippingCont w-full h-auto">
+            <h1 class="text-[20px] text-[#282828] font-semibold pb-[15px]">Free Shipping Method</h1>
+            <p class="text-[#506172]">aorem ixpsacdolor sit <br> ameasecur adipisicing elitsf <br> edasd.</p>
+          </div>
+        </div>
+        <div class="shipping w-full lg:w-[293px] h-auto text-center">
+          <div class="shippingImg w-full h-[40px] mb-[30px] flex justify-center">
+            <i class="fa-solid fa-unlock-keyhole text-[40px]"></i>
+          </div>
+          <div class="shippingCont w-full h-auto">
+            <h1 class="text-[20px] text-[#282828] font-semibold pb-[15px]">Secure Payment System</h1>
+            <p class="text-[#506172]">aorem ixpsacdolor sit <br> ameasecur adipisicing elitsf <br> edasd.</p>
+          </div>
+        </div>
+        <div class="shipping w-full lg:w-[293px] h-auto text-center">
+          <div class="shippingImg w-full h-[40px] mb-[30px] flex justify-center">
+            <i class="fa-solid fa-rotate text-[40px]"></i>
+          </div>
+          <div class="shippingCont w-full h-auto">
+            <h1 class="text-[20px] text-[#282828] font-semibold pb-[15px]">Secure Payment System</h1>
+            <p class="text-[#506172]">aorem ixpsacdolor sit <br> ameasecur adipisicing elitsf <br> edasd.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery w-full h-auto flex items-center justify-center">
+      <div class="subGallery w-full lg:w-[1170px] h-auto flex flex-wrap lg:flex-nowrap justify-center gap-[10px] lg:gap-0">
+        <div class="img w-full sm:w-[43%] lg:w-[280px] h-[347px] bg-[url('Assets/gallery1.jpg')] bg-no-repeat bg-cover bg-center"></div>
+        <div class="img w-full sm:w-[43%] lg:w-[280px] h-[347px] bg-[url('Assets/gallery2.jpg')] bg-no-repeat bg-cover bg-center"></div>
+        <div class="img w-full sm:w-[43%] lg:w-[280px] h-[347px] bg-[url('Assets/gallery3.jpg')] bg-no-repeat bg-cover bg-center"></div>
+        <div class="img w-full sm:w-[43%] lg:w-[280px] h-[347px] bg-[url('Assets/gallery4.jpg')] bg-no-repeat bg-cover bg-center"></div>
+        <div class="img w-full sm:w-[43%] lg:w-[280px] h-[347px] bg-[url('Assets/gallery5.jpg')] bg-no-repeat bg-cover bg-center"></div>
+      </div>
+    </div>
+
+    <div class="footer w-full h-auto flex flex-col items-center justify-end py-10">
+      <div class="subFooter w-full lg:w-[1170px] h-auto mb-[30px] flex flex-wrap justify-between gap-8">
+        <div class="estore w-full sm:w-[48%] lg:w-[293px] h-auto">
+          <div class="estoreNm w-[102px] h-[23px] mb-[20px] mx-[20px]">
+            <img src="Assets/logo2_footer.png">
+          </div>
+          <div class="estoreCont w-[263px] h-auto mx-[20px]">
+            <p class="text-[#868c98]">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+        </div>
+        <div class="links w-full sm:w-[48%] lg:w-[195px] h-auto">
+          <div class="linkTtl w-[165px] h-[24px] mx-[20px] mb-[20px]">
+            <h1 class="text-[20px] text-[#000] font-semibold leading-[24px]">Quick Links</h1>
+          </div>
+          <div class="linkCont w-[165px] h-auto text-[#968C98] mx-[20px] flex flex-col space-y-3">
+            <a href="#" class="hover:text-[#2577fd]">About</a>
+            <a href="#" class="hover:text-[#2577fd]">Offers & Discounts</a>
+            <a href="#" class="hover:text-[#2577fd]">Get Coupon</a>
+            <a href="#" class="hover:text-[#2577fd]">Contact Us</a>
+          </div>
+        </div>
+        <div class="newProducts w-full sm:w-[48%] lg:w-[293px] h-auto">
+          <div class="newProductTtl w-[165px] h-[24px] mx-[20px] mb-[20px]">
+            <h1 class="text-[20px] text-[#000] font-semibold leading-[24px]">New Products</h1>
+          </div>
+          <div class="newProductCont w-[165px] h-auto text-[#968C98] mx-[20px] flex flex-col space-y-3">
+            <a href="#" class="hover:text-[#2577fd]">Woman Cloth</a>
+            <a href="#" class="hover:text-[#2577fd]">Fashion Accessories</a>
+            <a href="#" class="hover:text-[#2577fd]">Man Accessories</a>
+            <a href="#" class="hover:text-[#2577fd]">Rubber made Toys</a>
+          </div>
+        </div>
+        <div class="support w-full sm:w-[48%] lg:w-[293px] h-auto">
+          <div class="newProductTtl w-[165px] h-[24px] mx-[20px] mb-[20px]">
+            <h1 class="text-[20px] text-[#000] font-semibold leading-[24px]">Support</h1>
+          </div>
+          <div class="newProductCont w-[250px] h-auto text-[#968C98] mx-[20px] flex flex-col space-y-3">
+            <a href="#" class="hover:text-[#2577fd]">Frequently Asked Questions</a>
+            <a href="#" class="hover:text-[#2577fd]">Terms & Conditions</a>
+            <a href="#" class="hover:text-[#2577fd]">Privacy Policy</a>
+            <a href="#" class="hover:text-[#2577fd]">Report a Payment Issue</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight w-full lg:w-[1170px] h-auto flex flex-col lg:flex-row justify-between items-center gap-4">
+        <div class="subCopyright w-full lg:w-[653px] h-auto flex items-center justify-center lg:justify-start text-center lg:text-left">
+          <p class="text-[#888]">Copyright ©2024 All rights reserved | This template is made with <i class="fa-regular fa-heart text-[#2577fd]"></i> by <span class="text-[#2577fd]">Colorlib</span></p>
+        </div>
+        <div class="iconCopyright w-full lg:w-[488px] h-auto flex justify-center lg:justify-end items-center">
+          <div class="subIcon w-[100px] h-[24px] text-[14px] flex items-center justify-between">
+            <i class="fab fa-twitter hover:text-[#2577fd] duration-500"></i>
+            <i class="fab fa-facebook-f hover:text-[#2577fd] duration-500"></i>
+            <i class="fab fa-behance hover:text-[#2577fd] duration-500"></i>
+            <i class="fas fa-globe hover:text-[#2577fd] duration-500"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".subDropMenu").hide();
+    $(".hamburger").click(function(){
+      $(".subDropMenu").fadeToggle();
+    })
+  })
+</script>
+</html>

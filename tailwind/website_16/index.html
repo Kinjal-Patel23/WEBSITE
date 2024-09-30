@@ -1,0 +1,539 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="Container w-full h-auto">
+        <div class="heroSection w-full h-auto lg:h-[640px] bg-[url('Assets/banner-bg.jpg')] bg-no-repeat bg-cover flex flex-col items-center">
+            <div class="header fixed z-50 w-full lg:w-[1140px] h-[80px] bg-[#fff] flex justify-between items-center">
+                <div class="navleft w-[140px] h-[50px] ms-[25px] lg:ms-0">
+                    <img src="Assets/logo.png">
+                </div>
+                <div class="navright w-[480px] h-[50px] text-[12px] font-medium hidden lg:flex items-center justify-between">
+                    <a href="#" class="text-[#ffba00]">HOME</a>
+                    <a href="#" class="hover:text-[#ffba00] duration-300">SHOP</a>
+                    <a href="#" class="hover:text-[#ffba00] duration-300">BLOG</a>
+                    <a href="#" class="hover:text-[#ffba00] duration-300">PAGES</a>
+                    <a href="#" class="hover:text-[#ffba00] duration-300">CONTACT</a>
+                    <i class="ri-briefcase-2-line text-[16px] text-[#222] cursor-pointer"></i>
+                    <i class="ri-search-line text-[16px] text-[#222] cursor-pointer"></i>
+                </div>
+                <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[80px] lg:mr-0">
+                    <i class="fa-solid fa-bars text-[28px] text-[#000]"></i>
+                </div>
+            </div>
+            <div class="heroSectionCont w-full lg:w-[1140px] h-auto lg:h-[380px] mt-[160px] flex flex-wrap justify-center lg:justify-between items-center">
+                <div class="heroCont w-full lg:w-[445px] h-auto lg:h-[325px]">
+                    <h1 class="text-[30px] lg:text-[60px] text-[#222] text-center lg:text-left font-extrabold leading-[72px] tracking-wider pb-[26px]">Nike New Collection!</h1>
+                    <p class="text-[14px] text-[#777] leading-[24px] pb-[22px] text-center lg:text-left p-[30px] lg:p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <div class="w-full lg:w-[134px] h-auto lg:h-[50px] flex items-center justify-center lg:justify-between">
+                        <div class="circleBtn w-[50px] h-[50px] rounded-full bg-yellow-500 flex items-center justify-center">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                        <p class="text-[12px] uppercase text-[#222] font-medium">add to bag</p>
+                    </div>
+                </div>
+                <div class="heroImg w-full lg:w-[635px] h-[380px]">
+                    <img src="Assets/banner-img.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="dropnav w-full h-[400px] bg-black fixed top-24 text-[#fff] flex flex-col items-center justify-around">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Blog</a>
+            <a href="#">Pages</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="services w-full h-auto lg:h-[375px] flex items-center justify-center">
+            <div class="subServices w-full lg:w-[1140px] h-auto lg:h-[174px] flex flex-wrap items-center justify-around pt-[20px] lg:pt-0 gap-[20px] lg:gap-0">
+                <div class="delivery w-[255px] h-[90px] border-r border-[#EEEEEE] flex flex-col items-center justify-center">
+                    <img src="Assets/f-icon1.png">
+                    <h1 class="text-[16px] font-medium text-[#222] pt-[13px]">Free Delivery</h1>
+                    <p class="text-[14px] text-[#777]">Free Shipping on all order</p>
+                </div>
+                <div class="policy w-[255px] h-[90px] border-r border-[#EEEEEE] flex flex-col items-center justify-center">
+                    <img src="Assets/f-icon2.png">
+                    <h1 class="text-[16px] font-medium text-[#222] pt-[13px]">Return Policy</h1>
+                    <p class="text-[14px] text-[#777]">Free Shipping on all order</p>
+                </div>
+                <div class="support w-[255px] h-[90px] border-r border-[#EEEEEE] flex flex-col items-center justify-center">
+                    <img src="Assets/f-icon3.png">
+                    <h1 class="text-[16px] font-medium text-[#222] pt-[13px]">24/7 Support</h1>
+                    <p class="text-[14px] text-[#777]">Free Shipping on all order</p>
+                </div>
+                <div class="payment w-[255px] h-[90px] flex flex-col items-center justify-center">
+                    <img src="Assets/f-icon4.png">
+                    <h1 class="text-[16px] font-medium text-[#222] pt-[13px]">Secure Payment</h1>
+                    <p class="text-[14px] text-[#777]">Free Shipping on all order</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery w-full h-auto lg:h-[440px] flex flex-wrap justify-center">
+            <div class="images w-full lg:w-[760px] h-auto lg:h-[413px] flex flex-col justify-between">
+                <div class="img w-full lg:w-[760px] h-auto lg:h-[190px] flex flex-wrap justify-around">
+                    <div class="relative w-full lg:w-[477px] h-[190px] bg-[url('Assets/c1.jpg')] bg-no-repeat bg-cover group">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#fff] uppercase text-[14px] font-medium tracking-wider">sneaker for sports</p>
+                        </div>
+                    </div>
+                    <div class="relative w-full lg:w-[223px] h-[190px] bg-[url('Assets/c2.jpg')] bg-no-repeat bg-cover group">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#fff] uppercase text-[14px] font-medium tracking-wider text-center">sneaker for <br> sports</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img w-full lg:w-[760px] h-auto lg:h-[190px] flex flex-wrap justify-around">
+                    <div class="relative w-full lg:w-[223px] h-[190px] bg-[url('Assets/c3.jpg')] bg-no-repeat bg-cover group">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#fff] uppercase text-[14px] font-medium tracking-wider text-center">product for <br> couple</p>
+                        </div>
+                    </div>
+                    <div class="relative w-full lg:w-[477px] h-[190px] bg-[url('Assets/c4.jpg')] bg-no-repeat bg-cover group">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-[#fff] uppercase text-[14px] font-medium tracking-wider text-center">sneaker for sports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative saleImg w-full lg:w-[380px] h-[413px] flex justify-center bg-[url('Assets/c5.jpg')] bg-no-repeat bg-cover group">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p class="text-[#fff] uppercase text-[14px] font-medium tracking-wider text-center">sneaker for sports</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="product w-full h-auto lg:h-[1200px] flex flex-col items-center justify-center">
+            <div class="productTtl w-full lg:w-[570px] h-auto lg:h-[150px]">
+                <h1 class="text-[20px] lg:text-[36px] text-[#222] font-medium text-center pb-[8px]">Latest Products</h1>
+                <p class="text-[14px] text-[#777] text-center p-[20px] lg:p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br>
+                    incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="productCont w-full lg:w-[1140px] h-auto lg:h-[470px] flex flex-wrap justify-center">
+                <div class="subProductCont w-[285px] h-[470px] flex justify-center">
+                    <div class="productImg w-[255px] h-[420px]">
+                        <div class="w-[255px] h-[270px] bg-[url('Assets/p1.jpg')] bg-no-repeat bg-cover"></div>
+                        <h1 class="text-[16px] text-[#222] font-medium uppercase pt-[18px] pb-[8px]">addidas New Hammer sole <br> for Sports person</h1>
+                        <p class="text-[14px] text-[#222] font-medium pb-[14px]">$150.00<span class="text-[#ccc] ps-[20px]"><del>$210.00</del></span></p>
+                        <div class="w-[140px] h-[38px] flex justify-between">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-briefcase-2-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-heart-3-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-loop-right-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-drag-move-2-fill text-[#fff]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subProductCont w-[285px] h-[470px] flex justify-center">
+                    <div class="productImg w-[255px] h-[420px]">
+                        <div class="w-[255px] h-[270px] bg-[url('Assets/p2.jpg')] bg-no-repeat bg-cover"></div>
+                        <h1 class="text-[16px] text-[#222] font-medium uppercase pt-[18px] pb-[8px]">addidas New Hammer sole <br> for Sports person</h1>
+                        <p class="text-[14px] text-[#222] font-medium pb-[14px]">$150.00<span class="text-[#ccc] ps-[20px]"><del>$210.00</del></span></p>
+                        <div class="w-[140px] h-[38px] flex justify-between">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-briefcase-2-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-heart-3-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-loop-right-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-drag-move-2-fill text-[#fff]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subProductCont w-[285px] h-[470px] flex justify-center">
+                    <div class="productImg w-[255px] h-[420px]">
+                        <div class="w-[255px] h-[270px] bg-[url('Assets/p3.jpg')] bg-no-repeat bg-cover"></div>
+                        <h1 class="text-[16px] text-[#222] font-medium uppercase pt-[18px] pb-[8px]">addidas New Hammer sole <br> for Sports person</h1>
+                        <p class="text-[14px] text-[#222] font-medium pb-[14px]">$150.00<span class="text-[#ccc] ps-[20px]"><del>$210.00</del></span></p>
+                        <div class="w-[140px] h-[38px] flex justify-between">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-briefcase-2-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-heart-3-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-loop-right-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-drag-move-2-fill text-[#fff]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subproductCont w-[285px] h-[470px] flex justify-cente">
+                    <div class="productImg w-[255px] h-[420px]">
+                        <div class="w-[255px] h-[270px] bg-[url('Assets/p4.jpg')] bg-no-repeat bg-cover"></div>
+                        <h1 class="text-[16px] text-[#222] font-medium uppercase pt-[18px] pb-[8px]">addidas New Hammer sole <br> for Sports person</h1>
+                        <p class="text-[14px] text-[#222] font-medium pb-[14px]">$150.00<span class="text-[#ccc] ps-[20px]"><del>$210.00</del></span></p>
+                        <div class="w-[140px] h-[38px] flex justify-between">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-briefcase-2-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-heart-3-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-loop-right-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-drag-move-2-fill text-[#fff]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productCont w-full lg:w-[1140px] h-auto lg:h-[470px] flex flex-wrap justify-center">
+                <div class="subProductCont w-[285px] h-[470px] flex justify-center">
+                    <div class="productImg w-[255px] h-[420px]">
+                        <div class="w-[255px] h-[270px] bg-[url('Assets/p5.jpg')] bg-no-repeat bg-cover"></div>
+                        <h1 class="text-[16px] text-[#222] font-medium uppercase pt-[18px] pb-[8px]">addidas New Hammer sole <br> for Sports person</h1>
+                        <p class="text-[14px] text-[#222] font-medium pb-[14px]">$150.00<span class="text-[#ccc] ps-[20px]"><del>$210.00</del></span></p>
+                        <div class="w-[140px] h-[38px] flex justify-between">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-briefcase-2-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-heart-3-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-loop-right-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-drag-move-2-fill text-[#fff]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subProductCont w-[285px] h-[470px] flex justify-center">
+                    <div class="productImg w-[255px] h-[420px]">
+                        <div class="w-[255px] h-[270px] bg-[url('Assets/p6.jpg')] bg-no-repeat bg-cover"></div>
+                        <h1 class="text-[16px] text-[#222] font-medium uppercase pt-[18px] pb-[8px]">addidas New Hammer sole <br> for Sports person</h1>
+                        <p class="text-[14px] text-[#222] font-medium pb-[14px]">$150.00<span class="text-[#ccc] ps-[20px]"><del>$210.00</del></span></p>
+                        <div class="w-[140px] h-[38px] flex justify-between">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-briefcase-2-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-heart-3-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-loop-right-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-drag-move-2-fill text-[#fff]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subProductCont w-[285px] h-[470px] flex justify-center">
+                    <div class="productImg w-[255px] h-[420px]">
+                        <div class="w-[255px] h-[270px] bg-[url('Assets/p7.jpg')] bg-no-repeat bg-cover"></div>
+                        <h1 class="text-[16px] text-[#222] font-medium uppercase pt-[18px] pb-[8px]">addidas New Hammer sole <br> for Sports person</h1>
+                        <p class="text-[14px] text-[#222] font-medium pb-[14px]">$150.00<span class="text-[#ccc] ps-[20px]"><del>$210.00</del></span></p>
+                        <div class="w-[140px] h-[38px] flex justify-between">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-briefcase-2-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-heart-3-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-loop-right-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-drag-move-2-fill text-[#fff]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subProductCont w-[285px] h-[470px] flex justify-center">
+                    <div class="productImg w-[255px] h-[420px]">
+                        <div class="w-[255px] h-[270px] bg-[url('Assets/p8.jpg')] bg-no-repeat bg-cover"></div>
+                        <h1 class="text-[16px] text-[#222] font-medium uppercase pt-[18px] pb-[8px]">addidas New Hammer sole <br> for Sports person</h1>
+                        <p class="text-[14px] text-[#222] font-medium pb-[14px]">$150.00<span class="text-[#ccc] ps-[20px]"><del>$210.00</del></span></p>
+                        <div class="w-[140px] h-[38px] flex justify-between">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-briefcase-2-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-heart-3-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-loop-right-line text-[#fff]"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#828BB2] flex items-center justify-center">
+                                <i class="ri-drag-move-2-fill text-[#fff]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="deal w-full h-auto lg:h-[830px] bg-[#F9F9FF] flex flex-wrap items-center justify-center lg:justify-around">
+            <div class="dealImg relative w-full lg:w-[664px] h-[830px] border border-black bg-[url('Assets/exclusive.jpg')] 
+            bg-no-repeat bg-cover bg-center flex items-center justify-center">
+                <div class="absolute inset-0 bg-black opacity-55"></div>
+                <div class="dealImgCont relative w-full lg:w-[515px] h-auto lg:h-[270px] flex flex-col items-center">
+                    <div class="dealImgTtl w-full lg:w-[514px] h-auto lg:h-[90px] flex flex-col items-center">
+                        <h1 class="text-[20px] lg:text-[30px] text-[#fff] text-center font-medium">Exclusive Hot Deal Ends Soon!</h1>
+                        <p class="text-[14px] text-[#fff] text-center p-[20px] lg:p-0">Who are in extremely love with eco friendly system.</p>
+                    </div>
+                    <div class="dealCounter w-full lg:w-[514px] h-auto lg:h-[96px] bg-[#FFFFFF] rounded-[5px] mb-[30px] flex flex-wrap justify-center items-center">
+                        <div class="w-[128px] h-[60px] flex flex-col items-center justify-center">
+                            <h1 class="text-[30px] text-[#222] font-medium">29</h1>
+                            <p class="text-[14px] text-[#222]">Days</p>
+                        </div>
+                        <div class="w-[128px] h-[60px] flex flex-col items-center justify-center">
+                            <h1 class="text-[30px] text-[#222] font-medium">23</h1>
+                            <p class="text-[14px] text-[#222]">Hours</p>
+                        </div>
+                        <div class="w-[128px] h-[60px] flex flex-col items-center justify-center">
+                            <h1 class="text-[30px] text-[#222] font-medium">48</h1>
+                            <p class="text-[14px] text-[#222]">Mins</p>
+                        </div>
+                        <div class="w-[128px] h-[60px] flex flex-col items-center justify-center">
+                            <h1 class="text-[30px] text-[#222] font-medium">52</h1>
+                            <p class="text-[14px] text-[#222]">Secs</p>
+                        </div>
+                    </div>
+                    <button class="dealBtn w-[132px] h-[50px] text-[14px] text-[#fff] font-medium rounded-[50px] uppercase">Shop Now</button>
+                </div>
+            </div>
+            <div class="dealImg w-full lg:w-[664px] h-auto lg:h-[480px] flex flex-col items-center">
+                <div class="subDealImg w-full lg:w-[328px] h-[298px] flex items-center justify-center">
+                    <img src="Assets/e-p1.png">
+                </div>
+                <div class="subDealImgCont w-full lg:w-[328px] h-auto lg:h-[152px] flex flex-col items-center">
+                    <p class="text-[14px] text-[#222] font-medium pb-[10px] pt-[40px] lg:pt-0">$150.00<span class="text-[#ccc] ps-[15px]"><s>$210.00</s></span></p>
+                    <h1 class="text-[24px] text-[#222] font-medium uppercase text-center pb-[16px] p-[20px] lg:p-0">Addidas new hammer sole for sports person</h1>
+                    <div class="w-[200px] h-[30px] flex items-center justify-center gap-[14px]">
+                        <div class="circleBtn w-[30px] h-[30px] rounded-full flex items-center justify-center">
+                            <i class="ri-briefcase-2-line text-[#fff]"></i>
+                        </div>
+                        <p class="uppercase text-[#222] text-[12px] font-medium tracking-wider">Add to bag</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos w-full h-auto lg:h-[270px] flex flex-wrap items-center justify-center mt-[30px] lg:mt-0 gap-[20px] lg:gap-0">
+            <div class="w-[228px] h-[70px] flex items-center justify-center">
+                <img src="Assets/1.png">
+            </div>
+            <div class="w-[228px] h-[70px] flex items-center justify-center">
+                <img src="Assets/2.png">
+            </div>
+            <div class="w-[228px] h-[70px] flex items-center justify-center">
+                <img src="Assets/3.png">
+            </div>
+            <div class="w-[228px] h-[70px] flex items-center justify-center">
+                <img src="Assets/4.png">
+            </div>
+            <div class="w-[228px] h-[70px] flex items-center justify-center">
+                <img src="Assets/5.png">
+            </div>  
+        </div>
+
+        <div class="weekDeal w-full h-auto lg:h-[550px] flex flex-col items-center justify-center">
+            <div class="weekDealTtl w-full lg:w-[570px] h-auto lg:h-[150px] flex flex-col items-center">
+                <h1 class="text-[20px] lg:text-[36px] text-[#222] font-medium tracking-wide text-center pt-[20px] lg:pt-0">Deals of the Week</h1>
+                <p class="text-[14px] text-[#777] text-center p-[20px] lg:p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br>
+                   incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="weekDealCont w-full lg:w-[1140px] h-auto lg:h-[300px] flex flex-wrap justify-center">
+                <div class="w-[285px] h-[300px] flex flex-col justify-between items-center">
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r1.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r5.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r9.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[285px] h-[300px] flex flex-col justify-between items-center">
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r2.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r6.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r10.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[285px] h-[300px] flex flex-col justify-between items-center">
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r3.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r7.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[70px] flex items-center">
+                        <div class="w-[70px] h-[70px]">
+                            <img src="Assets/r11.jpg">
+                        </div>
+                        <div class="w-[130px] h-[50px] ms-[14px]">
+                            <h1 class="text-[14px] text-[#222] uppercase hover:text-[#ffba00] duration-300 pb-[4px]">Black lace Heels</h1>
+                            <p class="text-[14px] font-semibold text-[#222]">$189.00<span class="text-[#ccc] ps-[14px]"><s>$210.00</s></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[285px] h-[300px] flex justify-center">
+                    <img src="Assets/c5.jpg" class="h-[300px]">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[475px] bg-[#222222] flex flex-col items-center justify-center">
+            <div class="subFooter w-full lg:w-[1110px] h-auto lg:h-[180px] flex flex-wrap justify-center lg:justify-around pt-[20px] lg:pt-0 gap-[30px] lg:gap-0">
+                <div class="about w-full lg:w-[260px] h-auto lg:h-[120px] flex flex-col items-center lg:items-start">
+                    <h1 class="text-[18px] text-[#fff] font-bold pb-[22px] text-center lg:text-left">About Us</h1>
+                    <p class="text-[14px] text-[#777] leading-[24px] text-center lg:text-left p-[20px] lg:p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+                <div class="newsletter w-full lg:w-[350px] h-auto lg:h-[125px] flex flex-col items-center lg:items-start">
+                    <h1 class="text-[18px] text-[#fff] font-bold pb-[22px] text-center lg:text-left">Newsletter</h1>
+                    <p class="text-[14px] text-[#777] pb-[15px] text-center lg:text-left p-[20px] lg:p-0">Stay update with our latest</p>
+                    <div class="w-[350px] h-[38px] flex">
+                        <input type="email" placeholder="Enter Email" class="w-[280px] h-[38px] placeholder:text-[14px] text-[#495057] text-[14px] outline-none ps-[16px]">
+                        <div class="circleBtn w-[40px] h-[38px] flex items-center justify-center cursor-pointer">
+                            <i class="fa fa-long-arrow-right text-[#fff]"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagramFeed w-full lg:w-[265px] h-auto lg:h-[178px] flex flex-col items-center lg:items-start">
+                    <h1 class="text-[18px] text-[#fff] font-bold pb-[15px] text-center lg:text-left">Instragram Feed</h1>
+                    <div class="w-[264px] h-[68px] flex items-center justify-center lg:justify-around">
+                        <div class="w-[58px] h-[58px]">
+                            <img src="Assets/i1.jpg">
+                        </div>
+                        <div class="w-[58px] h-[58px]">
+                            <img src="Assets/i2.jpg">
+                        </div>
+                        <div class="w-[58px] h-[58px]">
+                            <img src="Assets/i3.jpg">
+                        </div>
+                        <div class="w-[58px] h-[58px]">
+                            <img src="Assets/i4.jpg">
+                        </div>
+                    </div>
+                    <div class="w-[264px] h-[68px] flex items-center justify-center lg:justify-around">
+                        <div class="w-[58px] h-[58px]">
+                            <img src="Assets/i5.jpg">
+                        </div>
+                        <div class="w-[58px] h-[58px]">
+                            <img src="Assets/i6.jpg">
+                        </div>
+                        <div class="w-[58px] h-[58px]">
+                            <img src="Assets/i7.jpg">
+                        </div>
+                        <div class="w-[58px] h-[58px]">
+                            <img src="Assets/i8.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="follow w-[160px] h-[110px] flex flex-col items-center lg:items-start">
+                    <h1 class="text-[18px] text-[#fff] font-bold pb-[22px] text-center lg:text-left">Follow Us</h1>
+                    <p class="text-[14px] text-[#777] pb-[12px] text-center lg:text-left">Let us be social</p>
+                    <div class="w-[130px] h-[25px] text-[#CCCCCC] flex items-center justify-center lg:justify-between gap-[20px] lg:gap-0">
+                        <i class="ri-facebook-fill hover:text-[#ffba00]"></i>
+                        <i class="ri-twitter-fill hover:text-[#ffba00]"></i>
+                        <i class="ri-dribbble-line hover:text-[#ffba00]"></i>
+                        <i class="ri-behance-fill hover:text-[#ffba00]"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright w-full lg:w-[495px] h-auto lg:h-[100px] flex items-end">
+                <p class="text-[14px] text-[#777] text-center p-[20px] lg:p-0">Copyright ©2024 All rights reserved | This template is made with <i class="ri-heart-line text-[#ffba00]"></i> by <span class="text-[#ffba00]">Colorlib</span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide();
+        $(".hamburger").click(function(){
+            $(".dropnav").toggle();
+        })
+    })
+</script>
+</html>

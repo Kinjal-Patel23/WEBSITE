@@ -1,0 +1,923 @@
+@media (min-width:0px) and (max-width:480px){
+    .menu .links .sub-links{
+        display: none;
+    }
+
+    .head .sub-head .call-button{
+        display: none;
+    }
+
+    .head .sub-head .icon{
+        display: none;
+    }
+
+    .menu .bar{
+        display: flex;
+        padding-right: 20px;
+    }
+
+    .head .sub-head .logo{
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    .hero-section {
+        height: 600px;
+    }
+
+    .hero-section .hero-section-cont{
+        width: 429px;
+        height: 200px;
+        margin-left: 40px;
+    }
+
+    .hero-section .hero-section-cont h1{
+        font-size: 5vh;
+        font-weight: 700;
+        width: 300px;
+        height: 150px;
+    }
+
+    .hero-section .hero-section-cont button{
+        margin-top: 30px;
+        font-weight: 800;
+        font-size: 2vh;
+    }
+
+    .about{
+        height: 940px;
+    }
+
+    .about .sub-about{
+        width: 466px;
+        height: 500px;
+        margin-left: -95px;
+    }
+
+    .about .sub-about h1{
+        font-size: 3vh;
+        text-align: left;
+        /* padding-left: 30px; */
+    }
+
+    .about .sub-about .line{
+        margin-left: 130px;
+    }
+
+    .about .sub-about-1{
+        width: 458px;
+        height: 600px;
+        margin-left: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .sub-about h1{
+        margin-left: 26%;
+    }
+
+    .about .sub-about-1 .about-1{
+        width: 450px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .about .sub-about-1 .about-2{
+        height: 400px;
+        width: 430px;
+    }
+
+    .slide{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide .slider{
+        width: 500px;
+        height: 400px;
+    }
+
+    swiper-slide .img-cont h2{
+        font-size: 1.3vh;
+    }
+
+    .video{
+        height: 300px;
+    }
+
+    .video .sub-video{
+        width: 450px;
+        height: 400px;
+        margin-left: 2px;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .testimonial{
+        height: 1200px;
+    }
+
+    .testimonial .testi-title{
+        padding-top: 80px;
+        width: 400px;
+        height: 200px;
+        margin-left: 30px;
+    }
+
+    .testimonial .testi-title h1{
+        font-size: 3vh;
+
+    }
+
+    .testimonial .box-1{
+        width: 450px;
+        margin-left: 10px;
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    .testimonial .box-1 .sub-box-1{
+        width: 400px;
+        height: 300px;
+    }
+
+    .testimonial .box-1 .sub-box-2{
+        width: 400px;
+        height: 300px;
+    }
+
+    .testimonial .box-1 .sub-box-3{
+        width: 400px;
+        height: 300px;
+    }
+
+    .blog{
+        height: 800px;
+    }
+
+    .blog .sub-blog{
+        width: 300px;
+        height: 150px;
+        margin-left: 5px;
+    }
+
+    .blog .sub-blog .blog-title{
+        width: 100px;
+        height: 40px;
+    }
+
+    .blog .sub-blog .blog-title h1{
+        font-size: 2.7vh;
+        padding-left: 20px;
+    }
+
+    .blog .card{
+        display: flex;
+        flex-direction: column;
+        width:450px;
+    }
+
+    .blog .card .card-1{
+        width: 450px;
+        height: 600px;
+        flex-direction: column;
+    }
+
+    .blog .card .card-1 .card-1-img{
+        width: 470px;
+        height: 600px;
+    }
+
+    .blog .card .card-1 .card-1-cont{
+        width: 470px;
+        height: 400px;
+    }
+
+    .blog .card .card-1 .card-1-cont p{
+        font-size: 1.8vh;
+    }
+
+    .blog .card .card-2{
+        width: 450px;
+        height: 600px;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .blog .card .card-2 .card-2-img{
+        width: 463px;
+        height: 600px;
+    }
+
+    .blog .card .card-2 .card-2-cont{
+        width: 470px;
+        height: 400px;
+    }
+
+    .blog .card .card-2 .card-2-cont p{
+        font-size: 1.8vh;
+    }
+
+    .gallery{
+        height: 1810px;
+        padding-top: 120%;
+    }
+
+    .gallery .gallery-ttl{
+        width: 450px;
+        height: 180px;
+        margin-left: 17px;
+    }
+
+    .gallery .gallery-ttl h1{
+        font-size: 3vh;
+    }
+
+    .gallery .gallery-ttl button{
+        margin-left: 34%;
+    }
+
+    .gallery .gallery-img{
+        flex-direction: column;
+        gap: 10px;
+        height: 900px;
+        margin-left: 88px;
+        width: 380px;
+    }
+
+    .gallery .gallery-img .gallery-img-1{
+        width: 300px;
+        height: 230px;
+    }
+
+    .gallery .gallery-img .gallery-img-2{
+        width: 300px;
+        height: 230px;
+    }
+
+    .gallery .gallery-img .gallery-img-3{
+        width: 300px;
+        height: 230px;
+    }
+
+    .gallery .gallery-img .gallery-img-4{
+        width: 300px;
+        height: 230px;
+    }
+
+    footer{
+        height: 900px;
+    }
+
+    footer .sub-footer{
+        height: 800px;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 450px;
+    }
+
+    footer .sub-footer .detail{
+        width: 450px;
+        height: 230px;
+    }
+
+    footer .sub-footer .location{
+        width: 250px;
+        height: 268px;
+        margin-left: 170px;
+    }
+
+    footer .sub-footer .contact{
+        width: 250px;
+        height: 268px;
+        margin-left: 170px;
+    }
+
+    footer .sub-footer .contact img{
+        padding-top: 0px;
+    }
+
+
+    footer .line-2{
+        margin-top: 716px;
+        width: 450px;
+        margin-left: 15px;
+
+    }
+
+    footer .copyright{
+        margin-top: 764px;
+    }
+}
+
+@media (min-width:481px) and (max-width:1080px){
+    .menu .links .sub-links{
+        display: none;
+    }
+
+    .head .sub-head .call-button{
+        display: none;
+    }
+
+    .menu .bar{
+        display: flex;
+        padding-right: 20px;
+    }
+
+    .head{
+        height: 100px;
+        width: 600px;
+    }
+
+    .head .sub-head{
+        width: 95%;
+        height: 60px;
+    }
+
+    .head .sub-head .icon{
+        width: 86px;
+        height: 30px;
+    }
+
+    .head .sub-head .logo{
+        width: 213px;
+        height: 60px;
+        margin-right: 75px;
+    }
+
+    .menu{
+        width: 600px;
+
+    }
+
+    .hero-section{
+        width: 600px;
+        height: 600px;
+    }
+
+    .hero-section .hero-section-cont{
+        width: 575px;
+        height: 230px;
+        margin-left: 20px;
+    }
+
+    .about{
+        height: 820px;
+        width: 600px;
+    }
+
+    .about .sub-about{
+        width: 800px;
+        height: 500px;
+        margin-left:-221px;
+    }
+
+    .about .sub-about h1{
+        font-size: 3vh;
+        /* padding-left: 30px; */
+    }
+
+    .about .sub-about .line{
+        margin-left: 430px;
+    }
+
+    .about .sub-about-1{
+        width: 600px;
+        height: 400px;
+        margin-left: 2px;
+        display: flex;
+    }
+
+    .about .sub-about-1 .about-1{
+        width: 280px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .about .sub-about-1 .about-2{
+        height: 400px;
+        width: 280px;
+    }
+
+    .slide{
+        width: 600px;
+        /* height: auto; */
+        display: flex;
+    }
+
+     .slide .slider{
+        width: 580px;
+        height: 400px;
+    }
+
+    swiper-slide .img-cont h2{
+        font-size: 2vh;
+    }
+    
+    .video{
+        width: 600px;
+        height: 400px;
+    }
+
+    .video .sub-video{
+        width: 550px;
+        height: 370px;
+        margin-left: 2px;
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .testimonial{
+        height: 1000px;
+        width: 600px;
+    }
+
+    .testimonial .testi-title{
+        padding-top: 10px;
+        width: 400px;
+        height: 100px;
+        margin-left: 90px;
+    }
+
+    .testimonial .testi-title h1{
+        font-size: 5vh;
+    }
+
+    .testimonial .box-1{
+        width: 580px;
+        margin-left: 20px;
+        padding-top: 30px;
+        flex-wrap: wrap;
+    }
+
+
+    .testimonial .box-1 .sub-box-1{
+        width: 280px;
+        height: 300px;
+    }
+
+    .testimonial .box-1 .sub-box-1 .review p{
+        font-size: 2vh;
+    }
+
+    .testimonial .box-1 .sub-box-2{
+        width: 280px;
+        height: 300px;
+    }
+
+    .testimonial .box-1 .sub-box-2 .star{
+        margin-left: 25px;
+    }
+
+    .testimonial .box-1 .sub-box-2 .review p{
+        font-size: 2vh;
+        padding-left: 15px;
+    }
+
+    .testimonial .box-1 .sub-box-2 .client{
+        margin-left: 25px;
+    }
+
+    .testimonial .box-1 .sub-box-3{
+        width: 580px;
+        height: 300px;
+    }
+
+    .testimonial .box-1 .sub-box-3 .review p{
+        font-size: 2vh;
+    }
+
+    .testimonial .box-1 .sub-box-3 .star{
+        margin-left: 120px;
+    }
+
+    .testimonial .box-1 .sub-box-3 .client{
+        margin-left: 50px;
+    }
+
+    .blog{
+        height: 1000px;
+        width: 600px;
+    }
+
+    .blog .sub-blog{
+        width: 600px;
+        height: 200px;
+        margin-left: 2px;
+    }
+
+    .blog .sub-blog .blog-title{
+        width: 100px;
+        height: 50px;
+    }
+
+    .blog .sub-blog .blog-title h1{
+        font-size: 3vh;
+        padding-left: 20px;
+    }
+
+    .blog .sub-blog .blog-btn{
+        margin-left: 50%;
+        margin-top: 20px;
+    }
+
+    .blog .card{
+        display: flex;
+        flex-direction: column;
+        width:600px;
+    }
+
+    .blog .card .card-1{
+        width: 590px;
+        height: 400px;
+    }
+
+    .blog .card .card-1 .card-1-img{
+        width: 290px;
+        height: 500px;
+    }
+
+    .blog .card .card-1 .card-1-cont{
+        width: 290px;
+        height: 370px;
+    }
+
+    .blog .card .card-1 .card-1-cont p{
+        font-size: 1.8vh;
+    }
+
+    .blog .card .card-2{
+        width: 590px;
+        height: 400px;
+    }
+
+    .blog .card .card-2 .card-2-img{
+        width: 290px;
+        height: 500px;
+    }
+
+    .blog .card .card-2 .card-2-cont{
+        width: 290px;
+        height: 370px;
+    }
+
+    .blog .card .card-2 .card-2-cont p{
+        font-size: 1.8vh;
+    }
+
+    .gallery{
+        height: 800px;
+        width:600px;
+    }
+
+    .gallery .gallery-ttl{
+        width: 500px;
+        height: 180px;
+        margin-left: 50px;
+    }
+
+    .gallery .gallery-ttl h1{
+        font-size: 3vh;
+    }
+
+    .gallery .gallery-ttl button{
+        margin-left: 34%;
+    }
+
+    .gallery .gallery-img{
+        flex-wrap: wrap;
+        height: 500px;
+        margin-left: 10px;
+        width: 580px;
+    }
+
+    .gallery .gallery-img .gallery-img-1{
+        width: 280px;
+        height: 230px;
+    }
+
+    .gallery .gallery-img .gallery-img-2{
+        width: 280px;
+        height: 230px;
+    }
+
+    .gallery .gallery-img .gallery-img-3{
+        width: 280px;
+        height: 230px;
+    }
+
+    .gallery .gallery-img .gallery-img-4{
+        width: 280px;
+        height: 230px;
+    }
+
+    footer{
+        width:600px;
+        height: 800px;
+    }
+
+    footer .sub-footer{
+        height: 500px;
+        margin-left: 20px;
+        width: 600px;
+        flex-wrap: wrap;
+    }
+
+    footer .sub-footer .detail{
+        width: 570px;
+        height: 230px;
+    }
+
+    footer .sub-footer .location{
+        width: 280px;
+        height: 268px;
+        margin-left: 25px;
+    }
+
+    footer .sub-footer .contact{
+        width: 280px;
+        height: 268px;
+        margin-left: 3px;
+    }
+
+    footer .line-2{
+        margin-top: 600px;
+        width: 450px;
+        margin-left: 15px;
+
+    }
+
+    footer .copyright{
+        margin-top: 650px;
+        width: 550px;
+        height: 100px;
+    }
+
+    footer .copyright p{
+        font-size: 2vh;
+    }
+}
+
+@media (min-width:1081px) and (max-width:1400px){
+    .head{
+        width: 100%;
+        height: auto;
+    }
+
+    .head .sub-head{
+        width: 1270px;
+        height: 74px;
+    }
+
+    .head .sub-head .icon{
+        width: 130px;
+        height: 40px;
+    }
+
+    .head .sub-head .logo{
+        width: 213px;
+        height: 74px;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .hero-section{
+        width: 100%;
+        height: 700px;
+    }
+
+    .hero-section .hero-section-cont{
+        width: 641px;
+        height: 270px;
+    }
+
+    .about{
+        width: 100%;
+        height: 648px;
+    }
+
+    .about .sub-about{
+        width: 1140px;
+        height: 226px;
+    }
+
+    .about .sub-about h1{
+        font-size: 40px;
+    }
+
+    .about .sub-about .line{
+        margin-left: 520px;
+    }
+
+    .about .sub-about-1{
+        width: 1140px;
+        height: 322px;
+        margin-left: 110px;
+    }
+
+    .about .sub-about-1 .about-1{
+        width: 570px;
+        height: 322px;
+        margin-left: 50px;
+    }
+
+    .about .sub-about-1 .about-2{
+        width: 451px;
+        height: 315px;
+    }
+
+    .slide{
+        width: 100%;
+    }
+
+    .slider{
+        width: 100%;
+        height: 500px;
+    }
+
+    swiper-slide .img-cont h2{
+        font-size: 24px;
+    }
+    
+    .video{
+        width: 100%;
+        height: 668px;
+    }
+
+    .video .sub-video{
+        width: 1116px;
+        height: 668px;
+        margin-left: 110px;
+    }
+
+    .testimonial{
+        width: 100%;
+        height: 728px;
+    }
+
+    .testimonial .testi-title{
+        width: 1140px;
+        height: 102px;
+        margin-top: 110px;
+        margin-left: 100px;
+    }
+
+    .testimonial .testi-title h1{
+        font-size: 40px;
+    }
+
+    .testimonial .box-1{
+        width: 1140px;
+        margin-left: 100px;
+    }
+
+
+    .testimonial .box-1 .sub-box-1{
+        width: 380px;
+        height: 356px;
+    }
+
+    .testimonial .box-1 .sub-box-2{
+        width: 380px;
+        height: 356px;
+    }
+
+    .testimonial .box-1 .sub-box-3{
+        width: 380px;
+        height: 356px;
+    }
+
+    .blog{
+        width: 100%;
+        height: 554px;
+    }
+
+    .blog .sub-blog{
+        width: 1140px;
+        height: 154px;
+        margin-left: 100px;
+    }
+
+    .blog .sub-blog .blog-title{
+        width: 165px;
+        height: 52px;
+    }
+
+    .blog .card{
+        width: 1328px;
+    }
+
+    .blog .card .card-1{
+        width: 664px;
+        height: 370px;
+    }
+
+    .blog .card .card-1 .card-1-img{
+        width: 327px;
+        height: 370px;
+    }
+
+    .blog .card .card-1 .card-1-cont{
+        width: 327px;
+        height: 370px;
+    }
+
+    .blog .card .card-2{
+        width: 664px;
+        height: 370px;
+    }
+
+    .blog .card .card-2 .card-2-img{
+        width: 327px;
+        height: 370px;
+    }
+
+    .blog .card .card-2 .card-2-cont{
+        width: 327px;
+        height: 370px;
+    }
+
+    .gallery{
+        width: 100%;
+        height: 560px;
+    }
+
+    .gallery .gallery-ttl{
+        width: 1140px;
+        height: 221px;
+        margin-left: 100px;
+    }
+
+    .gallery .gallery-ttl button{
+        margin-left: 43%;
+    }
+
+    .gallery .gallery-img{
+        width: 1140px;
+        height: 239px;
+        margin-left: 100px;
+    }
+
+    .gallery .gallery-img .gallery-img-1{
+        width: 261px;
+        height: 209px;
+    }
+
+    .gallery .gallery-img .gallery-img-2{
+        width: 261px;
+        height: 209px;
+    }
+
+    .gallery .gallery-img .gallery-img-3{
+        width: 261px;
+        height: 209px;
+    }
+
+    .gallery .gallery-img .gallery-img-4{
+        width: 261px;
+        height: 209px;
+    }
+
+    footer{
+        width: 100%;
+        height: 450px;
+    }
+
+    footer .sub-footer{
+        width: 1140px;
+        height: 248px;
+        margin-left: 100px;
+    }
+
+    footer .sub-footer .detail{
+        width: 570px;
+        height: 248px;
+    }
+
+    footer .sub-footer .location{
+        width: 190px;
+        height: 248px;
+    }
+
+    footer .sub-footer .contact{
+        width: 190px;
+        height: 248px;
+    }
+
+    footer .line-2{
+        width: 1140px;
+        height: 1px;
+        margin-left: 100px;
+    }
+
+    footer .copyright{
+        width: 100%;
+        height: 20px;
+        margin-top: 400px;
+    }
+}

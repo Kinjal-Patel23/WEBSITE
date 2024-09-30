@@ -1,0 +1,490 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="Container w-full h-auto">
+        <a id="top"></a>
+
+        <div class="header relative w-full h-auto lg:h-[641px] flex flex-col items-center justify-between">
+            <div class="absolute inset-0 bg-[#031315] opacity-60"></div>
+            <div class="navMenu relative w-full lg:w-[1280px] h-[80px] flex items-center justify-between">
+                <div class="navleft w-[280px] h-[60px] ms-[30px] lg:ms-0">
+                    <img src="Assets/logo-sm-white2.png" class="w-[132px] h-[50px]">
+                </div>
+                <div class="navcenter w-[768px] h-[60px] text-[15px] text-[#fff] font-medium gap-[40px] hidden lg:flex items-center justify-center">
+                    <a href="#" class="text-[#D68240]">Home</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Order</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Shop</a>
+                </div>
+                <div class="navright w-[256px] h-[60px] flex items-center justify-end gap-[30px]">
+                    <button class="w-[157px] h-[60px] bg-[#E78C45] uppercase text-[#fff] text-[14px] hidden md:flex items-center justify-center transform transition-transform duration-300 hover:translate-y-1 hover:translate-x-1 hover:scale-105">Reservation</button>
+                    <i class="fa-solid fa-bag-shopping text-[#fff] text-[25px] hidden lg:flex"></i>
+                </div>
+                <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[80px] lg:mr-0">
+                    <i class="fa-solid fa-bars text-[28px] text-[#fff]"></i>
+                </div>
+            </div>
+            <div class="headerCont relative w-full lg:w-[1210px] h-auto lg:h-[280px] flex flex-col items-center justify-center">
+                <p class="text-[14px] text-[#e5ebef] font-bold uppercase">Welcome to Tastyc</p>
+                <div class="headerTtl w-full lg:w-[1210px] h-[150px] ms-0 lg:ms-[10%] uppercase text-[60px] lg:text-[112px] text-[#e5ebef] mb-[20px]"></div>
+                <div class="w-full lg:w-[600px] h-auto lg:h-[90px] flex flex-wrap items-center justify-center">
+                    <button class="w-[171px] h-auto lg:h-[60px] border-2 border-white uppercase text-[14px] text-[#fff] font-medium">Book a table</button>
+                    <button class="w-[171px] h-auto lg:h-[60px] uppercase text-[14px] text-[#fff] font-medium">Open menu</button>
+                </div>
+            </div>
+            <div class="headerIcon w-[25px] h-[40px] relative rounded-b-full rounded-t-full border border-white flex items-center justify-center">
+                <i class="fa-solid fa-circle fa-bounce text-[#fff] text-[5px]"></i>
+            </div>
+        </div>
+
+        <div class="dropnav w-full h-[300px] bg-black text-[#fff] fixed top-28 flex flex-col justify-evenly items-center">
+            <a href="#">Home</a>
+            <a href="#">Pages</a>
+            <a href="#">Menu</a>
+            <a href="#">Order</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Shop</a>
+        </div>
+
+        <div class="about w-full h-auto lg:h-[1920px] bg-[#0A1316] flex flex-col items-center justify-center">
+            <div class="aboutUs w-full lg:w-[1210px] h-auto lg:h-[605px] flex flex-wrap">
+                <div class="aboutUsCont w-full lg:w-[605px] h-auto lg:h-[605px] flex flex-col justify-center items-center gap-[20px] order-2 lg:order-1">
+                    <div class="aboutUsTtl w-full lg:w-[460px] h-[20px] flex">
+                        <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240] mt-[5px]"></div>
+                        <p class="text-[12px] text-[#d3cfc6] font-bold text-center lg:text-left uppercase tracking-wider ps-[10px]">About Us</p>
+                    </div>
+                    <div class="aboutUsSubTtl w-full lg:w-[460px] h-auto lg:h-[186px]">
+                        <h1 class="text-[36px] lg:text-[52px] text-[#eae5dc] text-center lg:text-left leading-[62px] p-[20px] lg:p-0">We Invite You to Visit Our Coffee House</h1>
+                    </div>
+                    <div class="aboutUsSubCont w-full lg:w-[460px] h-auto lg:h-[82px]">
+                        <p class="text-[#d3cfc6] font-medium text-[17px] p-[20px] lg:p-0">Repudiandae dignissimos fugiat sit nam. Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+                    </div>
+                    <div class="aboutUsBtn w-full lg:w-[460px] h-[90px] flex items-center justify-center lg:justify-start">
+                        <button class="w-[147px] h-[60px] bg-[#D68240] uppercase text-[14px] text-[#fff] transform transition-transform duration-300 hover:translate-y-1 hover:translate-x-1 hover:scale-105">Read More</button>    
+                    </div>
+                </div>
+                <div class="aboutUsImg w-full lg:w-[605px] h-[605px] bg-[url('Assets/st-coffee1.jpg.webp')] bg-no-repeat bg-cover bg-center lg:order-2"></div>
+            </div>
+            <div class="coffeeMenu w-full lg:w-[1210px] h-auto lg:h-[605px] flex flex-wrap">
+                <div class="coffeeMenuImg w-full lg:w-[605px] h-[605px] bg-[url('Assets/st-coffee3.jpg.webp')] bg-no-repeat bg-cover bg-center"></div>
+                <div class="coffeeMenuCont w-full lg:w-[605px] h-auto lg:h-[605px] flex flex-col justify-center items-center gap-[20px]">
+                    <div class="coffeeMenuTtl w-full lg:w-[460px] h-auto lg:h-[20px] flex">
+                        <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240] mt-[5px]"></div>
+                        <p class="text-[12px] text-[#d3cfc6] font-bold text-center lg:text-left uppercase tracking-wider ps-[10px]">Coffee Menu</p>
+                    </div>
+                    <div class="coffeeMenuTtl w-full lg:w-[460px] h-auto lg:h-[130px]">
+                        <h1 class="text-[36px] lg:text-[52px] text-[#eae5dc] text-center lg:text-left leading-[62px] p-[20px] lg:p-0">Quality Kava <br> Beans</h1>
+                    </div>
+                    <div class="coffeeMenuCont w-full lg:w-[460px] h-auto lg:h-[82px]">
+                        <p class="text-[#d3cfc6] font-medium text-[17px] p-[20px] lg:p-0">Repudiandae dignissimos fugiat sit nam. Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+                    </div>
+                    <div class="coffeeMenuBtn w-full lg:w-[460px] h-[90px] flex items-center justify-center lg:justify-start">
+                        <button class="w-[147px] h-[60px] bg-[#D68240] uppercase text-[14px] text-[#fff] transform transition-transform duration-300 hover:translate-y-1 hover:translate-x-1 hover:scale-105">view menu</button>    
+                    </div>
+                </div>
+            </div>
+            <div class="ourTeam w-full lg:w-[1210px] h-auto lg:h-[605px] flex flex-wrap">
+                <div class="ourTeamCont w-full lg:w-[605px] h-auto lg:h-[605px] flex flex-col justify-center items-center gap-[20px] order-2 lg:order-1">
+                    <div class="ourTeamTtl w-full lg:w-[460px] h-auto lg:h-[20px] flex">
+                        <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240] mt-[5px]"></div>
+                        <p class="text-[12px] text-[#d3cfc6] font-bold text-center lg:text-left uppercase tracking-wider ps-[10px]">Our Team</p>
+                    </div>
+                    <div class="ourTeamTtl w-full lg:w-[460px] h-auto lg:h-[186px]">
+                        <h1 class="text-[36px] lg:text-[52px] text-[#eae5dc] text-center lg:text-left leading-[62px] p-[20px] lg:p-0">Use the Tips & Recipes of Our Barista</h1>
+                    </div>
+                    <div class="ourTeamCont w-full lg:w-[460px] h-auto lg:h-[82px]">
+                        <p class="text-[#d3cfc6] font-medium text-[17px] p-[20px] lg:p-0">Repudiandae dignissimos fugiat sit nam. Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+                    </div>
+                    <div class="ourTeamBtn w-full lg:w-[460px] h-[90px] flex items-center justify-center lg:justify-start">
+                        <button class="w-[147px] h-[60px] bg-[#D68240] uppercase text-[14px] text-[#fff] transform transition-transform duration-300 hover:translate-y-1 hover:translate-x-1 hover:scale-105">meet the team</button>    
+                    </div>
+                </div>
+                <div class="ourTeamImg w-full lg:w-[605px] h-[605px] bg-[url('Assets/team1.jpg.webp')] bg-no-repeat bg-cover bg-center lg:order-2"></div>
+            </div>
+        </div>
+
+        <div class="features w-full h-auto lg:h-[577px] bg-[#0A1316] flex flex-col items-center justify-center">
+            <div class="featuresTtl w-full lg:w-[1240px] h-auto lg:h-[235px] flex flex-col items-center gap-[15px]">
+                <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240] mt-[5px]"></div>
+                <p class="text-[14px] text-[#d3cfc6] font-bold tracking-wider uppercase">Features</p>
+                <h1 class="text-[36px] lg:text-[52px] text-[#eae5dc] text-center">Why people choose us?</h1>
+                <p class="text-[#d3cfc6] tetx-[17px] tracking-wide text-center p-[20px] lg:p-0">Porro eveniet, autem ipsam vitae consequatur!</p>
+            </div>
+            <div class="featuresCont w-full lg:w-[1149px] h-auto lg:h-[218px] flex flex-wrap justify-center">
+                <div class="everyTaste w-[383px] h-[218px] flex flex-col items-center">
+                    <div class="everyTasteIcon w-[70px] h-[70px] mb-[20px]">
+                        <img src="Assets/menu-256x256.png">
+                    </div>
+                    <h1 class="text-[28px] text-[#eae5dc] pb-[20px]">Menu for every taste</h1>
+                    <p class="text-[17px] text-[#d3cfc6] text-center">Dolor sit amet, consectetur adipisicing elit et molestias possimus</p>
+                </div>
+                <div class="qualityBeans w-[383px] h-[218px] flex flex-col items-center">
+                    <div class="everyTasteIcon w-[70px] h-[70px] mb-[20px]">
+                        <img src="Assets/coffee-256x256.png">
+                    </div>
+                    <h1 class="text-[28px] text-[#eae5dc] pb-[20px]">Always Quality Beanse</h1>
+                    <p class="text-[17px] text-[#d3cfc6] text-center">Assumenda possimus eaque illo iste, autem. Porro eveniet autem</p>
+                </div>
+                <div class="experienced w-[383px] h-[218px] flex flex-col items-center">
+                    <div class="everyTasteIcon w-[70px] h-[70px] mb-[20px]">
+                        <img src="Assets/barista-256x256.png">
+                    </div>
+                    <h1 class="text-[28px] text-[#eae5dc] pb-[20px]">Experienced Barista</h1>
+                    <p class="text-[17px] text-[#d3cfc6] text-center">Rolorem, beatae dolorum, praesentium itaque et quam quaerat</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reservation relative w-full h-auto lg:h-[641px] bg-[url('Assets/st-coffee10.jpg')] bg-no-repeat bg-center bg-cover flex flex-wrap items-center justify-center gap-[30px]">
+            <div class="absolute bg-[#353B38] inset-0 opacity-60"></div>
+            <div class="reservationCont relative w-full lg:w-[797px] h-auto lg:h-[397px] flex flex-col items-center justify-center gap-[25px]">
+                <div class="reservationTtl w-full lg:w-[677px] h-auto lg:h-[20px] flex justify-center">
+                    <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240] mt-[5px]"></div>
+                    <p class="text-[12px] text-[#d3cfc6] font-bold uppercase tracking-wider ps-[10px]">Reservation</p>
+                </div>
+                <div class="reservationSubTtl w-full lg:w-[677px] h-auto lg:h-[74px]">
+                    <h1 class="text-[36px] lg:text-[62px] text-[#e5ebef] text-center leading-[74px] uppercase">Working hours</h1>
+                </div>
+                <div class="reservationSubCont w-full lg:w-[677px] h-auto lg:h-[27px]">
+                    <p class="text-[17px] text-[#d3cfc6] text-center p-[20px] lg:p-0">Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+                </div>
+                <div class="reservationBtn w-full lg:w-[677px] h-auto lg:h-[60px] flex flex-wrap justify-center">
+                    <button class="w-[166px] h-[60px] bg-[#D68240] uppercase text-[14px] text-[#fff]">Book a Table</button>
+                    <button class="w-[120px] h-[60px] uppercase text-[14px] text-[#fff]">Contact us</button>
+                </div>
+            </div>
+            <div class="reservationTable relative w-full lg:w-[383px] h-auto lg:h-[395px] bg-[#121A1D] flex flex-col justify-center gap-[30px]">
+                <div class="reservationTime w-full lg:w-[383px] h-auto lg:h-[108px] flex flex-col items-center">
+                    <p class="text-[14px] text-[#d3cfc6] font-bold uppercase">Sunday to Tuesday</p>
+                    <h1 class="text-[28px] text-[#eae5dc]">09 <span class="text-[#d68240]">:</span> 00</h1>
+                    <h1 class="text-[28px] text-[#eae5dc]">22 <span class="text-[#d68240]">:</span> 00</h1>
+                </div>
+                <div class="reservationTime w-full lg:w-[383px] h-auto lg:h-[108px] flex flex-col items-center">
+                    <p class="text-[14px] text-[#d3cfc6] font-bold uppercase">Friday to Saturday</p>
+                    <h1 class="text-[28px] text-[#eae5dc]">11 <span class="text-[#d68240]">:</span> 00</h1>
+                    <h1 class="text-[28px] text-[#eae5dc]">19 <span class="text-[#d68240]">:</span> 00</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial w-full h-auto lg:h-[982px] bg-[#0A1316] flex flex-col items-center justify-center">
+            <div class="testimonialTtl w-full lg:w-[1210px] h-auto lg:h-[202px] flex flex-col items-center justify-between">
+                <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240] mt-[20px] lg:mt-[5px]"></div>
+                <p class="text-[14px] uppercase text-[#d3cfc6] font-bold text-center tracking-wider">Testimonials</p>
+                <h1 class="text-[36px] lg:text-[52px] text-center text-[#eae5dc]">What Our Visitors Say</h1>
+                <p class="text-[17px] text-[#d3cfc6] text-center p-[20px] lg:p-0">Porro eveniet, autem ipsam corrupti consectetur cum. <br> Repudiandae dignissimos fugiat sit nam.</p>
+            </div>
+            <div class="testimonialCont w-full lg:w-[1240px] h-auto lg:h-[536px] flex flex-wrap items-center justify-around">
+                <div class="client-1 w-[383px] h-[416px] border-2 border-dashed border-[#1C2427] flex flex-col items-center justify-center gap-[30px]">
+                    <div class="clientReview w-[319px] h-[34px]">
+                        <h1 class="text-[28px] text-[#eae5dc]">The best restaurant!</h1>
+                    </div>
+                    <div class="clientSubReview w-[319px] h-[218px]">
+                        <p class="text-[17px] text-[#d3cfc6] tracking-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error sed, minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+                    </div>
+                    <div class="clientImg w-[319px] h-[40px] flex items-center justify-between">
+                        <div class="w-[171px] h-[40px] flex items-center">
+                            <div class="w-[40px] h-[40px] rounded-full">
+                                <img src="Assets/face-4.jpg.webp" class="rounded-full">
+                            </div>
+                            <p class="text-[12px] ps-[12px] text-[#eae5dc] font-bold uppercase tracking-widest">Oscar Oldman</p>
+                        </div>
+                        <div class="w-[67px] h-[22px] bg-[#192224] rounded-l-full rounded-r-full flex items-center justify-center">
+                            <p class="text-[14px] text-[#d3cfc6]">02.02.21</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-2 w-[383px] h-[416px] border-2 border-dashed border-[#1C2427] flex flex-col items-center justify-center gap-[30px]">
+                    <div class="clientReview w-[319px] h-[34px]">
+                        <h1 class="text-[28px] text-[#eae5dc]">It was very delicious!</h1>
+                    </div>
+                    <div class="clientSubReview w-[319px] h-[218px]">
+                        <p class="text-[17px] text-[#d3cfc6] tracking-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error sed, minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+                    </div>
+                    <div class="clientImg w-[319px] h-[40px] flex items-center justify-between">
+                        <div class="w-[171px] h-[40px] flex items-center">
+                            <div class="w-[40px] h-[40px] rounded-full">
+                                <img src="Assets/face-1.jpg.webp" class="rounded-full">
+                            </div>
+                            <p class="text-[12px] ps-[12px] text-[#eae5dc] font-bold uppercase tracking-widest">Emma newman</p>
+                        </div>
+                        <div class="w-[67px] h-[22px] bg-[#192224] rounded-l-full rounded-r-full flex items-center justify-center">
+                            <p class="text-[14px] text-[#d3cfc6]">02.02.21</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-3 w-[383px] h-[416px] border-2 border-dashed border-[#1C2427] flex flex-col items-center justify-center gap-[30px]">
+                    <div class="clientReview w-[319px] h-[34px]">
+                        <h1 class="text-[28px] text-[#eae5dc]">I'm delighted</h1>
+                    </div>
+                    <div class="clientSubReview w-[319px] h-[218px]">
+                        <p class="text-[17px] text-[#d3cfc6] tracking-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error sed, minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+                    </div>
+                    <div class="clientImg w-[319px] h-[40px] flex items-center justify-between">
+                        <div class="w-[171px] h-[40px] flex items-center">
+                            <div class="w-[40px] h-[40px] rounded-full">
+                                <img src="Assets/face-2.jpg.webp" class="rounded-full">
+                            </div>
+                            <p class="text-[12px] ps-[8px] text-[#eae5dc] font-bold uppercase tracking-widest">Victoria freeman</p>
+                        </div>
+                        <div class="w-[67px] h-[22px] bg-[#192224] rounded-l-full rounded-r-full flex items-center justify-center">
+                            <p class="text-[14px] text-[#d3cfc6]">02.02.21</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonialBtn w-full lg:w-[1210px] h-auto lg:h-[60px] flex justify-center lg:justify-start">
+                <button class="w-[180px] h-[60px] bg-[#D78340] text-[14px] text-[#fff] uppercase">more about us</button>
+            </div>
+        </div>
+
+        <div class="mobileApp relative w-full h-auto lg:h-[550px] bg-[url('Assets/cbg2.jpg.webp')] bg-no-repeat bg-cover bg-center flex flex-wrap items-center justify-center gap-[10px]">
+            <div class="absolute bg-[#0D1B1E] opacity-75 inset-0"></div>
+            <div class="mobileAppCont relative w-full lg:w-[590px] h-auto lg:h-[359px] flex flex-col justify-between items-center order-2 lg:order-1">
+                <div class="mobileAppTtl w-full lg:w-[590px] h-auto lg:h-[20px] flex items-center justify-center">
+                    <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240]"></div>
+                    <p class="text-[12px] text-[#d3cfc6] font-bold uppercase tracking-widest ps-[10px]">Mobile application</p>
+                </div>
+                <div class="mobileAppSubTtl w-full lg:w-[590px] h-auto lg:h-[149px]">
+                    <h1 class="text-[36px] lg:text-[62px] text-[#e5ebef] text-center lg:text-left leading-[40px] lg:leading-[74px] uppercase">Download <br> our application</h1>
+                </div>
+                <div class="mobileAppTtlCont w-full lg:w-[590px] h-auto lg:h-[54px]">
+                    <p class="text-[17px] text-[#d3cfc6] text-center">Quaerat debitis, vel, sapiente dicta sequi <br> labore porro pariatur harum expedita.</p>
+                </div>
+                <div class="mobileAppBtn w-full lg:w-[590px] h-auto lg:h-[60px] flex flex-wrap justify-center gap-[8px]">
+                    <button class="w-[180px] h-[60px] border-2 border-[#DC8642] text-[14px] text-[#fff] uppercase tracking-wider"><i class="fa-brands fa-apple text-[18px] text-[#fff]"></i>  Appstore</button>
+                    <button class="w-[203px] h-[60px] border-2 border-[#DC8642] text-[14px] text-[#fff] uppercase tracking-wider"><i class="fa-brands fa-google text-[1px] text-[#fff]"></i>  playmarket</button>
+                </div>
+            </div>
+            <div class="mobileAppContImg relative w-full lg:w-[614px] h-auto lg:h-[548px] lg:order-2">
+                <img src="Assets/tastyc_apps2-950x848.png" class="h-[548px]">
+            </div>
+        </div>
+
+        <div class="blog w-full h-auto lg:h-[1070px] bg-[#0A1316] flex flex-col items-center justify-center gap-[30px]">
+            <div class="blogTtl w-full lg:w-[1090px] h-auto lg:h-[265px] flex flex-col items-center justify-center lg:justify-between">
+                <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240] mt-[20px] lg:mt-0"></div>
+                <p class="text-[14px] text-[#d3cfc6] font-bold uppercase text-center tracking-widest">Newsletter</p>
+                <h1 class="text-[36px] lg:text-[52px] text-[#eae5dc] leading-[62px] text-center">Use the Tips <br> and Recipes of Our Barista</h1>
+                <p class="text-[17px] text-[#d3cfc6] text-center p-[20px] lg:p-0">Porro eveniet, autem ipsam corrupti consectetur cum. <br> Repudiandae dignissimos fugiat sit nam.</p>
+            </div>
+            <div class="blogCont w-full lg:w-[1120px] h-auto lg:h-[542px] flex flex-wrap items-center justify-center lg:justify-around">
+                <div class="breakfast w-[343px] h-[542px]">
+                    <div class="breakfastImg w-[343px] h-[223px] overflow-hidden">
+                        <img src="Assets/blog-6.jpg.webp" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="breakfastCont w-[343px] h-[288px] bg-[#121A1D] flex flex-col items-center justify-center gap-[20px]">
+                        <div class="breakfastTtl w-[283px] h-[34px]">
+                            <h1 class="text-[28px] text-[#eae5dc]">Business Breakfast</h1>
+                        </div>
+                        <div class="breakfastTtlCont w-[283px] h-[109px]">
+                            <p class="text-[16px] text-[#d3cfc6]">Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio 
+                                officiis amet temporibus, consequuntur dolorem dicta… <span class="text-[#d68240] text-[12px] uppercase hover:underline">Read more</span></p>
+                        </div>
+                        <div class="breakfastTtlBtn w-[283px] h-[40px] flex items-center justify-between">
+                            <div class="breakfastClient w-[142px] h-[40px] flex items-center">
+                                <div class="breakfastClientImg w-[40px] h-[40px] rounded-full border">
+                                    <img src="Assets/user.png" class="rounded-full">
+                                </div>
+                                <p class="text-[12px] text-[#eae5dc] uppercase font-bold tracking-wider ps-[10px]">oleksandr</p>
+                            </div>
+                            <div class="breakfastDate w-[85px] h-[22px] bg-[#262E30] rounded-r-full rounded-l-full flex items-center justify-center">
+                                <p class="text-[13px] text-[#d3cfc6]">May 1,2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chocolate w-[343px] h-[542px]">
+                    <div class="chocolateImg w-[343px] h-[223px] overflow-hidden">
+                        <img src="Assets/blog-5.jpg.webp" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="chocolateCont w-[343px] h-[288px] bg-[#121A1D] flex flex-col items-center justify-center gap-[20px]">
+                        <div class="chocolateTtl w-[283px] h-[34px]">
+                            <h1 class="text-[28px] text-[#eae5dc]">Pancakes in Chocolate</h1>
+                        </div>
+                        <div class="chocolateTtlCont w-[283px] h-[109px]">
+                            <p class="text-[16px] text-[#d3cfc6]">Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio 
+                                officiis amet temporibus, consequuntur dolorem dicta… <span class="text-[#d68240] text-[12px] uppercase hover:underline">Read more</span></p>
+                        </div>
+                        <div class="chocolateTtlBtn w-[283px] h-[40px] flex items-center justify-between">
+                            <div class="breakfastClient w-[142px] h-[40px] flex items-center">
+                                <div class="breakfastClientImg w-[40px] h-[40px] rounded-full border">
+                                    <img src="Assets/user.png" class="rounded-full">
+                                </div>
+                                <p class="text-[12px] text-[#eae5dc] uppercase font-bold tracking-wider ps-[10px]">oleksandr</p>
+                            </div>
+                            <div class="breakfastDate w-[85px] h-[22px] bg-[#262E30] rounded-r-full rounded-l-full flex items-center justify-center">
+                                <p class="text-[13px] text-[#d3cfc6]">May 1,2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tuna w-[343px] h-[542px]">
+                    <div class="tunaImg w-[343px] h-[223px] overflow-hidden">
+                        <img src="Assets/blog-4.jpg.webp" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="tunaCont w-[343px] h-[288px] bg-[#121A1D] flex flex-col items-center justify-center gap-[20px]">
+                        <div class="tunaTtl w-[283px] h-[34px]">
+                            <h1 class="text-[28px] text-[#eae5dc]">Tuna & Tomatoes</h1>
+                        </div>
+                        <div class="tunaTtlCont w-[283px] h-[109px]">
+                            <p class="text-[16px] text-[#d3cfc6]">Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio 
+                                officiis amet temporibus, consequuntur dolorem dicta… <span class="text-[#d68240] text-[12px] uppercase hover:underline">Read more</span></p>
+                        </div>
+                        <div class="tunaTtlBtn w-[283px] h-[40px] flex items-center justify-between">
+                            <div class="breakfastClient w-[142px] h-[40px] flex items-center">
+                                <div class="breakfastClientImg w-[40px] h-[40px] rounded-full border">
+                                    <img src="Assets/user.png" class="rounded-full">
+                                </div>
+                                <p class="text-[12px] text-[#eae5dc] uppercase font-bold tracking-wider ps-[10px]">oleksandr</p>
+                            </div>
+                            <div class="breakfastDate w-[85px] h-[22px] bg-[#262E30] rounded-r-full rounded-l-full flex items-center justify-center">
+                                <p class="text-[13px] text-[#d3cfc6]">May 1,2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogBtn w-full lg:w-[1090px] h-auto lg:h-[60px] flex items-center justify-between">
+                <p class="text-[17px] text-[#d3cfc6] p-[20px] lg:p-0">Read the news of our restaurant, recipes for delicious fears, tips for your home kitchen in our blog!</p>
+                <button class=" w-full lg:w-[195px] h-[60px] bg-[#D68240] uppercase text-[14px] text-[#fff]">All publications</button>
+            </div>
+        </div>
+
+        <div class="newsletter relative w-full h-auto lg:h-[491px] bg-[url('Assets/st-coffee8.jpg')] bg-no-repeat bg-center bg-cover flex items-center">
+            <div class="absolute inset-0 bg-[#182F31] opacity-50"></div>
+            <div class="subNewsletter relative w-full lg:w-[700px] h-auto lg:h-[450px] ms-0 lg:ms-[80px] flex flex-col justify-center lg:items-start items-center gap-[35px]">
+                <div class="newsletterTtl w-full lg:w-[500px] h-[20px] flex justify-center lg:justify-start mt-[10px] lg:mt-0">
+                    <div class="line w-[30px] h-[5px] rounded-l-full rounded-r-full bg-[#D68240] mt-[5px]"></div>
+                    <p class="text-[12px] text-[#fff] font-bold uppercase tracking-widest ps-[10px]">Newsletter</p>
+                </div>
+                <div class="newsletterSubTtl w-full lg:w-[500px] h-auto lg:h-[149px]">
+                    <h1 class="text-[36px] lg:text-[62px] text-[#e5ebef] text-center lg:text-left uppercase leading-[74px]">Subscribe our <br> newsletter</h1>
+                </div>
+                <div class="newsletterTtlCont w-full lg:w-[500px] h-auto lg:h-[19px]">
+                    <p class="text-[17px] text-[#d3cfc6] text-center lg:text-left p-[20px] lg:p-0 font-medium">Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+                </div>
+                <div class="newsletterTtlEmail w-full lg:w-[500px] h-auto lg:h-[80px] flex flex-wrap justify-center lg:justify-start">
+                    <input type="text" placeholder="Enter your email here" class="w-[339px] h-[60px] bg-[#182F31] outline-none text-[17px] text-[#fff] font-semibold ps-[30px]">
+                    <button class="w-[141px] h-[60px] bg-[#D68240] uppercase text-[14px] text-[#fff] tracking-wider">subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[630px] bg-[#0A1316] flex flex-col items-center justify-center">
+            <div class="subFooter w-full lg:w-[1210px] h-auto lg:h-[150px] flex items-center justify-around lg:justify-between p-[20px] lg:p-0">
+                <div class="tastyc w-full lg:w-[595px] h-[45px]">
+                    <img src="Assets/logo-sm-white2.png" class="w-[120px] h-[45px]">
+                </div>
+                <div class="tastycIcon w-full lg:w-[595px] h-[45px] text-[14px] text-[#d3cfc6] flex items-center justify-end gap-[20px]">
+                    <i class="fa-brands fa-facebook-f hover:text-[#d68240]"></i>
+                    <i class="fa-brands fa-instagram hover:text-[#d68240]"></i>
+                    <i class="fa-brands fa-twitter hover:text-[#d68240]"></i>
+                    <i class="fa-brands fa-youtube hover:text-[#d68240]"></i>
+                </div>
+            </div>
+            <div class="subFooterDetail w-full lg:w-[1210px] h-auto lg:h-[300px] p-[20px] lg:p-0 border-dashed border-t-2 border-[#232A2D] border-b-2 flex flex-wrap items-center justify-center lg:justify-between">
+                <div class="tastycAbout w-[390px] h-[230px] flex flex-col justify-between">
+                    <div class="tastycAboutTtl w-[360px] h-[34px]">
+                        <h1 class="text-[28px] text-[#eae5dc]">About us</h1>
+                    </div>
+                    <div class="tastycAboutCont w-[360px] h-[109px]">
+                        <p class="text-[17px] text-[#d3cfc6]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repudiandae neque illum aspernatur fugiat maiores id magni, modi, quaerat vitae.</p>
+                    </div>
+                    <div class="tastycAboutBtn w-[83px] h-[20px]">
+                        <p class="uppercase text-[#d68240] text-[14px]">read more</p>
+                    </div>
+                </div>
+                <div class="tastycContact w-[390px] h-[230px] flex flex-col justify-between">
+                    <div class="tastycContactTtl w-[360px] h-[34px]">
+                        <h1 class="text-[28px] text-[#eae5dc]">Contact info</h1>
+                    </div>
+                    <div class="tastycContactCont w-[360px] h-[109px] flex flex-col justify-between">
+                        <div class="call w-[360px] h-[27px] flex items-center justify-between">
+                            <p class="text-[13px] text-[#d3cfc6] font-bold uppercase">Call :</p>
+                            <p class="text-[16px] text-[#d3cfc6] tracking-wider">+76 (094) 754 43 7I</p>
+                        </div>
+                        <div class="write w-[360px] h-[27px] flex items-center justify-between">
+                            <p class="text-[13px] text-[#d3cfc6] font-bold uppercase">write :</p>
+                            <p class="text-[16px] text-[#d3cfc6] tracking-wider">your.email.inbox@here.com</p>
+                        </div>
+                        <div class="findUs w-[360px] h-[27px] flex items-center justify-between">
+                            <p class="text-[13px] text-[#d3cfc6] font-bold uppercase">Find us :</p>
+                            <p class="text-[16px] text-[#d3cfc6] tracking-wider">Canada, Toronto, Avenue 31B,</p>
+                        </div>
+                    </div>
+                    <div class="tastycContactBtn w-[83px] h-[20px]">
+                        <p class="uppercase text-[#d68240] text-[14px]">read more</p>
+                    </div>
+                </div>
+                <div class="tastycGallery w-[390px] h-[230px] flex flex-col justify-between">
+                    <div class="tastycGalleryTtl w-[360px] h-[34px]">
+                        <h1 class="text-[28px] text-[#eae5dc]">Gallery</h1>
+                    </div>
+                    <div class="tastycGalleryImg w-[390px] h-[109px] flex justify-between">
+                        <div class="img-1 w-[86px] h-[86px]">
+                            <img src="Assets/blog-2-140x140.jpg.webp">
+                        </div>
+                        <div class="img-2 w-[86px] h-[86px]">
+                            <img src="Assets/blog-4-140x140.jpg.webp">
+                        </div>
+                        <div class="img-3 w-[86px] h-[86px]">
+                            <img src="Assets/st-menu1-140x140.jpg.webp">
+                        </div>
+                        <div class="img-4 w-[86px] h-[86px]">
+                            <img src="Assets/blog-5-140x140.jpg.webp">
+                        </div>
+                    </div>
+                    <div class="testycGalleryBtn w-[390px] h-[20px] flex items-center justify-between">
+                        <div class="subBtn w-[71px] h-[17px]">
+                            <p class="text-[14px] text-[#d68240] uppercase">see more</p>
+                        </div>
+                        <div class="subBtn w-[50px] h-[22px] text-[13px] text-[#d3cfc6] font-bold flex items-center justify-between">
+                            <i class="ri-arrow-left-line"></i>
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright w-full lg:w-[1210px] h-auto lg:h-[100px] flex items-center justify-between p-[20px] lg:p-0">
+                <div class="subCopyright w-full lg:w-[595px] h-auto lg:h-[27px]">
+                    <p class="text-[15px] text-[#d3cfc6] font-medium tracking-wider">&copy; Tastyc 2022 . All rights reserved.</p>
+                </div>
+                <div class="subCopyrightBtn w-full lg:w-[595px] h-[27px] flex items-center justify-end">
+                    <a href="#top" class="uppercase text-[#d68240] text-[14px] cursor-pointer">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide();
+        $(".hamburger").click(function(){
+            $(".dropnav").toggle();
+        })
+
+        $(".subCopyrightBtn a").click(function(){
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+    })
+</script>
+</html>

@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="Container w-full h-auto">
+        <div class="header w-full h-auto lg:h-[1180px] bg-[#000000] flex flex-col items-center justify-around">
+            <div class="headerMenu w-full lg:w-[1170px] h-auto lg:h-[70px] flex items-center justify-between">
+                <div class="navleft w-[110px] h-[30px] ms-[20px] lg:ms-0">
+                    <img src="Assets/logo.svg">
+                </div>
+                <div class="navcenter w-[500px] h-[30px] text-[18px] hidden lg:flex items-center justify-between">
+                    <a href="#" class="text-[#bababa]">Home</a>
+                    <a href="#" class="text-[#fff]">About</a>
+                    <a href="#" class="text-[#fff]">Work</a>
+                    <a href="#" class="text-[#fff]">Blog</a>
+                    <a href="#" class="text-[#fff]">Shop</a>
+                    <a href="#" class="text-[#fff]">Pages</a>
+                </div>
+                <div class="navright w-[170px] h-[30px] hidden md:flex items-center justify-between">
+                    <p class="text-[18px] text-[#fff]">Contact</p>
+                    <div class="arrowcircle w-[40px] h-[40px] rounded-full flex items-center justify-center">
+                        <img src="Assets/arrow.svg">
+                    </div>
+                    <i class="ri-shopping-bag-4-line text-[20px] text-[#fff] flex"></i>
+                </div>
+                <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[80px] lg:mr-0">
+                    <i class="fa-solid fa-bars text-[28px] text-[#fff]"></i>
+                </div>
+            </div>
+            <div class="headerCont w-full lg:w-[1170px] h-auto lg:h-[1019px] flex flex-col items-center">
+                <div class="headerContTtl w-full lg:w-[1098px] h-auto lg:h-[286px]">
+                    <h1 class="text-[40px] lg:text-[100px] text-[#fff] font-bold leading-[100px] lg:leading-[140px] text-center">Welcome to My Creative Space</h1>
+                </div>
+                <div class="headerImg w-full lg:w-[550px] h-auto lg:h-[733px] mt-[-90px] flex items-center justify-center">
+                    <img src="Assets/girl.avif" class="h-[733px]">
+                </div>
+                <div class="headerCont w-full lg:w-[1098px] h-auto lg:h-[124px] mt-[-250px] mb-[60px] flex flex-wrap items-center justify-center lg:justify-between">
+                    <div class="headerSubCont w-full lg:w-[370px] h-auto lg:h-[114px]">
+                        <p class="text-[22px] text-[#bababa] text-center p-[20px] lg:p-0 lg:text-left leading-[29px]">Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium, totam rem aperiam.</p>
+                    </div>
+                    <div class="headerConnect w-[170px] h-[40px] flex items-center justify-between">
+                        <p class="text-[18px] text-[#fff]">Let's Connect</p>
+                        <div class="arrowcircle w-[40px] h-[40px] rounded-full flex items-center justify-center">
+                            <img src="Assets/arrow.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="headerMarquee w-full h-auto lg:h-[240px] flex items-center justify-center">
+                    <marquee  direction="left" scrollamount="5" loop="infinite" class="styledText text-[130px] font-bold">
+                        Carolina
+                    </marquee>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropnav w-full h-[400px] fixed top-28 bg-black text-[#fff] flex flex-col justify-around items-center">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Blog</a>
+            <a href="#">Shop</a>
+            <a href="#">Pages</a>
+        </div>
+
+        <div class="intro w-full h-auto lg:h-[372px] bg-[#000000] flex flex-wrap items-center justify-center">
+            <div class="introTtl w-full lg:w-[549px] h-auto lg:h-[282px]">
+                <h1 class="text-[30px] lg:text-[56px] text-[#fff] text-center lg:text-left p-[20px] lg:p-0 font-medium leading-[67px]">I am a Product Designer by trade</h1>
+            </div>
+            <div class="introTtlCont w-full lg:w-[549px] h-auto lg:h-[282px]">
+                <p class="text-[14px] text-[#bababa] pb-[20px] p-[20px] lg:p-0">We need knowladge to predict human interactions. I try to work beyond feel and intuition. Beyond feel and intuition, we need knowledge to predict how humans will act. In today’s digital landscape, it takes meaning and emotion to craft true connection. That’s why every Wonderland experience is designed on more than a whim.</p>
+                <p class="text-[14px] text-[#bababa] p-[20px] lg:p-0">We engineer experiences that cut through the noise and make long-lasting connections by melding design sense with a sense of purpose. Through our insight-based approach, we’re helping brands create original, memorable and purpose-driven experiences. Wonderful.</p>
+            </div>
+        </div>
+
+        <div class="work w-full h-auto lg:h-[2358px] bg-[#000000] flex flex-col items-center justify-center">
+            <div class="workTtl w-full lg:w-[1170px] h-auto lg:h-[300px] flex items-center justify-center">
+                <h1 class="text-[40px] lg:text-[180px] text-[#fff] font-semibold">My Work</h1>
+            </div>
+            <div class="workTtlCont w-full lg:w-[1170px] h-auto lg:h-[1706px] mt-[20px] lg:mt-[-70px] mb-[60px] flex flex-wrap justify-around">
+                <div class="subWorkCont w-full lg:w-[519px] h-auto lg:h-[1706px] flex flex-col items-center justify-between">
+                    <div class="workBox w-[519px] h-[573px] flex flex-col justify-between">
+                        <div class="workBoxImg w-full lg:w-[519px] h-[410px] bg-[url('Assets/pro-1.avif')] bg-no-repeat bg-cover bg-center transform transition-transform duration-500 hover:scale-110"></div>
+                        <div class="workBoxImgCont w-[519px] h-[123px]">
+                            <h1 class="text-[30px] lg:text-[56px] text-[#bababa] font-medium leading-[62px]">Ethiopian Yirgacheffe</h1>
+                        </div>
+                    </div>
+                    <div class="workBox w-[519px] h-[1093px] flex flex-col justify-between">
+                        <div class="workBoxImg w-full lg:w-[519px] h-[930px] bg-[url('Assets/pro-3.avif')] bg-no-repeat bg-cover bg-center transform transition-transform duration-500 hover:scale-110"></div>
+                        <div class="workBoxImgCont w-[519px] h-[123px]">
+                            <h1 class="text-[30px] lg:text-[56px] text-[#bababa] font-medium leading-[62px]">Sauz All Natural - Arabbiata</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="subWorkCont w-full lg:w-[519px] h-auto lg:h-[1706px] flex flex-col items-center justify-between">
+                    <div class="workBox w-[519px] h-[893px] flex flex-col justify-between">
+                        <div class="workBoxImg w-full lg:w-[519px] h-[730px] bg-[url('Assets/pro-2.avif')] bg-no-repeat bg-cover bg-center transform transition-transform duration-500 hover:scale-110"></div>
+                        <div class="workBoxImgCont w-[519px] h-[123px]">
+                            <h1 class="text-[30px] lg:text-[56px] text-[#bababa] leading-[62px] font-medium">Sauz All Natural - Arabbiata</h1>
+                        </div>
+                    </div>
+                    <div class="workBox w-[519px] h-[712px] flex flex-col justify-between">
+                        <div class="workBoxImg w-full lg:w-[519px] h-[610px] bg-[url('Assets/pro-4.avif')] bg-no-repeat bg-cover bg-center transform transition-transform duration-500 hover:scale-110"></div>
+                        <div class="workBoxImgCont w-[519px] h-[62px]">
+                            <h1 class="text-[30px] lg:text-[56px] font-medium text-[#bababa] leading-[62px]">648 Abstract</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="workBtn w-full lg:w-[1170px] h-auto lg:h-[100px] flex items-center">
+                <h1 class="text-[40px] text-[#fff] ps-[40px]">View More</h1>
+                <div class="arrowcircle w-[100px] h-[100px] rounded-full ms-[20px] flex items-center justify-center">
+                    <img src="Assets/arrow.svg" class="w-[80px] h-[80px]">
+                </div>
+            </div>
+        </div>
+
+        <div class="services w-full h-auto lg:h-[700px] bg-[#000000] flex flex-col items-center justify-center">
+            <div class="servicesTtl w-full lg:w-[1098px] h-auto lg:h-[200px] flex items-center justify-center">
+                <h1 class="text-[60px] lg:text-[180px] text-[#fff] font-semibold">Services</h1>
+            </div>
+            <div class="servicesTtlCont w-full lg:w-[1098px] h-auto lg:h-[400px] mt-[20px] lg:mt-[-40px]">
+                <div class="graphic w-full lg:w-[1098px] h-auto lg:h-[100px] border border-[#222222] bg-[#111111] flex items-center justify-between p-[40px]">
+                    <div class="graphicTtl w-[411px] h-[62px] flex items-center justify-between">
+                        <p class="text-[24px] text-[#5E2FD2]">01</p>
+                        <h1 class="text-[25px] lg:text-[48px] text-[#fff]">Graphic Design</h1>
+                    </div>
+                    <div class="graphicIcon w-[40px] h-[25px] flex items-center justify-center">
+                        <i class="fa-solid fa-angle-down text-[26px] text-[#fff]"></i>
+                    </div>
+                </div>
+                <div class="webDesign w-full lg:w-[1098px] h-auto lg:h-[100px] border border-[#222222] bg-[#111111] flex items-center justify-between p-[40px]">
+                    <div class="webDesignTtl w-[334px] h-[62px] flex items-center justify-between">
+                        <p class="text-[24px] text-[#5E2FD2]">02</p>
+                        <h1 class="text-[25px] lg:text-[48px] text-[#fff]">Web Design</h1>
+                    </div>
+                    <div class="webDesignIcon w-[40px] h-[25px] flex items-center justify-center">
+                        <i class="fa-solid fa-angle-down text-[26px] text-[#fff]"></i>
+                    </div>
+                </div>
+                <div class="experienceDesign lg:w-[1098px] h-auto lg:h-[100px] border border-[#222222] bg-[#111111] flex items-center justify-between p-[40px]">
+                    <div class="experienceDesignTtl w-[585px] h-[62px] flex items-center justify-between">
+                        <p class="text-[24px] text-[#5E2FD2]">03</p>
+                        <h1 class="text-[25px] lg:text-[48px] text-[#fff]">Use Experience Design</h1>
+                    </div>
+                    <div class="experienceDesignIcon w-[40px] h-[25px] flex items-center justify-center">
+                        <i class="fa-solid fa-angle-down text-[26px] text-[#fff]"></i>
+                    </div>
+                </div>
+                <div class="interfaceDesign w-full lg:w-[1098px] h-auto lg:h-[100px] border border-[#222222] bg-[#111111] flex items-center justify-between p-[40px]">
+                    <div class="interfaceDesignTtl w-[545px] h-[62px] flex items-center justify-between">
+                        <p class="text-[24px] text-[#5E2FD2]">04</p>
+                        <h1 class="text-[25px] lg:text-[48px] text-[#fff]">Use Interface Design</h1>
+                    </div>
+                    <div class="interfaceDesignIcon w-[40px] h-[25px] flex items-center justify-center">
+                        <i class="fa-solid fa-angle-down text-[26px] text-[#fff]"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="insights w-full h-auto lg:h-[1200px] bg-[#000000] flex flex-col items-center justify-center">
+            <div class="insightsTtl w-full lg:w-[1098px] h-auto lg:h-[200px] flex items-center justify-center">
+                <h1 class="text-[60px] lg:text-[180px] text-[#fff] font-semibold">Insights</h1>
+            </div>
+            <div class="insightsTtlCont w-full lg:w-[1098px] h-auto lg:h-[720px] mt-[20px] lg:mt-[-30px] mb-[30px] flex flex-wrap justify-center lg:justify-between">
+                <div class="webflow w-full lg:w-[342px] h-auto lg:h-[610px] flex flex-col items-center">
+                    <div class="webflowImg w-[342px] h-[363px]">
+                        <img src="Assets/insights-1.avif">
+                    </div>
+                    <div class="webflowImgCont w-full lg:w-[342px] h-auto lg:h-[247px]">
+                        <h1 class="text-[25px] lg:text-[40px] text-[#fff] lg:text-left text-center font-medium leading-[48px] pt-[15px]">Result Driven Webflow Templates</h1>
+                        <p class="text-[15px] text-[#bababa] pt-[10px] lg:text-left text-center p-[20px] lg:p-0">How to cultivate a growth mindset and embrace challenges as opportunities for growth.</p>
+                    </div>
+                </div>
+                <div class="webDeveloper w-[342px] h-[720px] flex flex-col items-center">
+                    <div class="webDeveloperImg w-[342px] h-[476px] flex">
+                        <img src="Assets/insights-2.avif">
+                    </div>
+                    <div class="webDeveloperImgCont w-[342px] h-[247px]">
+                        <h1 class="text-[25px] lg:text-[40px] text-[#fff] text-center lg:text-left font-medium leading-[48px] pt-[15px]">Becoming a Web Designer & Web Developer</h1>
+                        <p class="text-[15px] text-[#bababa] pt-[10px] lg:text-left text-center p-[20px] lg:p-0">How to cultivate a growth mindset and embrace challenges as opportunities for growth.</p>
+                    </div>
+                </div>
+                <div class="ecommerce w-[342px] h-[610px] flex flex-col items-center">
+                    <div class="ecommerceImg w-[342px] h-[363px] flex">
+                        <img src="Assets/insights-3.avif">
+                    </div>
+                    <div class="ecommerceCont w-[342px] h-[247px]">
+                        <h1 class="text-[25px] lg:text-[40px] text-[#fff] text-center lg:text-left font-medium leading-[48px] pt-[15px]">Result Driven Webflow Templates</h1>
+                        <p class="text-[15px] text-[#bababa] pt-[10px] text-center lg:text-left p-[20px] lg:p-">How to cultivate a growth mindset and embrace challenges as opportunities for growth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="insightsTtlBtn w-full lg:w-[1098px] h-auto lg:h-[100px]">
+                <div class="w-full lg:w-[324px] h-auto lg:h-[100px] flex items-center justify-center lg:justify-between">
+                    <h1 class="text-[40px] text-[#fff]">Read More</h1>
+                    <div class="arrowcircle w-[100px] h-[100px] rounded-full flex items-center justify-center">
+                        <img src="Assets/arrow.svg" class="w-[80px] h-[80px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact w-full h-auto lg:h-[500px] bg-[#000000] flex flex-col items-center justify-center">
+            <div class="contactTtl w-full lg:w-[1098px] h-auto lg:h-[300px] flex items-center justify-center">
+                <h1 class="text-[60px] lg:text-[180px] text-[#fff] font-semibold">Contact</h1>
+            </div>
+            <div class="contactEmail w-full h-auto lg:h-[250px] bg-[#111111] mt-[40px] lg:mt-[-90px] flex items-center justify-center">
+                <div class="subContactEmail w-full lg:w-[890px] h-auto lg:h-[190px] flex flex-wrap items-center justify-between">
+                    <input type="email" placeholder="*Your Email" class="w-[670px] h-[70px] text-[32px] text-[#fff] ps-[10px] border-b outline-none bg-transparent">
+                    <div class="arrowcircle w-[190px] h-[190px] rounded-full flex items-center justify-center">
+                        <img src="Assets/arrow.svg" class="w-[150px] h-[150px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="marqueeSection w-full h-auto lg:h-[150px] bg-[#000000] flex items-center justify-center">
+            <marquee behavior="scroll" direction="left" scrollamount="5" class=" w-fulllg:w-[1200px] h-auto lg:h-[150px]">
+                <span class="flex items-center space-x-16">
+                    <img src="Assets/hues.svg" class="w-[100px] h-[100px]">
+                    <img src="Assets/volume.svg" class="w-[100px] h-[100px]">
+                    <img src="Assets/snapshot.svg" class="w-[130px] h-[130px]">
+                    <img src="Assets/sitemap.svg" class="w-[130px] h-[130px]">
+                    <img src="Assets/vertigo.svg" class="w-[100px] h-[100px]">
+                    <img src="Assets/cactus.svg" class="w-[100px] h-[100px]">
+                </span>
+            </marquee>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[430px] bg-[#000000] flex items-center justify-center">
+            <div class="subFooter w-full lg:w-[1098px] h-auto lg:h-[360px] flex flex-col justify-around">
+                <div class="subCarolina w-full lg:w-[1098px] h-auto lg:h-[210px] flex flex-wrap justify-center p-[20px] lg:p-0 gap-[100px]">
+                    <div class="carolina w-[160px] h-[86px] flex flex-col justify-between">
+                        <img src="Assets/logo.svg">
+                        <p class="text-[18px] text-[#bababa]">hello@carolina.com</p>
+                    </div>
+                    <div class="home w-[60px] h-[208px] text-[18px] text-[#fff] flex flex-col justify-between ml-auto">
+                        <a href="#" class="text-[#bababa]">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Work</a>
+                        <a href="#">Shop</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="404 w-[115px] h-[208px] text-[18px] text-[#fff] flex flex-col justify-between">
+                        <a href="#">404</a>
+                        <a href="#">Password</a>
+                        <a href="#">Checkout</a>
+                        <a href="#">Blog Details</a>
+                        <a href="#">Shop Details</a>
+                    </div>
+                    <div class="styleGuide w-[110px] h-[166px] text-[18px] text-[#fff] flex flex-col justify-between">
+                        <a href="#">Style Guide</a>
+                        <a href="#">Change Log</a>
+                        <a href="#">Licensing</a>
+                        <a href="#">Instructions</a>
+                    </div>
+                    <div class="instagram w-[95px] h-[166px] text-[18px] text-[#fff] flex flex-col justify-between">
+                        <a href="#">Instagram</a>
+                        <a href="#">Pinterest</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+                <div class="copyright w-full lg:w-[1098px] h-auto lg:h-[96px] border-t flex items-center justify-between">
+                    <p class="text-[18px] font-medium text-[#fff] p-[20px] lg:p-0">Crafted with <i class="fa-solid fa-heart text-[#9919FE]"></i> by <span class="hover:text-[#0084fd]">Azwedo & Wedoflow</span></p>
+                    <p class="text-[18px] font-medium text-[#fff] p-[20px] lg:p-0">Powered by <span class="hover:text-[#0084fd]">Webflow</span></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide();
+        $(".hamburger").click(function(){
+            $(".dropnav").toggle();
+        })
+    })
+</script>
+</html>

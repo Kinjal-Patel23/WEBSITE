@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="Container w-full h-auto">
+        <div class="header relative w-full h-auto lg:h-[650px] flex flex-col items-center justify-between">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="navbar relative w-full lg:w-[1300px] h-auto lg:h-[80px] flex items-center justify-between">
+                <div class="navleft w-[65px] h-[45px] flex items-center justify-center ms-[30px] lg:ms-0">
+                    <h1 class="text-[24px] text-[#fff] font-bold">Meal<span class="text-[#ff5200]">.</span></h1>
+                </div>
+                <div class="navcenter w-[495px] h-[42px] text-[14px] ms-[80px] text-[#858F80] font-medium hidden lg:flex items-center justify-between">
+                    <a href="#" class="text-[#fff]">Home</a>
+                    <a href="#" class="hover:text-[#fff] duration-300">Menu</a>
+                    <a href="#" class="hover:text-[#fff] duration-300">Events</a>
+                    <a href="#" class="hover:text-[#fff] duration-300">Gallery</a>
+                    <a href="#" class="hover:text-[#fff] duration-300">About</a>
+                    <a href="#" class="hover:text-[#fff] duration-300">Contact</a>
+                </div>
+                <button class="navright w-[130px] h-[42px] bg-[#FF5F12] rounded-[50px] uppercase text-[11px] tracking-wider text-[#fff] font-bold hidden md:flex items-center justify-center">Book a table</button>
+                <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[80px] lg:mr-0">
+                    <i class="fa-solid fa-bars text-[28px] text-[#fff]"></i>
+                </div>
+            </div>
+            <div class="headerCont relative w-full lg:w-[570px] h-auto lg:h-[290px] flex flex-col items-center">
+                <p class="text-[12px] text-[#fff] font-extrabold uppercase text-center tracking-widest pt-[20px] lg:pt-0">Enjoy Your Healthy Delicious Meal</p>
+                <h1 class="mainTtl text-[40px] lg:text-[70px] text-center text-[#fff] font-bold pb-[15px]">Treat Yourself</h1>
+                <p class="text-[18px] text-[#fff] text-center pb-[25px] p-[20px] lg:p-0">Another free template by Colorlib. Far far away, behind the word <br>
+                     mountains, far from the countries Vokalia and Consonantia, there <br>
+                      live the blind texts.</p>
+                <button class="w-[150px] h-[50px] bg-[#FF5200] rounded-[49px] uppercase text-[#fff] font-bold text-[11px] tracking-wider">explore now</button>
+            </div>
+            <div class="headerIcons relative w-full lg:w-[1300px] h-auto lg:h-[80px] flex justify-center lg:justify-end gap-[4px]">
+                <div class="whatsapp w-[40px] h-[40px] bg-[#fff] rounded-full cursor-pointer flex items-center justify-center">
+                    <i class="ri-whatsapp-line text-[#ff5200] text-[18px]"></i>
+                </div>
+                <div class="instagram w-[40px] h-[40px] bg-[#fff] rounded-full cursor-pointer flex items-center justify-center">
+                    <i class="ri-instagram-line text-[#ff5200] text-[18px]"></i>
+                </div>
+                <div class="facebook w-[40px] h-[40px] bg-[#fff] rounded-full cursor-pointer flex items-center justify-center">
+                    <i class="ri-facebook-fill text-[#ff5200] text-[18px]"></i>
+                </div>
+                <div class="twitter w-[40px] h-[40px] bg-[#fff] rounded-full cursor-pointer flex items-center justify-center">
+                    <i class="ri-twitter-fill text-[#ff5200] text-[18px]"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropnav w-full h-[400px] bg-black fixed top-20 text-[#fff] flex flex-col items-center justify-around">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Events</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="meal w-full h-auto lg:h-[780px] bg-[#FEE2B3] flex items-center justify-center">
+            <div class="subMeal w-full lg:w-[1140px] h-auto lg:h-[635px] flex flex-wrap justify-center lg:justify-between">
+                <div class="selectMeal w-full lg:w-[285px] h-auto lg:h-[635px] flex flex-col items-center">
+                    <div class="selectMealTtl w-full lg:w-[255px] h-auto lg:h-[68px] mb-[20px]">
+                        <p class="text-[12px] text-[#00000080] uppercase font-extrabold text-center lg:text-left tracking-widest pt-[20px] lg:pt-0">Select your Meal</p>
+                        <h1 class="mainTtl text-[20px] lg:text-[35px] text-[#000] font-medium text-center lg:text-left">Popular <span class="text-[#ff5200] font-bold">Foods</span></h1>
+                    </div>
+                    <div class="breakfast w-full lg:w-[255px] h-auto lg:h-[62px] mb-[8px] flex items-center gap-[15px]">
+                        <img src="Assets/noodles.png" class="w-[30px] h-[35px] ms-[25px]">
+                        <p class="text-[20px] text-[#000] pt-[8px]">Breakfast</p>
+                    </div>
+                    <div class="lunch w-full lg:w-[255px] h-auto lg:h-[62px] mb-[8px] flex items-center gap-[15px]">
+                        <img src="Assets/chicken.png" class="w-[30px] h-[35px] ms-[25px]">
+                        <p class="text-[20px] text-[#000] pt-[8px]">Lunch</p>
+                    </div>
+                    <div class="dinner w-full lg:w-[255px] h-auto lg:h-[62px] mb-[8px] flex items-center gap-[15px]">
+                        <img src="Assets/hotdog.png" class="w-[25px] h-[20px] ms-[25px]">
+                        <p class="text-[20px] text-[#000] pt-[8px]">Dinner</p>
+                    </div>
+                    <div class="drinks w-full lg:w-[255px] h-auto lg:h-[75px] bg-[#fff] rounded-[25px] flex items-center gap-[15px]">
+                        <img src="Assets/drinks.png" class="w-[25px] h-[45px] ms-[25px]">
+                        <p class="text-[20px] text-[#000] pt-[8px]">Drinks</p>
+                    </div>
+                </div>
+                <div class="menus w-full lg:w-[760px] h-auto lg:h-[635px] flex flex-col justify-between">
+                    <div class="menusTtl w-full lg:w-[350px] h-auto lg:h-[40px] ms-0 lg:ms-[15px]">
+                        <h1 class="mainTtl text-[32px] text-[#000] font-medium text-center lg:text-left">Drinks</h1>
+                    </div>
+                    <div class="w-full lg:w-[760px] h-auto lg:h-[270px] flex flex-wrap justify-around">
+                        <div class="w-[350px] h-[270px] overflow-hidden">
+                            <div class="w-[350px] h-[196px] transform transition-transform hover:scale-110 duration-300">
+                                <img src="Assets/img_1_d.jpg" class="rounded-[10px]">
+                            </div>
+                            <h1 class="mainTtl text-[18px] text-[#000] font-medium pt-[15px] pb-[5px]">Italian Sauce Mushroom</h1>
+                            <p class="text-[#ff5200]">$19.00</p>
+                        </div>
+                        <div class="w-[350px] h-[270px] overflow-hidden">
+                            <div class="w-[350px] h-[196px] transform transition-transform hover:scale-110 duration-300">
+                                <img src="Assets/img_2_d.jpg" class="rounded-[10px]">
+                            </div>
+                            <h1 class="mainTtl text-[18px] text-[#000] font-medium pt-[15px] pb-[5px]">Salted Fried Chicken</h1>
+                            <p class="text-[#ff5200]">$19.00</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[760px] h-auto lg:h-[270px] flex flex-wrap justify-around">
+                        <div class="w-[350px] h-[270px] overflow-hidden">
+                            <div class="w-[350px] h-[196px] transform transition-transform hover:scale-110 duration-300">
+                                <img src="Assets/img_3_d.jpg" class="rounded-[10px]">
+                            </div>
+                            <h1 class="mainTtl text-[18px] text-[#000] font-medium pt-[15px] pb-[5px]">Fried Potato w/ Garlic</h1>
+                            <p class="text-[#ff5200]">$19.00</p>
+                        </div>
+                        <div class="w-[350px] h-[270px] overflow-hidden">
+                            <div class="w-[350px] h-[196px] transform transition-transform hover:scale-110 duration-300">
+                                <img src="Assets/img_4_d.jpg" class="rounded-[10px]">
+                            </div>
+                            <h1 class="mainTtl text-[18px] text-[#000] font-medium pt-[15px] pb-[5px]">Shrimp and olive</h1>
+                            <p class="text-[#ff5200]">$19.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desserts w-full h-auto lg:h-[350px] bg-[#FEE2B3] flex items-center justify-center">
+            <div class="subDesserts w-full lg:w-[1140px] h-auto lg:h-[260px] flex flex-col items-center justify-around">
+                <div class="dessertsTtl w-full lg:w-[1110px] h-auto lg:h-[60px] flex flex-col justify-center items-center">
+                    <p class="text-[12px] text-[#00000080] font-extrabold uppercase tracking-widest text-center">Choose Desserts</p>
+                    <h1 class="mainTtl text-[20px] lg:text-[28px] text-[#333] text-center font-medium">Popular <span class="text-[#ff5200] font-bold">Desserts</span></h1>
+                </div>
+                <div class="dessertsCont w-full lg:w-[1140px] h-auto lg:h-[152px] flex flex-wrap justify-center lg:justify-around">
+                    <div class="w-[255px] h-[152px] border border-[#E4CBA1] rounded-[5px] hover:bg-[#fff] duration-300 hover:border-white flex items-center justify-center gap-[14px]">
+                        <div class="w-[65px] h-[94px]">
+                            <img src="Assets/dessert_1.png" class="w-[60px] h-[94px]">
+                        </div>
+                        <div class="w-[132px] h-[65px]">
+                            <h1 class="mainTtl text-[20px] text-[#000] font-medium">Cherry Muffin</h1>
+                            <p class="text-[20px] text-[#ff5200] pt-[5px]">$20</p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[152px] border border-[#E4CBA1] rounded-[5px] hover:bg-[#fff] duration-300 hover:border-white flex items-center justify-center gap-[14px]">
+                        <div class="w-[65px] h-[85px]">
+                            <img src="Assets/dessert_2.png" class="w-[65px] h-[85px]">
+                        </div>
+                        <div class="w-[132px] h-[65px]">
+                            <h1 class="mainTtl text-[20px] text-[#000] font-medium">Rose Muffin</h1>
+                            <p class="text-[20px] text-[#ff5200] pt-[5px]">$20</p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[152px] border border-[#E4CBA1] rounded-[5px] hover:bg-[#fff] duration-300 hover:border-white flex items-center justify-center gap-[14px]">
+                        <div class="w-[60px] h-[52px]">
+                            <img src="Assets/dessert_5.png" class="w-[60px] h-[52px]">
+                        </div>
+                        <div class="w-[132px] h-[65px]">
+                            <h1 class="mainTtl text-[20px] text-[#000] font-medium">Sweet Donut</h1>
+                            <p class="text-[20px] text-[#ff5200] pt-[5px]">$20</p>
+                        </div>
+                    </div>
+                    <div class="w-[255px] h-[152px] border border-[#E4CBA1] rounded-[5px] hover:bg-[#fff] duration-300 hover:border-white flex items-center justify-center gap-[14px]">
+                        <div class="w-[60px] h-[52px]">
+                            <img src="Assets/dessert_4.png" class="w-[60px] h-[52px]">
+                        </div>
+                        <div class="w-[132px] h-[65px]">
+                            <h1 class="mainTtl text-[20px] text-[#000] font-medium">Choco Cake</h1>
+                            <p class="text-[20px] text-[#ff5200] pt-[5px]">$20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial relative w-full h-auto lg:h-[690px] flex items-center justify-center">
+            <div class="absolute bg-[#E5C384] inset-0 opacity-90"></div>
+            <div class="subTestimonial relative w-full lg:w-[1140px] h-auto lg:h-[495px] flex flex-wrap justify-center lg:justify-between">
+                <div class="testi w-full lg:w-[475px] h-auto lg:h-[495px] flex flex-col items-center">
+                    <div class="testiTtl w-full lg:w-[445px] h-auto lg:h-[55px] mb-[40px]">
+                        <p class="text-[12px] text-[#00000080] uppercase font-extrabold tracking-widest text-center lg:text-left">Testimonials</p>
+                        <h1 class="mainTtl text-[25px] lg:text-[32px] text-[#333] text-center lg:text-left font-medium">Satisfied <span class="text-[#ff5200] font-bold">Customers</span></h1>
+                    </div>
+                    <div class="clientCont w-full lg:w-[445px] h-auto lg:h-[275px]">
+                        <div class="w-full lg:w-[80px] h-[80px] rounded-full flex justify-center items-center">
+                            <img src="Assets/person_3.jpg" class="rounded-full w-[80px] h-[80px]">
+                        </div>
+                        <h1 class="mainTtl text-[18px] text-[#ff5200] font-medium pt-[15px] pb-[4px] text-center lg:text-left">Rob Smith</h1>
+                        <p class="text-[14px] text-[#000] pb-[8px] text-center lg:text-left">Product Designer at Twitter</p>
+                        <i class="ri-double-quotes-l text-[30px] text-[#333] hidden md:flex"></i>
+                        <p class="text-[#333] leading-[26px] text-center lg:text-left p-[20px] lg:p-0">“A small river named Duden flows by their place and supplies <br>
+                             it with the necessary regelialia. It is a paradisematic country, <br>
+                              in which roasted parts of sentences fly into your mouth.”</p>
+                    </div>
+                </div>
+                <div class="galleries w-full lg:w-[570px] h-auto lg:h-[495px] flex flex-col items-center justify-around">
+                    <div class="galleriesTtl w-full lg:w-[540px] h-auto lg:h-[55px]">
+                        <p class="text-[12px] text-[#00000080] font-extrabold uppercase tracking-widest text-center lg:text-left">Galleries</p>
+                        <h1 class="mainTtl text-[20px] lg:text-[32px] text-[#333] fo font-medium text-center lg:text-left">Photo <span class="text-[#ff5200] font-bold">Galleries</span></h1>
+                    </div>
+                    <div class="w-full lg:w-[570px] h-auto lg:h-[143px] flex flex-wrap justify-center lg:justify-around overflow-hidden">
+                        <div class="w-[255px] h-[143px] transform transition-transform hover:scale-110 duration-500">
+                            <img src="Assets/img_1.jpg" class="rounded-[10px]">
+                        </div>
+                        <div class="w-[255px] h-[143px] transform transition-transform hover:scale-110 duration-500">
+                            <img src="Assets/img_2.jpg" class="rounded-[10px]">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[570px] h-auto lg:h-[143px] flex flex-wrap justify-center lg:justify-around overflow-hidden">
+                        <div class="w-[255px] h-[143px] transform transition-transform hover:scale-110 duration-500">
+                            <img src="Assets/img_1_b.jpg" class="rounded-[10px]">
+                        </div>
+                        <div class="w-[255px] h-[143px] transform transition-transform hover:scale-110 duration-500">
+                            <img src="Assets/img_2_b.jpg" class="rounded-[10px]">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[540px] h-auto lg:h-[50px] flex justify-center">
+                        <button class="w-[168px] h-[50px] rounded-[50px] bg-[#FF5200] uppercase text-[#fff] text-[11px] font-bold">more galleries</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="events w-full h-auto lg:h-[780px] bg-[#FEE2B3] flex items-center justify-center">
+            <div class="subEvents w-full lg:w-[1140px] h-auto lg:h-[580px] flex flex-col items-center justify-around">
+                <div class="eventsTtl w-full lg:w-[665px] h-auto lg:h-[140px] flex flex-col items-center">
+                    <p class="text-[12px] text-[#00000080] uppercase font-extrabold tracking-widest text-center">Events</p>
+                    <h1 class="mainTtl text-[20px] lg:text-[32px] text-[#333] font-medium text-center">Enjoy <span class="text-[#ff5200] font-bold">Our Events</span></h1>
+                    <p class="text-[#333] text-center p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and <br>
+                         Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="eventsCont w-full lg:w-[1140px] h-auto lg:h-[370px] flex flex-wrap justify-center lg:justify-between">
+                    <div class="w-full lg:w-[475px] h-auto lg:h-[345px]">
+                        <p class="mainTtl text-[20px] lg:text-[30px] text-[#ff5200] text-center lg:text-left">$200.99</p>
+                        <h1 class="mainTtl text-[28px] text-[#333] font-medium pb-[20px] text-center lg:text-left">Guest Chef Nihgt Party</h1>
+                        <p class="text-[#333] leading-[26px] pb-[25px] text-center lg:text-left p-[20px] lg:p-0">Far far away, behind the word mountains, far from the <br>
+                             countries Vokalia and Consonantia, there live the blind texts. <br>
+                              Separated they live in Bookmarksgrove right at the coast of <br>
+                            the Semantics, a large language ocean.</p>
+                        <p class="text-[#333] text-center lg:text-left"><i class="ri-check-line text-[#333] text-[20px]"></i><span class="ps-[10px]">Away behind the word</span></p>
+                        <p class="text-[#333] text-center lg:text-left"><i class="ri-check-line text-[#333] text-[20px]"></i><span class="ps-[10px]">Bookmarksgrove right at the coast</span></p>
+                        <p class="text-[#333] text-center lg:text-left"><i class="ri-check-line text-[#333] text-[20px]"></i><span class="ps-[10px]">Separated they live</span></p>
+                    </div>
+                    <div class="w-full lg:w-[540px] h-auto lg:h-[370px]">
+                        <img src="Assets/party_2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tableBook relative w-full h-auto lg:h-[280px] flex items-center justify-center">
+            <div class="absolute bg-[#E5C384] inset-0 opacity-90"></div>
+            <div class="subTable relative w-full lg:w-[665px] h-auto lg:h-[185px] flex flex-col items-center">
+                <p class="text-[12px] text-[#00000080] font-extrabold uppercase tracking-widest text-center">Book a table</p>
+                <h1 class="mainTtl text-[20px] lg:text-[28px] text-[#333] font-medium pb-[8px] text-center">Book A Table Now</h1>
+                <p class="text-[#333] leading-[26px] text-center pb-[15px] p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and <br>
+                   Consonantia, there live the blind texts.</p>
+                <button class="w-[152px] h-[50px] text-[11px] text-[#fff] font-bold uppercase bg-[#FF5200] rounded-[50px] flex justify-center items-center">book a table</button>
+            </div>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[500px] bg-[#645F56] flex items-center justify-center">
+            <div class="subFooter w-full lg:w-[1140px] h-auto lg:h-[370px] flex flex-col justify-between">
+                <div class="mainFooter w-full lg:w-[1140px] h-auto lg:h-[283px] flex flex-wrap justify-center lg:justify-between">
+                    <div class="about w-full lg:w-[380px] h-auto lg:h-[280px] p-[20px] lg:p-0">
+                        <h1 class="mainTtl text-[#fff] font-medium pb-[30px]">About Meal<span class="text-[#ff5200]">.</span></h1>
+                        <p class="text-[14px] text-[#fff] leading-[22px] pb-[35px]">Far far away, behind the word mountains, far from the <br>
+                             countries Vokalia and Consonantia, there live the blind <br> texts.</p>
+                        <h1 class="mainTtl text-[#fff] font-medium pb-[25px]">Connect</h1>
+                        <div class="icons w-[300px] h-[40px] flex gap-[4px]">
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#fff] flex items-center justify-center">
+                                <i class="ri-instagram-line"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#fff] flex items-center justify-center">
+                                <i class="ri-twitter-fill"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#fff] flex items-center justify-center">
+                                <i class="ri-facebook-fill"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#fff] flex items-center justify-center">
+                                <i class="ri-linkedin-fill"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#fff] flex items-center justify-center">
+                                <i class="ri-pinterest-fill"></i>
+                            </div>
+                            <div class="w-[30px] h-[30px] rounded-full bg-[#fff] flex items-center justify-center">
+                                <i class="ri-dribbble-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects w-full lg:w-[190px] h-auto lg:h-[280px] flex flex-col p-[20px] lg:p-0">
+                        <h1 class="mainTtl text-[#fff] font-medium">Projects</h1>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pt-[30px] pb-[10px]">Web Design</a>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pb-[10px]">HTML5</a>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pb-[10px]">CSS3</a>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pb-[10px]">jQuery</a>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff]">Bootstrap</a>
+                    </div>
+                    <div class="services w-full lg:w-[190px] h-auto lg:h-[280px] flex flex-col p-[20px] lg:p-0">
+                        <h1 class="mainTtl text-[#fff] font-medium">Services</h1>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pt-[30px] pb-[10px]">Design</a>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pb-[10px]">Front-end</a>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pb-[10px]">Code3</a>
+                        <a href="#" class="text-[14px] text-[#ADAF9D] hover:text-[#fff]">Developer</a>
+                    </div>
+                    <div class="contact w-full lg:w-[285px] h-auto lg:h-[280px] flex flex-col p-[20px] lg:p-0">
+                        <h1 class="mainTtl text-[#fff] font-medium">Contact</h1>
+                        <p class="text-[14px] text-[#fff] pt-[30px] pb-[20px]">43 Raymouth Rd. Baltemoer, London <br> 3910</p>
+                        <p class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pb-[10px]">+1(123)-456-7890</p>
+                        <p class="text-[14px] text-[#ADAF9D] hover:text-[#fff] pb-[10px]">+1(123)-456-7890</p>
+                        <p class="text-[14px] text-[#ADAF9D] hover:text-[#fff]">info@mydomain.com</p>
+                    </div>
+                </div>
+                <div class="copyright w-full lg:w-[1140px] h-auto lg:h-[25px] flex justify-center">
+                    <p class="text-[14px] text-[#fff] font-medium text-center">Copyright ©2024 All rights reserved | This template is made with <i class="ri-heart-fill text-[#dc3545] text-[16px]"></i>  by <span class="text-[#ff5200]">Colorlib</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide();
+
+        $(".hamburger").click(function(){
+            $(".dropnav").toggle();
+        })
+    })
+</script>
+</html>

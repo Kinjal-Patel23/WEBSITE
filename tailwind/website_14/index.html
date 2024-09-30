@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="Container w-full h-auto">
+        <div class="main w-full h-auto lg:h-[500px]">
+            <div class="headerBg relative w-full h-auto lg:h-[500px] flex flex-col items-center" id="particles-js">
+                <div class="headerMenu absolute w-full lg:w-[1140px] h-[58px] mt-[40px] flex justify-between">
+                    <div class="navleft w-[100px] h-[58px] flex items-center justify-center">
+                        <h1 class="text-[20px] text-[#fff] font-bold">SNIPP.</h1>
+                    </div>
+                    <div class="navright w-[780px] h-[58px] text-[16px] text-[#F0E1DE] capitalize hidden lg:flex items-center justify-between">
+                        <a href="#" class="text-[#F6C5C4] hover:text-[#fff]">home</a>
+                        <a href="#" class="hover:text-[#fff]">about</a>
+                        <a href="#" class="hover:text-[#fff]">services</a>
+                        <a href="#" class="hover:text-[#fff]">portfolio</a>
+                        <a href="#" class="hover:text-[#fff]">case studies</a>
+                        <a href="#" class="hover:text-[#fff]">contact</a>
+                        <button class="w-[139px] h-[47px] border border-[#F3BDA3] rounded-[50px] text-[#fff]">Get in touch</button>
+                    </div>
+                    <div class="hamburger flex items-center justify-center lg:hidden cursor-pointer mr-[80px] lg:mr-0">
+                        <i class="fa-solid fa-bars text-[28px] text-[#000]"></i>
+                    </div>
+                </div> 
+                <div class="headerTtl absolute w-full lg:w-[664px] h-auto lg:h-[232px] mt-[70px] lg:mt-[200px] flex flex-col items-center justify-center">
+                    <h1 class="text-[30px] lg:text-[55px] text-[#fff] font-extralight text-center pb-[18px] leading-[66px]">We love to create <span class="font-extrabold">Beautiful</span> websites</h1>
+                    <button class="w-[197px] h-[60px] border-2 border-[#FAE1E1] rounded-[50px] text-[16px] text-[#fff] hover:bg-[#fff] hover:text-[#ee76ad] duration-700 hover:border-none">Get in touch</button>
+                </div>
+                <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+                <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+            </div>
+        </div>
+
+        <div class="dropnav w-full h-[300px] bg-[#EF9D8E] fixed top-24 text-[#fff] flex flex-col justify-around items-center">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Case Studies</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="gallery w-full h-auto lg:h-[1050px] bg-[#F8FAFF] flex flex-col items-center justify-around mt-[20px] lg:mt-0">
+            <div class="subGallery w-full lg:w-[1297px] h-auto lg:h-[648px] flex flex-wrap items-center justify-center lg:justify-around gap-[20px] lg:gap-0">
+                <div class="img w-full lg:w-[298px] h-auto lg:h-[550px] flex items-center justify-center">
+                    <div class="image w-[298px] h-[274px]">
+                        <img src="Assets/image_1.jpg" class="transform transition-transform hover:scale-110 duration-500">
+                    </div>
+                </div>
+                <div class="img w-full lg:w-[398px] h-auto lg:h-[550px] flex flex-col justify-center items-center lg:justify-between">
+                    <div class="image w-[398px] h-[265px]">
+                        <img src="Assets/image_5.jpg" class="transform transition-transform hover:scale-110 duration-500">
+                    </div>
+                    <div class="image w-[398px] h-[265px]">
+                        <img src="Assets/image_6.jpg" class="transform transition-transform hover:scale-110 duration-500">
+                    </div>
+                </div>
+                <div class="img w-full lg:w-[199px] h-auto lg:h-[617px] flex flex-col items-center justify-between">
+                    <div class="image w-[199px] h-[298px]">
+                        <img src="Assets/image_4.jpg" class="transform transition-transform hover:scale-110 duration-500">
+                    </div>
+                    <div class="image w-[199px] h-[298px]">
+                        <img src="Assets/image_3.jpg" class="transform transition-transform hover:scale-110 duration-500">
+                    </div>
+                </div>
+                <div class="img w-full lg:w-[298px] h-auto lg:h-[550px] flex items-center justify-center">
+                    <div class="image w-[298px] h-[213px]">
+                        <img src="Assets/image_2.jpg" class="transform transition-transform hover:scale-110 duration-500">
+                    </div>
+                </div>
+            </div>
+            <div class="galleryCont w-full lg:w-[885px] h-auto lg:h-[271px] flex flex-col items-center justify-center lg:justify-around">
+                <h1 class="text-[20px] lg:text-[38px] text-[#404044] font-light text-center">UI/UX, visual, <span class="text-[#efac78] font-bold bg-[#FDF2EA] p-[5px]">Web designer</span> with more than 12 years of experience in designing websites and mobile apps.</h1>
+                <button class="w-[197px] h-[60px] bg-[#FCE7F1] rounded-[50px] text-[16px] text-[#ee76ad] border-2 border-white hover:border-[#EE76AD] hover:bg-transparent">Get in touch</button>
+            </div>
+        </div> 
+
+        <div class="services w-full h-auto lg:h-[800px] flex items-center justify-center">
+            <div class="subServices w-full lg:w-[1140px] h-auto lg:h-[644px] flex flex-col items-center justify-around">
+                <div class="servicesTtl w-full lg:w-[570px] h-auto lg:h-[240px] flex flex-col items-center justify-center">
+                    <p class="text-[13px] uppercase text-[#0003] tracking-widest pb-2">Our Services</p>
+                    <h1 class="text-[20px] lg:text-[38px] text-[#404044] font-bold text-center leading-[57px] pb-5 p-[20px] lg:p-0">Web & Mobile app design, bring your ideas to life</h1>
+                    <p class="text-[16px] text-[#8b8b92] font-light text-center p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia <br> and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+                <div class="servicesCont w-full lg:w-[1140px] h-auto lg:h-[267px] flex flex-wrap justify-center lg:justify-around">
+                    <div class="strategy w-[255px] h-[275px] flex flex-col items-center justify-between">
+                        <div class="strategyIcon relative w-24 h-24 flex items-center justify-center">
+                            <div class="absolute inset-0 clip-hexagon bg-[#DEF4FB]"></div>
+                            <i class="relative fa-regular fa-lightbulb text-[32px]" style="color: #29bae4;"></i>
+                        </div>
+                        <div class="strategyCont w-[255px] h-[185px]">
+                            <h1 class="text-[20px] text-[#404044] text-center pt-[12px]">Strategy</h1>
+                            <p class="text-[16px] text-[#8b8b92] font-light text-center pt-[10px]">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                    <div class="design w-[255px] h-[275px] flex flex-col items-center justify-between">
+                        <div class="designIcon relative w-24 h-24 flex items-center justify-center">
+                            <div class="absolute inset-0 clip-hexagon bg-[#FCE7F1]"></div>
+                            <i class="relative fa-solid fa-desktop text-[30px]" style="color: #ee76ad;"></i>
+                        </div>
+                        <div class="designCont w-[255px] h-[185px]">
+                            <h1 class="text-[20px] text-[#404044] text-center pt-[12px]">Design</h1>
+                            <p class="text-[16px] text-[#8b8b92] font-light text-center pt-[10px]">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                    <div class="development w-[255px] h-[267px] flex flex-col items-center justify-between">
+                        <div class="developementIcon relative w-24 h-24 flex items-center justify-center">
+                            <div class="absolute inset-0 clip-hexagon bg-[#FDF2EA]"></div>
+                            <i class="relative fa-solid fa-gear text-[30px]" style="color: #efac78;"></i>
+                        </div>
+                        <div class="developmentCont w-[255px] h-[185px]">
+                            <h1 class="text-[20px] text-[#404044] text-center pt-[12px]">Development</h1>
+                            <p class="text-[16px] text-[#8b8b92] font-light text-center pt-[10px]">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                    <div class="support w-[255px] h-[267px] flex flex-col items-center justify-between">
+                        <div class="supportIcon relative w-24 h-24 flex items-center justify-center">
+                            <div class="absolute inset-0 clip-hexagon bg-[#EBFDF4]"></div>
+                            <i class="relative fa-solid fa-question text-[30px]" style="color: #79efb4;"></i>
+                        </div>
+                        <div class="supportCont w-[255px] h-[185px]">
+                            <h1 class="text-[20px] text-[#404044] text-center pt-[12px]">Help & Supports</h1>
+                            <p class="text-[16px] text-[#8b8b92] font-light text-center pt-[10px]">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="newsletter w-full h-auto lg:h-[546px] flex items-center justify-center">
+            <div class="newsletterCont w-full lg:w-[665px] h-auto lg:h-[226px] flex flex-col items-center">
+                <h1 class="text-[32px] lg:text-[40px] text-[#fff] pb-[10px] text-center">Subcribe to our Newsletter</h1>
+                <p class="text-[16px] text-[#ffffffb3] font-light text-center pb-[40px] p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and <br> Consonantia, there live the blind texts. Separated they live in</p>
+                <div class="emailBtn w-[302px] h-[52px] border border-[#FCE9E9] rounded-[50px] bg-transparent outline-none flex items-center">
+                    <input type="email" placeholder="Enter email address" class="w-[302px] h-[52px] rounded-[50px] bg-transparent outline-none text-[18px] text-[#fff] placeholder:text-[#fffc] ps-[15px]">
+                    <span><i class="fa-solid fa-paper-plane pr-[20px] text-[18px] pt-[10px]" style="color: #fce9e9;"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="works w-full h-auto lg:h-[2715px] flex flex-col items-center justify-evenly">
+            <div class="worksTtl w-full lg:w-[647px] h-auto lg:h-[240px]">
+                <p class="text-[13px] text-[#0003] uppercase tracking-widest text-center pb-[8px]">Works</p>
+                <h1 class="text-[20px] lg:text-[38px] text-[#404044] font-bold leading-[57px] text-center pb-[20px] p-[20px] lg:p-0">View our works below to see our design and way of development.</h1>
+                <p class="text-[16px] text-[#8b8b92] font-light text-center leading-[30px] p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            </div>
+            <div class="worksCont w-full lg:w-[1140px] h-auto lg:h-[2062px] flex flex-col justify-between">
+                <div class="illustration w-full lg:w-[1140px] h-auto lg:h-[575px] flex flex-wrap">
+                    <div class="illustrationImg w-full lg:w-[570px] h-auto lg:h-[575px] bg-[#FCE7F1] p-[20px]">
+                        <div class="w-full lg:w-[570px] h-[575px] bg-[url('Assets/work-1.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                    </div>
+                    <div class="illustrationCont w-full lg:w-[570px] h-auto lg:h-[575px] flex justify-center items-center">
+                        <div class="w-[400px] h-auto lg:h-[370px] ms-[70px]">
+                            <p class="text-[13px] tracking-widest uppercase text-[#c0c0c3] pb-[10px]">Illustration</p>
+                            <h1 class="text-[30px] text-[#404044] leading-[45px] pb-[28px]">Even the all-powerful <br> Pointing has no control</h1>
+                            <p class="text-[16px] text-[#8b8b92] font-light leading-[30px] pb-[14px]">Even the all-powerful Pointing has no control about
+                                the blind texts it is an almost unorthographic life One
+                                day however a small line of blind text by the name of
+                                Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            <button class="w-[160px] h-[40px] rounded-[50px] bg-[#FCE7F1] text-[16px] text-[#ee76ad] border-2 border-[#FCE7F1] hover:border-[#EE76AD] hover:bg-transparent duration-500">View Portfolio</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="application w-full lg:w-[1140px] h-auto lg:h-[575px] flex flex-wrap">
+                    <div class="applicationCont w-full lg:w-[570px] h-auto lg:h-[575px] flex justify-center items-center">
+                        <div class="w-[400px] h-[370px] ms-[70px]">
+                            <p class="text-[13px] tracking-widest uppercase text-[#c0c0c3] pb-[10px]">Application</p>
+                            <h1 class="text-[30px] text-[#404044] leading-[45px] pb-[28px]">Even the all-powerful <br> Pointing has no control</h1>
+                            <p class="text-[16px] text-[#8b8b92] font-light leading-[30px] pb-[14px]">Even the all-powerful Pointing has no control about
+                                the blind texts it is an almost unorthographic life One
+                                day however a small line of blind text by the name of
+                                Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            <button class="w-[160px] h-[40px] rounded-[50px] bg-[#FCE7F1] text-[16px] text-[#ee76ad] border-2 border-[#FCE7F1] hover:border-[#EE76AD] hover:bg-transparent duration-500">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="applicationImg w-full lg:w-[570px] lg:h-[575px] bg-[#FCE7F1] p-[20px]">
+                        <div class="w-full lg:w-[570px] h-[575px] bg-[url('Assets/work-2.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                    </div>
+                </div>
+                <div class="webDesign w-full lg:w-[1140px] h-auto lg:h-[575px] flex flex-wrap">
+                    <div class="webDesignImg w-full lg:w-[570px] h-auto lg:h-[575px] bg-[#FCE7F1] p-[20px]">
+                        <div class="w-full lg:w-[570px] h-[575px] bg-[url('Assets/work-3.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                    </div>
+                    <div class="webDesignCont w-full lg:w-[570px] h-auto lg:h-[575px] flex justify-center items-center">
+                        <div class="w-[400px] h-[370px] ms-[70px]">
+                            <p class="text-[13px] tracking-widest uppercase text-[#c0c0c3] pb-[10px]">Web Design</p>
+                            <h1 class="text-[30px] text-[#404044] leading-[45px] pb-[28px]">Even the all-powerful <br> Pointing has no control</h1>
+                            <p class="text-[16px] text-[#8b8b92] font-light leading-[30px] pb-[14px]">Even the all-powerful Pointing has no control about
+                                the blind texts it is an almost unorthographic life One
+                                day however a small line of blind text by the name of
+                                Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            <button class="w-[160px] h-[40px] rounded-[50px] bg-[#FCE7F1] text-[16px] text-[#ee76ad] border-2 border-[#FCE7F1] hover:border-[#EE76AD] hover:bg-transparent duration-500">View Portfolio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="worksBtn w-full lg:w-[1140px] h-auto lg:h-[60px] flex justify-center">
+                <button class="w-[230px] h-[60px] text-[16px] text-[#ee76ad] font-medium rounded-[50px] bg-[#FCE7F1] hover:bg-transparent border-2 border-[#FCE7F1] hover:border-[#EE76AD] duration-500">
+                    View All Projects
+                </button>
+            </div>
+        </div>
+
+        <div class="customer w-full h-auto lg:h-[850px] bg-[#F8FAFF] flex items-center justify-center">
+            <div class="subCustomer w-full lg:w-[1140px] h-auto lg:h-[650px] flex flex-col items-center justify-between">
+                <div class="customerTtl w-full lg:w-[665px] h-auto lg:h-[183px] flex flex-col items-center justify-center">
+                    <p class="text-[13px] text-[#0003] uppercase tracking-widest pb-[8px]">Customer Says</p>
+                    <h1 class="text-[20px] lg:text-[38px] text-[#404044] font-bold text-center pb-[18px]">Our satisfied customer says</h1>
+                    <p class="text-[16px] text-[#8b8b92] font-light text-center p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+                <div class="customerCont w-full lg:w-[1130px] h-auto lg:h-[417px] flex flex-wrap justify-center lg:justify-between">
+                    <div class="client w-[350px] h-[417px] flex flex-col items-center justify-center gap-[20px]">
+                        <div class="clientImg w-[100px] h-[100px] rounded-full">
+                            <img src="Assets/person_1.jpg" class="rounded-full">
+                        </div>
+                        <div class="clientCont w-[302px] h-[221px]">
+                            <p class="text-[16px] text-[#8b8b92] font-light text-center pb-[40px] pt-[8px]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <h1 class="text-[16px] text-[#efac78] font-medium text-center pb-[10px]">Dennis Green</h1>
+                            <p class="text-[13px] text-[#f4c8a6] font-light text-center">System Analytics</p>
+                        </div>
+                    </div>
+                    <div class="client w-[350px] h-[417px] flex flex-col items-center justify-center gap-[20px]">
+                        <div class="clientImg w-[100px] h-[100px] rounded-full">
+                            <img src="Assets/person_2.jpg" class="rounded-full">
+                        </div>
+                        <div class="clientCont w-[302px] h-[221px]">
+                            <p class="text-[16px] text-[#8b8b92] font-light text-center pb-[40px] pt-[8px]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <h1 class="text-[16px] text-[#efac78] font-medium text-center pb-[10px]">Dennis Green</h1>
+                            <p class="text-[13px] text-[#f4c8a6] font-light text-center">Marketing Manager</p>
+                        </div>
+                    </div>
+                    <div class="client w-[350px] h-[417px] flex flex-col items-center justify-center gap-[20px]">
+                        <div class="clientImg w-[100px] h-[100px] rounded-full">
+                            <img src="Assets/person_3.jpg" class="rounded-full">
+                        </div>
+                        <div class="clientCont w-[302px] h-[221px]">
+                            <p class="text-[16px] text-[#8b8b92] font-light text-center pb-[40px] pt-[8px]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <h1 class="text-[16px] text-[#efac78] font-medium text-center pb-[10px]">Dennis Green</h1>
+                            <p class="text-[13px] text-[#f4c8a6] font-light text-center">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="achievements w-full h-auto lg:h-[600px] bg-[#29BAE4] flex items-center justify-center">
+            <div class="subAchievements w-full lg:w-[1140px] h-auto lg:h-[380px] flex flex-col items-center justify-between">
+                <div class="achievementsTtl w-full lg:w-[665px] h-auto lg:h-[142px] flex flex-col items-center">
+                    <h1 class="text-[20px] lg:text-[40px] text-[#fff] font-bold text-center pb-[15px]">Our achievements</h1>
+                    <p class="text-[16px] font-light text-[#ffffffb3] text-center p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+                <div class="achievementsCont w-full lg:w-[1140px] h-auto lg:h-[144px] flex flex-wrap justify-center lg:justify-between">
+                    <div class="achiev w-[350px] h-[144px] flex flex-col items-center">
+                        <h1 class="text-[40px] text-[#fff] pb-[10px]">400</h1>
+                        <p class="text-[20px] text-[#ffffffb3] font-light text-center">Customers are satisfied with our professional support</p>
+                    </div>
+                    <div class="achiev w-[350px] h-[144px] flex flex-col items-center">
+                        <h1 class="text-[40px] text-[#fff] pb-[10px]">1,000</h1>
+                        <p class="text-[20px] text-[#ffffffb3] font-light text-center">Amazing preset options to be mixed and combined</p>
+                    </div>
+                    <div class="achiev w-[350px] h-[144px] flex flex-col items-center">
+                        <h1 class="text-[40px] text-[#fff] pb-[10px]">8,000</h1>
+                        <p class="text-[20px] text-[#ffffffb3] font-light text-center">Average response time on live chat support channel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog w-full lg:h-[1000px] flex items-center justify-center">
+            <div class="subBlog lg:w-[1140px] lg:h-[848px] flex flex-col items-center justify-around">
+                <div class="blogTtl lg:w-[665px] lg:h-[167px] flex flex-col items-center">
+                    <p class="text-[13px] text-[#0003] uppercase tracking-widest pb-[8px]">Blog</p>
+                    <h1 class="text-[20px] lg:text-[38px] text-[#404044] text-center font-bold pb-[10px]">Recent Blog</h1>
+                    <p class="text-[16px] text-[#8b8b92] font-light text-center p-[20px] lg:p-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+                <div class="blogCont lg:w-[1140px] lg:h-[555px] flex flex-wrap justify-around">
+                    <div class="subBlogCont w-full lg:w-[348px] h-auto lg:h-[555px]">
+                        <div class="blogImg w-full lg:w-[348px] h-[350px] bg-[url('Assets/image_1.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                        <div class="blogImgCont w-full lg:w-[348px] h-auto lg:h-[203px] flex flex-col items-center justify-evenly">
+                            <div class="blogDate w-[300px] h-[33px] flex items-center">
+                                <p class="text-[14px] text-[#a5a5ab] font-light"><span class="cursor-pointer duration-300 ease-in-out hover:opacity-0">July 12, 2018</span> <span class="cursor-pointer duration-300 ease-in-out hover:opacity-0">Admin</span> <span class="cursor-pointer duration-300 ease-in-out hover:opacity-0"><i class="fa-solid fa-message p-[5px]" style="color: #a5a5ab;"></i>3</span></p>
+                            </div>
+                            <div class="blogDateCont w-full lg:w-[300px] h-auto lg:h-[90px]">
+                                <p class="text-[20px] text-[#4F4F53] text-center hover:text-[#ee76ad] p-[20px] lg:p-0 duration-500">Even the all-powerful Pointing has no control about the blind texts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subBlogCont w-full lg:w-[348px] h-auto lg:h-[555px]">
+                        <div class="blogImg w-full lg:w-[348px] h-[350px] bg-[url('Assets/image_2.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                        <div class="blogImgCont w-full lg:w-[348px] h-auto lg:h-[203px] flex flex-col items-center justify-evenly">
+                            <div class="blogDate w-[300px] h-[33px] flex items-center">
+                                <p class="text-[14px] text-[#a5a5ab] font-light"><span class="cursor-pointer duration-300 ease-in-out hover:opacity-0">July 12, 2018</span> <span class="cursor-pointer duration-300 ease-in-out hover:opacity-0">Admin</span> <span class="cursor-pointer duration-300 ease-in-out hover:opacity-0"><i class="fa-solid fa-message p-[5px]" style="color: #a5a5ab;"></i>3</span></p>
+                            </div>
+                            <div class="blogDateCont w-full lg:w-[300px] h-auto lg:h-[90px]">
+                                <p class="text-[20px] text-[#4F4F53] p-[20px] text-center lg:p-0 hover:text-[#ee76ad] duration-500">Even the all-powerful Pointing has no control about the blind texts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subBlogCont w-full lg:w-[348px] h-auto lg:h-[555px]">
+                        <div class="blogImg w-full lg:w-[348px] h-[350px] bg-[url('Assets/image_3.jpg')] bg-no-repeat bg-cover bg-center"></div>
+                        <div class="blogImgCont w-full lg:w-[348px] h-auto lg:h-[203px] flex flex-col items-center justify-evenly">
+                            <div class="blogDate w-[300px] h-[33px] flex items-center">
+                                <p class="text-[14px] text-[#a5a5ab] font-light"><span class="cursor-pointer duration-300 ease-in-out hover:opacity-0">July 12, 2018</span> <span class="cursor-pointer duration-300 ease-in-out hover:opacity-0">Admin</span> <span class="cursor-pointer duration-300 ease-in-out hover:opacity-0"><i class="fa-solid fa-message p-[5px]" style="color: #a5a5ab;"></i>3</span></p>
+                            </div>
+                            <div class="blogDateCont w-full lg:w-[300px] h-auto lg:h-[90px]">
+                                <p class="text-[20px] text-[#4F4F53] p-[20px] lg:p-0 hover:text-[#ee76ad] text-center duration-500">Even the all-powerful Pointing has no control about the blind texts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer w-full h-auto lg:h-[600px] bg-[#EE76AD] flex items-center justify-center">
+            <div class="subFooter w-full lg:w-[1140px] h-auto lg:h-[453px] flex flex-col justify-between">
+                <div class="footerInfo w-full lg:w-[1140px] h-auto lg:h-[330px] flex flex-wrap justify-center lg:justify-between gap-[20px] lg:gap-0">
+                    <div class="snipp w-[255px] h-[182px]">
+                        <h1 class="text-[18px] text-[#fff] pb-[40px]">Snipp.</h1>
+                        <p class="text-[16px] text-[#ffffffb3] font-light">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                    <div class="links w-[207px] h-[330px] flex flex-col">
+                        <h1 class="text-[18px] text-[#fff] pb-[35px]">Quick Links</h1>
+                        <a href="#" class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">Home</a>
+                        <a href="#" class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">Case studies</a>
+                        <a href="#" class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">Services</a>
+                        <a href="#" class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">Portfolio</a>
+                        <a href="#" class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">About</a>
+                        <a href="#" class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">Contact</a>
+                    </div>
+                    <div class="information w-[255px] h-[275px]">
+                        <h1 class="text-[18px] text-[#fff] pb-[35px]">Contact Information</h1>
+                        <p class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">198 West 21th Street, Suite 721 <br> New York NY 10016</p>
+                        <p class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">+ 1235 2355 98</p>
+                        <p class="text-[16px] text-[#ffffffb3] font-light pb-[20px]">info@yoursite.com</p>
+                        <p class="text-[16px] text-[#ffffffb3] font-light">email@email.com</p>
+                    </div>
+                    <div class="footerIcons w-[190px] h-[60px] flex justify-between">
+                        <div class="facebook w-[50px] h-[50px] bg-[#EF7DB1] rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-twitter text-[22px]" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="facebook w-[50px] h-[50px] bg-[#EF7DB1] rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-facebook-f text-[22px]" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="facebook w-[50px] h-[50px] bg-[#EF7DB1] rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-[23px]" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright w-full lg:w-[1140px] h-auto lg:h-[45px] flex justify-center">
+                    <p class="text-[16px] text-[#ffffffb3] font-light p-[20px] lg:p-0">Copyright ©2024 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #ffffff;"></i>  by Colorlib</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="Jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".dropnav").hide();
+        $(".hamburger").click(function(){
+            $(".dropnav").slideToggle();
+        })
+
+        particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);
+    })
+</script>
+</html>
