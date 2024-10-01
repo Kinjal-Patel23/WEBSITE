@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #4F5665;
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+/* .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox%3D%220 0 30 30%22 xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22black%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+} */
+
+.signInBtn{
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+.signUpBtn{
+    font-size: 14px;
+    color: #F53855;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.heroTtl{
+    font-size: 45px;
+    font-weight: 700;
+    color: #0B132A;
+
+}
+
+.heroSubTtl{
+    color: #4F5665;
+    font-weight: 500;
+}
+
+.user{
+    width: 60px;
+    height: 60px;
+    background-color: #FFECEC;
+    border-radius: 50px;
+}
+
+.userNum{
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.userNm{
+    font-size: 20px;
+    color: #7B808B;
+}
+
+.location{
+    width: 60px;
+    height: 60px;
+    background-color: #FFECEC;
+    border-radius: 50px;
+}
+
+.locationNum{
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.locationNm{
+    font-size: 20px;
+    color: #7B808B;
+}
+
+.servers{
+    width: 60px;
+    height: 60px;
+    background-color: #FFECEC;
+    border-radius: 50px;
+}
+
+.serversNum{
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.serversNm{
+    font-size: 20px;
+    color: #7B808B;
+}
+
+.userShadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.featureTtl{
+    font-size: 35px;
+    font-weight: 700;
+    color: #0B132A;
+}
+
+.featureSubTtl{
+    color: #4F5665;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.online{
+    font-size: 14px;
+    color: #4F5665;
+    line-height: 30px;
+}
+
+.internet{
+    font-size: 14px;
+    color: #4F5665;
+    line-height: 30px;
+}
+
+.vpn{
+    font-size: 14px;
+    color: #4F5665;
+    line-height: 30px;
+}
+
+.time{
+    font-size: 14px;
+    color: #4F5665;
+    line-height: 30px;
+}
+
+.fa-check-circle{
+    font-size: 20px;
+}
+
+.planTtl{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.planSubTtl{
+    font-size: 16px;
+    color: #4F5665;
+    font-weight: 500;
+    text-align: center;
+}
+
+.freePlan{
+    font-size: 18px;
+    color: #0B132A;
+    font-weight: 700;
+    /* padding-left: 80px; */
+    padding-bottom: 15px;
+    padding-top: 30px; 
+}
+
+
+.bandwidth{
+    font-size: 14px;
+    color: #4F5665;
+    /* padding-left: 40px; */
+    line-height: 25px;
+}
+
+.connection{
+    font-size: 14px;
+    color: #4F5665;
+    /* padding-left: 40px; */
+    line-height: 25px;
+}
+
+.logs{
+    font-size: 14px;
+    color: #4F5665;
+    /* padding-left: 40px; */
+    line-height: 25px;
+}
+
+.devices{
+    font-size: 14px;
+    color: #4F5665;
+    /* padding-left: 40px; */
+    line-height: 25px;
+}
+
+.free{
+    font-size: 25px;
+    color: #0B132A;
+    font-weight: 700;
+    /* padding-left: 112px; */
+    padding-top: 60px;
+}
+
+.freeBtn{
+    font-weight: 700;
+    font-size: 18px;
+    color: #F53838;
+}
+
+.standard{
+    font-size: 25px;
+    color: #0B132A;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+.standardBtn{
+    font-weight: 700;
+    font-size: 18px;
+    color: #F53838;
+}
+
+.premium{
+    font-size: 25px;
+    color: #0B132A;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.premiumBtn{
+    font-weight: 700;
+    font-size: 18px;
+    color: #F53838;
+}
+
+.networkTtl{
+    font-size: 35px;
+    font-weight: 700;
+    color: #0B132A;
+    text-align: center;
+}
+
+.subNetworkTtl{
+    font-size: 16px;
+    font-weight: 500;
+    color: #4F5665;
+    text-align: center;
+}
+
+.clientName{
+    font-size: 18px;
+    color: #0B132A;
+    font-weight: 700;
+}
+
+.clientCity{
+    font-size: 14px;
+    font-weight: 500;
+    color: #4F5665;
+    line-height: 10px;
+}
+
+.clientReviewNum{
+    font-size: 16px;
+    color: #0B132A;
+    font-weight: 500;
+}
+
+.clientCont{
+    font-size: 16px;
+    color: #0B132A;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.subscribeTtl{
+    font-size: 35px;
+    font-weight: 700;
+    color: #0B132A;
+}
+
+.subscribeCont{
+    font-size: 16px;
+    font-weight: 500;
+    color: #4F5665;
+}
+
+.subscribeBtn{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.subscribeShadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.footerDetail{
+    color: #4F5665;
+    font-weight: 500;
+}
+
+.icons{
+    width: 270px;
+    height: 40px;
+    margin-left: -25px;
+}
+
+.copyright{
+    color: #AFB5C0;
+    font-weight: 500;
+}
+
+.footerTtl{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    color: #4F5665;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #4F5665;
+    text-decoration: none;
+    font-weight: 500;
+}

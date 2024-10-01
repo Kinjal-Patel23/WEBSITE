@@ -1,0 +1,278 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background-color: black; */
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    max-width: 130px; 
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #A8741A;
+    color: white;
+}
+
+.fa-solid{
+    font-size: 22px;
+}
+
+.support{
+    font-size: 14px;
+    color: #a8741a;
+    font-weight: 500;
+}
+
+.navbar{
+    background-color: #212529;
+    border-top: 1px solid #2D2D2D;
+}
+
+.navbar-nav .nav-link {
+    color: #f3f3f3;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4a253; 
+}
+
+.dropdown-menu {
+    background-color: #242424;
+}
+
+.dropdown-item {
+    color: #fff;
+    font-size: 14px;
+}
+
+.active-link {
+    color: #d4a253 !important;
+}
+
+.heroSection{
+    background-color: #171717;
+}
+
+.offerTtl{
+    font-size: 18px;
+    color: #a8741a;
+}
+
+.mainTtl{
+    font-size: 40px;
+    color: #fff;
+}
+
+.mainTtlCont{
+    font-size: 18px;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.price{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.cardContent{
+    background-color: #242424;
+}
+
+.productTtl{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.subProductTtl{
+    font-size: 16px;
+    color: #a0a0a0;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.card{
+    width: 224px;
+    height: 337px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.card img{
+    width: 85%;
+    height: 55%;
+}
+
+.card h1{
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.card p{
+    font-size: 13px;
+    padding-top: 10px;
+    text-align: center;
+    color: #888888;
+}
+
+.card button{
+    width: 100px;
+    height: 40px;
+    background-color: #A8741A;
+    color: white;
+    font-size: 12px;
+    border:none;
+    margin-top: 10px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    background-color: #1B1B1B;
+  }
+
+  .testimonial img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .testimonial-name {
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .clientCity{
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .testimonial-review {
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 15px;
+    color: #888;
+  }
+
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+  }
+
+  .footerTtl {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .footerDetail {
+    margin-bottom: 10px;
+    color: #adb5bd;
+    font-size: 14px;
+  }
+
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer ul li {
+    color: #adb5bd;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer ul li:hover {
+    color: #ffffff;
+  }
+
+  .footer a {
+    color: #adb5bd;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+
+@media (max-width: 768px) {
+    .mainTtl {
+        font-size: 36px;
+        text-align: center;
+    }
+    .mainTtlCont {
+        font-size: 16px;
+        text-align: center;
+    }
+    .price span {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container-fluid {
+        text-align: center;
+    }
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .ttlBtn{
+        margin: auto;
+    }
+
+    .footer h1 {
+        font-size: 1.25rem;
+      }
+
+}
+
+@media (max-width: 576px) {
+    .mainTtl {
+        font-size: 28px;
+    }
+    .mainTtlCont {
+        font-size: 14px;
+    }
+    .price span {
+        font-size: 18px;
+    }
+
+    .heroSection img {
+        width: 100%;
+        height: auto;
+    }
+}

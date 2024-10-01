@@ -1,526 +1,297 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coza Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<style>
-    body{
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-    
-    .travelCont, .news-1, .news-2, .news-3, .news-4, .trendingCont, .trendingCard-1, .trendingCard-2, .articlesContBox, .videosContBox, .news{
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    }
-</style>
 <body>
-  
-    <div class="Container w-full h-auto">
-        <div class="header w-full h-auto lg:h-[600px] relative bg-[url('Assets/bg1.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center">
-            <div class="absolute inset-0 bg-black opacity-75"></div>
-            <div class="sub-header relative w-full lg:w-[1110px] h-[55px] mt-[20px] border-b border-white flex justify-around lg:justify-between">
-                <div class="navleft w-[90px] h-[40px] flex items-end justify-center">
-                    <h1 class="text-[#FFFFFF] text-[21px] font-medium ps-[30px]">WORLD</h1>
+
+    <div class="head">
+        <div class="subhead">
+            <div class="divleft">
+                <div class="logo">
+                    <h1>COZA <span>STORE</span></h1>
                 </div>
-                <div class="navright w-auto lg:w-[800px] h-[40px] flex">
-                    <div class="navmenu w-[700px] h-[40px] text-[14px] font-medium flex items-end justify-end gap-[30px]">
-                        <a href="#" class="text-[#fff]">Home</a>
-                        <a href="#" class="text-[#777574] hover:text-[#fff]">Pages</a>
-                        <a href="#" class="text-[#777574] hover:text-[#fff]">Gadgets</a>
-                        <a href="#" class="text-[#777574] hover:text-[#fff]">Lifestyle</a>
-                        <a href="#" class="text-[#777574] hover:text-[#fff]">Video</a>
-                        <a href="#" class="text-[#777574] hover:text-[#fff]">Contact</a>
-                    </div>
-                    <div class="navsearch w-[100px] h-[40px] flex items-end justify-center">
-                        <i class="fa-solid fa-magnifying-glass text-[#777574] text-[25px]"></i>
-                    </div>
+                <div class="navbar">
+                    <a href="#" id="active">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Features</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
                 </div>
             </div>
-            <div class="heroDetail w-full lg:w-[1110px] h-auto lg:h-[55px] mt-[31%] flex flex-wrap justify-center lg:justify-between gap-[20px] lg:gap-0">
-                <div class="heroDetail-1 w-[350px] h-[55px] flex items-center relative">
-                    <div class="circle-1 w-[80px] h-[55px]">
-                        <div class="subCircle w-[55px] h-[55px] border-4 border-[#8D8D8D] rounded-full flex items-center justify-center">
-                            <h1 class="text-[#8D8D8D] font-bold text-[26px]">1</h1>
-                        </div>
-                    </div>
-                    <div class="circleInfo w-[270px] h-[48px] flex items-center">
-                        <p class="text-[14px] font-bold text-[#fff]">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</p>
-                    </div>
+            <div class="divright">
+                <div class="srch">
+                    <i class="ri-search-line"></i>
                 </div>
-                <div class="heroDetail-2 w-[350px] h-[55px] flex items-center relative">
-                    <div class="circle-1 w-[80px] h-[55px]">
-                        <div class="subCircle w-[55px] h-[55px] border-4 border-[#8D8D8D] rounded-full flex items-center justify-center">
-                            <h1 class="text-[#8D8D8D] font-bold text-[26px]">2</h1>
-                        </div>
-                    </div>
-                    <div class="circleInfo w-[270px] h-[48px] flex items-center">
-                        <p class="text-[14px] font-bold text-[#fff]">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</p>
-                    </div>
+                <div class="sub">
+                    <i class="ri-shopping-cart-2-fill"></i>
+                    <span>2</span>
                 </div>
-                <div class="heroDetail-3 w-[350px] h-[55px] flex items-center relative">
-                    <div class="circle-2 w-[80px] h-[55px]">
-                        <div class="subCircle w-[55px] h-[55px] border-4 border-[#8D8D8D] rounded-full flex items-center justify-center">
-                            <h1 class="text-[#8D8D8D] font-bold text-[26px]">3</h1>
-                        </div>
-                    </div>
-                    <div class="circleInfo w-[270px] h-[48px] flex items-center">
-                        <p class="text-[14px] font-bold text-[#fff]">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex</p>
-                    </div>
+                <div class="upr">
+                    <i class="ri-heart-line"></i>
+                    <span>0</span>
+                </div>
+                <div class="hamburger">
+                    <i class="ri-menu-line"></i>
                 </div>
             </div>
         </div>
+        <swiper-container class="mySwiper" rewind="true"  autoplay="true">
+            <swiper-slide id="main-slide-1">
+                <div class="slide-1">
+                   <h3>Women Collection 2018</h3>
+                   <h1>NEW SEASON</h1>
+                   <button>SHOP NOW</button>
+                </div>
+            </swiper-slide>
+            <swiper-slide id="main-slide-2">
+                <div class="slide-2">
+                    <h3>Men New-Season</h3>
+                    <h1>JACKETS & COATS</h1>
+                    <button>SHOP NOW</button>
+                 </div>
+            </swiper-slide>
+            <swiper-slide id="main-slide-3">
+                <div class="slide-3">
+                    <h3>Men Collection 2018</h3>
+                    <h1>NEW ARRIVALS</h1>
+                    <button>SHOP NOW</button>
+                 </div>
+            </swiper-slide>
+          </swiper-container>
+        <!-- <div class="hero-section">
+            <h2>Women Collection 2018</h2>
+            <h1>NEW SEASON</h1>
+            <button>SHOP NOW</button>
+        </div> -->
+    </div>
+    <div class="nav">
+        <a href="#" id="active">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Features</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
 
-        <div class="main w-full h-auto lg:h-[2898px] flex flex-wrap flex-col items-center justify-center">
-            <div class="subMain w-full lg:w-[1140px] h-auto lg:h-[1423px] flex">
-                <div class="subMain-1 w-full lg:w-[760px] h-auto lg:h-[1423px]  flex flex-col items-center justify-between">
-                    <div class="mainmenuCont-1 w-full lg:w-[760px] h-auto lg:h-[560px] flex flex-col items-center">
-                        <div class="mainMenu w-full lg:w-[730px] h-auto lg:h-[49px] border-b-2 border-[#F1F1F1] flex items-center justify-between">
-                            <div class="mainTtl w-[100px] h-[27px]">
-                                <h1 class="text-[18px] font-bold text-[#000]">Don't Miss</h1>
-                            </div>
-                            <div class="mainNavMenu w-[560px] h-[27px] flex items-center justify-between">
-                                <a href="#" class="text-[14px] text-[#000]">All</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Style hunter</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Vogue</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Health & Fitness</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Travel</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Gadgets</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">More <span><i class="ri-arrow-down-s-fill"></i></span></a>
-                            </div>
-                        </div>
-                        <div class="mainCont w-full lg:w-[730px] h-auto lg:h-[511px] flex items-end">
-                            <div class="travel w-[380px] h-[481px]" data-aos="fade-up">
-                                <div class="travelImg w-[350px] h-[190px]">
-                                    <img src="Assets/b2.jpg" alt="">
-                                </div>
-                                <div class="travelCont w-[350px] h-[216px]">
-                                    <div class="subTravleTtl w-[290px] h-[70px] ms-[25px] pt-[17px]">
-                                        <h1 class="text-[18px] text-[#000] font-medium leading-[23px]">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h1>
-                                    </div>
-                                    <div class="subTravleDetail w-[290px] h-[59px] ms-[25px] mt-[25px]">
-                                        <p class="text-[14px] text-[#8d8d8d] leading-[20px]">How Did van Gogh’s Turbulent Mind <br> Depict One of the Most Complex <br> Concepts in...</p>
-                                    </div>
-                                    <div class="time w-[290px] h-[17px] ms-[25px] mt-[25px]">
-                                        <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                    </div>
-                                </div>
-                                <div class="circle-2 w-[340px] h-[36px] mt-[37px] flex">
-                                    <div class="leftCircle w-[36px] h-[36px] border-2 border-[#D8D8D8] rounded-full ms-[10px] flex items-center justify-center">
-                                        <i class="ri-arrow-left-s-line text-[#D8D8D8] text-[25px]"></i>
-                                    </div>
-                                    <div class="rightCircle w-[36px] h-[36px] border-2 border-[#D8D8D8] rounded-full ms-[15px] flex items-center justify-center">
-                                        <i class="ri-arrow-right-s-line text-[#D8D8D8] text-[25px]"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="travelNews w-[380px] h-[481px] flex flex-col items-end gap-[6px]">
-                                <div class="news-1 w-[350px] h-[97px] flex items-center justify-between" data-aos="fade-up">
-                                    <div class="newsImg-1 w-[97px] h-[97px]">
-                                        <img src="Assets/b10.jpg">
-                                    </div>
-                                    <div class="newsCont-1 w-[238px] h-[73px]">
-                                        <h1 class="text-[14px] text-[#000] font-medium leading-[18px] pt-[4px] ps-[6px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                                        <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] pt-[10px] ps-[6px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                    </div>
-                                </div>
-                                <div class="news-2 w-[350px] h-[97px] flex items-center justify-between" data-aos="fade-up">
-                                    <div class="newsImg-1 w-[97px] h-[97px]">
-                                        <img src="Assets/b11.jpg">
-                                    </div>
-                                    <div class="newsCont-1 w-[238px] h-[73px]">
-                                        <h1 class="text-[14px] text-[#000] font-medium leading-[18px] pt-[4px] ps-[6px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                                        <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] pt-[10px] ps-[6px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                    </div>
-                                </div>
-                                <div class="news-3 w-[350px] h-[97px] flex items-center justify-between" data-aos="fade-up">
-                                    <div class="newsImg-1 w-[97px] h-[97px]">
-                                        <img src="Assets/b12.jpg">
-                                    </div>
-                                    <div class="newsCont-1 w-[238px] h-[73px]">
-                                        <h1 class="text-[14px] text-[#000] font-medium leading-[18px] pt-[4px] ps-[6px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                                        <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] pt-[10px] ps-[6px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                    </div>
-                                </div>
-                                <div class="news-4 w-[350px] h-[97px] flex items-center justify-between" data-aos="fade-up">
-                                    <div class="newsImg-1 w-[97px] h-[97px]">
-                                        <img src="Assets/b13.jpg">
-                                    </div>
-                                    <div class="newsCont-1 w-[238px] h-[73px]">
-                                        <h1 class="text-[14px] text-[#000] font-medium leading-[18px] pt-[4px] ps-[6px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                                        <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] pt-[10px] ps-[6px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mainmenuCont-2 w-full lg:w-[760px] h-auto lg:h-[762px] flex flex-col items-center justify-between">
-                        <div class="mainMenu w-[730px] h-[49px] border-b-2 border-[#F1F1F1] flex items-center justify-between">
-                            <div class="mainTtl w-[140px] h-[27px]">
-                                <h1 class="text-[18px] font-bold text-[#000]">What's Trending</h1>
-                            </div>
-                            <div class="mainNavMenu w-[560px] h-[27px] flex items-center justify-between">
-                                <a href="#" class="text-[14px] text-[#000]">All</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Style hunter</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Vogue</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Health & Fitness</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Travel</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">Gadgets</a>
-                                <a href="#" class="text-[14px] text-[#929292] hover:text-[#000]">More <span><i class="ri-arrow-down-s-fill"></i></span></a>
-                            </div>
-                        </div>
-                        <div class="mainCont w-[730px] h-[680px]">
-                            <div class="trendingMainCont-1 w-[730px] h-[410px] flex justify-between">
-                                <div class="trending-1 w-[350px] h-[410px]" data-aos="fade-up">
-                                    <div class="trendingImg w-[350px] h-[190px]">
-                                        <img src="Assets/b1.jpg" alt="">
-                                    </div>
-                                    <div class="trendingCont w-[350px] h-[216px]">
-                                        <div class="subTrendingTtl w-[290px] h-[70px] ms-[25px] pt-[17px]">
-                                            <h1 class="text-[18px] text-[#000] font-medium leading-[23px]">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h1>
-                                        </div>
-                                        <div class="subTrendingDetail w-[290px] h-[59px] ms-[25px] mt-[25px]">
-                                            <p class="text-[14px] text-[#8d8d8d] leading-[20px]">How Did van Gogh’s Turbulent Mind <br> Depict One of the Most Complex <br> Concepts in...</p>
-                                        </div>
-                                        <div class="timeTrendinng w-[290px] h-[17px] ms-[25px] mt-[25px]">
-                                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="trending-2 w-[350px] h-[410px]" data-aos="fade-up">
-                                    <div class="trendingImg w-[350px] h-[190px]">
-                                        <img src="Assets/b3.jpg" alt="">
-                                    </div>
-                                    <div class="trendingCont w-[350px] h-[216px]">
-                                        <div class="subTrendingTtl w-[290px] h-[70px] ms-[25px] pt-[17px]">
-                                            <h1 class="text-[18px] text-[#000] font-medium leading-[23px]">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h1>
-                                        </div>
-                                        <div class="subTrendingDetail w-[290px] h-[59px] ms-[25px] mt-[25px]">
-                                            <p class="text-[14px] text-[#8d8d8d] leading-[20px]">How Did van Gogh’s Turbulent Mind <br> Depict One of the Most Complex <br> Concepts in...</p>
-                                        </div>
-                                        <div class="timeTrending w-[290px] h-[17px] ms-[25px] mt-[25px]">
-                                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="trendingNews w-[730px] h-[202px]  mt-[4px] flex justify-between">
-                                <div class="trendingNews-1 w-[350px] h-[202px] flex flex-col justify-between" data-aos="fade-up">
-                                    <div class="trendingCard-1 w-[350px] h-[97px] flex items-center justify-between">
-                                        <div class="trendingCardImg-1 w-[97px] h-[97px]">
-                                            <img src="Assets/b14.jpg">
-                                        </div>
-                                        <div class="trendingCardImgCont-1 w-[238px] h-[73px]">
-                                            <h1 class="text-[14px] text-[#000] font-medium leading-[18px] pt-[4px] ps-[6px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] pt-[10px] ps-[6px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                        </div>
-                                    </div>
-                                    <div class="trendingCard-2 w-[350px] h-[97px] flex items-center justify-between">
-                                        <div class="trendingCardImg-1 w-[97px] h-[97px]">
-                                            <img src="Assets/b16.jpg">
-                                        </div>
-                                        <div class="trendingCardImgCont-1 w-[238px] h-[73px]">
-                                            <h1 class="text-[14px] text-[#000] font-medium leading-[18px] pt-[4px] ps-[6px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] pt-[10px] ps-[6px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="trendingNews-2 w-[350px] h-[202px] flex flex-col justify-between" data-aos="fade-up">
-                                    <div class="trendingCard-1 w-[350px] h-[97px] flex items-center justify-between">
-                                        <div class="trendingCardImg-1 w-[97px] h-[97px]">
-                                            <img src="Assets/b15.jpg">
-                                        </div>
-                                        <div class="trendingCardImgCont-1 w-[238px] h-[73px]">
-                                            <h1 class="text-[14px] text-[#000] font-medium leading-[18px] pt-[4px] ps-[6px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] pt-[10px] ps-[6px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                        </div>
-                                    </div>
-                                    <div class="trendingCard-2 w-[350px] h-[97px] flex items-center justify-between">
-                                        <div class="trendingCardImg-1 w-[97px] h-[97px]">
-                                            <img src="Assets/b17.jpg">
-                                        </div>
-                                        <div class="trendingCardImgCont-1 w-[238px] h-[73px]">
-                                            <h1 class="text-[14px] text-[#000] font-medium leading-[18px] pt-[4px] ps-[6px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] pt-[10px] ps-[6px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="trendingCircle w-[360px] h-[36px] mt-[26px] flex">
-                                <div class="leftCircle w-[36px] h-[36px] border-2 border-[#D8D8D8] rounded-full ms-[10px] flex items-center justify-center">
-                                        <i class="ri-arrow-left-s-line text-[#D8D8D8] text-[25px]"></i>
-                                </div>
-                                <div class="rightCircle w-[36px] h-[36px] border-2 border-[#D8D8D8] rounded-full ms-[15px] flex items-center justify-center">
-                                    <i class="ri-arrow-right-s-line text-[#D8D8D8] text-[25px]"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="subMain-2 w-full lg:w-[380px] h-auto lg:h-[1423px] flex flex-col items-center">
-                    <div class="aboutTtl w-[348px] h-[49px] border-l-2 border-[#F1F1F1] flex items-center">
-                        <h1 class="text-[18px] text-[#000] font-bold leading-[23px] ps-[25px]">About World</h1>
-                    </div>
-                    <div class="aboutCont w-[348px] h-[194px] border-l-2 border-t-2 border-[#F1F1F1] flex justify-end">
-                        <p class="text-[14px] text-[#8d8d8d] leading-[20px] tracking-wider pt-[30px]">
-                            The mango is perfect in that it is always <br>
-                            yellow and if it’s not, I don’t want to hear <br>
-                            about it. The mango’s only flaw, and it’s a <br>
-                            minor one, is the effort it sometimes takes to <br> 
-                            undress the mango, carve it up in a way that <br>
-                            makes sense, and find its way to the mouth.
-                        </p>
-                    </div>
-                    <div class="storiesTtl w-[348px] h-[49px] border-l-2 border-t-2 border-[#F1F1F1] flex items-center">
-                        <h1 class="text-[18px] text-[#000] font-bold leading-[23px] ps-[25px]">Top Stories</h1>
-                    </div>
-                    <div class="storiesNews w-[348px] h-[430px] border-l-2 border-t-2 border-[#F1F1F1] flex flex-col items-end justify-center gap-[5px]">
-                        <div class="news w-[318px] h-[70px] flex items-center justify-between">
-                            <div class="newsImg w-[70px] h-[70px]">
-                                <img src="Assets/b18.jpg" alt="">
-                            </div>
-                            <div class="newsCont w-[233px] h-[46px] flex items-center">
-                                <h1 class="text-[14px] text-[#000] font-medium leading-[18px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                            </div>
-                        </div>
-                        <div class="news w-[318px] h-[70px] flex items-center justify-between">
-                            <div class="newsImg w-[70px] h-[70px]">
-                                <img src="Assets/b13.jpg" alt="">
-                            </div>
-                            <div class="newsCont w-[233px] h-[46px] flex items-center">
-                                <h1 class="text-[14px] text-[#000] font-medium leading-[18px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                            </div>
-                        </div>
-                        <div class="news w-[318px] h-[70px] flex items-center justify-between">
-                            <div class="newsImg w-[70px] h-[70px]">
-                                <img src="Assets/b14.jpg" alt="">
-                            </div>
-                            <div class="newsCont w-[233px] h-[46px] flex items-center">
-                                <h1 class="text-[14px] text-[#000] font-medium leading-[18px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                            </div>
-                        </div>
-                        <div class="news w-[318px] h-[70px] flex items-center justify-between">
-                            <div class="newsImg w-[70px] h-[70px]">
-                                <img src="Assets/b10.jpg" alt="">
-                            </div>
-                            <div class="newsCont w-[233px] h-[46px] flex items-center">
-                                <h1 class="text-[14px] text-[#000] font-medium leading-[18px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                            </div>
-                        </div>
-                        <div class="news w-[318px] h-[70px] flex items-center justify-between">
-                            <div class="newsImg w-[70px] h-[70px]">
-                                <img src="Assets/b15.jpg" alt="">
-                            </div>
-                            <div class="newsCont w-[233px] h-[46px] flex items-center">
-                                <h1 class="text-[14px] text-[#000] font-medium leading-[18px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="connected w-[348px] h-[49px] border-l-2 border-t-2 border-[#F1F1F1] flex items-center">
-                        <h1 class="text-[18px] text-[#000] font-bold leading-[23px] ps-[25px]">Stay Connected</h1>
-                    </div>
-                    <div class="icons w-[348px] h-[96px] border-l-2 border-t-2 border-[#F1F1F1] flex items-center justify-end gap-[21px]">
-                        <div class="facebook w-[36px] h-[36px] border border-[#F1F1F1] rounded-full flex items-center justify-center">
-                            <i class="ri-facebook-fill text-[#8D8D8D] hover:text-[#00f] duration-700"></i>
-                        </div>
-                        <div class="twitter w-[36px] h-[36px] border border-[#F1F1F1] rounded-full flex items-center justify-center">
-                            <i class="ri-twitter-fill text-[#8D8D8D] hover:text-[#00f] duration-700"></i>
-                        </div>
-                        <div class="pinterest w-[36px] h-[36px] border border-[#F1F1F1] rounded-full flex items-center justify-center">
-                            <i class="ri-pinterest-line text-[#8D8D8D] hover:text-[#00f] duration-700"></i>
-                        </div>
-                        <div class="vimeo w-[36px] h-[36px] border border-[#F1F1F1] rounded-full flex items-center justify-center">
-                            <i class="ri-vimeo-fill text-[#8D8D8D] hover:text-[#00f] duration-700"></i>
-                        </div>
-                        <div class="instagram w-[36px] h-[36px] border border-[#F1F1F1] rounded-full flex items-center justify-center">
-                            <i class="ri-instagram-line text-[#8D8D8D] hover:text-[#00f] duration-700"></i>
-                        </div>
-                        <div class="google w-[36px] h-[36px] border border-[#F1F1F1] rounded-full flex items-center justify-center">
-                            <i class="ri-google-fill text-[#8D8D8D] hover:text-[#00f] duration-700"></i>
-                        </div>
-                    </div>
-                    <div class="pick w-[348px] h-[49px] border-r-0 border-2 border-[#F1F1F1] flex items-center">
-                        <h1 class="text-[18px] text-[#000] font-bold leading-[23px] ps-[25px]">Today's Pick</h1>
-                    </div>
-                    <div class="pickNews w-[348px] h-[320px] border-l-2 border-[#F1F1F1] flex flex-col items-end">
-                        <div class="pickNewsImg w-[318px] h-[160px] mt-[30px]">
-                            <img src="Assets/b22.jpg" alt="">
-                        </div>
-                        <div class="pickNewsCont w-[318px] h-[90px] flex items-end">
-                            <h1 class="text-[18px] font-medium leading-[23px] text-[#000]">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h1>
-                        </div>
-                    </div>
-                </div>
+    <div class="type">
+        <div class="sub-type">
+            <div class="women">
+                <h1>Women</h1>
+                <p>Spring 2018</p>
             </div>
-            <div class="blog w-full lg:w-[1140px] h-auto lg:h-[245px] flex justify-around items-end">
-                <div class="blogCard-1 w-[350px] h-[190px] relative bg-[url('Assets/b4.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-center" data-aos="fade-up">
-                    <div class="absolute inset-0 bg-black opacity-60"></div>
-                    <div class="blogCardCont-1 w-[320px] h-[160px] relative flex flex-col items-center justify-between">
-                        <div class="blogTravel w-[61px] h-[20px] bg-[#FFFFFF] hover:bg-[#0000FF] text-[#0000FF] hover:text-[#ffffff] duration-700 flex items-center justify-center">
-                            <p class="text-[10px]">TRAVEL</p>
-                        </div>
-                        <div class="blogTravelCont w-[320px] h-[70px]">
-                            <h1 class="text-[18px] text-[#fff] font-medium leading-[23px] text-center">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h1>
-                        </div>
-                        <div class="blogTravelName w-[195px] h-[17px]">
-                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogCard-2 w-[350px] h-[190px] relative bg-[url('Assets/b5.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-center" data-aos="fade-up">
-                    <div class="absolute inset-0 bg-black opacity-60"></div>
-                    <div class="blogCardCont-2 w-[320px] h-[160px] relative flex flex-col items-center justify-between">
-                        <div class="blogTravel w-[61px] h-[20px] bg-[#FFFFFF] hover:bg-[#0000FF] text-[#0000FF] hover:text-[#ffffff] duration-700 flex items-center justify-center">
-                            <p class="text-[10px]">TRAVEL</p>
-                        </div>
-                        <div class="blogTravelCont w-[320px] h-[70px]">
-                            <h1 class="text-[18px] text-[#fff] font-medium leading-[23px] text-center">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h1>
-                        </div>
-                        <div class="blogTravelName w-[195px] h-[17px]">
-                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="blogCard-3 w-[350px] h-[190px] relative bg-[url('Assets/b6.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-center" data-aos="fade-up">
-                    <div class="absolute inset-0 bg-black opacity-60"></div>
-                    <div class="blogCardCont-3 w-[320px] h-[160px] relative flex flex-col items-center justify-between">
-                        <div class="blogTravel w-[61px] h-[20px] bg-[#FFFFFF] hover:bg-[#0000FF] text-[#0000FF] hover:text-[#ffffff] duration-700 flex items-center justify-center">
-                            <p class="text-[10px]">TRAVEL</p>
-                        </div>
-                        <div class="blogTravelCont w-[320px] h-[70px]">
-                            <h1 class="text-[18px] text-[#fff] font-medium leading-[23px] text-center">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h1>
-                        </div>
-                        <div class="blogTravelName w-[195px] h-[17px]">
-                            <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="men">
+                <h1>Men</h1>
+                <p>Spring 2018</p>
             </div>
-            <div class="articlesVideos w-full lg:w-[1140px] h-auto lg:h-[946px] flex">
-                <div class="articles w-[760px] h-[946px] flex flex-col items-center justify-end">
-                    <div class="articlesTtl w-[730px] h-[45px] mb-[30px] border-b-2 border-[#F1F1F1] flex items-center">
-                        <h1 class="text-[18px] text-[#000] font-bold">Latest Articles</h1>
-                    </div>
-                    <div class="articlesCont w-[730px] h-[820px] flex flex-col justify-between">
-                        <div class="articlesContBox w-[730px] h-[200px] flex items-center justify-between" data-aos="fade-up">
-                            <div class="articlesImg w-[200px] h-[200px]">
-                                <img src="Assets/b18.jpg" class="w-[200px] h-[200px]">
-                            </div>
-                            <div class="articlesImgCont w-[510px] h-[162px]">
-                                <h1 class="text-[18px] text-[#000] font-medium pb-[10px]">How Did van Gogh’s Turbulent Mind Depict One of the <br> Most Complex Concepts in Physics?</h1>
-                                <p class="text-[14px] text-[#8d8d8d] leading-[20px] tracking-wide pb-[20px]">Pick the yellow peach that looks like a sunset with its red, orange, <br> and pink coat skin, peel it off with your teeth. Sink them into <br> unripened...</p>
-                                <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                            </div>
-                        </div>
-                        <div class="articlesContBox w-[730px] h-[200px] flex items-center justify-between" data-aos="fade-up">
-                            <div class="articlesImg w-[200px] h-[200px]">
-                                <img src="Assets/b19.jpg" class="w-[200px] h-[200px]">
-                            </div>
-                            <div class="articlesImgCont w-[510px] h-[162px]">
-                                <h1 class="text-[18px] text-[#000] font-medium pb-[10px]">How Did van Gogh’s Turbulent Mind Depict One of the <br> Most Complex Concepts in Physics?</h1>
-                                <p class="text-[14px] text-[#8d8d8d] leading-[20px] tracking-wide pb-[20px]">Pick the yellow peach that looks like a sunset with its red, orange, <br> and pink coat skin, peel it off with your teeth. Sink them into <br> unripened...</p>
-                                <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                            </div>
-                        </div>
-                        <div class="articlesContBox w-[730px] h-[200px] flex items-center justify-between" data-aos="fade-up">
-                            <div class="articlesImg w-[200px] h-[200px]">
-                                <img src="Assets/b20.jpg" class="w-[200px] h-[200px]">
-                            </div>
-                            <div class="articlesImgCont w-[510px] h-[162px]">
-                                <h1 class="text-[18px] text-[#000] font-medium pb-[10px]">How Did van Gogh’s Turbulent Mind Depict One of the <br> Most Complex Concepts in Physics?</h1>
-                                <p class="text-[14px] text-[#8d8d8d] leading-[20px] tracking-wide pb-[20px]">Pick the yellow peach that looks like a sunset with its red, orange, <br> and pink coat skin, peel it off with your teeth. Sink them into <br> unripened...</p>
-                                <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                            </div>
-                        </div>
-                        <div class="articlesContBox w-[730px] h-[200px] flex items-center justify-between" data-aos="fade-up">
-                            <div class="articlesImg w-[200px] h-[200px]">
-                                <img src="Assets/b21.jpg" class="w-[200px] h-[200px]">
-                            </div>
-                            <div class="articlesImgCont w-[510px] h-[162px]">
-                                <h1 class="text-[18px] text-[#000] font-medium pb-[10px]">How Did van Gogh’s Turbulent Mind Depict One of the <br> Most Complex Concepts in Physics?</h1>
-                                <p class="text-[14px] text-[#8d8d8d] leading-[20px] tracking-wide pb-[20px]">Pick the yellow peach that looks like a sunset with its red, orange, <br> and pink coat skin, peel it off with your teeth. Sink them into <br> unripened...</p>
-                                <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="videos w-[380px] h-[946px] flex flex-col items-center justify-end">
-                    <div class="videosTtl w-[350px] h-[45px] mb-[30px] border-b-2 border-[#F1F1F1] flex items-center">
-                        <h1 class="text-[18px] text-[#000] font-bold">Most Popular Videos</h1>
-                    </div>
-                    <div class="videosCont w-[350px] h-[820px] flex flex-col justify-between">
-                        <div class="videosContBox w-[350px] h-[406px]" data-aos="fade-up">
-                            <div class="videosImg w-[350px] h-[190px] bg-[url('Assets/b7.jpg')] bg-cover bg-no-repeat bg-center flex items-center justify-center">
-                                <div class="videosPlayIcon w-[36px] h-[36px] rounded-full bg-white flex items-center justify-center">
-                                    <i class="fa-solid fa-play text-[#8D8D8D] hover:text-[#00f] duration-1000"></i>
-                                </div>
-                            </div>
-                            <div class="videosCont w-[350px] h-[216px]">
-                                <h1 class="text-[18px] text-[#000] font-medium leading-[23px] pt-[20px] ps-[25px] pb-[10px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most <br> Complex Concepts in Physics?</h1>
-                                <p class="text-[14px] text-[#8d8d8d] leading-[20px] ps-[25px] pb-[20px]">How Did van Gogh’s Turbulent Mind <br> Depict One of the Most Complex <br> Concepts in...</p>
-                                <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] ps-[25px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                            </div>
-                        </div>
-                        <div class="videosContBox w-[350px] h-[406px]" data-aos="fade-up">
-                            <div class="videosImg w-[350px] h-[190px] bg-[url('Assets/b8.jpg')] bg-cover bg-no-repeat bg-center flex items-center justify-center">
-                                <div class="videosPlayIcon w-[36px] h-[36px] rounded-full bg-white flex items-center justify-center">
-                                    <i class="fa-solid fa-play text-[#8D8D8D] hover:text-[#00f] duration-1000"></i>
-                                </div>
-                            </div>
-                            <div class="videosCont w-[350px] h-[216px]">
-                                <h1 class="text-[18px] text-[#000] font-medium leading-[23px] pt-[20px] ps-[25px] pb-[10px]">How Did van Gogh’s Turbulent <br> Mind Depict One of the Most <br> Complex Concepts in Physics?</h1>
-                                <p class="text-[14px] text-[#8d8d8d] leading-[20px] ps-[25px] pb-[20px]">How Did van Gogh’s Turbulent Mind <br> Depict One of the Most Complex <br> Concepts in...</p>
-                                <p class="text-[12px] text-[#8d8d8d] hover:text-[#00f] ps-[25px]">Katy Liu on Sep 29, 2017 at 9:48 am</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="button w-full lg:w-[1140px] h-[85px] flex items-end justify-center">
-                <div class="subBtn w-[120px] h-[35px] border border-[#D8D8D8] hover:bg-[#00f] text-[#8d8d8d] hover:text-[#fff] duration-700 rounded-l-full rounded-r-full flex items-center justify-center">
-                    <h1 class="text-[14px]">Load More</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer w-full h-[233px] bg-[#161616] flex items-center justify-center">
-            <div class="world w-[380px] h-[93px] flex flex-col justify-between">
-                <h1 class="text-white text-[21px] font-medium px-[10px]">WORLD</h1>
-                <p class="text-[#8d8d8d] text-[14px] px-[10px] tracking-wide">Copyright ©2024 All rights reserved | This <br> template is made with <i class="fa-regular fa-heart"></i> by Colorlib</p>
-            </div>
-            <div class="menuFooter w-[380px] h-[93px] px-[10px] mt-[20px] flex">
-                <div class="homeCont w-[117px] h-[72px] flex flex-col justify-around">
-                    <a href="#" class="text-[14px] text-[#8d8d8d] hover:text-[#00f]">Home</a>
-                    <a href="#" class="text-[14px] text-[#8d8d8d] hover:text-[#00f]">Contact</a>
-                </div>
-                <div class="fashionGadgets w-[117px] h-[72px] flex flex-col justify-around">
-                    <a href="#" class="text-[14px] text-[#8d8d8d] hover:text-[#00f]">Fashion</a>
-                    <a href="#" class="text-[14px] text-[#8d8d8d] hover:text-[#00f]">Gadgets</a>
-                </div>
-                <div class="lifestyleVideo w-[117px] h-[72px] flex flex-col justify-around">
-                    <a href="#" class="text-[14px] text-[#8d8d8d] hover:text-[#00f]">Lifestyle</a>
-                    <a href="#" class="text-[14px] text-[#8d8d8d] hover:text-[#00f]">Video</a>
-                </div>
-            </div>
-            <div class="subscribe w-[380px] h-[93px] flex flex-col justify-around">
-                <h1 class="text-[18px] text-[#fff] font-bold px-[10px]">Subscribe</h1>
-                <input type="text" placeholder="Enter your mail" class="w-[350px] h-[35px] bg-transparent border-b border-[#8d8d8d] mx-[10px] placeholder:text-[14px] px-[5px] text-[#8d8d8d]">
+            <div class="accessories">
+                <h1>Accessories</h1>
+                <p>New Trend</p>
             </div>
         </div>
     </div>
 
+    <div class="overview">
+        <div class="sub-overview">
+            <div class="title">
+                <h1>PRODUCT OVERVIEW</h1>
+            </div>
+            <div class="navlinks">
+                <div class="sub-nav">
+                    <a href="#" id="line">All Products</a>
+                    <a href="#">Women</a>
+                    <a href="#">Men</a>
+                    <a href="#">Bag</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Watches</a>
+                    <div class="hamburger1">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+                
+                <div class="filt-srch">
+                    <div class="filter">
+                        <i class="ri-filter-3-line"></i><span>Filter</span>
+                    </div>
+                    <div class="search">
+                        <i class="ri-search-line"></i><span>Search</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-2">
+                    <a href="#" id="line">All Products</a>
+                    <a href="#">Women</a>
+                    <a href="#">Men</a>
+                    <a href="#">Bag</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Watches</a>
+            </div>
+
+            <div class="box-1">
+                <div class="sub-box1">
+                    <div class="img-1"></div>
+                    <p>Esprit Ruffle Shirt <span><i class="ri-heart-line"></i></span></p>
+                    <p>$16.64</p>
+                </div>
+                <div class="sub-box2">
+                    <div class="img-2"></div>
+                    <p>Herschel supply <span><i class="ri-heart-line"></i></span></p>
+                    <p>$35.31</p>
+                </div>
+                <div class="sub-box3">
+                    <div class="img-3"></div>
+                    <p>Only Check Trouser <span><i class="ri-heart-line"></i></span></p>
+                    <p>$25.50</p>
+                </div>
+                <div class="sub-box4">
+                    <div class="img-4"></div>
+                    <p>Classic Trench Coat <span><i class="ri-heart-line"></i></span></p>
+                    <p>$75.00</p>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="sub-box5">
+                    <div class="img-5"></div>
+                    <p>Front Pocket Jumper <span><i class="ri-heart-line"></i></span></p>
+                    <p>$34.75</p>
+                </div>
+                <div class="sub-box6">
+                    <div class="img-6"></div>
+                    <p>Vintage Inspired Classic <span><i class="ri-heart-line"></i></span></p>
+                    <p>$93.20</p>
+                </div>
+                <div class="sub-box7">
+                    <div class="img-7"></div>
+                    <p>Shirt in Stretch Cotton <span><i class="ri-heart-line"></i></span></p>
+                    <p>$52.66</p>
+                </div>
+                <div class="sub-box8">
+                    <div class="img-8"></div>
+                    <p>Pieces Metallic Printed <span><i class="ri-heart-line"></i></span></p>
+                    <p>$18.96</p>
+                </div>
+
+            </div>
+            <div class="box-3">
+                <div class="sub-box9">
+                    <div class="img-9"></div>
+                    <p>Converse All Star Hi Plimsolls <span><i class="ri-heart-line"></i></span></p>
+                    <p>$75.00</p>
+                </div>
+                <div class="sub-box10">
+                    <div class="img-10"></div>
+                    <p>Femme T-Shirt In Stripe <span><i class="ri-heart-line"></i></span></p>
+                    <p>$25.85</p>
+                </div>
+                <div class="sub-box11">
+                    <div class="img-11"></div>
+                    <p>Herschel supply <span><i class="ri-heart-line"></i></span></p>
+                    <p>$63.16</p>
+                </div>
+                <div class="sub-box12">
+                    <div class="img-12"></div>
+                    <p>Herschel supply <span><i class="ri-heart-line"></i></span></p>
+                    <p>$63.15</p>
+                </div>
+            </div>
+            <div class="box-4">
+                <div class="sub-box13">
+                    <div class="img-13"></div>
+                    <p>T-Shirt with Sleeve <span><i class="ri-heart-line"></i></span></p>
+                    <p>$18.49</p>
+                </div>
+                <div class="sub-box14">
+                    <div class="img-14"></div>
+                    <p>Pretty Little Thing <span><i class="ri-heart-line"></i></span></p>
+                    <p>$54.79</p>
+                </div>
+                <div class="sub-box15">
+                    <div class="img-15"></div>
+                    <p>Mini Silver Mesh Watch <span><i class="ri-heart-line"></i></span></p>
+                    <p>$86.85</p>
+                </div>
+                <div class="sub-box16">
+                    <div class="img-16"></div>
+                    <p>Square Neck Back <span><i class="ri-heart-line"></i></span></p>
+                    <p>$29.64</p>
+                </div>
+            </div>
+            <button>LOAD MORE</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="sub-footer">
+            <div class="categories">
+                <h1>CATEGORIES</h1>
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">Shoes</a>
+                <a href="#">Watches</a>
+            </div>
+            <div class="help">
+                <h1>HELP</h1>
+                <a href="#">Track Order</a>
+                <a href="#">Returns</a>
+                <a href="#">Shipping</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="getintouch">
+                <h1>GET IN TOUCH</h1>
+                <p>Any questions? Let us know in store at 8th <br>
+                     floor, 379 Hudson St, New York, NY 10018 or <br> 
+                     call us on (+1) 96 716 6879
+                </p>
+                <i class="fa-brands fa-facebook-f" style="color: #d4d0d0;"></i>
+                <i class="fa-brands fa-instagram" style="color: #d4d0d0;"></i>
+                <i class="fa-brands fa-pinterest-p" style="color: #d4d0d0;"></i>
+            </div>
+            <div class="newsletter">
+                <h1>NEWSLETTER</h1>
+                <form>
+                    <input class="email" type="email" id="mail" name="mail" placeholder="email@exampel.com">
+                </form>
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="payment">
+            <img src="assets/icon-pay-01.png">
+            <img src="assets/icon-pay-02.png">
+            <img src="assets/icon-pay-03.png">
+            <img src="assets/icon-pay-04.png">
+            <img src="assets/icon-pay-05.png">
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy;2024 All rights reserved | This template is made with <i class="fa-regular fa-heart" style="color: #d4d0d0;"></i> by <span>Colorlib</span></p>
+        </div>
+    </div>
+    
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <script src="Jquery.js"></script>
 <script>
-    AOS.init();
+    $(document).ready(function(){
+        $(".hamburger").click(function(){
+            $(".nav").slideToggle(1000)
+        })
+
+        $(".hamburger1").click(function(){
+            $(".nav-2").fadeToggle(1000)
+        })
+    })
 </script>
 </html>
